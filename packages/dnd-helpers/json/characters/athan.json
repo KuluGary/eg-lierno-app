@@ -1,0 +1,322 @@
+{
+  "name": "Athan Lor",
+  "flavor": {
+    "alignment": "Neutral buena",
+    "appearance": "<p>Físicamente es alta y robusta, con un cuerpo fuerte y anchos huesos. Es una persona que tiende a engordar con facilidad, pero lleva una vida muy activa y por ello es bastante musculosa, especialmente en las piernas a causa de su vida como amazona. Tiene una larga melena pelirroja, que suele recoger en intrincadas trenzas, y una piel tersa, mas llena de cicatrices y pequeños tatuajes provocados por errores con la magia -o hechos a propósito-. Su rostro es serio, con rasgos marcados, nariz fina y recta, labios carnosos y ojos ligeramente rasgados.</p>",
+    "background": {
+      "description": "<p>Entiendes de riqueza, poder y privilegio. Tienes un título nobiliario, y tu familia posee tierras, recauda impuestos y ejerce un significativo poder político. Podrías ser un mimado aristócrata desconocedor de lo que es el trabajo o la falta de comodidades, un antiguo comerciante recién elevado a la nobleza, o un canalla desheredado con un desproporcionado sentido sobre sus legítimos derechos. O podrías ser un honesto y trabajador terrateniente que se preocupa profundamente por la gente que vive y trabaja en tus tierras, muy consciente de tus responsabilidades para con ellos.</p>",
+      "name": "Noble",
+      "trait": "<p>Gracias a tu cuna noble, la gente tiende a pensar lo mejor de ti. Eres bienvenido en la alta sociedad y la gente asume que tienes el derecho de estar donde quiera que estés. La gente común hace todo lo posible para que te sientas cómodo y evitar tu descontento, y otras personas de alta cuna te tratan como miembro de la misma esfera social. Puedes asegurar una audiencia con un noble local, si es necesario.</p>"
+    },
+    "backstory": "<p>Athan nació siendo una do Vandor, una familia noble norteña de viejos terratenientes. Eran una familia numerosa, teniendo Athan cuatro hermanos y dos hermanas, y todos compartían una relación cercana. La única persona cuya relación con su familia era más distante era con su tío Gael, amargado por ser el más joven de sus hermanos y heredero de casi nada. La sombra de aquel hombre atormentado parecía acechar sobre la familia.</p><p>Durante la conquista del norte por parte del Heredo, Gael preparó su golpe haciendo alianzas con los invasores y reclutando a algunos sirvientes de la mansión. Durante una festividad, Gael tomó acciones y su gente tomó repentina y violentamente el control de la casa familiar, matando o capturando a cualquiera que se opusiera a ellos. La casa Do Vandor quedó completamente destruida y solo un miembro de la familia sobrevivió: Athan.</p><p>Gael, una vez instalado en el hogar de los do Vandor, entregó títulos a los seguidores que lo habían ayudado a derrotar a su hermano y los cuerpos de la familia do Vandor fueron colgados de los árboles de sus tierras para infundir un miedo absoluto a cualquier rebelión o intento de escape. Él, asimismo, se convirtió en aliado y marioneta política de la invasión del Heredo.</p><p>Athan, desde entonces vagó sin dirección a través del continente, intentando superar y lidiar con los traumáticos eventos sucedidos a su familia.</p>",
+    "faction": "",
+    "personality": "<p>Athan es una persona sensible y empática, y sufre cuando ve el dolor ajeno. Es una persona reservada e introvertida, que se mantiene lejos de las multitudes. Esto se debe, en parte, a su íntima relación con los espíritus: cuando está rodeada de un mayor número de personas, corre el riesgo de invitar a susurros cada vez más disonantes que nublen y a menudo inunden su conciencia.</p><p>Con los años ha ido acostumbrándose al sentimiento de soledad, pero es consciente que nunca lo logrará del todo, dado que nació y creció en el seno de una familia numerosa.</p>",
+    "portrait": {
+      "original": "https://i.imgur.com/cm92piY.jpg",
+      "token": "https://i.imgur.com/cl5LSCa.png",
+      "avatar": "https://i.imgur.com/3XyhnWM.png"
+    },
+    "traits": {
+      "age": "25 años",
+      "eyes": "",
+      "gender": "Mujer",
+      "hair": "",
+      "height": "1'75",
+      "pronoun": "La",
+      "skin": "",
+      "weight": "70kg"
+    },
+    "group": "62cf6118caa3bb0cf084e81f"
+  },
+  "stats": {
+    "race": {
+      "name": "Humana",
+      "description": "<p>La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.</p>",
+      "traits": ""
+    },
+    "armorClass": 13,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 10,
+      "dexterity": 14,
+      "constitution": 13,
+      "intelligence": 12,
+      "wisdom": 15,
+      "charisma": 8
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": true,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 10,
+      "current": 10
+    },
+    "initiativeBonus": 2,
+    "passivePerception": 12,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [
+      {
+        "name": "Forma de pavor",
+        "description": "<p>Manifiestas un aspecto del poder aterrador de tu patrón, dejando que los espíritus tomen control de tu ser. Como acción adicional, te transformas durante 1 minuto ganando los siguientes beneficios:</p><ul><li>Ganas puntos de vida temporal iguales a 1d10 + tu nivel de bruja.</li><li>Una vez cada uno de tus turnos, cuando golpeas a una criatura con un ataque, puedes forzarla a hacer una tirada de salvación de Sabiduría, y en un fallo el objetivo está <em>asustado </em>hasta el final de tu siguiente turno.</li><li>Eres inmune a la condición <em>asustada</em>.</li></ul><p>La apariencia de tu Forma de pavor refleja la naturaleza de tu patrón, dándote una apariencia fantasmagórica. Puedes transformarte un número de veces igual a tu bono de competencia, y recuperas todos los usos de esta habilidad cuando finalizas un descanso largo.</p>"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            },
+            "distance": {
+              "range": {
+                "short": 20,
+                "long": 60
+              },
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            }
+          }
+        }
+      },
+      {
+        "name": "Arco corto",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "distance": {
+              "range": {
+                "short": 80,
+                "long": 320
+              },
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 6
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Don oscuro — Susurros espectrales",
+        "description": "<p>Eres acechada por seres espirituales, ya sean las almas de los difuntos o entidades de otros planos. Sus voces susurran sin cesar, y a veces se convierten en rugidos sobrenaturales. Sólo tú puedes percibir a los espíritus, a menos que les permitas hablar a través de ti. Los espíritus son intangibles e invisibles; cualquiera que pueda ver criaturas invisibles solo ve destellos fugaces de estos espíritus mientras se encuentran a tu alrededor. Debido a esto, obtienes los siguientes rasgos:</p><ul><li><strong>Susurros espirituales:</strong> Conoces el truco <em>mensaje</em> si no lo conoces ya, y no necesitas componentes para utilizarlo. Cuando lanzas el hechizo, los mensajes son entregados por uno de tus espíritus en lugar de tu voz. Tu habilidad de conjuración para este hechizo es Sabiduría.</li><li><strong>Cacofonía súbita (1 / descanso largo):</strong> Cuando eres golpeada por una tirada de ataque, puedes usar tu reacción para canalizar tus espíritus acechantes, canalizando sus voces a través de ti. Si el atacante no está ensordecido, añades tu bonificador de proficiencia a tu CA contra el ataque, potencialmente haciéndolo fracasar.</li><li><strong>Voces del más allá (1 / descanso):</strong> Inmediatamente tras hacer una tirada de ataque, de habilidad o de salvación que haya resultado en un 1, las voces se vuelven demasiado fuertes para ignorar. Haz una tirada en la tabla de Voces del más allá para determinar el efecto de estas voces.</li></ul><p class=\"ql-indent-1\">Tabla de Voces del más allá</p><ol><li>Tienes desventaja en tu siguiente tirada de ataque, de habilidad o de salvación.</li><li>Eres ensordecida por las voces durante 1 minuto.</li><li>Eres aterrorizada por la criatura más cercana a ti, aparte de ti misma, hasta el final de tu siguiente turno. Si hay más de una criatura a la misma distancia, el DM elige la criatura que te aterroriza.</li><li>Durante el curso de los próximos 10 minutos, puedes preguntar a tus espíritus acerca de los resultados de un curso de acción específico que piensas tomar en los próximos 30 minutos. Puedes recibir un presagio como si hubieras lanzado el hechizo <em>augurio</em>. El presagio se manifiesta en los susurros de los espíritus, solo perceptibles por ti.</li></ol>"
+      }
+    ],
+    "reactions": [],
+    "spells": [
+      {
+        "spells": {
+          "0": [
+            {
+              "spellId": "5eb30244b8821a3a04edf1f8"
+            },
+            {
+              "spellId": "5eaf25218e8ecfd3cdc48ec5"
+            }
+          ],
+          "1": [
+            {
+              "spellId": "60d3817f87296a0004987ae1"
+            },
+            {
+              "spellId": "60d3800d87296a0004987ae0"
+            }
+          ]
+        },
+        "caster": "5ec030b0f44b2b688355ab60",
+        "modifier": "wisdom",
+        "level": 1
+      }
+    ],
+    "equipment": {
+      "items": [
+        {
+          "id": "6021a4869f3d039145dfee73",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "6022b1ff9f3d039145dff629",
+          "equipped": true,
+          "quantity": 1
+        },
+        {
+          "id": "5eb04df14871d4a313b58bc5",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicWeapons": null,
+      "vehicles": [
+        {
+          "id": "5f791fb28d7addcb45ffa3d7",
+          "equipped": true,
+          "quantity": 1
+        }
+      ]
+    },
+    "proficiencies": "<ul><li><strong>Proficiencias de armas: </strong><em>Simples.</em></li><li><strong>Proficiencia de armaduras: </strong><em>Ligera.</em></li><li><strong>Proficiencia en herramientas: </strong><em>Juego de cartas.</em></li><li><strong>Idiomas</strong>: <em>Común, extradiano, lengua antigua.</em></li></ul>",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": false,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": false,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": true,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": true,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Brujo",
+        "classLevel": "1",
+        "hitDie": 8,
+        "classId": "5ec030b0f44b2b688355ab60",
+        "subclassName": "Patrón fantasmal",
+        "subclassDescription": "<p>Has hecho un pacto con unos seres inmortales, criaturas que desafían el ciclo de la vida y la muerte. Comparten con entusiasmo este conocimiento profano, junto con otros secretos, con aquellos que portan su voluntad entre los vivos.</p>"
+      }
+    ],
+    "wounds": [],
+    "statBonus": [
+      {
+        "modifier": "stats.abilityScores.constitution",
+        "bonus": 1,
+        "descriptions": "<p>Rasgo racial: Humana variante</p>"
+      },
+      {
+        "modifier": "stats.abilityScores.wisdom",
+        "bonus": 1,
+        "descriptions": "<p>Rasgo racial: Humana variante</p>"
+      }
+    ]
+  },
+  "__v": 0,
+  "createdBy": "5e987f8e4b88382a98c84042"
+}

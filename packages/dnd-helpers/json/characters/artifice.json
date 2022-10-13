@@ -1,0 +1,336 @@
+{
+  "name": "Artífice",
+  "flavor": {
+    "alignment": "Neutral",
+    "appearance": "",
+    "background": {
+      "description": "",
+      "name": "Noble",
+      "trait": ""
+    },
+    "backstory": "",
+    "faction": "",
+    "personality": "",
+    "traits": {
+      "age": "",
+      "eyes": "",
+      "gender": "",
+      "hair": "",
+      "height": "",
+      "pronoun": "",
+      "skin": "",
+      "weight": ""
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humano",
+      "description": "",
+      "traits": ""
+    },
+    "armorClass": 10,
+    "proficiencyBonus": 2,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 14,
+      "constitution": 13,
+      "intelligence": 15,
+      "wisdom": 12,
+      "charisma": 10
+    },
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": true,
+        "expertise": true
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 21,
+      "current": 21
+    },
+    "initiativeBonus": 0,
+    "passivePerception": 10,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [],
+    "attacks": [
+      {
+        "name": "Guanteletes de relámpago (Guardián)",
+        "proficient": true,
+        "data": {
+          "modifier": "intelligence",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Relámpago",
+              "numDie": 1,
+              "dieSize": 8
+            }
+          }
+        }
+      },
+      {
+        "name": "Lanzador de rayos (Infiltrador)",
+        "proficient": true,
+        "data": {
+          "modifier": "intelligence",
+          "damage": {
+            "distance": {
+              "range": {
+                "short": 90,
+                "long": 300
+              },
+              "type": "Relámpago",
+              "numDie": 1,
+              "dieSize": 6
+            }
+          }
+        }
+      },
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "strength",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            },
+            "distance": {
+              "range": {
+                "short": 20,
+                "long": 60
+              },
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Dote — Experto en habilidades",
+        "description": "<p>Has perfeccionado tu competencia con unas habilidades en particular, otorgándote los siguientes beneficios:</p><ul><li>Aumenta una competencia de habilidad en 1, hasta un máximo de 20.</li><li>Ganas competencia con una habilidad de tu elección.</li><li>Eliges una habilidad con la que tienes competencia. Ganas pericia con esa habilidad, lo que significa que tu bonificador de competencia es doblado para cualquier habilidad que hagas con ella. La habilidad que elijas no puede ser una que ya se beneficie de pericia.</li></ul>"
+      },
+      {
+        "name": "Retoques mágicos",
+        "description": "<p>En el primer nivel, aprendes como infundir una chispa mágica a objetos mundanos. Para usar esta habilidad, debes tener herramientas de manitas u otras herramientas de artesano en tus manos. Cuando tocas un objeto no mágico diminuto como parte de tu acción, puedes otorgarle una de las siguientes propiedades mágicas de tu elección:</p><ul><li>El objeto desprende luz brillante en un radio de 5 ft. y luz tenue en un radio adicional de 5 ft.</li><li>Cuando el objeto es tocado por una criatura, el objeto emite un mensaje grabado que puede ser escuchado hasta 10 ft. de distancia. Eliges el mensaje cuando otorgas la propiedad al objeto, y el mensaje no puede durar más de 6 segundos.</li><li>El objeto desprende un olor o sonido no verbal (viento, olas, o similar). El fenómeno elegido es perceptible hasta una distancia de 10 ft.</li><li>Un efecto visual estático aparece en la superficie de un objeto. Este efecto puede ser un dibujo, un texto de hasta 25 palabras, líneas y formas, o una mezcla de estos elementos, a tu elección.</li></ul><p>La propiedad elegida dura indefinidamente. Como acción, puedes tocar el objeto y terminar la propiedad en cualquier momento.</p><p>Puedes otorgar magia a múltiples objetos, tocando un objeto cada vez que usas esta habilidad, aunque cada objeto solo puede tener una propiedad simultáneamente. El número máximo de objetos que puedes afectar con esta habilidad a la vez es igual a tu modificador de Inteligencia (mínimo de un objeto). Si intentas exceder tu máximo, la propiedad más vieja termina y la nueva es aplicada.</p>"
+      },
+      {
+        "name": "Infundir objeto",
+        "description": "<p>Al segundo nivel, has aprendido a imbuir objetos mundanos con ciertas infusiones mágicas, convirtiéndolos en objetos mágicos. Cuando ganas esta habilidad, eliges cuatro infusiones de artífice que aprender y puedes reemplazar  una de ellas cada vez que ganas un nivel de artífice.</p><p><strong>Infundir un objeto</strong></p><p>Cuando terminas un descanso largo, puedes tocar un objeto mundano e imbuirlo con una de tus infusiones de artífice, convirtiéndolo en un objeto mágico. Una infusión funciona solo en ciertos objetos, que se especifica en la descripción de la infusión. Si el objeto requiere sintonización, puedes sintonizarte a ella en el mismo momento en que infundes el objeto. Si decides hacerlo más tarde, debes seguir el procedimiento normal de sintonización.</p><p>Tu infusión permanece indefinidamente en el objeto, pero cuando mueres la infusión desaparece tras un número de días igual a tu modificador de inteligencia (mínimo de 1 día). La infusión también desaparece si reemplazas tu conocimiento de la infusión.</p><p>Puedes infundir más de un objeto mundano al final de un descanso largo; el número máximo de objetos aparece en la tabla de Artífice. Debes entrar en contacto con cada uno de los objetos, y cada una de tus infusiones solo puede estar presente en un objeto simultáneamente. Además, ningún objeto puede tener más de una infusión a la vez. Si intentas superar tu máximo de infusiones, la infusión más vieja termina y la nueva aplica.</p><p><strong>Infusiones aprendidas</strong></p><ul><li><strong>Defensa mejorada. </strong><em>Item: Una armadura o escudo. </em>La criatura obtiene un +1 a su clase de armadura mientras lleva el objeto imbuido. El bono aumenta a +2 cuando alcanza el 10º nivel de artífice.</li><li><strong>Replicar objeto: Gafas de la Noche. </strong>Mientras lleva puestas estas gafas, tiene una visión en la oscuridad con un alcance de 60 ft. Si ya tiene visión en la oscuridad, llevar estas gafas aumenta el alcance de su visión en 60 ft.</li><li><strong>Replicar objeto: Piedras de Envío. </strong>Las piedras de envío vienen en pares. Cuando tocas una piedra, puedes usar tu acción para lanzar el hechizo Envío. El objetivo es el portador de la otra piedra. Si no hay ninguna criatura que tenga la otra piedra, puedes saberlo antes de lanzar el hechizo. Una vez Envío es lanzado a través de las piedras, no pueden ser usadas de nuevo hasta el siguiente amanecer. Si una de estas piedras es destruida, su pareja se vuelve mundana.</li><li><strong>Arma de retorno. </strong><em>Item: Una arma simple o marcial con la propiedad arrojadiza. </em>Este objeto mágico otorga un +1 al ataque y al daño de tiradas hechas con ella, y vuelve a la mano de su propietario tras haber sido usada para un ataque a distancia.</li></ul>"
+      },
+      {
+        "name": "Armadura arcana",
+        "description": "<p>A partir del 3er nivel, tus conocimientos metalúrgicos te han llevado a crear una armadura para canalizar tu magia. Como acción, puedes transformar una armadura que estés portando en tu Armadura Arcana, siempre que tengas sus herramientas de herrero en mano.</p><p>Ganas los siguientes beneficios mientras portas esta armadura:</p><ul><li>Si la armadura normalmente tiene un requerimiento de Fuerza, la armadura arcana carece de este requerimiento para ti.</li><li>Puedes utilizar la armadura arcana como foco para tus hechizos de artífice.</li><li>La armadura se apega a ti y no puede ser quitada contra tu voluntad. Además se expande para cubrir tu cuerpo totalmente, aunque puedes retraer o colocar el yelmo como acción adicional. La armadura reemplaza miembros faltantes, funcionando idénticamente al miembro que sustituye.</li><li>Puedes colocarte o quitarte la armadura usando una acción.</li></ul><p>La armadura continua siendo una armadura arcana hasta que te colocas otra armadura o mueres.</p>"
+      },
+      {
+        "name": "Modelo de armadura",
+        "description": "<p>A partir del 3er nivel, puedes personalizar tu armadura arcana. Cuando lo haces, eliges uno de los siguientes modelos: Guardián o Infiltrador. El modelo que elijas te otorga beneficios especiales mientras la llevas puesta.</p><p>Cada modelo incluye una arma especial. Cuando atacas con dicha arma, puedes añadir tu modificador de Inteligencia, en lugar de tu Fuerza o Destreza, a las tiradas de ataque y de daño.</p><p>Puedes cambiar el modelo de armadura cuando terminas un descanso largo o corto, siempre que tengas acceso a herramientas de herrero.</p><p><strong>Guardián.</strong> Tu diseño de armadura está preparado para estar en primera línea de batalla. Ganas las siguientes habilidades:</p><ul><li><strong>Guanteletes de relámpago.</strong> Los guanteletes de tu armadura cuentan como una arma de cuerpo a cuerpo simple siempre que no sostengas nada con ellos, y causan 1d8 de daño de relámpago cuando golpean. Una criatura golpeada por el guantelete tiene desventaja en tiradas de ataque contra objetivos que no seas tu hasta el principio de tu próximo turno.</li><li><strong>Campo defensivo. </strong>Como acción adicional, puedes ganar puntos de golpe temporales iguales a tu nivel de artífice, reemplazando cualquier punto de golpe temporal que ya tengas. Pierdes estos puntos de golpe temporales si te quitas la armadura. Puedes usar esta acción adicional un número de veces igual a tu bonificador de competencia, y recuperas todos sus usos cuando finalizas un descanso largo.</li></ul><p><strong>Infiltrador. </strong>Personalizas tu armadura para tareas encubiertas. Obtienes los siguientes beneficios:</p><ul><li><strong>Lanzador de rayos. </strong>Un nodo en forma de gema aparece en uno de tus puños con armadura. Cuenta como una arma a distancia simple, con un alcance normal de 90 ft. y un alcance largo de 300 ft., y causa 1d6 de daño de relámpago en un acierto. Una vez en cada uno de tus turnos cuando golpeas a una criatura con esta habilidad, puedes causar 1d6 de daño de relámpago adicional al objetivo.</li><li><strong>Pasos empoderados. </strong>Tu velocidad en tierra aumenta en 5 ft.</li><li><strong>Campo de amortiguamiento. </strong>Tienes ventaja en tiradas de Destreza (Sigilo). Si la armadura normalmente impone desventaja en dichas tiradas, la ventaja y desventaja se cancelan.</li></ul>"
+      },
+      {
+        "name": "Herramienta adecuada",
+        "description": "<p>A partir del tercer nivel, has aprendido como producir exactamente la herramienta que necesitas: con las herramientas de ladrón o herramientas de artesano a mano, puedes crear mágicamente unas herramientas de artesano en un espacio sin ocupar en un alcance de 5 ft. de ti. La creación requiere una hora de trabajo ininterrumpido, que puede coincidir con un descanso corto o largo. A pesar de ser un producto de magia, las herramientas son mundanas, y desaparecen cuando usas esta habilidad de nuevo.</p>"
+      }
+    ],
+    "reactions": [],
+    "spells": [
+      {
+        "_id": "6277fe9ec2176600047a4b7e",
+        "modifier": "intelligence",
+        "caster": "615764cf69c41a2d46d7b23a",
+        "level": 3,
+        "spells": {
+          "0": [
+            {
+              "spellId": "6277fe9ec2176600047a4b7e"
+            },
+            {
+              "spellId": "6277ff54c2176600047a4b81"
+            }
+          ],
+          "1": [
+            {
+              "spellId": "5eaf20708e8ecfd3cdc48cd3"
+            },
+            {
+              "spellId": "62780378c2176600047a4b9a"
+            },
+            {
+              "spellId": "61b3f4142ed7ee266ca78272"
+            },
+            {
+              "spellId": "5eb318b9b8821a3a04edfb8d"
+            },
+            {
+              "spellId": "62780271c2176600047a4b96"
+            }
+          ]
+        }
+      }
+    ],
+    "equipment": {
+      "items": [],
+      "armor": [],
+      "magicItems": null,
+      "weapons": [],
+      "magicWeapons": null
+    },
+    "proficiencies": "<p>Idiomas: Común</p>",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": true,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": true,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Artífice",
+        "classLevel": "3",
+        "hitDie": 8,
+        "classId": "615764cf69c41a2d46d7b23a",
+        "subclassName": "Armero",
+        "subclassDescription": "<p>Un artífice que se especializa como armero modifica armadura para funcionar como una segunda piel. La armadura es mejorada para perfeccionar la magia del artífice, desencadenar potentes ataques y generar una defensa formidable. El artífice se enlaza con esta armadura, uniéndose a ella mientras experimenta y refina sus habilidades mágicas.</p>"
+      }
+    ],
+    "wounds": [],
+    "statBonus": [
+      {
+        "modifier": "stats.armorClass",
+        "bonus": 2,
+        "descriptions": "<p>Bonificador a la armadura por modificador de Destreza.</p>"
+      },
+      {
+        "modifier": "stats.armorClass",
+        "bonus": 4,
+        "descriptions": "<p>Bonificador a la armadura por llevar armadura de escamas.</p>"
+      },
+      {
+        "modifier": "stats.abilityScores.intelligence",
+        "bonus": 2,
+        "descriptions": "<p>Bonificador a la Inteligencia por rasgo racial de Linaje Personalizado.</p>"
+      },
+      {
+        "modifier": "stats.abilityScores.intelligence",
+        "bonus": 1,
+        "descriptions": "<p>Bonificador a la Inteligencia por dote Habilidoso.</p>"
+      }
+    ]
+  },
+  "createdBy": "5e987f8e4b88382a98c84042",
+  "__v": 0
+}

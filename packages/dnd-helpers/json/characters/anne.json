@@ -1,0 +1,277 @@
+{
+  "flavor": {
+    "faction": "",
+    "traits": {
+      "gender": "Mujer",
+      "pronoun": "La",
+      "age": "24 años",
+      "eyes": "Grises",
+      "weight": "60 kg",
+      "hair": "Negro",
+      "skin": "Pálida",
+      "height": "1,65 m"
+    },
+    "personality": "",
+    "portrait": {
+      "original": "https://i.pinimg.com/564x/15/03/f3/1503f387a2129966e35f1062181776f3.jpg"
+    },
+    "backstory": "<p>Anne nació en un frío amanecer, con el sonido de otro bebe llorando de fondo. El desprecio que sintió su padre al darse cuenta de que se trataba de otra niña no hizo más que acrecentarse con los años, llenando a la pobre chica de vergüenza y furia.</p><p>Marian era una buena hermana, mas su resiliencia la hacía sentir inferior, incapaz de sobrellevar una vida con aquellos padres. Cuando las arrastraron hasta Lierno, se negó a seguir los pasos de su hermana y se marchó sola, hasta encontrar la primera ciudad que vio, en el lado más miserable de Marea.</p><p>Estaba perdida y muerta de hambre cuando un grupo de abandonados la encontró. Aprendió todo lo que sabía de ellos, siguió sus costumbres y encajó en sus ideales. Mas todos sabian que no encajaba allí. Su furia, su falta de compañerismo y su tendencia a la celosía y el egocentrismo la hacían difícil de soportar. Cuando su historia se conocío, se creo una división en el grupo, aquellos que se apenaban de su misero destino, y los que pensaban que era solo una niña rica con ansias de aventura que no podía olvidar quien había sido en el pasado.</p><p>El grupo se dividió. Anne marchó con sus amigos a Perla, en un barco de mala muerte donde les dieron acceso a cambio de un puñado de monedas. Al llegar descubrió que de su isla de la infancia ya no quedaba nada, los no-muertos habían conquistado cada rincón. Muchos murieron de camino a la ciudad, donde Anne esperaba que ella y sus amigos pudieran conseguir una mejor vida gracias a su apellido.</p><p>Pero se equivocaba. Cuando llegó con los pocos supervivientes que quedaron, descubrió que sus padres la habían desherado junto a su hermana y aquel apellido ya no significaba nada. Una fría furia le recorrió las venas, mientras una venganza empezó a formarse en el fondo de su mente.</p><p>Sus amigos encontraron más abandonados en la zona pobre de la ciudad y todos sobrevivieron. Así es como Marian la encontró al llegar, sin más opción que unirse a aquella pandilla de huerfanos y pobres. Anne volvió a amigarse con ella y así empezó su historia.</p>",
+    "appearance": "",
+    "alignment": "Neutral mala",
+    "background": {
+      "description": "Creciste en las calles solo, huérfano y pobre. No tenías a nadie que te cuidara o te proveyese, así que aprendiste a proveerte por ti mismo. Luchaste ferozmente por la comida y te mantuviste en una alerta constante por si otras almas desesperadas te robaban. Dormiste en azoteas y en callejones, expuesto a los elementos, y te sobre pusiste a enfermedades sin las ventajas de la medicina o un lugar para recuperarte. Sobreviviste contra toda posibilidad, y lo hiciste a través de la astucia, la fuerza, la velocidad, o una combinación de todas. Comienzas tu carrera de aventurero con suficiente dinero para vivir modestamente diez días. ¿Cómo conseguiste ese dinero? ¿Qué te permitió liberarte de tus desesperadas circunstancias y embarcarte en una vida mejor?",
+      "trait": "Conoces los patrones y flujos secretos de las ciudades, y puedes encontrar pasadizos a través de la masa urbana que otros pasarían por alto. Cuando no estás en combate, puedes viajar (junto a los compañeros que guíes) a través de dos puntos en la ciudad el doble de rápido de lo que tu velocidad te permitiría normalmente.",
+      "name": "Huérfano"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humana",
+      "description": "La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.",
+      "traits": "Velocidad. 30 ft.\nDote inicial. Ganas una Dote de tu elección.\nModificadores. +1 a dos características a escoger. Competencia a escoger. Dote adicional.\nEdad. Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo.\nAlineamiento. Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor.\nTamaño. La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cual sea tu altura concreta, tu tamaño es Mediano."
+    },
+    "armorClass": 14,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 16,
+      "constitution": 12,
+      "intelligence": 14,
+      "wisdom": 14,
+      "charisma": 10
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": true
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": true,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 9,
+      "current": 9
+    },
+    "initiativeBonus": 3,
+    "passivePerception": 14,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [],
+    "attacks": [
+      {
+        "name": "Espada corta",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "numDie": 1,
+              "dieSize": 6,
+              "type": "Perforante",
+              "range": 5
+            }
+          }
+        }
+      },
+      {
+        "name": "Ballesta de mano",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "distancia": {
+              "numDie": 1,
+              "dieSize": 6,
+              "type": "Perforante",
+              "range": {
+                "short": 30,
+                "long": 60
+              }
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Secretos de la ciudad",
+        "description": "Conoces los patrones y flujos secretos de las ciudades, y puedes encontrar pasadizos a través de la masa urbana que otros pasarían por alto. Cuando no estás en combate, puedes viajar (junto a los compañeros que guíes) a través de dos puntos en la ciudad el doble de rápido de lo que tu velocidad te permitiría normalmente."
+      },
+      {
+        "name": "Experto en ballestas",
+        "description": "Debido a una práctica intensa con la ballesta, has conseguido los beneficios siguientes:<ul><li>Puedes ignorar la propiedad \"recarga\" de las ballestas con las que eres competente.</li><li>Estar a 5 pies o menos de una criatura hostil no te causa desventaja en las tiradas de ataque a distancia.</li><li>Cuando realizas una acción de Atacar y atacas con un arma a una mano, puedes utilizar tu acción adicional para atacar con una ballesta de mano que estés sujetando.</li></ul>"
+      },
+      {
+        "name": "Ataque furtivo",
+        "description": "Sabes aprovechar la distracción de un enemigo para atacarlo por la espalda. Una vez por turno, puedes infligir daño adicional a una criatura a la que impactes con un ataque si tienes ventaja en la tirada de ataque. El ataque debe usar un arma sutil o a distancia. Este rasgo funciona aunque no tengas ventaja en la tirada de ataque si otro enemigo del objetivo no incapacitado está a menos de 5 pies de él y si tú no tienes desventaja en la tirada de ataque. Daño adicional: 1d6."
+      },
+      {
+        "name": "Germanía",
+        "description": "Durante tu entrenamiento como pícaro, aprendes la germanía, una mezcla de dialecto, jerga y código secretos que te permite enviar mensajes en una conversación aparentemente normal. Solo otra criatura que conozca la germanía puede entender tales mensajes. Transmitir un mensaje de este tipo cuesta cuatro veces más que decir la misma idea directamente. Además, entiendes una serie de signos y símbolos que se usan para esconder mensajes cortos y sencillos, como si un área es peligrosa o es territorio de un gremio de ladrones, si hay un botín cerca o si las gentes que viven en la zona son presas fáciles u ofrecerán cobijo a un ladrón a la fuga."
+      }
+    ],
+    "reactions": [],
+    "spells": [],
+    "equipment": {
+      "items": [
+        {
+          "id": "5eb2d563b8821a3a04ede3c1",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5e99bf839fee6cdfd31192c7",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5ed2bcbddfd4d4a1adcbbcf5",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5e99ff639fee6cdfd311aaa5",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicWeapons": null
+    },
+    "proficiencies": "Proficiencias de armas: Simples, marciales\n\nProficiencia de armaduras: Media, ligera, escudos\n\nHerramientas: Juego de cartas, vehículos (tierra)\n\nIdiomas: Común",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": true,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": false,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": false,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": true,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Pícaro",
+        "subclassName": null,
+        "classLevel": 1,
+        "hitDie": 8,
+        "classId": "5ec03048f44b2b688355ab2c"
+      }
+    ],
+    "wounds": []
+  },
+  "name": "Anne Eturiette",
+  "createdBy": "5eb1b45488db130004a9c172"
+}

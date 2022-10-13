@@ -1,0 +1,179 @@
+{
+  "skills": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "description": "Tu prueba de Destreza (Acrobacias) abarca tu intento por mantenerte en pie en situaciones difíciles, como cuando estás intentado correr sobre una capa de hielo, mantener el equilibrio en una cuerda floja o mantenerte recto sobre la borda de un barco que se balancea."
+    },
+    "animal-handling": {
+      "name": "T.con Animales",
+      "description": "Cuando hay cualquier duda sobre si puedes calmar a un animal doméstico, evitar que una montura se asuste o intuir las intenciones de un animal, el director de juego puede pedir una prueba de Sabiduría (Trato con Animales). También puedes hacerla para controlar a tu montura cuando haces una maniobra arriesgada."
+    },
+    "arcana": {
+      "name": "C.Arcano",
+      "description": "Tu prueba de Inteligencia (Arcana) mide tu capacidad para recordar conocimiento sobre conjuros, objetos mágicos, símbolos sobrenaturales, tradiciones mágicas, los planos de existencia y los habitantes de dichos planos"
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "description": "Tu prueba de Fuerza (Atletismo) cubre situaciones difíciles mientras escalas, saltas o nadas"
+    },
+    "deception": {
+      "name": "Engaño",
+      "description": "Una prueba de Carisma (Engañar) determina si puedes esconder la verdad de manera convincente, ya sea verbalmente o a través de las acciones. Este engaño puede abarcar cualquier cosa, desde liar a alguien siendo ambiguo hasta mentir. Situaciones típicas son camelarse a un guardia, estafar a un mercader, ganar dinero con las apuestas, disfrazarse para hacerse pasar por otro, engañar a alguien suspicaz con afirmaciones falsas o mantener el rosto impávido mientras mientes descaradamente."
+    },
+    "history": {
+      "name": "Historia",
+      "description": "Tu prueba de Inteligencia (Historia) mide tu capacidad para recordar eventos históricos, gente legendaria, reinos antiguos, disputas pasadas, guerras recientes y civilizaciones perdidas"
+    },
+    "insight": {
+      "name": "Perspicacia",
+      "description": "Una prueba de Sabiduría (Perspicacia) determina si puedes conocer las verdaderas intenciones de una criatura, como cuando sospechas que te están mintiendo o predices el siguiente movimiento de alguien. Esto implica analizar el lenguaje corporal, la forma de hablar y los cambios en la gesticulación."
+    },
+    "intimidation": {
+      "name": "Intimidación",
+      "description": "Cuando intentas influenciar a alguien a través de una amenaza, acciones hostiles o violencia física, el director de juego puede pedirte hacer una prueba de Carisma (Intimidar). Algunos ejemplos son intentar sonsacar información a un prisionero, convencer a unos matones de que se echen atrás en una confrontación o usar una botella rota para convencer a un visir despreciable de que reconsidere una decisión."
+    },
+    "investigation": {
+      "name": "Investigación",
+      "description": "Cuando miras a tu alrededor en busca de pistas y haces deducciones basándote en dichas pistas, haces una prueba de Inteligencia (Investigación). Puedes deducir dónde se encuentra un objeto escondido, discernir qué tipo de arma infligió una herida dependiendo de su apariencia o determinar el punto débil de un túnel que podría provocar un colapso. Estudiar detenidamente pergaminos antiguos en busca de conocimiento oculto también puede requerir una prueba de Inteligencia"
+    },
+    "medicine": {
+      "name": "Medicina",
+      "description": "Una prueba de Sabiduría (Medicina) te permite intentar estabilizar a un compañero moribundo o diagnosticar una enfermedad."
+    },
+    "nature": {
+      "name": "Naturaleza",
+      "description": "Una prueba de Inteligencia (Naturaleza) mide tu capacidad para recordar conocimiento sobre terrenos, plantas, animales, el clima y los ciclos naturales."
+    },
+    "perception": {
+      "name": "Percepción",
+      "description": "Una prueba de Sabiduría (Percepción) te permite ver, oír o detectar de otro modo la presencia de algo. Mide tu percepción general sobre lo que te rodea y la agudeza de tus sentidos."
+    },
+    "performance": {
+      "name": "Interpretación",
+      "description": "Una prueba de Carisma (Interpretación) determina si consigues deleitar a una audiencia con música, baile, actuación, cuentacuentos o alguna otra forma de entretenimiento."
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "description": "Cuando intentas influenciar a alguien o a un grupo de personas con tacto, cortesía o buen talante, el director de juego puede pedirte que hagas una prueba de Carisma (Persuasión). Normalmente usa persuasión cuando actúes de buena fe, para hacer amigos, hacer sugerencias cordiales o exhibir una etiqueta correcta. Ejemplos de persuadir a otros son convencer a un chambelán de que deje a tu grupo ver al rey, negociar la paz entre dos tribus en guerra o inspirar a una multitud de pueblerinos."
+    },
+    "religion": {
+      "name": "Religión",
+      "description": "Una prueba de Inteligencia (Religión) mide tu capacidad para recordar conocimiento sobre deidades, ritos y oraciones, jerarquías religiosas, símbolos sagrados y las prácticas de cultos secretos."
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "description": "Cuando hagas un acto de prestidigitación o un movimiento rápido con las manos, como pasarle algo a alguien u ocultar algo en tu cuerpo, haz una prueba de Destreza (Juego de Manos)"
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "description": "Haz una tirada de Destreza (Sigilo) cuando intentes ocultarte de tus enemigos, escabullirte de unos guardias, escaquearte sin que te perciban o acercarte sigilosamente a alguien sin que te vean ni oigan"
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "description": "El director de juego puede pedirte hacer una prueba de Sabiduría (Supervivencia) para seguir huellas, cazar, guiar a tu grupo por un yermo helado, identificar signos de osos lechuza que viven cerca, predecir el clima o evitar arenas movedizas u otros peligros naturales."
+    }
+  },
+  "saves": {
+    "strength": {
+      "name": "Fuerza",
+      "description": "La tirada de salvación de Fuerza mide tu potencia física y capacidades atléticas."
+    },
+    "dexterity": {
+      "name": "Destreza",
+      "description": "La tirada de salvación de Destreza mide tu agilidad y reflejos."
+    },
+    "constitution": {
+      "name": "Constitución",
+      "description": "La tirada de salvación de Constitución mide tu resistencia y salud."
+    },
+    "intelligence": {
+      "name": "Inteligencia",
+      "description": "La tirada de salvación de Inteligencia mide tu razonamiento y memoria."
+    },
+    "wisdom": {
+      "name": "Sabiduría",
+      "description": "La tirada de salvación de Sabiduría mide tu perspicacia e intuición"
+    },
+    "charisma": {
+      "name": "Carisma",
+      "description": "La tirada de salvación de Carisma mide tu fuerza de personalidad y presencia."
+    }
+  },
+  "stats": {
+    "strength": {
+      "name": "Fuerza",
+      "description": "La puntuación de Fuerza mide la potencia física y capacidades atléticas."
+    },
+    "dexterity": {
+      "name": "Destreza",
+      "description": "La puntuación de Destreza mide la agilidad y reflejos."
+    },
+    "constitution": {
+      "name": "Constitución",
+      "description": "La puntuación de Constitución mide la resistencia y salud."
+    },
+    "intelligence": {
+      "name": "Inteligencia",
+      "description": "La puntuación de Inteligencia mide la razonamiento y memoria."
+    },
+    "wisdom": {
+      "name": "Sabiduría",
+      "description": "La puntuación de Sabiduría mide la perspicacia e intuición"
+    },
+    "charisma": {
+      "name": "Carisma",
+      "description": "La puntuación de Carisma mide la fuerza de personalidad y presencia."
+    }
+  },
+  "checks": {
+    "strength": {
+      "name": "Fuerza",
+      "description": "<div><p>Las tiradas de Fuerza miden el poderío físico, entrenamiento atlético, y el nivel en el que pueden exudar pura fuerza física.</p><h4>Tiradas de habilidad de Fuerza</h4><p>Una tirada de Fuerza puede modelar cualquier intento de levantar, empujar, romper o tirar de algo, forzar tu cuerpo a través de un espacio, o cualquier forma de aplicar fuerza bruta a una situación. La habilidad de Atletismo refleja aptitud en ciertos tipos de tiradas de Fuerza.</p><p>Tu DM puede pedir una tirada de Fuerza cuando intentas llevar a cabo alguna de estas tareas:</p><ul><li>Intentar abrir por la fuerza una puerta cerrada, apuntalada o encallada.</li><li>Liberarse de ataduras.</li><li>Intentar pasar por un tunel demasiado pequeño.</li><li>Agarrarse a un carruaje mientras eres arrastrado.</li><li>Derribar una estatua.</li></ul><h4>Tiradas de Ataque y Daño</h4><p>Añades tu modificador de Fuerza a tu tirada de ataque y tu tirada de daño cuando atacas con una arma cuero a cuero como una maza, una hacha de batalla, o una javalina.</p><h4>Lifting and Carrying</h4><p>Tu habilidad de Fuerza determina el peso que puedes llevar. Los siguientes términos definen lo que puedes levantar o cargar.</p><p><strong>Capacidad de carga.</strong>Tu capacidad de carga es tu número de Fuerza multiplicado por 15. Este es el peso (en libras) que puedes cargar, que es suficientemente alto que la mayoría de personajes no deberán preocuparse por ello.</p><p><strong>Empujar, arrastrar o levantar.</strong>Puedes empujar, levantar o arrastrar un peso en libras igual a tu capacidad de poprtar (o 30 veces tu número de Fuerza). Cuando empujas o arrastras peso en exceso de tu capacidad de carga, tu velocidad se reduce 5 ft.</p><p><strong>Tamaño y Fuerza.</strong>Criaturas de mayor tamaño pueden cargar más peso, mientras que criaturas Diminutas pueden cargar menos. Por cada categoría de tamaño por encima de Mediano, dobla la capacidad de carga de la criatura y la cantidad que puede empujar, arrastrar o levantar. Para una criatura Diminuta, divide estos pesos.</p><h4>Variant: Traba</h4><p>Las reglas para levantar y cargar son intencionalmente simples. Aquí hay una variante si buscas reglas más detalladas para determinar como un personaje es entorpecido por el peso de su equipamiento. Cuando usas esta variante, ignora la columna de Fuerza en la tabla de Armadura.</p><p>Si portas peso mayor a 5 veces tu habilidad de Fuerza, resultas<strong>entorpecido</strong>, lo que significa que tu velocidad disminuye 10 ft.</p><p>Si portas peso por encima de 10 veces tu habilidad de Fuerza, hasta tu capacidad de carga máxima, en su lugar resultas<strong>fuertemente entorpecido</strong>, lo que significa que tu velocidad disminuye 20 ft y tienes desventaja en tiradas de habilidad, tiradas de ataque, y tiradas de salvación que usan Fuerza, Destreza o Constitución.</p></div>"
+    },
+    "dexterity": {
+      "name": "Destreza",
+      "description": "<div><p>La Destreza mide la agilidad, reflejos y equilibrio.</p><h4>Tiradas de habilidad de Destreza</h4><p>Una tirada de habilidad de Destreza puede modelar cualquier intento de moverse ágilmente, rapidamente o sigolosamente, o para evitar caer en una situación con terreno difícil. Las tiradas de Acrobacias, Sigilo y Juego de Manos reflejan aptitud en ciertos tipos de triadas de Destreza.</p><p>Tu DM puede pedir una tirada de Destreza cuando intentas llevar a cabo alguna de estas tareas:</p><ul><li>Controlas un carruaje pesado por un descenso irregular.</li><li>Forzar una cerradura.</li><li>Desarmar una trampa.</li><li>Liberarte de unas ataduras</li><li>Crear un objeto pequeño o detallado.</li></ul><h4>Tiradas de Ataque y Daño</h4><p>Añades tu modificador de Destreza cuando haces una tirada de ataque y de daño cuando atacas con una arma a distancia, tal y como una honda o un arco. También puedes añadir tu modificador de Destreza a tu tirada de ataque y de daño cuando atacas con una arma cuerpo a cuerpo que tiene la propiedad sutil, tal y como una daga o una espada ropera.</p><h4>Clase de Armadura</h4><p>Dependiendo de la armadura que lleves, es posible que añadas parte o la totalidad de tu modificador de Destreza a tu Clase de Armadura.<h4>Iniciativa</h4><p>Al principio de cada combate, haces una tirada de Iniciativa mediante una tirada de Destreza. La iniciativa determina el orden en el que las criaturas actúan en combate.</p></div>"
+    },
+    "constitution": {
+      "name": "Constitución",
+      "description": "<div><p>La Constitución mide tu salud, resistencia y fuerza vital.</p><h4>Tiradas de habilidad de Constitución</h4><p>Las tiradas de habilidad de Constitución son poco comunes, y no hay habilidades que utilicen Constitución, porque la resistencia que representa esta habilidad es principalmente pasiva en lugar de incluir un esfuerzo consciente por parte del personaje o monstruo. Aun así, una tirada de Constitución puede modelar un intento de ir más allá de tus límites normales.</p><p>Tu DM puede pedir una tirada de Constitución cuando intentas llevar a cabo alguna de estas tareas:</p><ul><li>Aguantar la respiración.</li><li>Marchas o trabajar por horas sin descanso.</li><li>Aguantar sin dormir.</li><li>Sobrevivir sin comida o agua.</li></ul><h4>Puntos de vida</h4><p>Tu modificador de Constitución contribuye a tus puntos de vida. Típicamente, añades tu modificador de Constitución con cada Dado de Golpe que utilizas para tus puntos de vida.</p><p>Si tu modificador de Constitución cambia, tus puntos de vida máximos también cambian, como si hubieras tenido tu nuevo modificador desde nivel 1. Por ejemplo, si aumentas tu Constitución cuando alcanzas el 4º nivel y tu modificador cambia de +1 a +2, también ajustas tus puntos de vida máximos como si simepre hubieras tenido un +2. De esta froma añades 3 puntos de vida a tus primeros tres niveles, y después haces la tirada de tus puntos de golpe del nivel 4 con tu nuevo modificador.</p></div>"
+    },
+    "intelligence": {
+      "name": "Inteligencia",
+      "description": "<div><p>La Inteligencia mide la agudeza mental, memoria, y habilida de razonamiento.</p><h4>Tiradas de habilidad de Inteligencia</h4><p>La Inteligencia entra en juego cuando necesitas usar lógica, educación, memoria o razonamiento deductivo. Las tiradas de habilidad de C. Arcano, Historia, Investigación, Naturaleza y Religión reflejan aptitud en ciertos tipos de tiradas Inteligencia.</p><p>Tu DM puede pedir una tirada de Inteligencia cuando intentas llevar a cabo alguna de estas tareas:</p><ul><li>Estimar el valor de un objeto preciado.</li><li>Falsificar un documento.</li><li>Recordar información sobre un lugar, una tarea o una persona.</li><li>Ganar en un juego de habilidad.</li></ul><h4>Spellcasting Ability</h4><p>Los Magos tipicamente usan Inteligencia como su habilidad de conjuración, lo que ayuda a determinar su CD de tiradas de salvación con los hechizos que utilizan.</p></div>"
+    },
+    "wisdom": {
+      "name": "Sabiduría",
+      "description": "<div><p>La Sabiduría refleja que tan en sintonía estás con el mundo a tu alrededor y representa percepción e intuición.</p><h4>Tiradas de habilidad de Sabiduría</h4><p>Una tirada de Sabiduría puede reflejar el intento de leer lenguaje corporal, entender los sentimientos de otra persona, percatarse de cosas en el entorno, o cuidar de una persona herida. Las habilidades de T. con Animales, Perspicacia, Medicina, Percecpión y Supervivencia reflejan aptitud en ciertos tipos de tiradas de Sabiduría.</p><p>Tu DM puede pedir una tirada de Sabiduría cuando intentas llevar a cabo alguna de estas tareas:</p><ul><li>Tener una intuición sobre el camino a seguir.</li><li>Discernir si un cadáver se trata de un no-muerto.</li></ul><h4>Spellcasting Ability</h4><p>Los Clérigos, Druidas y Montaracen típicamente usan Sabiduría como su habilidad de conjuración, lo que ayuda a determinar su CD de tiradas de salvación con los hechizos que utilizan.</p></div>"
+    },
+    "charisma": {
+      "name": "Carisma",
+      "description": "<div><p>El Carisma mide tu habilidad para interactuar efectivamente con otros. Incluye factores tales como confianza y elocuencia, y puede representar una personalidad encantadora o dominante.</p><h4>Tiradas de habilidad de Carisma</h4><p>Una tirada de Carisma puede darse cuando intentas influenciar o entretener a otros, cuando intentas impresionar o decir una mentira convincente, o cuando intentas navegar una situación social complicada. Las tiradas de Engaño, Intimidación, Interpretación y Persuasión reflejan aptitud en ciertos tipos de tiradas de Carisma.</p><p>Tu DM puede pedir una tirada de Carisma cuando intentas llevar a cabo alguna de estas tareas:</p><ul><li>Hallar a la mejor persona para hablar sobre noticias, rumores y chismes.</li><li>Mezclarse en una multitud para hacerse una idea de temas de conversación importantes.</li></ul><h4>Spellcasting Ability</h4><p>Los Bardos, Paladines y Hechiceros y Brujos típicamente usan Sabiduría como su habilidad de conjuración, lo que ayuda a determinar su CD de tiradas de salvación con los hechizos que utilizan.</p></div>"
+    }
+  },
+  "hitDie": {
+    "Bárbaro": 12,
+    "Paladín": 10,
+    "Guerrero": 10,
+    "Montaraz": 10,
+    "Monje": 8,
+    "Druida": 8,
+    "Rogue": 8,
+    "Bardo": 8,
+    "Clérigo": 8,
+    "Brujo": 8,
+    "Mago": 6,
+    "Hechicero": 6
+  },
+  "other": {
+    "proficiency": "El bono de competencia es un modificador que se añade a tiradas de habilidad, de salvación o de ataque con las que se es proficiente.",
+    "inspiration": "La inspiración es una recompensa que puede conceder el DM por interpretar al personaje fielmente, y otorga ventaja en una tirada de habilidad, salvación o ataque.",
+    "armorClass": "La clase de armadura determina la dificultad para ser golpeado, y compite con la tirada de ataque para ver si un ataque contra uno acierta o falla.",
+    "initiative": "El bono de iniciativa es un modificador que se añade al inicio de combate para determinar el orden de turnos de batalla.",
+    "hitPoints": "Los puntos de vida determinan la vitalidad de un personaje, y al llegar a 0 el personaje queda incapacitado.",
+    "hitDice": "Los dados de golpe sirven para determinar los puntos de vida iniciales, así como para el proceso de recuperar puntos de vida mediante descanso y recuperación.",
+    "speed": "La velocidad es la distancia en ft. que se puede mover en una ronda de combate.",
+    "passivePerception": "La percepción pasiva determina la percepción ambiental sin necesidad de hacer una tirada de habilidad.",
+    "deathSaves": "Los fallos de muerte son una serie de tiradas de salvación hechas cuando se llega a 0 puntos de vida, y determinan si el personaje muere."
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "flavor": {
+    "faction": "",
+    "traits": {
+      "gender": "Hombre",
+      "pronoun": "El",
+      "age": "23 años",
+      "eyes": "Marrón",
+      "weight": "66 kg",
+      "hair": "Marrón",
+      "skin": "Morena",
+      "height": "1,74 cm"
+    },
+    "personality": "<p>Tristán es un tipo despreocupado, burlón y juerguista. Suele tomarse las cosas con mucha flema, y no tiende a preocuparse ni buscar dificultades en la vida. Su ingenio y labia lo convierten en un buen negociador y embaucador, Tristán a menudo no comparte sus problemas y ansiedades, si no que se dedica a bromear. Tristán también es un mujeriego prolífico, aunque también coquetea con hombres y personas de cualquier género.</p>",
+    "portrait": {
+      "original": "https://i.imgur.com/189CUHu.jpg",
+      "token": "https://i.imgur.com/XaAij71.png",
+      "avatar": "https://i.imgur.com/XaBku3t.png"
+    },
+    "backstory": "<p>Tristán nació en un pequeño pueblo y tuvo una infancia relativamente normal, donde aprendió el oficio de mercader puesto que su padre a menudo viajaba a la ciudad a comerciar, y así se ganaban la vida.</p><p>Un fatídico día, la caravana del padre de Tristán fue asaltada por bandidos y su padre fue una de las víctimas mortales que se cobró. El por aquel entonces adolescente comenzó a hacer chanchullos para ayudar a su madre y su hermana pequeña a salir adelante. Eventualmente, su hermana terminaría casándose con un mozo del pueblo y Tristán terminaría mudándose a la ciudad para poder ganarse la vida y continuar apoyando económicamente a su familia.</p><p>Sin embargo, la vida en la ciudad le resultó más difícil de lo que pensaba. Ganarse la vida como mercader le fue prácticamente imposible, y desesperado por enviar dinero a su madre decidió comenzar a hacer favores a los bajos fondos de la ciudad. Rápidamente Tristán consiguió desarrollarse como pícaro y estafador, ganando dinero en juegos de azar y trabajando para mafiosos.</p>",
+    "appearance": "",
+    "alignment": "Caótico bueno",
+    "background": {
+      "description": "Siempre has tenido mano con la gente. Sabes qué los motiva, puedes desentrañar los deseos de sus corazones tras apenas unos minutos de conversación, y con un algunas preguntas principales puedes leer en ellos como si fueran libros para niños. Es un talento útil que estás perfectamente dispuesto a utilizar en tu favor.",
+      "trait": "Te has creado una segunda identidad que incluye documentación, citas establecidas y disfraces que te permiten asumir ese personaje.\n\nAdemás, puedes falsificar documentos oficiales y cartas personales, siempre y cuando hayas visto un ejemplo de la clase de documento o escritura que estás tratando de copiar.",
+      "name": "Charlatán"
+    }
+  },
+  "stats": {
+    "race": {
+      "subrace": {
+        "name": ""
+      },
+      "name": "Humano",
+      "description": "<p>La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.</p>",
+      "traits": "Velocidad. 30 ft.\n\nDote inicial. Ganas una Dote de tu elección.\n\nModificadores. +1 a dos características a escoger. Competencia a escoger. Dote adicional.\n\nEdad. Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo.\n\nAlineamiento. Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor.\n\nTamaño. La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cual sea tu altura concreta, tu tamaño es Mediano."
+    },
+    "armorClass": 12,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 12,
+      "constitution": 10,
+      "intelligence": 14,
+      "wisdom": 14,
+      "charisma": 16
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": true,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": true,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 8,
+      "current": 8
+    },
+    "initiativeBonus": 1,
+    "passivePerception": 14,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [],
+    "attacks": [
+      {
+        "name": "Espada corta",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "numDie": 1,
+              "dieSize": 6,
+              "type": "Perforante",
+              "range": 5
+            }
+          }
+        }
+      },
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "numDie": 1,
+              "dieSize": 4,
+              "type": "Perforante",
+              "range": 5
+            },
+            "distance": {
+              "numDie": 1,
+              "dieSize": 4,
+              "type": "Perforante",
+              "range": {
+                "short": 20,
+                "long": 60
+              }
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [],
+    "reactions": [],
+    "spells": [],
+    "equipment": {
+      "items": [
+        {
+          "id": "5e99bf839fee6cdfd31192c7",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5eb2d563b8821a3a04ede3c1",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5e99ff639fee6cdfd311aaa5",
+          "equipped": true,
+          "quantity": 1
+        },
+        {
+          "id": "5eb04df14871d4a313b58bc5",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicWeapons": null
+    },
+    "proficiencies": "Proficiencias de armas: Simples, marciales\n\nProficiencia de armaduras: Media, ligera, escudos\n\nHerramientas: Juego de cartas, vehículos (tierra)\n\nIdiomas: Común",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": true,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": false,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": true,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Pícaro",
+        "subclassName": null,
+        "classLevel": 1,
+        "hitDie": 8,
+        "classId": "5ec03048f44b2b688355ab2c"
+      }
+    ],
+    "wounds": []
+  },
+  "name": "Tristán de Tincoras",
+  "createdBy": "5e987f8e4b88382a98c84042"
+}

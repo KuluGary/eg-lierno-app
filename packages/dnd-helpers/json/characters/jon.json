@@ -1,0 +1,311 @@
+{
+  "name": "Jon Armin",
+  "flavor": {
+    "alignment": "Neutral",
+    "appearance": "",
+    "background": {
+      "description": "<p>Eres miembro de un gremio de artesanos, experto en un campo en particular y estrechamente asociado con otros artesanos. Eres parte del mundo mercantil, liderada por el talento en un orden social feudal. Aprendiste tus habilidades como aprendiz de un maestro artesano, bajo el patrocinio de tu gremio, hasta que te convertiste en un maestro por derecho propio.</p>",
+      "name": "Artesano de gremio",
+      "trait": "<p>Como miembro establecido y respetado de un gremio, puedes contar con ciertos beneficios que brinda la membresía. Tus compañeros del gremio te proporcionarán alojamiento y comida si es necesario. En algunas ciudades y pueblos, una casa gremial ofrece un lugar central para conocer a otros miembros de tu profesión, que puede ser un buen lugar para conocer a posibles mecenas, aliados o mercenarios.</p><p>Los gremios a menudo tienen una fuerte influencia política. Si te acusan de un delito, tu gremio te apoyará si se puede presentar un caso fuerte a favor de tu inocencia o si el delito es justificable. También puedes obtener acceso a poderosas figuras políticas a través del gremio, si eres un miembro con buena reputación. Tales conexiones pueden requerir la donación de dinero u objetos mágicos a las arcas del gremio.</p><p>Debes pagar cuotas de 5 monedas de oro por mes al gremio. Si no realizas los pagos, debes recuperar las cuotas atrasadas para permanecer en la buena voluntad del gremio.</p>"
+    },
+    "backstory": "",
+    "faction": "",
+    "personality": "",
+    "portrait": {
+      "original": "https://i.imgur.com/GcWxf4f.jpg",
+      "token": "https://i.imgur.com/NqXbcXW.png",
+      "avatar": "https://i.imgur.com/GWRXyzI.png"
+    },
+    "traits": {
+      "age": "28 años",
+      "eyes": "",
+      "gender": "Hombre",
+      "hair": "",
+      "height": "1'85 cm",
+      "pronoun": "",
+      "skin": "",
+      "weight": "85 kg"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humano (linaje personalizado)",
+      "description": "",
+      "traits": ""
+    },
+    "armorClass": 14,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 10,
+      "dexterity": 13,
+      "constitution": 14,
+      "intelligence": 15,
+      "wisdom": 12,
+      "charisma": 8
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": true,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 10,
+      "current": 10
+    },
+    "initiativeBonus": 0,
+    "passivePerception": 10,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [],
+    "attacks": [
+      {
+        "name": "Arcabuz",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "distance": {
+              "range": {
+                "short": 30,
+                "long": 90
+              },
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 10
+            }
+          }
+        }
+      },
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            },
+            "distance": {
+              "range": {
+                "short": 20,
+                "long": 60
+              },
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Pistolero",
+        "description": "<p>Tienes un ojo y mano agudos para el uso de armas de fuego, obteniendo los siguientes beneficios:</p><ul><li>Aumenta tu Destreza en 1 punto, hasta un máximo de 20.</li><li>Ganas competencia con armas de fuego.</li><li>Ignoras la propiedad \"recarga\" de las armas de fuego.</li><li>Estar a 5 ft. o menos de una criatura hostil no impone desventaja en tus tiradas de ataque a distancia.</li></ul>"
+      },
+      {
+        "name": "Retoques mágicos",
+        "description": "<p>En el nivel 1, aprendes como infundir una chispa mágica a objetos mundanos. Para usar esta habilidad, debes tener tus herramientas de manitas u otras herramientas de artesano en mano. Cuando tocas un objeto mundano diminuto, usas tu acción para darle una de las siguientes propiedades mágicas de tu elección:</p><ul><li>El objeto suelta una luz brillante en un radio de 5 ft y luz tenue en un radio adicional de 5 ft.</li><li>Cuando es tocado por una criatura, el objeto emite un mensaje grabado que puede ser oído hasta 10 ft. de distancia. Grabas el mensaje cuando le otorgas esta propiedad al objeto, y el mensaje no puede durar más de 6 segundos.</li><li>El objeto emite un olor o sonido no-verbal (viento, olas, o similar). El efecto elegido es perceptible hasta una distancia de 10 ft.</li><li>Un efecto visual estático aparece en la superficie de unos de los objetos. Este efecto puede ser una imagen, hasta 25 palabras, líneas o formas, o una mezcla de estos elementos, a tu gusto.</li></ul><p>La propiedad elegida dura indefinidamente. Como acción, puedes tocar el objeto y terminar la propiedad preventivamente.</p><p>Puedes otorgar magia a múltiples objetos, tocando un objeto cada vez que uses esta habilidad, aunque un objeto solo puede tener una de estas propiedades simultáneamente. El número máximo que puedes afectar con esta habilidad a la vez es igual a tu modificador de inteligencia (mínimo de uno). Si intentas sobrepasar tu máximo, la propiedad más antigua termina, y la nueva se aplica.</p>"
+      }
+    ],
+    "reactions": [],
+    "spells": [
+      {
+        "modifier": "intelligence",
+        "caster": "615764cf69c41a2d46d7b23a",
+        "level": 1,
+        "spells": {
+          "0": [
+            {
+              "spellId": "60d36b6887296a0004987ada"
+            },
+            {
+              "spellId": "5eb31445b8821a3a04edf9b7"
+            }
+          ],
+          "1": [
+            {
+              "spellId": "5ff477dc7abe0a5f9c5c6a10"
+            },
+            {
+              "spellId": "5eaf1f838e8ecfd3cdc48c68"
+            }
+          ]
+        }
+      }
+    ],
+    "equipment": {
+      "items": [
+        {
+          "id": "5eb1352bb8821a3a04eda7e3",
+          "equipped": true,
+          "quantity": 1
+        },
+        {
+          "id": "6021a4869f3d039145dfee73",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "armor": [
+        {
+          "id": "5f6369cd4af7eaef91209dd8",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5eb04df14871d4a313b58bc5",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicWeapons": null
+    },
+    "proficiencies": "<p><strong>Idiomas:</strong> Común.</p><p><strong>Armas: </strong>Simples.</p><p><strong>Armaduras: </strong>Ligera, mediana, escudos.</p><p><strong>Herramientas:</strong> Herramientas de manitas, herramientas de ladrón.</p>",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": true,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": true,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Artífice",
+        "classLevel": 1,
+        "hitDie": 8,
+        "classId": "615764cf69c41a2d46d7b23a"
+      }
+    ],
+    "wounds": [],
+    "statBonus": [
+      {
+        "modifier": "stats.abilityScores.intelligence",
+        "bonus": 2,
+        "descriptions": "<p>Bonificador racial: linaje personalizado (+2)</p>"
+      },
+      {
+        "modifier": "stats.abilityScores.dexterity",
+        "bonus": 1,
+        "descriptions": "<p>Dote nivel 1 (linaje personalizado): Pistolero (+1 destreza)</p>"
+      }
+    ]
+  },
+  "createdBy": "5e987f8e4b88382a98c84042",
+  "__v": 0
+}

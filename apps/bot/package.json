@@ -1,0 +1,35 @@
+{
+  "name": "bot2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node . & node deploy-commands.js",
+    "dev1": "cross-env NODE_ENV=development nodemon index.js",
+    "set-commands": "cross-env NODE_ENV=development node deploy-commands.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dice-roller/rpg-dice-roller": "^5.1.0",
+    "@discordjs/builders": "^0.11.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "@lierno/dnd-helpers": "^1.0.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.5.1",
+    "mongoose": "^6.1.5",
+    "redis": "^4.0.6",
+    "socket.io": "^4.4.1",
+    "turndown": "^7.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.13.1"
+  }
+}

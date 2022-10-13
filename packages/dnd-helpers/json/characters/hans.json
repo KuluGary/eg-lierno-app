@@ -1,0 +1,284 @@
+{
+  "flavor": {
+    "faction": "",
+    "traits": {
+      "gender": "Hombre",
+      "pronoun": "El",
+      "age": "21 años",
+      "eyes": "Azules",
+      "weight": "60 kg",
+      "hair": "Pelirrojo",
+      "skin": "Pálida",
+      "height": "1,72 cm"
+    },
+    "personality": "Hans es un individuo dedicado a la incansable investigación mágica. Es descrito como un excéntrico que se siente más cómodo con sus libros que con otra gente, y el contacto visual y la cercanía física suelen ponerle incómodo. Dicho esto, Hans es un hombre profundamente compasivo, de principios y cortés.",
+    "portrait": {
+      "original": "https://i.imgur.com/a83e4eG.png",
+      "token": "https://i.imgur.com/7cxBWr4.png",
+      "avatar": "https://i.imgur.com/MBwNzPj.png"
+    },
+    "backstory": "<p>Hans Allenbach nació en una pequeña aldea llamada Emden, en algún lugar del oeste del contiente. Su padre Heinrich fue un miembro del ejército, y tenía un hermano mayor. Hans desarrolló un interés por las artes mágicas desde muy joven, puesto que su madre fue una alquimista y farmacóloga.</p>",
+    "appearance": "",
+    "alignment": "Neutral bueno",
+    "background": {
+      "description": "Pasaste años aprendiendo la sabiduría del multiverso. Has rastreado manuscritos, estudiado pergaminos y escuchado a los mayores expertos en los temas que te interesan. Tus esfuerzos te han hecho un maestro en tus campos de estudio.",
+      "trait": "Cuando intentas aprender o recordar un fragmento de información, si no sabes nada sobre el tema, a menudo sí sabes a dónde o de quién puedes obtenerlo. Por lo general, esta información viene de una biblioteca, scriptorium, universidad o un sabio u otra persona o criatura culta. Tu DM podría decidir que el conocimiento que buscas está oculto en un lugar lejano y casi inaccesible, o que simplemente no puede ser encontrado. Develar los secretos más profundos del multiverso puede requerir una aventura o incluso toda una campaña.",
+      "name": "Erudito"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humano",
+      "description": "La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.",
+      "traits": "Velocidad. 30 ft.\nDote inicial. Ganas una Dote de tu elección.\nModificadores. +1 a dos características a escoger. Competencia a escoger. Dote adicional.\nEdad. Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo.\nAlineamiento. Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor.\nTamaño. La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cual sea tu altura concreta, tu tamaño es Mediano."
+    },
+    "armorClass": 11,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 12,
+      "constitution": 14,
+      "intelligence": 16,
+      "wisdom": 14,
+      "charisma": 10
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": true
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 14,
+      "current": 14
+    },
+    "initiativeBonus": 2,
+    "passivePerception": 12,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [],
+    "attacks": [],
+    "additionalAbilities": [
+      {
+        "name": "Recuperación arcana",
+        "description": "Has aprendido a recuperar parte de tu energía arcana estudiando tu libro de conjuros. Una vez por día, cuando hagas un descanso breve, puedes recuperar espacios de conjuro. Los espacios de conjuro pueden tener un nivel combinado igual o menor que la mitad de tu nivel de mago (redondeando hacia arriba) y, como máximo, nivel 5. Por ejemplo, si eres un mago de nivel 4, puedes recuperar hasta un valor de dos niveles de espacios de conjuro. Puedes recuperar un espacio de conjuro de nivel 2 o dos espacios de conjuro de nivel 1."
+      },
+      {
+        "name": "Prodigio",
+        "description": "Tienes facilidad para aprender cosas nuevas. Obtienes los beneficios siguientes:<ul><li>Ganas competencia con una habilidad de tu elección y unas herramientas que escojas y, además, aprendes un idioma de tu elección.</li><li>Elige una habilidad en la que seas competente. Ganas pericia con esa habilidad, lo que quiere decir que tu boniñcador por competencia se duplica para cualquier prueba de característica que hagas con ella. La habilidad que escojas no puede ser una que ya se beneficie de un rasgo, como Pericia, que duplica tu boniñcador por competencia.</li></ul>"
+      },
+      {
+        "name": "Erudito de la transmutación",
+        "description": "A partir del momento en el que elijas esta escuela en el nivel 2, el oro y el tiempo que debes invertir para copiar un conjuro de transmutación en tu libro de conjuros se divide a la mitad."
+      },
+      {
+        "name": "Alquimia menor",
+        "description": "Comenzando en el nivel 2 cuando seleccionas esta escuela, puedes alterar temporalmente las propiedades físicas de un objeto no mágico, cambiándolo de una sustancia a otra. Practicas un procedimiento alquímico especial con un objeto compuesto enteramente de madera, piedra (pero no una gema), hierro, cobre o plata, transformándolo en otro de esos materiales. Por cada 10 minutos que pases realizando el procedimiento, puedes transformar un pie cúbico de material. Después de una hora, o cuando pierdas la concentración (como si te estuvieses concentrando en un conjuro), el material vuelve a su sustancia original."
+      }
+    ],
+    "reactions": [],
+    "spells": [
+      {
+        "modifier": "intelligence",
+        "caster": "5ec03176f44b2b688355abb7",
+        "spells": {
+          "0": [
+            {
+              "spellId": "5eb31445b8821a3a04edf9b7"
+            },
+            {
+              "spellId": "5eb3030fb8821a3a04edf25c"
+            },
+            {
+              "spellId": "5eb314ffb8821a3a04edfa02"
+            }
+          ],
+          "1": [
+            {
+              "spellId": "5eb315d9b8821a3a04edfa59"
+            },
+            {
+              "spellId": "5eb3168ab8821a3a04edfaa3"
+            },
+            {
+              "spellId": "5eb3173ab8821a3a04edfae8"
+            },
+            {
+              "spellId": "5eb31787b8821a3a04edfb09"
+            },
+            {
+              "spellId": "5eaf23578e8ecfd3cdc48e06"
+            },
+            {
+              "spellId": "5eb31811b8821a3a04edfb41"
+            },
+            {
+              "spellId": "5eb3184ab8821a3a04edfb5a"
+            },
+            {
+              "spellId": "5eb318b9b8821a3a04edfb8d"
+            }
+          ]
+        },
+        "level": 2
+      }
+    ],
+    "equipment": {
+      "items": [
+        {
+          "id": "5eb31260b8821a3a04edf8f4",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5eb31331b8821a3a04edf946",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5e99bf839fee6cdfd31192c7",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5eb2fd44b8821a3a04edeff2",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "armor": [],
+      "magicItems": null,
+      "weapons": [],
+      "magicWeapons": null
+    },
+    "proficiencies": "Proficiencias de armas: Simples, marciales\n\nProficiencia de armaduras: Media, ligera, escudos\n\nHerramientas: Juego de cartas, vehículos (tierra)\n\nIdiomas: Común",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": false,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": true,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": true,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Mago",
+        "subclassName": "Escuela de transmutación",
+        "classLevel": 2,
+        "hitDie": 6,
+        "classId": "5ec03176f44b2b688355abb7",
+        "subclassDescription": "Eres un erudito de los conjuros que modifican la energía y la materia. Para ti, el mundo no es algo fijo, sino sumamente mutable, y te deleitas en la idea de ser un agente del cambio.\n\nBlandes la materia pura de la creación y aprendes a alterar tanto las formas físicas como las cualidades mentales. Tu magia te brinda las herramientas para convertirte un herrero en la forja de la realidad."
+      }
+    ],
+    "wounds": []
+  },
+  "name": "Hans Allenbach",
+  "createdBy": "5e987f8e4b88382a98c84042"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@lierno/core-helpers",
+  "version": "1.1.4",
+  "description": "Helper functions for EG services",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "prepublish": "tsc --declaration",
+    "build": "tsup index.ts --format cjs --dts",
+    "dev": "npm run build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuluGary/eg-helpers.git"
+  },
+  "keywords": [],
+  "author": "kulugary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuluGary/eg-helpers/issues"
+  },
+  "homepage": "https://github.com/KuluGary/eg-helpers#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "tsup": "^6.2.3",
+    "typescript": "^4.6.3"
+  }
+}
