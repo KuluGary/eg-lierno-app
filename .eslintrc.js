@@ -11,5 +11,6 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-key": "warn",
     "turbo/no-undeclared-env-vars": "warn",
+    "react/display-name": "warn",
   },
 };
