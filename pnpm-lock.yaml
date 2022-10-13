@@ -76,6 +76,7 @@ importers:
       html-to-text: ^8.2.0
       jsonwebtoken: ^8.5.1
       material-ui-dropzone: ^3.5.0
+      mongodb: ^4.10.0
       next: ^12.3.0
       next-auth: ^4.3.1
       nprogress: ^0.2.0
@@ -113,6 +114,7 @@ importers:
       html-to-text: registry.npmjs.org/html-to-text/8.2.1
       jsonwebtoken: registry.npmjs.org/jsonwebtoken/8.5.1
       material-ui-dropzone: registry.npmjs.org/material-ui-dropzone/3.5.0_k3epcyrlnddmhw6rnag5mws4py
+      mongodb: registry.npmjs.org/mongodb/4.10.0
       next: registry.npmjs.org/next/12.3.1_7zkbjz6d46tpcbbta4lk5n6n6i
       next-auth: registry.npmjs.org/next-auth/4.13.0_dty4et2pnba4zo7o4cegg6bk2e
       nprogress: registry.npmjs.org/nprogress/0.2.0
