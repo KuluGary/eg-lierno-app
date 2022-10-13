@@ -64,11 +64,13 @@ export default function MyApp(props) {
         localStorage.setItem("background", JSON.stringify({ background, mode }));
       },
       setDefaultTheme: () => {
-        const backgroundStr = localStorage.getItem("background") ?? `${{ background: backgroundList[0], mode }}`;
-        const primaryStr = localStorage.getItem("primary") ?? `${{ main: primaryList[0] }}`;
+        const backgroundStr = localStorage.getItem("background") ?? JSON.stringify({ ...backgroundList[0] });
+        const primaryStr = localStorage.getItem("primary") ?? JSON.stringify({ main: primaryList[0] });
 
         const { background, mode } = JSON.parse(backgroundStr);
         const primary = JSON.parse(primaryStr);
+
+        console.log(background);
 
         const newTheme = createTheme({
           ...theme,
