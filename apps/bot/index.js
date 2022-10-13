@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { Client, Collection, Intents } = require("discord.js");
 
-if (process.env.NODE_ENV === "development") require("dotenv").config();
+if (process.env.NODE_ENV === "development") require("dotenv").config({ path: ".env.local" });
 
 require("./db");
 require("./db/redis");

@@ -6,7 +6,8 @@ const multer = require("multer");
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./docs/swagger.json");
 
-if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test") require("dotenv").config();
+if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test")
+  require("dotenv").config({ path: ".env.local" });
 
 const corsOptions = {
   origin: [process.env.CLIENT_URL, process.env.SERVER_URL],
@@ -42,7 +43,7 @@ app.use("/api/v1", require("./routes/spell.routes"));
 app.use("/api/v1", require("./routes/image.routes"));
 app.use("/api/v1", require("./routes/logs.routes"));
 app.use("/api/v1", require("./routes/tier.routes"));
-app.use("/api", require("./routes/ping.routes"))
+app.use("/api", require("./routes/ping.routes"));
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

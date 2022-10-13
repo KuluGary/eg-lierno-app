@@ -4,7 +4,6 @@ const { Routes } = require("discord-api-types/v9");
 
 if (process.env.NODE_ENV === "development") require("dotenv").config();
 
-
 const commands = [];
 const commandFiles = fs.readdirSync("./commands").filter((file) => file.endsWith(".js"));
 
