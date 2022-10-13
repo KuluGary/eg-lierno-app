@@ -1,5 +1,13 @@
-# Turborepo starter
+# Lierno app
 
+<div align="center">
+<h4>A web application that provides D&D 5e Character Sheet creation, campaign management and Discord bot integration.</h4>
+</div>
+
+## About
+Lierno app is a web service that allows you to generate your own character sheets for D&D 5e and integrate with your campaign and Discord server.
+
+## Getting started
 This is an official pnpm starter turborepo.
 
 ## What's inside?
@@ -8,13 +16,13 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `client`: a [Next.js](https://nextjs.org) app
+- `server`: a [NodeJS](https://nodejs.org/es/) web server
+- `bot`: a [NodeJS](https://nodejs.org/es/) [Discord](https://discordbotlist.com/) bot integrated in `client` and `server`
+- `dnd-helpers`: a series of utility functions in [TypeScript](https://www.typescriptlang.org/) shared by both `client`, `bot` and `server` applications
+- `string-utils`: a series of utility functions in [TypeScript](https://www.typescriptlang.org/) shared by both `client`, `bot` and `server` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
