@@ -4,6 +4,8 @@
 <h4>A web application that provides D&D 5e Character Sheet creation, campaign management and Discord bot integration.</h4>
 </div>
 
+![Vercel](https://vercelbadge.vercel.app/api/KuluGary/eg-lierno-app?style=flat-square)
+
 ## About
 Lierno app is a web service that allows you to generate your own character sheets for D&D 5e and integrate with your campaign and Discord server.
 
