@@ -7,4 +7,9 @@ module.exports = {
       rootDir: ["apps/*/"],
     },
   },
+  rules: {
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-key": "warn",
+    "turbo/no-undeclared-env-vars": "warn",
+  },
 };
