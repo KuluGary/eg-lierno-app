@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import { getSession, signIn } from "next-auth/react";
+import { signIn } from "next-auth/react";
 import { Link } from "../components";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         </Typography>
         <Box sx={style.buttonContainer}>
           <Link href="/register">
-            <Button size="large" variant="contained">
+            <Button size="large" variant="contained" onClick={() => {}}>
               Prueba Lierno App
             </Button>
           </Link>
@@ -26,7 +26,7 @@ export default function Home() {
               signIn();
             }}
           >
-            <Button size="large" variant="outlined" color="background">
+            <Button size="large" variant="outlined" color="secondary" onClick={() => {}}>
               Accede con tu cuenta
             </Button>
           </Link>
@@ -34,19 +34,6 @@ export default function Home() {
       </Box>
     </Box>
   );
-}
-
-export async function getServerSideProps(ctx) {
-  const session = await getSession({ ctx });
-
-  if (!session) return { props: {} };
-
-  return {
-    redirect: {
-      permanent: true,
-      destination: "/characters",
-    },
-  };
 }
 
 const style = {
