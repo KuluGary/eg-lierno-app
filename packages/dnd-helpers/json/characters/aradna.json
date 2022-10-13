@@ -1,0 +1,283 @@
+{
+  "flavor": {
+    "faction": "",
+    "traits": {
+      "gender": "Mujer",
+      "pronoun": "La",
+      "age": "23 años",
+      "eyes": "Azules",
+      "weight": "69 kg",
+      "hair": "Rubio y ondulado",
+      "skin": "Pálida",
+      "height": "1,70 m"
+    },
+    "personality": "<p>Aradna es amable, sincera y tiene unos modales dignos de su cuna noble, aun si nunca a la altura de las expectativas de su familia, de los que reniega después de que ellos le dieran la espalda. Tras esa imagen de inocencia, se esconde una mujer orgullosa, impulsiva y de fuerte carácter, aun si es atormentada por numerosos miedos y dudas.</p><p>Confía en sus habilidades para defender a los vulnerables y desfavorecidos contra malhechores y aquellos que abusan del poder. Es una luchadora pasional y ofensiva, enfrentándose a sus enemigos sin miedo al dolor. Aun así, también es una habilidosa sanadora, y su dulzura y su bondad son de alivio para los heridos que encuentra en su camino.</p>",
+    "portrait": {
+      "original": "https://i.imgur.com/tArZRXV.png"
+    },
+    "backstory": "<p>A la edad de 18 años, cuando inicio sus estudios como administradora de la finca de su familia, su enemistad con su madre alcanzó cotas inesperadas. Siempre habían mantenido una relación tensa, complicada, y la eterna ausencia de su padre no ayudaba a calmar el ambiente. Pero el momento cumbre llego cuando Aradna empezó a comprender los entresijos que hacían funcionar a su familia y vio las injusticias que se cometían para con los subordinados de su familia. Ignorando los deseos de su madre empezó a tomar decisiones para cambiar la situación.</p><p>Su madre, cansada de que nunca fuera realmente obediente a su religión y ahora fuera incapaz de asumir sus ordenes, mandó a un alto mando de su ejercito a seducirla. Aquel hombre, llamado August Riecter, únicamente consiguió acabar siendo amenazado por la espada de la joven, pero fue entonces cuando su madre apareció y desoyendo las quejas de Aradna, decidió que había intentado propasarse con el soldado aprovechándose de su posición.</p><p>Por ello, a la edad de 22 años, fue expulsada de su hogar con las pocas pertenencias que pudo reunir antes de que los soldados al mando de Riecter la expulsaran de allí como a un ladrón. Desde entonces, trabajando de criada y mercenaria, ha tenido que arreglárselas para sobrevivir por si misma, después de una vida de comodidades.</p>",
+    "appearance": "<p>Físicamente es una persona de altura media, con un cuerpo robusto y ligeramente musculado, de huesos anchos y buena constitución. Raramente se enferma y se recupera bien de las heridas. Suele vestir con ropa ligera y cómoda, la cual lleva bajo su perenne armadura. Guarda en sus alforjas ropa más fina, para ambientes nobles, pero raramente la utiliza. Su rostro es ligeramente aniñado, tiene una nariz respingona, unos ojos grandes con largas pestañas y unos rasgos delicados y poco marcados. Su cabello es largo, le llega por debajo de los hombros, de un rubio pálido y ligeramente ondulado. Suele recogérselo en un moño descuidado.</p>",
+    "alignment": "Neutral buena",
+    "background": {
+      "description": "",
+      "trait": "",
+      "name": "Noble exiliada"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humana",
+      "description": "<p>La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.</p>",
+      "traits": "Velocidad. 30 ft.\nDote inicial. Ganas una Dote de tu elección.\nModificadores. +1 a dos características a escoger. Competencia a escoger. Dote adicional.\nEdad. Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo.\nAlineamiento. Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor.\nTamaño. La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cual sea tu altura concreta, tu tamaño es Mediano."
+    },
+    "armorClass": 13,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 16,
+      "constitution": 12,
+      "intelligence": 14,
+      "wisdom": 10,
+      "charisma": 14
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": true
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 11,
+      "current": 11
+    },
+    "initiativeBonus": 2,
+    "passivePerception": 12,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [
+      {
+        "name": "Nuevas energías (1 / descanso)",
+        "description": "<p>Dispones de una fuente ilimitada de vitalidad a la que puedes recurrir para protegerte del daño. Durante tu turno, puedes usar una acción adicional para recuperar un número de puntos de golpe igual a 1d10 + tu nivel de guerrero.</p>"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Espada corta",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 6
+            }
+          },
+          "properties": ["Sutil", "Ligera"],
+          "extraInformation": ""
+        }
+      },
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 4
+            }
+          },
+          "properties": ["Ligera", "Sutil", "Arrojadiza"]
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Estilo de combate – lucha con dos armas",
+        "description": "<p>Cuando utilizas este estilo de combate, puedes añadir tu modificador de habilidad al daño de un arma que hagas con el arma que empuñes en la mano no dominante.</p>"
+      },
+      {
+        "name": "Perspectiva de forastero",
+        "description": "Has aprendido a ver la sociedad de una manera distinta a los demás, y eso te permite evaluarla de forma crítica. A medida que pasa el tiempo en una ciudad, pueblo o asentamiento, la dinámica social de su sistema se hace evidente. Al interactuar con los lugareños y pasar tiempo en la zona, puedes determinar cosas como el equilibrio de poder actual, problemas y noticias urgentes, si hay descontento con el status quo y quienes podrían ser individuos importantes. Sin embargo, como forastero, tus críticas o inteferencias no son muy bienvenidas sin una buena razón."
+      },
+      {
+        "name": "Dote — Curadora",
+        "description": "<p>Eres una curadora proficiente, permitiéndote atender a heridas rápidamente y devolver a tus aliados al frente de batalla. Ganas los siguientes beneficios:</p><ul><li>Cuando usas equipamiento de curación para estabilizar a una criatura inconsciente, la creatura recupera 1 punto de vida.</li><li>Como acción, puedes gastar un uso del equipamiento de curación para atender a una criatura y hacerla recuperar 1d6+4 puntos de vida, más puntos de vida iguales al número máximo de dados de golpe de la criatura. Una criatura no puede recuperar puntos de vida gracias a este rasgo hasta que termine un descanso corto o largo.</li></ul>"
+      }
+    ],
+    "reactions": [],
+    "spells": [],
+    "equipment": {
+      "items": [
+        {
+          "id": "5e99bf839fee6cdfd31192c7",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5e99e02c9fee6cdfd3119fc2",
+          "quantity": 10,
+          "equipped": true
+        },
+        {
+          "id": "5eb1352bb8821a3a04eda7e3",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5eb31331b8821a3a04edf946",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5e99ff639fee6cdfd311aaa5",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicWeapons": null
+    },
+    "proficiencies": "<ul><li><strong>Proficiencias de armas: </strong><em>Simples, marciales.</em></li><li><strong>Proficiencia de armaduras: </strong><em>Media, ligera, escudos.</em></li><li><strong>Proficiencia en herramientas: </strong><em>Juego de cartas, vehículos (tierra).</em></li><li><strong>Idiomas</strong>: <em>Común.</em></li></ul>",
+    "savingThrows": {
+      "strength": {
+        "proficient": true,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": true,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": false,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Guerrero",
+        "subclassName": null,
+        "classLevel": 1,
+        "hitDie": 10,
+        "classId": "5ea1843b8bfa3a13ac19cc07"
+      }
+    ],
+    "wounds": []
+  },
+  "name": "Aradna Selene",
+  "createdBy": "5eb1b45488db130004a9c172"
+}

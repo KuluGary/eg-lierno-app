@@ -1,0 +1,1086 @@
+{
+  "00000": {
+    "name": "innato",
+    "components": {
+      "material": false,
+      "somatic": true,
+      "verbal": true
+    }
+  },
+  "5ed2b6f0dfd4d4a1adcbbba4": {
+    "name": "bardo",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "charisma",
+    "level": {
+      "1": {
+        "spellSlots": [2],
+        "cantripsKnown": 2,
+        "spellsKnown": 4
+      },
+      "2": {
+        "spellSlots": [3],
+        "cantripsKnown": 2,
+        "spellsKnown": 5
+      },
+      "3": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2,
+        "spellsKnown": 6
+      },
+      "4": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 7
+      },
+      "5": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 8
+      },
+      "6": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 9
+      },
+      "7": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 3,
+        "spellsKnown": 10
+      },
+      "8": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 11
+      },
+      "9": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 3,
+        "spellsKnown": 12
+      },
+      "10": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantrupsKnown": 4,
+        "spellsKnown": 14
+      },
+      "11": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 15
+      },
+      "12": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 15
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 16
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 18
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 19
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 19
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 20
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 22
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 22
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 22
+      }
+    },
+    "multiclassing": {
+      "type": "fullcaster"
+    }
+  },
+  "5ec02407f44b2b688355a566": {
+    "name": "clérigo",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "wisdom",
+    "level": {
+      "1": {
+        "spellSlots": [2],
+        "cantripsKnown": 3
+      },
+      "2": {
+        "spellSlots": [3],
+        "cantripsKnown": 3
+      },
+      "3": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 3
+      },
+      "4": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 4
+      },
+      "5": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 4
+      },
+      "6": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 4
+      },
+      "7": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "8": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 4
+      },
+      "9": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "10": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantripsKnown": 5
+      },
+      "11": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantripsKnown": 5
+      },
+      "12": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantripsKnown": 5
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantripsKnown": 5
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantripsKnown": 5
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      }
+    },
+    "multiclassing": {
+      "type": "fullcaster"
+    }
+  },
+  "5fe145ae267d9afc8e956c0f": {
+    "name": "druida",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "wisdom",
+    "level": {
+      "1": {
+        "spellSlots": [2],
+        "cantripsKnown": 2,
+        "spellsKnown": 4
+      },
+      "2": {
+        "spellSlots": [3],
+        "cantripsKnown": 2,
+        "spellsKnown": 5
+      },
+      "3": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2,
+        "spellsKnown": 6
+      },
+      "4": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 7
+      },
+      "5": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 8
+      },
+      "6": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 9
+      },
+      "7": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 3,
+        "spellsKnown": 10
+      },
+      "8": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 11
+      },
+      "9": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 3,
+        "spellsKnown": 12
+      },
+      "10": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantrupsKnown": 4,
+        "spellsKnown": 14
+      },
+      "11": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 15
+      },
+      "12": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 15
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 16
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 18
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 19
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 19
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 20
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 22
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 22
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantrupsKnown": 4,
+        "spellsKnown": 22
+      }
+    },
+    "multiclassing": {
+      "type": "fullcaster"
+    }
+  },
+  "5f6630144af7eaef9120f98e": {
+    "name": "paladin",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "charisma",
+    "level": {
+      "1": {
+        "spellSlots": []
+      },
+      "2": {
+        "spellSlots": [2]
+      },
+      "3": {
+        "spellSlots": [3]
+      },
+      "4": {
+        "spellSlots": [3]
+      },
+      "5": {
+        "spellSlots": [4, 2]
+      },
+      "6": {
+        "spellSlots": [4, 2]
+      },
+      "7": {
+        "spellSlots": [4, 3]
+      },
+      "8": {
+        "spellSlots": [4, 3]
+      },
+      "9": {
+        "spellSlots": [4, 3, 2]
+      },
+      "10": {
+        "spellSlots": [4, 3, 2]
+      },
+      "11": {
+        "spellSlots": [4, 3, 3]
+      },
+      "12": {
+        "spellSlots": [4, 3, 3]
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 1]
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 1]
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 2]
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 2]
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 1]
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 1]
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2]
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2]
+      }
+    },
+    "multiclassing": {
+      "type": "halfcaster"
+    }
+  },
+  "5ec02fbcf44b2b688355aaeb": {
+    "name": "montaraz",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "wisdom",
+    "level": {
+      "1": {
+        "spellSlots": []
+      },
+      "2": {
+        "spellSlots": [2]
+      },
+      "3": {
+        "spellSlots": [3]
+      },
+      "4": {
+        "spellSlots": [3]
+      },
+      "5": {
+        "spellSlots": [4, 2]
+      },
+      "6": {
+        "spellSlots": [4, 2]
+      },
+      "7": {
+        "spellSlots": [4, 3]
+      },
+      "8": {
+        "spellSlots": [4, 3]
+      },
+      "9": {
+        "spellSlots": [4, 3, 2]
+      },
+      "10": {
+        "spellSlots": [4, 3, 2]
+      },
+      "11": {
+        "spellSlots": [4, 3, 3]
+      },
+      "12": {
+        "spellSlots": [4, 3, 3]
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 1]
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 1]
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 2]
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 2]
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 1]
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 1]
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2]
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2]
+      }
+    },
+    "multiclassing": {
+      "type": "halfcaster"
+    }
+  },
+  "6025567f9f3d039145e02731": {
+    "name": "hechicero",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "charisma",
+    "level": {
+      "1": {
+        "spellSlots": [2],
+        "cantripsKnown": 4,
+        "spellsKnown": 2
+      },
+      "2": {
+        "spellSlots": [3],
+        "cantripsKnown": 4,
+        "spellsKnown": 3
+      },
+      "3": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 4,
+        "spellsKnown": 4
+      },
+      "4": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 5,
+        "spellsKnown": 5
+      },
+      "5": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 5,
+        "spellsKnown": 6
+      },
+      "6": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 5,
+        "spellsKnown": 7
+      },
+      "7": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 5,
+        "spellsKnown": 8
+      },
+      "8": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 5,
+        "spellsKnown": 9
+      },
+      "9": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 5,
+        "spellsKnown": 10
+      },
+      "10": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantripsKnown": 6,
+        "spellsKnown": 11
+      },
+      "11": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 12
+      },
+      "12": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 12
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 13
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 13
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 14
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 14
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 15
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 15
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 15
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 6,
+        "spellsKnown": 15
+      }
+    },
+    "multiclassing": {
+      "type": "fullcaster"
+    }
+  },
+  "5ec030b0f44b2b688355ab60": {
+    "name": "brujo",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "charisma",
+    "level": {
+      "1": {
+        "spellSlots": [1],
+        "cantripsKnown": 2,
+        "spellsKnown": 2
+      },
+      "2": {
+        "spellSlots": [2],
+        "cantripsKnown": 2,
+        "spellsKnown": 3
+      },
+      "3": {
+        "spellSlots": [0, 2],
+        "cantripsKnown": 2,
+        "spellsKnown": 4
+      },
+      "4": {
+        "spellSlots": [0, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 5
+      },
+      "5": {
+        "spellSlots": [0, 0, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 6
+      },
+      "6": {
+        "spellSlots": [0, 0, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 7
+      },
+      "7": {
+        "spellSlots": [0, 0, 0, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 8
+      },
+      "8": {
+        "spellSlots": [0, 0, 0, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 9
+      },
+      "9": {
+        "spellSlots": [0, 0, 0, 0, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 10
+      },
+      "10": {
+        "spellSlots": [0, 0, 0, 0, 2],
+        "cantripsKnown": 4,
+        "spellsKnown": 10
+      },
+      "11": {
+        "spellSlots": [0, 0, 0, 0, 3],
+        "cantripsKnown": 4,
+        "spellsKnown": 11
+      },
+      "12": {
+        "spellSlots": [0, 0, 0, 0, 3],
+        "cantripsKnown": 4,
+        "spellsKnown": 11
+      },
+      "13": {
+        "spellSlots": [0, 0, 0, 0, 3],
+        "cantripsKnown": 4,
+        "spellsKnown": 12
+      },
+      "14": {
+        "spellSlots": [0, 0, 0, 0, 3],
+        "cantripsKnown": 4,
+        "spellsKnown": 12
+      },
+      "15": {
+        "spellSlots": [0, 0, 0, 0, 3],
+        "cantripsKnown": 4,
+        "spellsKnown": 13
+      },
+      "16": {
+        "spellSlots": [0, 0, 0, 0, 3],
+        "cantripsKnown": 4,
+        "spellsKnown": 13
+      },
+      "17": {
+        "spellSlots": [0, 0, 0, 0, 4],
+        "cantripsKnown": 4,
+        "spellsKnown": 14
+      },
+      "18": {
+        "spellSlots": [0, 0, 0, 0, 4],
+        "cantripsKnown": 4,
+        "spellsKnown": 14
+      },
+      "19": {
+        "spellSlots": [0, 0, 0, 0, 4],
+        "cantripsKnown": 4,
+        "spellsKnown": 15
+      },
+      "20": {
+        "spellSlots": [0, 0, 0, 0, 4],
+        "cantripsKnown": 4,
+        "spellsKnown": 15
+      }
+    },
+    "multiclassing": {
+      "type": "warlock"
+    }
+  },
+  "5ec03176f44b2b688355abb7": {
+    "name": "mago",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "intelligence",
+    "level": {
+      "1": {
+        "spellSlots": [2],
+        "cantripsKnown": 3
+      },
+      "2": {
+        "spellSlots": [3],
+        "cantripsKnown": 3
+      },
+      "3": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 3
+      },
+      "4": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 4
+      },
+      "5": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 4
+      },
+      "6": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 4
+      },
+      "7": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "8": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 4
+      },
+      "9": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "10": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantripsKnown": 5
+      },
+      "11": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantripsKnown": 5
+      },
+      "12": {
+        "spellSlots": [4, 3, 3, 3, 2, 1],
+        "cantripsKnown": 5
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantripsKnown": 5
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1],
+        "cantripsKnown": 5
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2, 1, 1, 1, 1],
+        "cantripsKnown": 5
+      }
+    },
+    "multiclassing": {
+      "type": "fullcaster"
+    }
+  },
+  "615764cf69c41a2d46d7b23a": {
+    "name": "artifice",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "intelligence",
+    "level": {
+      "1": {
+        "spellSlots": [2],
+        "cantripsKnown": 2
+      },
+      "2": {
+        "spellSlots": [2],
+        "cantripsKnown": 2
+      },
+      "3": {
+        "spellSlots": [3],
+        "cantripsKnown": 2
+      },
+      "4": {
+        "spellSlots": [3],
+        "cantripsKnown": 2
+      },
+      "5": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2
+      },
+      "6": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2
+      },
+      "7": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 2
+      },
+      "8": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 2
+      },
+      "9": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 2
+      },
+      "10": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 3
+      },
+      "11": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3
+      },
+      "12": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3
+      },
+      "13": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 3
+      },
+      "14": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "15": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 4
+      },
+      "16": {
+        "spellSlots": [4, 3, 3, 2],
+        "cantripsKnown": 4
+      },
+      "17": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "18": {
+        "spellSlots": [4, 3, 3, 3, 1],
+        "cantripsKnown": 4
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantripsKnown": 4
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 3, 2],
+        "cantripsKnown": 4
+      }
+    },
+    "multiclassing": {
+      "type": "artificer"
+    }
+  },
+  "5ea1843b8bfa3a13ac19cc07": {
+    "name": "guerrero",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "intelligence",
+    "level": {
+      "3": {
+        "spellSlots": [2],
+        "cantripsKnown": 2,
+        "spellsKnown": 3
+      },
+      "4": {
+        "spellSlots": [3],
+        "cantripsKnown": 2,
+        "spellsKnown": 4
+      },
+      "5": {
+        "spellSlots": [3],
+        "cantripsKnown": 2,
+        "spellsKnown": 4
+      },
+      "6": {
+        "spellSlots": [3],
+        "cantripsKnown": 2,
+        "spellsKnown": 4
+      },
+      "7": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2,
+        "spellsKnown": 5
+      },
+      "8": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2,
+        "spellsKnown": 6
+      },
+      "9": {
+        "spellSlots": [4, 2],
+        "cantripsKnown": 2,
+        "spellsKnown": 6
+      },
+      "10": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 7
+      },
+      "11": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 8
+      },
+      "12": {
+        "spellSlots": [4, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 8
+      },
+      "13": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 9
+      },
+      "14": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 10
+      },
+      "15": {
+        "spellSlots": [4, 3, 2],
+        "cantripsKnown": 3,
+        "spellsKnown": 10
+      },
+      "16": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 11
+      },
+      "17": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 11
+      },
+      "18": {
+        "spellSlots": [4, 3, 3],
+        "cantripsKnown": 3,
+        "spellsKnown": 11
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 3,
+        "spellsKnown": 12
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 1],
+        "cantripsKnown": 3,
+        "spellsKnown": 13
+      }
+    },
+    "multiclassing": {
+      "type": "semicaster"
+    }
+  },
+  "5ec03048f44b2b688355ab2c": {
+    "name": "pícaro",
+    "components": {
+      "material": true,
+      "somatic": true,
+      "verbal": true
+    },
+    "ability": "intelligence",
+    "level": {
+      "3": {
+        "spellSlots": [2],
+        "spellsKnown": 3
+      },
+      "4": {
+        "spellSlots": [3],
+        "spellsKnown": 4
+      },
+      "5": {
+        "spellSlots": [3],
+        "spellsKnown": 4
+      },
+      "6": {
+        "spellSlots": [3],
+        "spellsKnown": 4
+      },
+      "7": {
+        "spellSlots": [4, 2],
+        "spellsKnown": 5
+      },
+      "8": {
+        "spellSlots": [4, 2],
+        "spellsKnown": 6
+      },
+      "9": {
+        "spellSlots": [4, 2],
+        "spellsKnown": 6
+      },
+      "10": {
+        "spellSlots": [4, 3],
+        "spellsKnown": 7
+      },
+      "11": {
+        "spellSlots": [4, 3],
+        "spellsKnown": 8
+      },
+      "12": {
+        "spellSlots": [4, 3],
+        "spellsKnown": 8
+      },
+      "13": {
+        "spellSlots": [4, 3, 2],
+        "spellsKnown": 9
+      },
+      "14": {
+        "spellSlots": [4, 3, 2],
+        "spellsKnown": 10
+      },
+      "15": {
+        "spellSlots": [4, 3, 2],
+        "spellsKnown": 10
+      },
+      "16": {
+        "spellSlots": [4, 3, 3],
+        "spellsKnown": 11
+      },
+      "17": {
+        "spellSlots": [4, 3, 3],
+        "spellsKnown": 11
+      },
+      "18": {
+        "spellSlots": [4, 3, 3],
+        "spellsKnown": 11
+      },
+      "19": {
+        "spellSlots": [4, 3, 3, 1],
+        "spellsKnown": 12
+      },
+      "20": {
+        "spellSlots": [4, 3, 3, 1],
+        "spellsKnown": 13
+      }
+    },
+    "multiclassing": {
+      "type": "semicaster"
+    }
+  }
+}

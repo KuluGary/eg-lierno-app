@@ -1,0 +1,1606 @@
+{
+  "spells": [
+    {
+      "_id": "5eaf1ff08e8ecfd3cdc48c9a",
+      "name": "Detectar magia",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": "Personal",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Concentración 10 minutos",
+        "description": "Mientras dura el conjuro, sientes la presencia de la magia hasta a 30 pies de ti. Si sientes alguna magia, puedes usar tu acción para ver una débil aura alrededor de cualquier criatura u objeto visible dentro del área que la tenga, y puedes averiguar de qué escuela es, si la tiene.<br/><br/>El conjuro puede penetrar la mayoría de las barreras, pero no a partir de 1 pie de piedra, 1 pulgada de metal común, una lámina de plomo o 3 pies de madera o tierra."
+      }
+    },
+    {
+      "_id": "5eaf26838e8ecfd3cdc48f5b",
+      "name": "Saber druídico",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "30ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Al susurrarles a los espíritus de la naturaleza, creas uno de los siguientes efectos dentro del alcance:<br/><br/>Creas un pequeño efecto sensorial inofensivo que predice el tiempo que hará donde te encuentras durante las próximas 24 horas. El efecto puede manifestarse como un orbe dorado para los cielos despejados, una nube para la lluvia, copos de nieve cayendo para la nieve, etcétera. Este efecto persiste durante 1 ronda.<br/><br/>Haces que instantáneamente florezca un capullo, germine una semilla o brote una hoja.<br/><br/>Creas un sensor instantáneo e inofensivo, como hojas cayendo, una brisa, el sonido de un animalillo o el vago olor de una mofeta. El efecto debe caber en un cubo de 5 pies.<br/><br/>Apagas o encientes inmediatamente una vela, una antorcha o una hoguera."
+      }
+    },
+    {
+      "_id": "5eaf20278e8ecfd3cdc48cb1",
+      "name": "Detectar venenos y enfermedades",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": "Personal",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Concentración 10 minutos",
+        "description": "Mientras dura el conjuro, puedes sentir la presencia y la localización de veneno, criaturas venenosas y enfermedades a 30 pies de ti o menos. También puedes identificar el tipo de veneno, criatura venenosa o enfermedad en cada caso.<br/><br/>El conjuro puede penetrar la mayoría de las barreras, pero no a partir de 1 pie de piedra, 1 pulgada de metal común, una lámina de plomo o 3 pies de madera o tierra."
+      }
+    },
+    {
+      "_id": "5eaf24478e8ecfd3cdc48e6e",
+      "name": "Escudo de fe",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 acción adicional",
+        "range": "60 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un pequeño pergamino que tiene escrito un fragmento de texto sagrado"
+        },
+        "duration": "Concentración 10 minutos",
+        "description": "Un campo brillante rodea a la criatura que elijas dentro del alcance y le concede un bonificador de +2 a la CA mientras dura el conjuro."
+      }
+    },
+    {
+      "_id": "5eb3184ab8821a3a04edfb5a",
+      "name": "Escudo",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 reacción, la cual puedes realizar cuando seas impactado por un ataque o cuando seas el objetivo del conjuro Proyectil mágico",
+        "range": "Propio",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "1 asalto",
+        "description": "Una barrera invisible de fuerza mágica te protege. Hasta el principio de tu siguiente turno, tienes un bonificador de +5 a la CA, incluso contra el ataque que lo activa, y no recibes daño del conjuro Proyectil mágico."
+      }
+    },
+    {
+      "_id": "5eb6e9280d1f655e40243c02",
+      "name": "Piedad con los moribundos",
+      "stats": {
+        "level": 0,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Tocas a una criatura viva que tenga 0 puntos de golpe. La criatura se estabiliza. Este conjuro no tiene efecto sobre no muertos ni constructos."
+      }
+    },
+    {
+      "_id": "5ff471cbabd4fa1890299888",
+      "name": "Mano de mago",
+      "stats": {
+        "level": 0,
+        "school": "Conjuración",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": "V,S",
+        "duration": "1 minuto",
+        "attack": "",
+        "description": "Una mano espectral aparece flotando en un punto que elijas dentro del alcance. La mano dura mientras lo haga el conjuro o hasta que la disipes como acción. La mano se desvanece si está a más de 30 pies de ti o si vuelves a lanzar este conjuro.\n\nPuedes usar tu acción para controlar la mano. Puedes usar la mano para manipular un objeto, abrir una puerta o un recipiente cerrado, guardar o sacar un objeto de un recipiente abierto o verter el contenido de un vial. Puedes mover la mano hasta 30 pies cada vez que la usas.\n\nLa mano no puede atacar, activar objetos mágicos ni transportar más de 10 libras."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf1dff8e8ecfd3cdc48bcb",
+      "name": "Ceremonia",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 hora",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S,M",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Llevas a cabo una ceremonia eligiosa especial infundida con magia. Cuando conjuras el hechizo, elige uno de los siguientes ritos, y el objetivo debe estar a menos de 10 ft. de ti durante la duración.<br/><br/><b>Redención:</b> Tocas a una criatura dispuesta cuyo alineamiento haya cambiado, y haces una tirada de DC 20 Sabiduría (Perspicacia). En un éxito, restauras el alineamiento original del objetivo.<br/><br/><b>Bendecir agua</b>:  Tocas un recipiente con agua y causas que se vuelva bendita.<br/><br/><b>Mayoría de edad</b>: Tocas a un humanoide dispuesto que sea un joven adulto. Durante las próxima 24 horas, cuando el objetivo haga una tirada de salvación, puede añadir 1d4 a la tirada. Una criatura solo se puede beneficiar de este ritual una vez.<br/><br/><b>Dedicación</b>: Tocas a un humanoide que desee dar servicio a tu Dios. Durante las próximas 24 horas, cuando el objetivo haga una tirada de salvación, puede añadir 1d4 a la tirada. Una criatura solo se puede beneficiar de este ritual una vez.<br/><br/><b>Rito funerario</b>: Tocas a un cadáver y durante los próximos siete días, no puede ser convertido en un muerto viviente excepto por el hechizo Deseo.<br/><br/><b>Matrimonio</b>: Tocas a dos humanoides adultos dispuestos a ser unidos en matrimonio. Durante las próximas 24 horas, cada uno de los objetivos ganan un bonus de +2 a la CA y tiradas de salvación siempre que estén a menos de 30ft. del otro. Una criatura solo puede beneficiarse de esta ceremonia una vez."
+      }
+    },
+    {
+      "_id": "5ff4799e1565c186e4612544",
+      "name": "Guía",
+      "stats": {
+        "level": 0,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": "Toque",
+        "components": "V,S",
+        "duration": "Concentración 1 minuto",
+        "attack": "",
+        "description": "Tocas a una criatura voluntaria. Una vez antes de que el conjuro termine, el objetivo puede tirar 1d4 y sumar el resultado a una prueba de característica de su elección. Puede tirar el dado antes o después de hacer la prueba. Luego el conjuro termina."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf1b4a8e8ecfd3cdc48ab4",
+      "name": "Perdición",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": null,
+        "components": {
+          "type": "V,S,M",
+          "description": "Una gota de sangre"
+        },
+        "duration": "Con, 1 min",
+        "description": "Hasta tres criaturas de tu elección que puedas ver dentro del alcance deben realizar una tirada de salvación de Carisma. Hasta el final de la duración del conjuro, cuando uno de los objetivos que haya fracasado en esta tirada de salvación haga una tirada de ataque o una tirada de salvación, debe tirar 1d4 y restar el resultado de esa tiada.<br/><br/>A niveles superiores: Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, puedes elegir como objetivo una criatura adicional por cada nivel por encima de 1 que tenga el espacio que hayas empleado"
+      }
+    },
+    {
+      "_id": "5eaf23578e8ecfd3cdc48e06",
+      "name": "Protección contra el bien y el mal",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S,M",
+          "description": "Agua bendita o polvo de plata y hierro, los cuales consume el conjuro"
+        },
+        "duration": "Concentración 10 minutos",
+        "description": "Hasta que el conjuro termine, una criatura voluntaria a la que tocas está protegida contra ciertos tipos de criaturas: aberraciones, celestiales, elementales, fatas, infernales y no muertos.<br/><br/>La protección garantiza varios beneficios. Las criaturas de esos tipos tienen desventaja en las tiradas de ataque que hagan contra el objetivo. El objetivo tampoco puede ser hechizado, asustado o poseído por ellas. Si el objetivo ya está hechizado, asustado o poseído por una criatura de ese tipo, tiene ventaja en una nueva tirada de salvación que haga contra el efecto pertinente."
+      }
+    },
+    {
+      "_id": "5eaf25848e8ecfd3cdc48eef",
+      "name": "Virtud",
+      "stats": {
+        "level": 0,
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "1 asalto",
+        "description": "Tocas a una criatura, imbuyéndola con vitalidad. Si el objetivo tiene al menos 1 punto de vida, gana un número de puntos de vida temporales igual a 1d4 + tu modificador de hechicería. Los puntos de vida se pierden cuando el hechizo termina."
+      }
+    },
+    {
+      "_id": "5eaf263c8e8ecfd3cdc48f3d",
+      "name": "Mano radiante",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "Personal, radio de 5ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Alzas una mano, y una luz radiante irrumpe de ti. Toda criatura de tu elección que puedas ver a 5ft. de ti debe tener éxito en una tirada de Constitución o recibir 1d6 de daño radiante.<br/><br/>El daño del hechizo aumenta por 1d6 cuando alcanzas el nivel 5, 11 y 17."
+      }
+    },
+    {
+      "_id": "5eaf26f98e8ecfd3cdc48f8b",
+      "name": "Llama sagrada",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "attack": "Con salvación de Destreza, 1d8 radiante",
+        "duration": "Instantáneo",
+        "description": "Un resplandor similar al de una llama desciende sobre una criatura que puedes ver dentro del alcance. El objetivo debe superar una tirada de salvación de Destreza para no recibir 1d8 puntos de daño radiante. El objetivo no obtiene ningún beneficio por cubrirse para esta tirada de salvación.<br/><br/>El daño del conjuro aumenta en 1d8 cuando subes al nivel 5 (2d8), al nivel 11 (3d8) y al nivel 17 (4d8)."
+      }
+    },
+    {
+      "_id": "5ff47a451565c186e4612546",
+      "name": "Nube de oscurecimiento",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 acción",
+        "range": "120 pies (círculo de 20 pies)",
+        "components": "",
+        "duration": "Concentración 1 hora",
+        "attack": "",
+        "description": "Creas una bruma que cubre un área esférica de 20 pies de radio alrededor de un punto de tu elección. La niebla se extiende más allá en las esquinas y el área se considera muy oscura. Dura mientras lo haga el conjuro o hasta que un viento moderado o de una velocidad mayor (al menos 10 millas por hora) lo disipe.\n\nEn niveles superiores. Cuando lances este conjuro usando un espacio de conjuro de nivel 2 o superior, el radio de la niebla aumenta en 20 pies por cada espacio por encima de 1."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "602175e195150a6bd0eb6a60",
+      "name": "Ferocidad primordial",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "Propio",
+        "components": "S",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "Canalizas magia primordial para causar que tus dientes o uñas se agudicen, dispuestas a propinar un ataque corrosivo. Haces un ataque de hechizo a melé contra una criatura a 5 ft. de ti, y en un acierto, el objetivo recibe 1d10 de daño de ácido.\n\nDespués de hacer el ataque, tus dientes o uñas vuelven a la normalidad.\n\nEl daño del hechizo aumenta a 2d10 a nivel 5, a 3d10 a nivel 11 y a 4d10 a nivel 17."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "602183fb95150a6bd0eb6a62",
+      "name": "Absorber elementos",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 reacción, cuando recibes daño de ácido, frío, fuego, rayo o trueno",
+        "range": "Propio",
+        "components": "S",
+        "duration": "1 ronda",
+        "attack": "",
+        "description": "El hechizo captura algo del daño recibido, disminuyendo su efecto en ti y guardándolo para tu próximo ataque a melé. Tienes resistencia al tipo de daño que haya activado esta habilidad hasta el inicio de tu próximo turno. Además, el primer golpe que hagas con un ataque a melé en tu próximo turno, el objetivo recibe 1d6 de daño extra del tipo que haya activado esta habilidad.\n\nA niveles más altos, cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, el daño extra aumenta por 1d6 por cada nivel por encima del 1º."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eb30244b8821a3a04edf1f8",
+      "name": "Descarga sobrenatural",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "120 ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Un rayo de energía chispeante alcanza a una criatura que elijas dentro del alcance. Haz una tirada de ataque de conjuro a distancia contra el objetivo. Si impactas, este recibe 1d10 puntos de daño por fuerza.<br/><br/>El conjuro crea más de un rayo cuando subes de nivel: dos rayos en el nivel 5, tres rayos en el nivel 11 y cuatro rayos en el nivel 17. Puedes dirigir los rayos al mismo objetivo o a objetivos diferentes. Haz una tirada de ataque por cada rayo."
+      }
+    },
+    {
+      "_id": "5eb31445b8821a3a04edf9b7",
+      "name": "Descarga de fuego",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "120 ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "attack": "A distancia 1d10 fuego",
+        "duration": "Instantáneo",
+        "description": "Arrojas una mota de fuego a una criatura u objeto que se encuentre dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si impactas, este recibe 1d10 puntos de daño por fuego. Este conjuro incinera a cualquier objeto inflamable al que alcance y que nadie lleve puesto ni transporte.<br/><br/>El daño de este conjuro aumenta en 1d10 cuando subes al nivel 5, (2d10), al nivel 11 (3d10) y al nivel 17 (4d10)."
+      }
+    },
+    {
+      "_id": "5eb3173ab8821a3a04edfae8",
+      "name": "Elixir de curación",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 minuto",
+        "range": "Propio",
+        "components": {
+          "type": "V,S,M",
+          "description": "Utensilios de alquimista"
+        },
+        "duration": "24 h",
+        "description": "Creas un elixir curativo en un frasco simple que aparece en tu mano. El elixir conserva su potencia durante todo el tiempo o hasta que se consume, momento en el cual el vial desaparece.<br/><br/>Como acción, una criatura puede beber el elixir o administrarlo a otra criatura. El bebedor recupera 2d4 + 2 puntos de golpe."
+      }
+    },
+    {
+      "_id": "5f66546e37653b371850c65b",
+      "name": "Marca del Cazador",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción adicional",
+        "range": "90 ft.",
+        "components": "V",
+        "duration": "Concentración 1 hora",
+        "attack": "",
+        "description": "Eliges a una criatura que puedas ver dentro del alcance y la marcas de forma mística como tu presa. Hasta que el conjuro termina, infliges 1d6 puntos de daño adicional en el objetivo cuando lo impactas con un ataque de arma, y tienes ventaja en cualquier prueba de Sabiduría (Percepción) o Sabiduría (Supervivencia) que hagas para encontrarlo. Si los puntos de golpe del objetivo se reducen a 0 antes de que termine el conjuro, puedes usar una acción adicional en uno de tus siguientes turnos para marcar a una nueva criatura.\n\nEn niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 3 o 4, puedes mantener la concentración en el conjuro hasta 8 horas. Cuando usas un espacio de conjuro de nivel 5 o superior, puedes mantener la concentración hasta 24 horas."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "6021882295150a6bd0eb6a66",
+      "name": "Temblor terrestre",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "10 ft.",
+        "components": "V,S",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "Causas un temblor en la tierra dentro del alcance. Cada criatura en el área debe hacer una tirada de salvación de Destreza, excluyéndote. En un fallo, la criatura recibe 1d6 de daño contundente y es derribado. Si el área es tierra o roca suelta, el suelo se vuelve terreno difícil hasta ser limpiado, con cada diámetro de 5ft. requiriendo al menos 1 minuto para ser limpiado a mano.\n\nA niveles más altos, cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, el daño aumenta en 1d6 por cada hueco por encima del 1º."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "6021897995150a6bd0eb6a68",
+      "name": "Salto",
+      "stats": {
+        "level": 1,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "Toque",
+        "components": "V,S,M",
+        "duration": "1 minuto",
+        "attack": "",
+        "description": "Tocas una criatura y su distancia de salto se triplica hasta que el conjuro termina."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf1f838e8ecfd3cdc48c68",
+      "name": "Curar heridas",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Una criatura que tocas recupera un número de puntos de golpe igual a 1d8 + tu modificador por característica para lanzar conjuros. Este conjuro no tiene efecto ni en no muertos ni en constructos.<br/><br/>En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, la curación aumentan 1d8 por cada nivel por encima del nivel 1."
+      }
+    },
+    {
+      "_id": "6021866a95150a6bd0eb6a64",
+      "name": "Enlace animal",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": "Toque",
+        "components": "V,S,M",
+        "duration": "Concentración,  hasta 10 minutos",
+        "attack": "",
+        "description": "Estableces un enlace telepático con una bestia que es amigable hacia ti o que has hechizado. El hechizo falla si la bestia tiene una Inteligencia de 4 o más. Hasta que el hechizo finaliza, el enlace está activado mientras tú y la bestia os podáis ver. A través del enlace, la bestia puede entender tus mensajes telepáticos y puede comunicarte emociones y conceptos básicos. Mientras el enlace está activo, la bestia gana ventaja en las tiradas de ataque contra cualquier criatura que esté a 5ft. de ti y que puedas ver."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "6021891595150a6bd0eb6a67",
+      "name": "Cuchillo de hielo",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": "S,M",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "Creas un fragmento de hielo y lo lanzas hacia una criatura dentro del alcance. Haz una tirada de ataque a distancia contra el objetivo. En un éxito, el objetivo recibe 1d10 de daño perforante. En un éxito o un fallo, el fragmento explota. El objetivo y toda criatura a 5 ft. de él debe tener éxito en una tirada de salvación de Destreza o recibe 2d6 daño de frío.\n\nA niveles más altos, cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, el daño de frío aumenta en 1d6 por cada hueco por encima del 1º."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eb314ffb8821a3a04edfa02",
+      "name": "Prestidigitación",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "10 ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "1 hora",
+        "description": "Este conjuro es un truco de magia menor que los lanzadores principiantes usan para practicar. Produces uno de los siguientes efectos mágicos dentro del alcance:<ul><li>Creas un efecto sensorial instantáneo e inofensivo, como una lluvia de chispas, una ráfaga de viento, notas musicales suaves o un olor raro.</li><li>Enciendes o apagas una vela, una antorcha o una pequeña hoguera instantáneamente.</li><li>Limpias o ensucias un objeto que no sea mayor que 1 pie cúbico instantáneamente.</li><li>Enfrías, calientas o das sabor a 1 pie cúbico de material inerte durante 1 hora.</li><li>Haces que aparezca un color, una marca o un símbolo en un objeto o en una superficie durante una hora.</li><li>Creas una baratija no mágica o una imagen ilusoria que cabe en tu mano y que dura hasta el final de tu siguiente turno.</li></ul>Si lanzas este conjuro varias veces, puedes tener hasta tres de estos efectos no instantáneos activos al mismo tiempo, y puedes disiparlos como acción."
+      }
+    },
+    {
+      "_id": "5eb3168ab8821a3a04edfaa3",
+      "name": "Encontrar familiar",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 hora",
+        "range": "10 pies",
+        "components": {
+          "type": "V,S,M",
+          "description": "Carbón vegetal, incienso y hierbas de 10 po de valor que debe consumir el fuego en un brasero de latón"
+        },
+        "duration": "Instantáneo",
+        "description": "Consigues el servicio de un familiar, un espíritu con la forma animal que elijas: araña, búho, cangrejo, caballito de mar, comadreja, cuervo, gato, halcón, lagarto, murciélago, pulpo, pez (piraña), rata, rana (sapo) o serpiente venenosa. El familiar aparece en un lugar sin ocupar dentro del alcance y tiene las estadísticas de la forma elegida, aunque sea un celestial, una fata o un infernal (según decidas) en lugar de una bestia.<br/><br/>El familiar actúa de manera independiente, pero siempre obedece tus órdenes. En combate, tira su propia iniciativa y tiene sus propios turnos. No puede atacar, pero puede realizar otras acciones con normalidad. Cuando sus puntos de golpe se reducen a 0, desaparece sin dejar ninguna forma física tras de sí. Aparece de nuevo cuando vuelvas a lanzar este conjuro.<br/><br/>Mientras el familiar esté a 100 pies de ti o menos, puedes comunicarte con él telepáticamente. Además, como acción, puedes ver a través de sus ojos y escuchar a través de sus oídos hasta el principio de tu siguiente turno, lo que hace que consigas los beneficios de los sentidos especiales que tenga el familiar. Durante este tiempo, estás sordo y ciego respecto a tus propios sentidos.<br/><br/>Como acción, puedes desconvocar temporalmente al familiar. Desparece en una dimensión de bolsillo, donde espera hasta que lo convocas. Como acción, puedes hacer que reaparezca en un lugar sin ocupar a 30 pies de ti o menos. También puedes desconvocarlo para siempre.<br/><br/>No puedes tener más de un familiar a la vez. Si lanzas este conjuro mientras ya tienes un familiar, haces que adopte una nueva forma. Elige una de las formas de la lista anterior y el familiar se transformará en la criatura elegida.<br/><br/>Finalmente, cuando lanzas un conjuro con un alcance de toque, el familiar puede transmitirlo como si lo lanzara él. El familiar debe estar a 100 pies de ti o menos y usar su reacción. Si el conjuro requiere hacer una tirada de ataque, usas tu modificador de ataque."
+      }
+    },
+    {
+      "_id": "5ed2b5a0dfd4d4a1adcbbb57",
+      "name": "Dormir",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "90 ft (cilindro de 20 ft.).",
+        "components": {
+          "type": "V,S,M",
+          "description": "una pizca de arena fina, pétalos de rosa y un grillo"
+        },
+        "duration": "1 minuto",
+        "description": "Este conjuro sume a las criaturas en un sueño ligero. Tira 5d8: el resultado es el número de puntos de golpe de criaturas a los que puede afectar este conjuro. Las criaturas que se encuentren a 20 pies o menos de un punto que elijas dentro del alcance se ven afectadas en orden ascendente de sus puntos de golpe (ignorando a las criaturas inconscientes).<br/><br/>Empezando por la criatura que tenga el menor número de puntos de golpe actuales, cada criatura afectada por este conjuro cae inconsciente hasta que el conjuro termina, hasta que reciba daño o hasta que alguien la zarandee para que se despierte. Resta los puntos de golpe de cada criatura al total antes de pasar a la siguiente criatura con menos puntos de golpe. Los puntos de golpe de una criatura deben ser iguales o menores que el total que quede para que esa criatura resulte afectada.<br/><br/>Los no muertos y las criaturas inmunes a ser hechizadas no se ven afectados por este conjuro.<br/><br/><b>En niveles superiores.</b> Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, tira 2d8 adicionales por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5ff477dc7abe0a5f9c5c6a10",
+      "name": "Fuego feérico",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": "V",
+        "duration": "Concentración, hasta 1 minuto.",
+        "attack": "",
+        "description": "Todo objeto que se encuentre en un cubo de 20 pies que surja dentro del alcance se convierte en una luz azul, verde o violeta (según decidas). Cualquier criatura que se encuentre en el área cuando lances el conjuro también se convierte en luz si falla una tirada de salvación de Destreza. Mientras dura el conjuro, los objetos y las criaturas afectadas emiten luz tenue en un radio de 10 pies.\n\nCualquier tirada de ataque que se haga contra una criatura u objeto afectado tiene ventaja si el atacante puede verlo, y la criatura u objeto afectado no puede beneficiarse de ser invisible."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "6021851f95150a6bd0eb6a63",
+      "name": "Encantar animal",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": "V,S,M",
+        "duration": "24 horas",
+        "attack": "",
+        "description": "Este conjuro te permite convencer a una bestia que pueda verte y escucharte de que no pretendes hacerle daño. Si su Inteligencia es 4 o superior, el conjuro falla. Si no, la bestia debe superar una tirada de salvación de Sabiduría para no quedar hechizada mientras dura el conjuro. Si tú o uno de tus compañeros daña al objetivo, el conjuro termina.\n\nA niveles más altos, cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, puedes afectar a una bestia adicional por cada hueco por encima del 1º."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "6021873095150a6bd0eb6a65",
+      "name": "Encantar persona",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": "V,S",
+        "duration": "1 hora",
+        "attack": "",
+        "description": "Intentas hechizar a un humanoide que puedas ver dentro del alcance. Debe hacer una tirada de salvación de Sabiduría, y la hace con ventaja si tu o tus compañeros estáis peleando con ella. Si la tirada falla, resulta hechizada por ti hasta que el hechizo finaliza o tu o tus compañeros le causan algún daño. La criatura hechizada te tiene en cuenta como un conocido  amigable. Cuando el hechizo finaliza, la criatura se da cuenta que ha sido hechizada por ti.\n\nA niveles más altos, cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, puedes afectar a una criatura adicional por cada hueco por encima del 1º. Las criaturas deben estar a 30 ft. o menos de la otra cuando las hechizas."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf1c1c8e8ecfd3cdc48b0d",
+      "name": "Bendición",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "30 ft",
+        "components": {
+          "type": "V,S,M",
+          "description": "Unas gotas de agua bendita"
+        },
+        "duration": "Con, 1 min",
+        "description": "Bendices hasta tres criaturas de tu elección dentro del alcance. Hasta el final de la duración del conjuro, cuando uno de los objetivos haga una tirada de ataque o una tirada de salvación, puede tirar 1d4 y añadir el resultado a esa tirada.<br/><br/>A niveles superiores. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio que hayas empleado."
+      }
+    },
+    {
+      "_id": "5eb3043bb8821a3a04edf2dc",
+      "name": "Aterrorizar",
+      "stats": {
+        "level": 1,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "Con., hasta 1 min",
+        "description": "Eres capaz de despertar el terror a la muerte en una criatura que puedes ver dentro del alcance. Los constructos y no-muertos son inmunes a este efecto. El objetivo debe tener éxito en una tirada de salvación de Sabiduría será aterrorizado hasta que el hechizo termine. El objetivo aterrorizado puede repetir la tirada de salvación al final de cada uno de sus turnos, terminando el efecto sobre sí mismo en un éxito. <br/><br/><b>En niveles superiores.</b> Cuando lanzas este hechizo usando un espacio de hechizzo de segundo nivel o superior, puedes seleccionar una criatura adicional para cada nivel de espacio superior al primero. Las criaturas deben esta a menos de 30 ft. entre sí cuando las eliges como objetivo."
+      }
+    },
+    {
+      "_id": "5ed2b655dfd4d4a1adcbbb79",
+      "name": "Susurros disonantes",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "attack": "Contra salvación 3d6 psíquico",
+        "description": "Susurras una melodía discrepante que sólo una criatura de tu elección dentro del alcance puede oír, asolándola con un terrible dolor. El objetivo debe realizar una tirada de salvación de Sabiduría. Con una salvación fallida, sufre 3d6 puntos de daño psíquico e inmediatamente debe usar su reacción, si la tiene disponible, para moverse tan lejos de ti como le sea posible. La criatura no se dirige a terrenos obviamente peligrosos, como un foso o un fuego. Con una salvación con éxito, el objetivo sufre la mitad del daño y no tiene que moverse. Una criatura ensordecida tendrá éxito automáticamente en la salvación.<br/><br/>A niveles superiores. Cuando lanzas este hechizo usando un espacio de conjuros de nivel 2 o superior, el daño se incrementa en 1d6 por cada nivel de espacio de conjuros por encima de nivel 1."
+      }
+    },
+    {
+      "_id": "5ff47a051565c186e4612545",
+      "name": "Enmarañar",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 acción",
+        "range": "90 pies",
+        "components": "",
+        "duration": " Concentración 1 minuto",
+        "attack": "",
+        "description": "Maleza y enredaderas surgen retorciéndose del suelo en un cuadrado de 20 pies que empieza en un punto de tu elección dentro del alcance. Mientras dura el conjuro, estas plantas convierten el suelo del área en un terreno difícil.\n\nUna criatura que se encuentre en el área cuando lanzas el conjuro debe superar una tirada de salvación de Fuerza para no quedar apresada por las enredaderas hasta que el conjuro termine. Una criatura apresada por las plantas puede usar su acción para realizar una prueba de Fuerza enfrentada a la CD de salvación del conjuro. Si tiene éxito, se libera.\n\nCuando el conjuro termina, las plantas conjuradas se marchitan."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf23a38e8ecfd3cdc48e27",
+      "name": "Purificar comida y bebida",
+      "stats": {
+        "level": 1,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "10 ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "La comida y la bebida no mágicas dentro de una esfera de 5 pies de radio cuyo centro sea un punto que elijas dentro del alcance es purificada y queda libre de veneno y enfermedad."
+      }
+    },
+    {
+      "_id": "5eaf24088e8ecfd3cdc48e53",
+      "name": "Santuario",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 acción adicional",
+        "range": "10 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un espejito de plata"
+        },
+        "duration": "1 minuto",
+        "description": "Proteges de un ataque a una criatura que se encuentra dentro del alcance. Hasta que el conjuro termine, cualquier criatura que elija a la protegida como objetivo de un ataque o un conjuro dañino debe hacer primero una tirada de salvación de Sabiduría. Si falla, debe elegir un nuevo objetivo o perder el ataque o conjuro. Este conjuro no protege a la criatura protegida de un efecto de área, como la explosión de una bola de fuego.<br/><br/>Si la criatura protegida hace una tirada de ataque o lanza un conjuro que afecta a una criatura enemiga, este conjuro termina."
+      }
+    },
+    {
+      "_id": "5eb31787b8821a3a04edfb09",
+      "name": "Armadura de mago",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un trozo de cuero curtido"
+        },
+        "duration": "8 h",
+        "description": "Tocas a una criatura voluntaria que no lleve armadura y una fuerza protectora mágica la rodea hasta que el conjuro termina. La CA base del objetivo pasa a ser 13 + su modificador por Destreza. El conjuro termina si el objetivo se pone una armadura o si, como acción, disipas el conjuro."
+      }
+    },
+    {
+      "_id": "5eaf25218e8ecfd3cdc48ec5",
+      "name": "Repicar funesto",
+      "stats": {
+        "level": 0,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Señalas a una criatura que puedas ver dentro del alcance, y el sonido de unas dolorosas campanadas llenan el aire a su alrededor durante un momento. El objetivo debe tener éxito en una tirada de salvación de Sabiduría o recibir 1d8 de daño necrótico.Si el objetivo ha perdido alguno de sus puntos de vida, recibe en su lugar 1d12 de daño necrótico.<br/><br/>El daño del hechizo aumenta en un dado cuando alcanzas el nivel 5, 11 y 17."
+      }
+    },
+    {
+      "_id": "5ed2b503dfd4d4a1adcbbb3a",
+      "name": "Burla dañina",
+      "stats": {
+        "level": 0,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "attack": "Contra salvación 1d4 psíquico",
+        "duration": "Instantáneo",
+        "description": "Sueltas una sarta de insultos enlazados con sutiles encantamientos a una criatura que puedas ver dentro del alcance. Si el objetivo puede oírte (aunque no es necesario que te entienda), debe superar una tirada de salvación de Sabiduría para no recibir 1d4 puntos de daño psíquico y tener desventaja en la siguiente tirada de ataque que haga antes del final de su siguiente turno.<br/><br/>El daño de este conjuro aumenta en 1d4 cuando llegas al nivel 5 (2d4), al nivel 11 (3d4) y la nivel 17 (4d4)."
+      }
+    },
+    {
+      "_id": "602189b895150a6bd0eb6a69",
+      "name": "Zancada prodigiosa",
+      "stats": {
+        "level": 1,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "Toque",
+        "components": "V,S,M",
+        "duration": "1 hora",
+        "attack": "",
+        "description": "Tocas a una criatura, cuya velocidad aumenta en 10 pies hasta que el conjuro termina.\n\nA niveles más altos, cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, puedes elegir a una criatura adicional por cada hueco por encima del 1º."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60218b3795150a6bd0eb6a6a",
+      "name": "Trampa",
+      "stats": {
+        "level": 1,
+        "school": "Abjuración",
+        "castingTime": "1 minuto",
+        "range": "Toque",
+        "components": "S,M",
+        "duration": "8 horas",
+        "attack": "",
+        "description": "Cuando lanzas este hechizo, usas la cuerda para crear un círculo de 5 ft. de radio en el suelo. Cuando finalizas de canalizar el hechizo, la cuerda desaparece y el círculo se convierte en una trampa mágica.\n\nLa trampa es prácticamente invisible, requiriendo una tirada de Inteligencia (Investigación) exitosa contra tu tirada de salvación de hechizos para ser discernida.\n\nLa trampa se activa cuando una criatura Pequeña, Mediana o Grande se mueve dentro del radio del hechizo. La criatura debe tener éxito en una tirada de salvación de Destreza o ser mágicamente alzada en el aire, siendo levantada bocabajo a 3 ft. del suelo. La criatura es apresada hasta que el hechizo finaliza.\n\nUna criatura apresada puede hacer una tirada de salvación de Destreza al final de cada uno de sus turnos, finalizando el efecto en un éxito. Alternativamente, la criatura o cualquier otro que pueda alcanzarla puede usar su acción para hacer una tirada de Inteligencia (C. Arcano) contra tu tirada de salvación de hechizos. En un éxito, el efecto del hechizo finaliza.\n\nUna vez la trampa es activada, el hechizo termina cuando no haya ninguna criatura atrapada."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60218b6795150a6bd0eb6a6b",
+      "name": "Hablar con los animales",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": "Propio",
+        "components": "V,S",
+        "duration": "10 minutos",
+        "attack": "",
+        "description": "Consigues la capacidad de comprender y comunicarte verbalmente con las bestias mientras dura el conjuro. El saber y el conocimiento de muchas bestias están limitados por su inteligencia, pero al menos te pueden dar información sobre lugares cercanos y monstruos, incluyendo cualquier cosa que puedan percibir o que hayan percibido durante el último día. Puedes persuadir a una bestia para que te haga un pequeño favor, a discreción del director de juego."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf1fb98e8ecfd3cdc48c81",
+      "name": "Detectar el mal y el bien",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": "Personal",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "Concentración 10 minutos",
+        "description": "Mientras dura el conjuro, sabes si hay alguna aberración, celestial, elemental, fata, infernal o no muerto a 30 pies o menos de ti, así como dónde se encuentra. Del mismo modo, sabes si hay algún lugar u objeto a 30 pies o menos de ti que haya sido consagrado o profanado.<br/><br/>El conjuro puede penetrar la mayoría de las barreras, pero no a partir de 1 pie de piedra, 1 pulgada de metal común, una lámina de plomo o 3 pies de madera o tierra."
+      }
+    },
+    {
+      "_id": "5eaf21158e8ecfd3cdc48d14",
+      "name": "Saeta guiada",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "120 ft.",
+        "components": {
+          "type": null,
+          "description": null
+        },
+        "duration": "1 asalto",
+        "attack": "A distancia 4d6 radiante",
+        "description": "Un rayo de luz cae sobre una criatura de tu elección dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si impactas, el objetivo recibe 4d6 puntos de daño radiante y la siguiente tirada de ataque que hagas contra él antes de que termine tu siguiente turno tiene ventaja gracias a la mística luz tenue que emite el objetivo hasta entonces.<br/><br/>En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, el daño aumenta en 1d6 por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5eb318b9b8821a3a04edfb8d",
+      "name": "Ola atronadora",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "Propio",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "attack": "Contra salvación 2d8 trueno",
+        "duration": "Instantáneo",
+        "description": "Una ola de una fuerza atronadora surge de ti. Cada criatura que se encuentre en un cubo de 15 pies adyacente a ti debe hacer una tirada de salvación de Constitución. Si falla, recibe 2d8 puntos de daño por trueno y es empujada lejos de ti a 10 pies. Si tiene éxito, recibe la mitad del daño y no es empujada.<br/><br/>Además, los objetos que no estén sujetos y que se encuentren completamente dentro del área son alejados de ti 10 pies debido al efecto del conjuro, y el conjuro emite un bum atronador que se oye a una distancia de 300 pies.<br/><br/>En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, el daño aumenta en 1d8 por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5eb30493b8821a3a04edf304",
+      "name": "Sirviente invisible",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un trozo de cuerda y un poco de madera"
+        },
+        "duration": "1 hora",
+        "description": "Este conjuro crea una fuerza invisible, inconsciente e informe que realiza tareas simples bajo tus órdenes hasta que el conjuro termine. El sirviente aparece en un lugar sin ocupar en el suelo dentro del alcance. Tiene CA 10, 1 punto de golpe y Fuerza 2, y no puede atacar. Si sus puntos de golpe se reducen a 0, el conjuro termina.<br/><br/>Una vez en cada uno de tus turnos, como acción adicional, puedes darle órdenes mentalmente para que se mueva hasta 15 pies e interactúe con un objeto. El sirviente puede realizar una tarea simple que un sirviente humano podría hacer, como coger cosas, limpiar, remendar, doblar ropa, encender fuego y servir comida y vino. Una vez le das una orden, el sirviente realiza la tarea lo mejor que puede hasta que la completa. Luego espera tu siguiente orden.<br/><br/>Si le ordenas al sirviente que realice una tarea que le haría alejarse más de 60 pies de ti, el conjuro termina."
+      }
+    },
+    {
+      "_id": "5eb315d9b8821a3a04edfa59",
+      "name": "Comprender lenguajes",
+      "stats": {
+        "level": 1,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "range": null,
+        "components": {
+          "type": "V,S,M",
+          "description": "Una pizca de sal y hollín"
+        },
+        "duration": "1 hora",
+        "description": "Mientras el hechizo esté activo, puedes comprender el significado literal de cualquier idioma que puedas escuchar. También puedes comprender cualquier lenguaje escrito que veas, pero debes tocar la superficie en la que están escritas esas palabras. Se tarda aproximadamente 1 minuto en leer una página de texto.<br/><br/>Este hechizo no decodifica mensajes secretos en un texto o un glifo, como un sigilo arcano, que no es parte de un lenguaje escrito."
+      }
+    },
+    {
+      "_id": "5eaf20708e8ecfd3cdc48cd3",
+      "name": "Falsa vida",
+      "stats": {
+        "level": 1,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "Personal",
+        "components": {
+          "type": "V,S,M",
+          "description": "Una pequeña cantidad de alcohol o licor destilado"
+        },
+        "duration": "1 hora",
+        "description": "Te fortaleces con una réplica nigromántica de vida y consigues 1d4+4 puntos de golpe temporales mientras dura el conjuro.<br/><br/>En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, consigues 5 puntos de golpe adicionales por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5eaf23018e8ecfd3cdc48de3",
+      "name": "Infligir heridas",
+      "stats": {
+        "level": 1,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "attack": "Melé 3d10 necrótico",
+        "duration": "Instantáneo",
+        "description": "Haces un ataque de conjuro cuerpo a cuerpo contra una criatura que puedas alcanzar. Si impactas, el objetivo recibe 3d10 puntos de daño necrótico.<br/><br/>En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, el daño aumenta en 1d10 por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5eb31811b8821a3a04edfb41",
+      "name": "Títere",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "120 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Tu gesto obliga a un humanoide que puedes ver dentro del alcance para hacer un tiro de salvación de la Constitución. En una salvación fallida, el objetivo debe avanzar a su velocidad en la dirección que elija. Además, puede hacer que el objetivo suelte lo que sea que esté sosteniendo. Este hechizo no tiene efecto en un humanoide que es inmune a ser encantado."
+      }
+    },
+    {
+      "_id": "5ed2b5fbdfd4d4a1adcbbb6b",
+      "name": "Palabra de curación",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción adicional",
+        "range": "60 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "Una criatura de tu elección que puedas ver dentro del alcance recupera puntos de golpe iguales a 1d4 + tu modificador por característica para lanzar conjuros. Este conjuro no tiene efecto ni en no muertos ni en constructos.<br/><br/><b>En niveles superiores.</b> Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, la cantidad de los puntos recuperados aumenta en 1d4 por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5eaf1ec18e8ecfd3cdc48c14",
+      "name": "Orden Imperiosa",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "1 asalto",
+        "description": "Le das una orden de una palabra a una criatura que puedas ver dentro del alcance. El objetivo debe superar una tirada de salvación de Sabiduría para no seguir la orden durante su siguiente turno. El conjuro no tiene efecto si el objetivo es un no muerto, si no entiende tu idioma o si tu orden es directamente dañina para él.<br/><br/>A continuación tienes algunas órdenes comunes y sus efectos. Puedes dar una orden diferente a las que aparecen aquí, en cuyo caso el director de juego determina el comportamiento del objetivo. Si el objetivo no puede seguir tu orden, el conjuro termina.<br/><br/><b>Acércate</b>. El objetivo se mueve hacia ti por la ruta más corta y directa, y termina su turno si se acerca a 5 pies o menos de ti.<br/><br/><b>Detente</b>. El objetivo no se mueve y no realiza acciones. Una criatura que vuela se mantiene en el aire, siempre y cuando sea capaz de hacerlo. Si debe moverse para mantenerse en el aire, vuela la distancia mínima necesaria para hacerlo.<br/><br/><b>Huye</b>. El objetivo dedica su turno a alejarse de ti lo más rápido posible.<br/><br/><b>Tíralo</b>. El objetivo tira cualquier cosa que esté sujetando y termina su turno.<br/><br/><b>Túmbate</b>. El objetivo se queda tumbado y termina su turno.En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, puedes afectar a una criatura adicional por cada nivel por encima de 1. Las criaturas deben estar a 30 pies o menos de distancia entre sí cuando las apuntes."
+      }
+    },
+    {
+      "_id": "5eaf1f3e8e8ecfd3cdc48c4c",
+      "name": "Crear o destruir agua",
+      "stats": {
+        "level": 1,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Una gota de agua si creas agua o unos cuantos granos de arena si la destruyes"
+        },
+        "duration": "Instantáneo",
+        "description": "Destruyes agua o la creas.<br/><br/><b>Crear agua</b>. Creas hasta 10 galones de agua limpia en un recipiente abierto dentro del alcance. De manera alternativa, el agua cae como lluvia en un cubo de 30 pies de lado dentro del alcance y extingue las llamas expuestas que haya en el área.<br/><br/><b>Destruir agua</b>. Destruyes hasta 10 galones de agua en un recipiente abierto dentro del área. De manera alternativa, también puedes destruir una niebla en un cubo de 30 pies de lado dentro del alcance.<br/><br/>En niveles superiores. Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, creas o destruyes 10 galones de agua adicionales, o el tamaño del cubo aumenta en 5 pies por cada nivel por encima de 1."
+      }
+    },
+    {
+      "_id": "5eb3029fb8821a3a04edf229",
+      "name": "Luz",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S",
+          "description": null
+        },
+        "duration": "1 hora",
+        "description": "Tocas un objeto de no más de 10 pies en cualquier dimensión. Hasta que el conjuro termine, el objeto emite luz brillante en un radio de 20 pies y luz tenue en otros 20 pies adicionales. La luz puede ser del color que quieras. Cubrir completamente el objeto con algo opaco bloquea la luz. El conjuro termina si lo lanzas otra vez o si lo disipas como acción.<br/><br/>Si eliges como objetivo a un objeto que una criatura hostil lleva puesto o transporta, dicha criatura debe superar una tirada de salvación de Destreza para evitar el conjuro."
+      }
+    },
+    {
+      "_id": "5eb3030fb8821a3a04edf25c",
+      "name": "Ilusión menor",
+      "stats": {
+        "level": 0,
+        "school": "Ilusión",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": {
+          "type": "S,M",
+          "description": "Un poco de vellón"
+        },
+        "duration": "1 minuto",
+        "description": "Creas un sonido o una imagen de un objeto dentro del alcance que dura mientras lo haga el conjuro. La ilusión también termina si la disipas como acción o si vuelves a lanzar el conjuro.<br/><br/>Si creas un sonido, su volumen puede ser desde un susurro hasta un grito. Puede ser tu voz, la voz de otra persona, el rugido de un león, un repique de tambores o cualquier otro sonido que elijas. Puedes hacer que el sonido continúe sin cesar mientras dura el conjuro o hacer un sonido discreto en diferentes momentos.<br/><br/>Si creas una imagen de un objeto (como una silla, huellas de barro o un cofre pequeño), debe ser menor que un cubo de 5 pies. La imagen no puede reproducir sonidos, luces, olor ni ningún otro efecto sensorial. Interactuar físicamente con la imagen revela que es una ilusión, dado que las cosas pueden atravesarla.<br/><br/>Si una criatura usa su acción para examinar el sonido o la imagen, esta puede determinar que es una ilusión si tiene éxito en una prueba de Inteligencia (Investigación) enfrentada a la CD de tu conjuro. Si la criatura discierne la ilusión por lo que es, esta se vuelve borrosa para ella."
+      }
+    },
+    {
+      "_id": "5ff478fd1565c186e4612543",
+      "name": "Buenas bayas",
+      "stats": {
+        "level": 1,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "Toque",
+        "components": "V,S,M",
+        "duration": "24 horas",
+        "attack": "",
+        "description": "En tu mano aparecen hasta diez bayas imbuidas con magia mientras dura el conjuro. Una criatura puede usar su acción para comerse una baya. Comerse una baya hace que se recupere 1 punto de golpe y ofrece suficiente alimento como para mantener a una criatura durante 1 día.\n\nLas bayas pierden su poder si no se consumen en 24 horas después de lanzar el conjuro."
+      },
+      "__v": 0
+    },
+    {
+      "_id": "5eaf275d8e8ecfd3cdc48fb9",
+      "name": "Taumaturgia",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "1 min",
+        "description": "Realizas una maravilla menor, una muestra de poder sobrenatural, dentro del alcance. Creas uno de los siguientes efectos mágicos dentro del alcance:<br/>Tu voz retumba hasta tres veces igual de fuerte que tu tono normal durante 1 minuto.<br/>Haces que las llamas titilen, se aviven, se debiliten o cambien de color durante 1 minuto.<br/>Provocas temblores inofensivos en el suelo durante 1 minuto.<br/>Creas un sonido instantáneo que se origina en un punto que elijas dentro del alcance, como el sonido sordo de un trueno, el graznido de un cuervo o unos susurros ominosos.<br/>Haces que una puerta o una ventana se abra de repente o se cierre dando un golpe.<br/>Alteras la apariencia de tus ojos durante 1 minuto.<br/>Si lanzas este conjuro varias veces, puedes tener hasta tres de estos efectos de 1 minuto activos a la vez. Puedes disipar uno de estos efectos como acción."
+      }
+    },
+    {
+      "_id": "5eaf27978e8ecfd3cdc48fd0",
+      "name": "Shillelagh",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción adicional",
+        "range": "Contacto",
+        "components": {
+          "type": "V,S,M",
+          "description": "Muérdago, un trébol y una clava o un bastón"
+        },
+        "duration": "1 min",
+        "description": "La madera de una clava o de un bastón que estés sosteniendo queda imbuida con el poder de la naturaleza. Mientras dura el conjuro, puedes usar tu característica para lanzar conjuros en lugar de Fuerza para atacar y realizar las tiradas de daño de los ataques cuerpo a cuerpo que hagas usando esa arma, y el dado de daño es d8. El arma también se vuelve mágica, si no lo es ya. El conjuro termina si vuelves a lanzarlo o si sueltas el arma."
+      }
+    },
+    {
+      "_id": "60d3697087296a0004987ad8",
+      "name": "Congelación",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "60 ft",
+        "components": "V,S",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "<p>Causas que se forme una escarcha entumecedora en una criatura dentro del alcance. El objetivo debe hacer una tirada de salvación de Constitución, y en un fallo recibe 1d6 de daño de frío y tiene desventaja en el siguiente ataqu de arma que haga antes del final de su turno.</p>\n<p><br></p>\n<p>El daño del hechiz aumenta en 1d6 cuando alcanzas el 5º nivel (2d6), 11º nivel (3d6) y 17º nivel (4d6).</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d36a6887296a0004987ad9",
+      "name": "Hoja atronadora",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "5 ft.",
+        "components": "V,M",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "<p>Como parte de la acción utilizada para lanzar este hechizo, debes hacer un ataque cuerpo a cuerpo con un arma contra una criatura dentro del alcance del hechizo. En un acierto, el objetivo sufre los efectos normales del ataque y es envuelto en una energía explosiva hasta el comienzo de su siguiente turno. Si el objetivo se mueve voluntariamente antes de ese momento, recibe 1d8 de daño de trueno y el hechizo termina.</p>\n<p><br></p>\n<p>En el 5º nivel, el ataque cuerpo a cuerpo causa 1d8 de daño de trueno adicional al objetivo, y el daño que recibe por moverse aumenta a 2d8. Ambas tiradas de daño aumentan en 1d8 a nivel 11 y 17.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d36b6887296a0004987ada",
+      "name": "Remendar",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 minuto",
+        "range": "Toque",
+        "components": "V,S,M",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "<p>Este hechizo repara una rotura o desgarro en un objeto que tocas, como el eslabón de una cadena rota, dos mitades de una llave, una capa desgarrada o un odre con fugas. Siempre que la rotura no sea mayor de 1 ft. en cualquier dimensión, lo repara sin dejar rastro del daño anterior.</p>\n<p><br></p>\n<p>Este hechizo puede reparar físicamente un objeto o construcción de origen mágio, pero no puede restaurar la magia del mismo.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d36c0487296a0004987adb",
+      "name": "Rayo de escarcha",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": "V,S",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "<p>Un frígido rayo de energía azulada es disparado hacia una criatura en su alcance. Haz una tirada de ataque de hechizo a distancia contra el objetivo. En un éxito, recibe 1d8 de daño de frío, y su velocidad es reducida por 10 ft. hasta el principio de tu siguiente turno.</p>\n<p><br></p>\n<p>El daño del hechizo aumenta en 1d8 en el 5º nivel (2d8), 11º nivel (3d8) y 17º nivel (4d8).</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d36d0a87296a0004987adc",
+      "name": "Manipular agua",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": "S",
+        "duration": "Instantáneo o 1 h.",
+        "attack": "",
+        "description": "<p>Eliges una área de agua que puedas ver a tu alcance y que quepa en un cubo de 5 ft. Puedes manipularla de una de las siguientes formas:</p>\n<ul>\n  <li>Instantáneamente mueves o cambias el flujo del agua como desees, hasta 5 ft. en cualquier dirección. Este movimiento no tiene suficiente fuerza para causar daño.</li>\n  <li>Causas que el agua tome formas simples y sea animada a tu discreción. El cambio dura 1 hora.</li>\n  <li>Cambias su color u opacitad. El agua debe ser cambiada de la misma forma por cada uso.</li>\n  <li>Congelas el agua, siempre que no haya criaturas en ella. El agua se descongela en 1 hora.</li>\n</ul>\n<p>Si lanzas el hechizo múltiples veces, no puedes tener más de dos de sus efectos no-instantáneos activos a la vez, y puedes desactivar uno de los efectos como acción.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d36ded87296a0004987add",
+      "name": "Dedos de hielo",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "Propio (cono de 15 ft.)",
+        "components": "V,S",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "<p>Frío congelante sale disparado de las puntas de tus dedos en un cono de 15 ft. Cada criatura en esa área debe hacer una tirada de salvación de Constitución, recibiendo 2d8 de daño frío en un dallo y la mitad en un éxito. El frío congela todos los líquidos en el área que no estén siendo portados o equipados.</p>\n<p><br></p>\n<p><strong>A niveles altos: </strong>Cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, el daño aumenta en 1d8 por cada hueco de hechizo por encima del primero.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d36e8287296a0004987ade",
+      "name": "Elixir curador",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 minuto",
+        "range": "Propio",
+        "components": "V,S,M",
+        "duration": "24 h",
+        "attack": "",
+        "description": "<p>Conjuras un elixir curativo dentro de un vial simple. El elixir mantiene su poder durante la duración o hasta que sea consumido, momento en el que se transforma en agua. Como acción, una criatura puede beber o administrar el elixir a otra criatura. Al beberlo, recupera 2d4 + 2 puntos de vida.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d37f2f87296a0004987adf",
+      "name": "Toque gélido",
+      "stats": {
+        "level": 0,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "120 ft.",
+        "components": "V,S",
+        "duration": "1 ronda",
+        "attack": "",
+        "description": "<p>Creas una mano fantasmagórica en un espacio ocupado por una criatura a su alcance. Haz una tirada de hechizo a distancia para asaltarlo con el frío de la tumba. En un éxito, el objetivo recibe 1d8 de daño necrótico, y no puede recuperar puntos de vida hasta el comienzo de tu próximo turno. Hasta entonces, la mano sigue agarrada.</p>\n<p><br></p>\n<p>Si golpeas a un no-muerto, también tiene desventaja en tiradas de ataque contra ti hasta el final de tu siguiente turno.</p>\n<p><br></p>\n<p>El daño del hechizo aumenta en 1d8 cuando alcanzas el 5º nivel (2d8), 11º nivel (3d8) y 17º nivel (4d8).</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d3800d87296a0004987ae0",
+      "name": "Brazos de Hadar",
+      "stats": {
+        "level": 1,
+        "school": "Conjuración",
+        "castingTime": "1 acción",
+        "range": "Propio (radio de 10 ft.)",
+        "components": "V,S",
+        "duration": "Instantáneo",
+        "attack": "",
+        "description": "<p>Invocas el poder de Hadar, el Hambre Oscura. Tentáculos de energía oscura erupcionan de ti y golpean a todas las criaturas en un radio de 10 ft. de ti. cada criatura en esa área debe hacer una tirada de salvación de Fuerza. En un fallo, el objetivo recibe 2d6 de daño necrótico y no puede tomar reacciones hasta el final de su siguiente turno. En un éxito, recibe la mitad de daño y ningún efecto.</p>\n<p><br></p>\n<p><strong>A niveles altos: </strong>Cuando lanzas este conjuro usando un hueco de hechizo de nivel 2 o superior, el daño aumenta en 1d6 por cada hueco por encima del primero.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d3817f87296a0004987ae1",
+      "name": "Maldición",
+      "stats": {
+        "level": 1,
+        "school": "Encantamiento",
+        "castingTime": "1 acción adicional",
+        "range": "90 ft.",
+        "components": "V,S,M",
+        "duration": "Concentración, hasta 1 h",
+        "attack": "",
+        "description": "<p>Maldices a una criatura que puedas ver en tu alcance. Hasta el final del hechizo, causas 1d6 de daño necrótico extra al objetivo cada vez que lo golpeas con un ataque. Además, elige una habilidad cuando lanzas el hechizo. El objetivo tiene desventaja en tiradas de habilidad hechas con esa habilidad. Si el objetivo es reducido a 0 puntos de vida antes del fin del hechizo, puedes usar tu acción adicional para maldecir a una nueva criatura. Una conjuración de <em>eliminar maldición</em> puede terminar este efecto.</p>\n<p><br></p>\n<p><strong>A nivel alto: </strong>Cuando lanzas este hechizo usando un hueco de hechizo de 3er o 4º nivel, puedes mantener tu concentración del hechizo hasta 8 horas. Cuando usas un hueco de hechizo de 5º nivel o superior, puedes mantener la concentración hasta 24h.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d3827687296a0004987ae2",
+      "name": "Oscuridad",
+      "stats": {
+        "level": 2,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "60 ft.",
+        "components": "V,M",
+        "duration": "Concentración, hasta 10 min.",
+        "attack": "",
+        "description": "<p>Oscuridad mágica se esparce desde un punto de tu elección en a tu alcance en una esfera de radio de 15ft. Una criatura con visión en la oscuridad no puede ver a través de esta oscuridad, y luz no-mágica no puede iluminarla.</p>\n<p><br></p>\n<p>Si el punto de tu elección es en un objeto que llevas o uno que no está siendo portado, la oscuridad emana del objeto y se mueve con ella. Cubrir completamente la fuente de la oscuridad con un objeto opaco bloquea la oscuridad.</p>\n<p><br></p>\n<p>Si cualquier parte de esta oscuridad se sobrepone a la área de luz de un hechizo de nivel 2 o inferior, el hechizo que creó la luz es disipado.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d383ea87296a0004987ae3",
+      "name": "Sugestión",
+      "stats": {
+        "level": 2,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": "V,M",
+        "duration": "Concentración, hasta 8 horas",
+        "attack": "",
+        "description": "<p>Sugieres un curso de acción (limitado a una frase o dos) y mágicamene influencias a una criatura que puedas verdentro de tu rango que pueda oirte y entenderte. Criaturas que no puedan ser encantadas son immunes al efecto. La sugestión debe ser descrita de tal manera que sea razonable. Sugerir cualquier acción obviamente dañina para con la criatura termina el hechizo.</p>\n<p><br></p>\n<p>El objetivo debe hacer una tirada de salvación de Sabiduría. En un fallo, lleva a cabo el curso de acción que has descrito lo mejor que pueda. El curso de acción puede durar toda la duración. Si la actividad sugerida puede ser completada en un tiempo menor, el hechizo termina cuando el objetivo finaliza la petición.</p>\n<p><br></p>\n<p>También puedes especificar condiciones que ejecutarán una actividad especial durante la duración. Por ejemplo, puedes sugerir que un caballero regale su caballo al primero que se encuentre. Si la condición no es ejecutada antes de que el hechizo expire, la actividad no se lleva a cabo.</p>\n<p><br></p>\n<p>Si tu o cualquiera de tus aliados daña al objetivo, el hechizo termina.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d3857d87296a0004987ae4",
+      "name": "Invocar no-muerto",
+      "stats": {
+        "level": 3,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "90 ft",
+        "components": "V,S,M",
+        "duration": "1 hora (concentración)",
+        "attack": "",
+        "description": "<p>Invocas un espíritu no-muerto. Se manifiesta en un espacio sin ocupar que puedas ver en su alcance. Esta forma corpórea usa las estadísticas del Espíritu No-Muerto. Cuando lanzas el conjuro, eliges la forma de la criatura: Fantasmagórica, Pútrida o Esquelética. El espíritu se parece a una criatura no-muerta con la forma elegida, lo cual determina ciertos rasgos en su bloque de estadísticas. La criatura desaparece cuando es reducida a 0 puntos de vida o el hechizo termina.</p>\n<p><br></p>\n<p>La criatura es un aliado para ti y tus compañeros. En combate, la criatura comparte tu iniciativa, pero su turno es inmediatamente posterior al tuyo. Obedece tus ordenes verbales (no requiere acciones por tu parte. Si no le das ninguna, lleva a cabo la acciónde Esquivar y usa su movimiento para evitar el daño.</p>\n<p><br></p>\n<p><strong>A niveles superiores: </strong>Cuando lanzas el hechizo usando un hueco de hechizo de nivel 4 o superior, usa el valor donde quiera que aparezca en su bloque de estadísticas.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d396dd6104170004ebf8b8",
+      "name": "Manto espiritual",
+      "stats": {
+        "level": 3,
+        "school": "Nigromancia",
+        "castingTime": "1 acción",
+        "range": "30 ft.",
+        "components": "V,S",
+        "duration": "1 min. (Concentración)",
+        "attack": "",
+        "description": "<p>You call forth spirits of the dead, which flit around you for the spell’s duration. The spirits are intangible and invulnerable.</p>\n<p>Until the spell ends, any attack you make deals 1d8 extra damage when you hit a creature within 10 feet of you. This damage is radiant, necrotic, or cold (your choice when you cast the spell). Any creature that takes this damage can’t regain hit points until the start of your next turn.</p>\n<p>In addition, any creature of your choice that you can see that starts its turn within 10 feet of you has its speed reduced by 10 feet until the start of your next turn.</p>\n<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.</p>\n<p><br></p>\n<p>Invocas a los espíritus de los muertos, que revolotean a tu alrededor por la duración. Los espíritus son intangibles e invulnerables. Hasta el final de la duración, cualquier ataque que hagas causa 1d8 puntos de daño necrótico, radiante o frío (a tu elección cuando lanzas el hechizo) extra. Cualquier criatura que reciba este daño no puede recuperar puntos de vida hasta el comienzo de tu siguiente turno.</p>\n<p><br></p>\n<p>Adicionalmente, cualquier criatura de tu elección que puedas ver que comience el turno a 10 ft. o menos de ti tiene su velocidad reducida por 10 ft. hasta el final de su próximo turno.</p>\n<p><br></p>\n<p><strong>A niveles superiores: </strong>Cuando lanzas este hechizo usando un hueco de hechizo de nivel 4 o superior, el daño aumenta 1d8 por cada 2 huecos por encima del 3º.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "60d3995a6104170004ebf8b9",
+      "name": "Animar muerto",
+      "stats": {
+        "level": 3,
+        "school": "Nigromancia",
+        "castingTime": "1 minuto",
+        "range": "10 ft.",
+        "components": "V,S,M",
+        "duration": "",
+        "attack": "",
+        "description": "<p>Este hechizo crea un sirviente no-muerto. Elige un montón de huesos o el cadáver de un humanoide mediano o pequeño a tu alcance. Tu hechizo imbuye al objetivo con una imitación de vida, levantándolo como una criatura no-muerta. La criatura se convierte en un esqueleto si eliges huesos o un zombie si eliges un cadáver.</p>\n<p><br></p>\n<p>En cada uno de sus turnos, puedes usar una acción adicional para comandar mentalmente a cualquier criatura que hayas hecho con este hechizo si la criatura está a 60 ft. o menos de ti (si tienes varias, puedes comandar una o más al mismo tiempo, lanzando la misma orden a cada una). Tú decides que acción toma la criatura y a dónde se mueve durante su siguiente turno, o puedes lanzar una orden genérica, tal como proteger una cámara o pasillo en particular. Si no les das ninguna orden, la criatura solo se defiende a si misma contra criaturas hostiles. Una vez se da una orden, la criatura la lleva a cabo hasta estar cmpletada.</p>\n<p><br></p>\n<p>La criatura está bajo tu control durante 24 horas, tras las cuales para de obedecer cualquier orden que le hayas dado. Para mantener el control por otras 24 horas, debes lanzar este hechizo en la criatura de nuevo antes de que el actual periodo de 24h finalice. Este uso vuelve a forzar tu control por hasta 4 criaturas que hayas animado previamente con este hechizo, en lugar de animar una nueva.</p>\n<p><br></p>\n<p><strong>A niveles superiores:</strong> Cuando lanzas este hechizo usando un hueco de hechizo de 4º nivel o superior, animas o refuerzas tu control sobre dos criaturas adicionales por cada hueco por encima del tercero. Cada criatura debe provenir de un cadáver o montón de huesos diferente.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61576a3769c41a2d46d7b395",
+      "name": "Señuelo de relámpago",
+      "stats": {
+        "level": 0,
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "range": "Personal (radio de 15 ft.)",
+        "components": {
+          "type": "V",
+          "description": null
+        },
+        "duration": "Instantáneo",
+        "description": "<p>Creas un latigazo de energía relampagueante que golpea a una criatura de tu elección que puedas ver a 15 ft. de ti. El objetivo debe tener éxito en una tirada de salvación de Fuerza o ser arrastrado hasta 10 ft. en línea recta hacia ti y luego recibir 1d8 de daño por rayo si está a 5 ft. de ti.</p><p><b><i>En niveles superiores.</i></b> El daño de este hechizo aumenta en 1d8 cuando alcanzas el nivel 5 (2d8), el nivel 11 (3d8) y el nivel 17 (4d8).</p>"
+      }
+    },
+    {
+      "_id": "61b3e2362ed7ee266ca7820c",
+      "name": "Controlar llamas",
+      "stats": {
+        "level": 0,
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo o 1 hora",
+        "range": "60 ft.",
+        "description": "<p>Eliges una llama no-mágica que puedas ver dentro del radio de tu alcance y que quepa en un cubo de 5 ft. Puedes afectarla de las siguientes maneras:</p><ul><li>Expandes instantáneamente la llama 5 ft. en cualquier dirección, siempre y cuando halla algo que pueda prender fuego en esa dirección.</li><li>Instantáneamente apagas las llamas.</li><li>Duplicas o reduces a la mitad el área de luz brillante y luz tenue producida por la llama, cambias su color, o ambas. El cambio dura 1 hora.</li><li>Creas forma simples — como por ejemplo la silueta de una criatura, un objeto inanimado, o una localización — dentro de las llamas y las animas como quieras. Las formas duran 1 hora.</li></ul><p>Si lanzas este hechizo múltiples veces, puedes tener hasta 3 efectos no-instantáneos activos al mismo tiempo, y puedes eliminar dicho efecto mediante el uso de tu acción.</p>",
+        "components": {
+          "type": "V,S,M"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61b3ea202ed7ee266ca7822f",
+      "name": "Manos ardientes",
+      "stats": {
+        "level": "1",
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "Propio (cono de 15 ft.)",
+        "components": {
+          "type": "V,S"
+        },
+        "description": "<p>Cuando extiendes tus manos, una fina capa de llamas sale disparada de tus dedos. Toda criatura en un cono de 15 ft. debe hacer una tirada de salvación de Destreza. En un fallo, la criatura recibe 3d6 daño de fuego, y la mitad en una tirada exitosa.</p><p>El hechizo prende fuego a todo objeto flamable que se encuentre en el área de efecto y no esté siendo portado.</p><p><br></p><p><strong><em>A niveles superiores</em></strong>. Cuando lanzas este hechizo con un hueco de hechizo de nivel 2 o superior, el daño aumenta en 1d6 por cada hueco por encima del 1º.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61b3ec712ed7ee266ca7823b",
+      "name": "Agrandar / Reducir",
+      "stats": {
+        "level": "2",
+        "school": "Transmutación",
+        "castingTime": "1 acción",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "30 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Una pizca de polvo de hierro"
+        },
+        "description": "<p>Puedes causar que una criatura u objeto que puedas ver dentro del alcance del hechizo crezca o se reduzca en tamaño por la duración. Elige una criatura o un objeto que no esté siendo portado. Si el objetivo no está dispuesto, puede hacer una tirada de salvación de Constitución. En un éxito, el hechizo no surge efecto.</p><p><br></p><p>Si el objetivo es una criatura, todo lo que lleva encima cambia de tamaño junto a ella. Cualquier objeto que suelte vuelve a su tamaño original.</p><p><br></p><p><strong><em>Agrandar. </em></strong>El tamaño del objetivo es doblado en todas las dimensiones, y su peso se multiplica por ocho. Este crecimiento aumenta su categoría de tamaño por una. Si no hay suficiente espacio para que el objetivo crezca, la criatura crece hasta el tamaño máximo posible. Hasta que el hechizo termine, el objetivo tiene ventaja en tiradas y tiradas de salvación de Fuerza. Todos los ataques de arma hechos durante el tiempo de efecto causan 1d4 de daño adicional.</p><p><br></p><p><strong><em>Reducir.</em></strong> El tamaño del objetivo es reducido a la mitad en todas las dimensiones, y su peso es reducido a una octava parte de lo normal. La reducción disminuye la categoría de tamaño por una. Hasta que el hechizo termine, el objetivo tiene desventaja en tiradas y tiradas de salvación de Fuerza. Todos los ataques de arma hechos durante el tiempo de efecto causan 1d4 de daño menos (mínimo de 1).</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61b3ede02ed7ee266ca7823e",
+      "name": "Bola de fuego",
+      "stats": {
+        "level": "3",
+        "school": "Evocación",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "150 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Una pizca de sulfuro"
+        },
+        "description": "<p>Un rayo brillante se extiende de tus manos hasta un punto de tu elección dentro del alcance del hechizo, y luego causa una explosión llameante en el lugar seleccionado. Toda criatura en un radio de 20 ft. debe tener éxito en una tirada de salvación de Destreza. El objetivo recibe 8d6 en un fallo, o la mitad en un éxito. Las llamas se extienden y causan que cualquier objeto en el área que no sea portado prenda fuego.</p><p><br></p><p><strong><em>A niveles superiores. </em></strong>Cuando lanzas este hechizo con un hueco de hechizo de nivel 4 o superior, el daño aumenta en 1d6 por cada hueco por encima del 3º.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61b3f4142ed7ee266ca78272",
+      "name": "Caída de pluma",
+      "stats": {
+        "level": "1",
+        "school": "Transmutación",
+        "castingTime": "1 reacción, cuando tú o una criatura cae",
+        "duration": "1 minuto",
+        "range": "60 ft.",
+        "components": {
+          "type": "V,M",
+          "description": "Una pequeña pluma"
+        },
+        "description": "<p>Elige hasta 5 criaturas dentro del alcance del hechizo. La velocidad de caída de la criatura se reduce a 60 ft. por turno hasta el final del hechizo. Si la criatura pisa tierra antes del final del hechizo, no recibe daño y puede caer de pie, y el hechizo finaliza para esa criatura.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61b41a062ed7ee266ca7829e",
+      "name": "Revivificar",
+      "stats": {
+        "level": "3",
+        "school": "Nigromancia",
+        "components": {
+          "type": "V,S,M",
+          "description": "Diamantes que cuestan 300 de oro, que son consumidos con el hechizo"
+        },
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "Toque",
+        "description": "<p>Tocas a una criatura que haya muerte en el último minuto. La criatura vuelve a la vida con 1 punto de vida. El hechizo no puede devolver a la vida a una criatura que haya muerto por edad, o a la que le falte algún miembro.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61c941d7574a364070715854",
+      "name": "Castigo atronador",
+      "stats": {
+        "level": 1,
+        "school": "Evocación",
+        "components": {
+          "type": "V"
+        },
+        "castingTime": "1 acción adicional",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "Propio",
+        "description": "<p>La primera vez que golpees con un ataque de arma a melé durante la duración del hechizo, tu arma estalla con un trueno que es audible en un radio de 300 ft. de ti, y el ataque hace 2d6 de daño de trueno al objetivo. Adicionalmente, si el objetivo es una criatura, debe tener éxito en una tirada de salvación de Fuerza o ser empujada 10 ft. de ti y ser derribado.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61c94311574a364070715857",
+      "name": "Castigo estigmatizante",
+      "stats": {
+        "level": 2,
+        "school": "Evocación",
+        "castingTime": "1 acción adicional",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "Propio",
+        "components": {
+          "type": "V"
+        },
+        "description": "<p>La primera vez que golpees con un ataque de arma a melé durante la duración del hechizo, tu arma brilla con un resplandor astral mientras golpeas. El ataque hace 2d6 de daño radiante adicional al objetivo, que se vuelve visible si es invisible, y el objetivo desprende una luz tenue en un radio de 5 ft. y no puede volverse invisible hasta el final del hechizo.</p><p><strong>A niveles superiores: </strong>Cuando lanzas este hechizo usando un hueco de nivel 3 o superior, el daño adicional aumenta por 1d6 por cada nivel por encima del 2º.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61c9449a574a36407071585a",
+      "name": "Hallar corcel",
+      "stats": {
+        "level": 2,
+        "school": "Conjuración",
+        "castingTime": "10 minutos",
+        "duration": "Instantáneo",
+        "range": "30 ft.",
+        "components": {
+          "type": "V,S"
+        },
+        "description": "<p>Invocas a un espíritu que asume la forma de un corcel extraordinariamente inteligente, fuerte y leal, creando un lazo duradero con él. Apareciendo en un espacio sin ocupar dentro del alcance, el corcel toma la forma que elijas: un caballo de guerra, un poni, un camello, un reno, o un mastín. El corcel tiene las estadísticas de la forma elegida, pero es un celestial, fae o felón en lugar de su tipo normal. Adicionalmente, si tu corcel tiene una Inteligencia de 5 o menor, su Inteligencia es 6 y gana la habilidad de entender un lenguaje de tu elección que puedas hablar.</p><p>Tu corcel sirve como montura, tanto en combate como fuera de ella, y posees un enlace con él que te permite luchar como una sola unidad. Mientras estés montado en tu corcel, puedes hacer que cualquier hechizo que lances sobre ti también afecte a tu corcel.</p><p>Cuando el corcel cae a 0 puntos de vida, desaparece sin dejar ninguna forma física. También puedes despedir al corcel en cualquier momento usando una acción, haciendo que desaparezca. En cualquier caso, lanzar este hechizo una segunda vez invoca el mismo corcel, restaurado a sus puntos de vida máximos.</p><p>Mientras el corcel esté a 1 milla de ti, puedes comunicarte con él telepáticamente. No puedes tener un enlace con más de un corcel al mismo tiempo. Como acción, puedes liberar al corcel de su enlace en cualquier momento, haciendo que desaparezca.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61c94523574a36407071585d",
+      "name": "Castigo cegador",
+      "stats": {
+        "level": 3,
+        "description": "<p>La primera vez que golpees con un ataque de arma a melé durante la duración del hechizo, tu arma brilla cegadoramente con una luz ardiente, y el ataque causa 3d8 de daño radiante adicional al objetivo. Adicionalmente, el objetivo debe tener éxito en una tirada de salvación de Constitución o ser cegado hasta el final de la duración del hechizo.</p><p>Una criatura cegada por este hechizo hace otra tirada de salvación de Constitución al final de cada uno de sus turnos. En un éxito, ya no está cegada.</p>",
+        "school": "Evocación",
+        "castingTime": "1 acción adicional",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "Propio",
+        "components": {
+          "type": "V"
+        }
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61c945b3574a364070715860",
+      "name": "Disipar magia",
+      "stats": {
+        "level": 3,
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "120 ft.",
+        "components": {
+          "type": "V,S"
+        },
+        "description": "<p>Elige una criatura, objeto o efecto mágico en el alcance. Cualquier hechizo de nivel 3 o inferior en el objetivo finaliza. Por cada hechizo de nivel 4 o superior, haz una tirada de habilidad usando tu habilidad de lanzamiento de conjuros. El CD es igual a 10 + el nivel del hechizo. En un éxito, el hechizo finaliza.</p><p><strong>A niveles superiores: </strong>Cuando lanzas este hechizo usando un hueco de nivel 4 o superior, automáticamente finalizas los efectos de un hechizo de nivel igual o inferior al hueco de hechizo que hayas usado.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca18cad8eb5e216895f9fa",
+      "name": "Codificar pensamientos",
+      "stats": {
+        "level": 0,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "duration": "8 horas",
+        "range": "Propio",
+        "components": {
+          "type": "S"
+        },
+        "description": "<p>Llevando un dedo a tu sien, puedes sacar una memoria, una idea o un mensaje de tu mente y transformarlo en un hilo tangible de energía brillante que persiste por la duración o hasta que lances el hechizo de nuevo. El hilo aparece en un espacio sin ocupar en un radio de 5ft. como un objeto Diminuto, sin peso y semisólido que puede ser portado.</p><p>Si lanzas este hechizo mientras te concentras en un hechizo o habilidad que permita leer o manipular los pensamientos de otros (como <em>detectar pensamientos</em> o <em>modificar memoria</em>), puedes transformar los pensamientos o memorias que leas, en lugar de las tuyas propias, en un hilo.</p><p>Lanzar este hechizo mientras sujetas un hilo te permite recibir instantáneamente cualquier memoria, idea o mensaje el hilo de pensamiento contiene. (Lanzar <em>detectar pensamientos</em> en el hilo causa el mismo efecto.)</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca1980d8eb5e216895f9fd",
+      "name": "Astilla mental",
+      "stats": {
+        "level": 0,
+        "school": "Encantamiento",
+        "castingTime": "1 acción",
+        "duration": "1 ronda",
+        "range": "60 ft.",
+        "components": {
+          "type": "V"
+        },
+        "description": "<p>Lanzas una desorientadora astilla de energía psíquica a la mente de una criatura que puedas ver dentro del alcance. El objetivo debe tener éxito en una tirada de salvación de Inteligencia o recibir 1d6 de daño psíquico y restar 1d4 de la siguiente tirada de salvación que haga hasta el final de tu siguiente turno.</p><p><strong>A niveles superiores: </strong>El daño de este hechizo aumente en 1d6 cuando alcanzas ciertos niveles: 5º nivel (2d6), 11º nivel (3d6) y 17º nivel (4d6).</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca1a9ed8eb5e216895fa00",
+      "name": "Cerradura arcana",
+      "stats": {
+        "level": 2,
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "duration": "Hasta ser disipado",
+        "range": "Toque",
+        "components": {
+          "type": "V,S,M",
+          "description": "Polvo de oro equivalente a 25 piezas de oro, que el hechizo consume"
+        },
+        "description": "<p>Tocas una puerta, ventana, cofre u otra entrada cerrada, y resulta bloqueada por la duración.</p><p>Tú y las otras criaturas que designes cuando lances este hechizo pueden abrir el objeto normalmente. También puedes establecer una contraseña que, cuando sea hablada en un radio de 5ft. del objeto, elimina el efecto del hechizo durante 1 minuto. En caso contrario, es impasable hasta que el hechizo se rompa o sea disipado o suprimido. Lanzar <em>toque </em>suprime los efectos de <em>cerradura arcana</em> durante 10 minutos.</p><p>Mientras esté afectado por este hechizo, el objeto es más difícil de romper o abrir; el CD para romperlo o para abrir cualquier candado que posea aumenta en 10.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca1c93d8eb5e216895fa03",
+      "name": "Detectar pensamientos",
+      "stats": {
+        "level": 2,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "Propio",
+        "components": {
+          "type": "V,S,M",
+          "description": "Una pieza de cobre"
+        },
+        "description": "<p>Por la duración, puedes leer los pensamientos de ciertas criaturas. Cuando lanzas este hechizo como acción y en todos los turnos hasta que finalice el hechizo, puedes concentrar tu mente en cualquier criatura que puedas ver en un radio de 30 ft. Si la criatura de tu elección tiene una Inteligencia de 3 o inferior o no habla ningún idioma, la criatura no es afectada.</p><p>Inicialmente aprendes los pensamientos superficiales de la criatura— lo que está más en su mente en ese momento. Como acción, puedes o bien cambiar tu atención a los pensamientos de otra criatura o intentar sondear más profundamente en la mente de la misma criatura. Si indagas más profundamente, el objetivo debe realizar una tirada de salvación de Sabiduría. Si falla, obtendrás una idea de su razonamiento, su estado emocional, y algo que ocupa de mente (como por ejemplo algo que le preocupa, le encanta u odia). Si tiene éxito, el hechizo termina. De cualquier forma, el objetivo se percata de que estás indagando en su mente, y a menos que cambies tu atención a los pensamientos de otra criatura, la criatura puede usar su acción en su turno para hacer una tirada de Inteligencia contra una tirada de Inteligencia tuya; si tiene éxito, el hechizo termina.</p><p>Preguntas dirigidas verbalmente a la criatura cambian la forma de sus pensamientos de forma natural, así que este hechizo es particularmente efectivo como parte de una interrogación.</p><p>Este hechizo también te permite detectar la presencia de criaturas pensantes que no puedas ver. Cuando lanzas este hechizo o como acción durante su duración, puedes buscar pensamientos en un radio de 30 ft. El hechizo penetra barreras, pero 2 ft. de piedra, 2 in. de cualquier metal excepto plomo, o una fina lámina de plomo te bloquea. No puedes detectar a ninguna criatura con Inteligencia de 3 o inferior o que no hable ningún idioma.</p><p>Una vez has detectado la presencia de una criatura de este forma, puedes leer sus pensamientos por el resto de la duración como es descrito más arriba, incluso si no puedes verla, pero debe estar dentro del alcance.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca1dc9d8eb5e216895fa06",
+      "name": "Hallar objeto",
+      "stats": {
+        "level": 2,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "duration": "Concentración, hasta 10 minutos",
+        "range": "Propio",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un palito bicéfalo"
+        },
+        "description": "<p>Describe o nombra un objeto que te sea familiar. Sientes la dirección a en la que se halla siempre que esté en un radio de 1000 ft. de ti. Si el objeto está en movimiento, sabes en que dirección se mueve.</p><p>El hechizo puede localizar un objeto específico que conozcas, siempre y cuando lo hayas visto de cerca— al menos en un radio de 30 ft.— al menos en una ocasión. Alternativamente, el hechizo puede localizar el objeto más cercando de un tipo en particular, como por ejemplo cierto tipo de ropajes, joyería, muebles, herramientas o armas.</p><p>Este hechizo no puede localizar ningún objeto si hay una capa de plomo, así sea una lámina fina, que bloquee el camino entre tú y el objeto.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca1e9cd8eb5e216895fa09",
+      "name": "Clarividencia",
+      "stats": {
+        "level": 3,
+        "school": "Adivinación",
+        "castingTime": "10 minutos",
+        "duration": "Concentración, hasta 10 minutos",
+        "range": "1 milla",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un foco con valor de 100 piezas de oro"
+        },
+        "description": "<p>Creas un sensor invisible en una localización familiar para ti (un lugar que hayas visto o visitado con anterioridad) o en una localización obvia que no te sea familiar (como por ejemplo tras una puerta, a la vuelta de una esquina,...). El sensor se mantiene en lugar por la duración, y no puede ser atacado o tener interacción con él.</p><p>Cuando lanzas este hechizo, eliges ver o escuchar. Puedes utilizar el sentido escogido a través del sensor como si estuvieras en su localización. Como tu acción, puedes cambiar entre ver y escuchar. Una criatura que pueda ver el sensor (como por ejemplo una criatura bajo el efecto de ver invisibilidad o con vista verdadera) ve un orbe luminoso e intangible del tamaño de un puño.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca1f34d8eb5e216895fa0c",
+      "name": "Suprimir maldición",
+      "stats": {
+        "level": 3,
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "Toque",
+        "components": {
+          "type": "V,S"
+        },
+        "description": "<p>Cuando lo tocas, todas las maldiciones afectando a una criatura o un objeto finalizan. Si el objeto es un objeto mágico maldito, la maldición se mantiene, pero el hechizo rompe el lazo con el propietaria gracias a lo cual puede descartarlo o deshacerse de él.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca201bd8eb5e216895fa0f",
+      "name": "Ojo arcano",
+      "stats": {
+        "level": 4,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "duration": "Concentración, hasta 1 hora",
+        "range": "30 ft.",
+        "components": {
+          "type": "V,S,M",
+          "description": "Un puñado de pelos de murciélago"
+        },
+        "description": "<p>Creas un ojo mágico invisible dentro del rango que flota en el aire por la duración. Recibes mentalmente la información visual del ojo, el cual tiene visión normal y visión nocturna de hasta 30 ft. El ojo puede mirar en todas direcciones.</p><p>Como acción, puedes mover el ojo hasta 30 ft. en cualquier dirección. No hay límite de que tan lejos el ojo se puede mover, pero no puede entrar en otro plano de existencia. Una barrera sólida puede bloquear el movimiento del ojo, pero el ojo puede atravesar cualquier abertura de tamaño mínimo 1 in. de diametro.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61ca20e0d8eb5e216895fa12",
+      "name": "Adivinación",
+      "stats": {
+        "level": 4,
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "Propio",
+        "components": {
+          "type": "V,S,M",
+          "description": "incienso y una ofrenda sacrificial apropiada para tu religión, que al menos en total valgan 25 de oro, que el hechizo consume"
+        },
+        "description": "<p>Tu magia y una oferta te ponen en contacto con un dios o un sirviente de un dios. Puedes hacer una sola pregunta respecto a una meta, evento o actividad específica que vaya a ocurrir en un rango de 7 días. El DM ofrece una respuesta verídica. La respuesta debe ser una frase corta, una rima críptica, o un presagio.</p><p>El hechizo no tiene en cuenta posibles circunstancias que puedan cambiar el resultado, como lanzar hechizos adicionales o la pérdida u obtención de un nuevo compañero.</p><p>Si lanzas el hechizo dos o más veces antes de finalizar un descanso largo, hay una probabilidad acumulativa del 25 por ciento de que cada resultado tras el primero sea aleatorio. El DM hace esta tirada en secreto.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61dc34d9a90bae19e83f151f",
+      "name": "Castigo ardiente",
+      "stats": {
+        "level": "1",
+        "school": "Evocación",
+        "castingTime": "1 acción adicional",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "Propio",
+        "components": {
+          "type": "V"
+        },
+        "description": "<p>La primera vez que golpees con un ataque de arma a melé durante la duración del hechizo, tu arma prende con una intensidad ardiente, y el ataque causa 1d6 de daño adicional de fuego en el objetivo y causa que prenda fuego.</p><p>Al principio de cada uno de sus turnos hasta que el hechizo termine, el objetivo debe hacer una tirada de salvación de Constitución. En un fallo, recibe 1d6 de daño de fuego. En un éxito, el hechizo finaliza. Si el objetivo o una criatura a 5 ft. de ella usa su acción para apagar las llamas, o si otro efecto causa que se desvanezcan las llamas (como ser sumergido en agua), el hechizo finaliza.</p><p><strong><em>A niveles superiores.</em></strong> Cuando lanzas este hechizo usando un hueco de hechizo de nivel 2 o superior, el daño inicial hecho por el ataque aumenta en 1d6 por cada hueco.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "61f7f461a486fb328cfcf06f",
+      "name": "Duelo forzado",
+      "stats": {
+        "level": "1",
+        "school": "Encantamiento",
+        "castingTime": "1 acción adicional",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "30 ft.",
+        "components": {
+          "type": "V"
+        },
+        "description": "<p>Intentas obligar a una criatura a un duelo. Una criatura que puedas ver en dentro del alcance debe hacer una tirada de salvación de Sabiduría. En un fallo, la criatura es atraída a ti, forzada por tu demanda divina. Por la duración, tiene desventaja en tiradas de ataque contra criaturas que no sean tú, y debe hacer una tirada de salvación de Sabiduría cada vez que intente moverse a un espacio más allá de 30 ft. de ti; si tiene éxito, el hechizo no restringe el movimiento del objetivo durante ese turno.</p><p>El hechizo finaliza si atacas a otra criatura, si lanzas un hechizo que tenga como objetivo a otra criatura, si una criatura aliada causa daño a la criatura, o si terminas tu turno más allá de 30 ft. del objetivo.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "622723dd25a3f5401435fab8",
+      "name": "Golpe atrapante",
+      "stats": {
+        "level": "1",
+        "school": "Conjuración",
+        "castingTime": "1 acción adicional",
+        "duration": "Concentración, hasta 1 minuto",
+        "range": "Proprio",
+        "components": {
+          "type": "V"
+        },
+        "description": "<p>La próxima vez que golpees a una criatura con un ataque de arma antes de que el hechizo termine, una masa de enredaderas espinosas aparece en el lugar del impacto, y el objetivo debe tener éxito en una tirada de salvación de Fuerza o ser constreñido por las enredaderas mágicas hasta el final del hechizo. Una criatura grande o mayor tiene ventaja en esta tirada de salvación. Si el objetivo tiene éxito en la tirada, las enredaderas se marchitan.</p><p>Mientras esté constreñido por este hechizo, el objetivo recibe 1d6 de daño perforante al inicio de cada uno de sus turnos. Una criatura constreñida por las enredaderas o una que pueda tocar a la criatura puede usar su acción para hacer una tirada de Fuerza contra tu salvación de hechizo. En un éxito, el objetivo es liberado.</p><p><strong>A niveles superiores. </strong>Si lanzas este hechizo usando un hueco de nivel 2 o superior, el daño aumente en 1d6 por cada hueco por encima del 1º.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "6227714b77a634101837b67d",
+      "name": "Hallar animales o plantas",
+      "stats": {
+        "level": "2",
+        "school": "Adivinación",
+        "castingTime": "1 acción",
+        "duration": "Instantáneo",
+        "range": "Propio",
+        "components": {
+          "type": "V,S,M",
+          "description": "Una pizca de vello de un sabueso"
+        },
+        "description": "<p>Describe o nombra un tipo específico de bestia o planta. Concentrándote en la voz de la naturaleza a tu alrededor, aprendes la dirección y distancia a la criatura o planta más cercana de ese tipo en un radio de 5 millas, si es que hay alguna.</p>"
+      },
+      "__v": 0
+    },
+    {
+      "_id": "622771fe77a634101837b680",
+      "name": "Paso sin rastro",
+      "stats": {
+        "level": "2",
+        "school": "Abjuración",
+        "castingTime": "1 acción",
+        "duration": "1 hora",
+        "range": "Propio",
+        "components": {
+          "type": "V,S",
+          "description": "Cenizas de una hoja quemada de muérdago y una ramita de abeto"
+        },
+        "description": "<p>Un velo de sombras y silencio emana de ti, enmascarándote a ti y a tus compañeros contra ser detectados. Por la duración, cada criatura de tu elección en un rango de 30 ft. (incluyéndote) tiene un bonificador de +10 a tiradas de Destreza (Sigilo) y no puede ser rastreada excepto por medios mágicos. Una criatura que recibe este bonificador no deja rastro de su paso.</p>"
+      },
+      "__v": 0
+    }
+  ]
+}

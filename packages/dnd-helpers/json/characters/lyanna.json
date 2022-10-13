@@ -1,0 +1,380 @@
+{
+  "flavor": {
+    "traits": {
+      "gender": "Agénero",
+      "pronoun": "La",
+      "age": "22 años",
+      "eyes": "Marrón oscuro",
+      "weight": "55 kg",
+      "hair": "Marrón y rizado",
+      "skin": "Morena",
+      "height": "1'60 cm"
+    },
+    "personality": "",
+    "portrait": {
+      "original": "https://i.imgur.com/8Ul16Hd.png",
+      "token": "https://i.imgur.com/A486DfS.png",
+      "avatar": "https://i.imgur.com/qemgwdm.png"
+    },
+    "backstory": null,
+    "appearance": "<p>Físicamente es bajita, delgada y aparentemente flacucha. Tiende a perder peso con facilidad y en épocas de escasez, se le llegan a marcar las costillas. Sin embargo, en general se mantiene en forma, tiene extremidades fuertes y una buena constitución. Tiene el cabello corto y ondulado, con aspecto eternamente desaliñado, los ojos grandes y oscuros, y unos rasgos muy marcados. Suele vestir con ropa cómoda de olor marrón y negro, la cual le facilita su vida errante y no entorpece sus movimientos en caso de tener que enfrentarse a una pelea.</p>",
+    "alignment": "Neutral",
+    "background": {
+      "description": "Provienes de un lugar lejano, tan remoto que mucha de la gente del norte no lo conoce, e incluso si algunos han oído hablar de él, apenas conocen el nombre y algunas historias y rumores. Has viajado desde aquellas tierras por tus propios motivos, que puedes compartir o no. Debido a tu exótica procedencia, eres una persona de bien para aquellos a tu alrededor, para bien o para mal.",
+      "trait": "Todos los ojos sobre ti. Tu acento, manerismos, e incluso tu apariencia te exponen como una extranjera. Miradas curiosas son dirigidas en tu dirección allá donde vas, lo cual puede ser incómodo, pero también te ganas el interés de eruditos y otros interesados en tierras remotas, sin mencionar a la gente común dispuesta a escuchar historias de tu hogar. Puedes utilizar esta atención para ganar acceso a lugares que de otra forma no podrías, para ti y tus compañeros. Señores nobles, eruditos, y príncipes mercantes, por nombrar algunos, pueden estar interesados en escuchar acerca de tu hogar y tu gente.",
+      "name": "Viajero"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Cambiaformas",
+      "description": "<p>Los cambiaformas son humanoides con esencia bestial; aunque no pueden cambiar de forma completamente, pueden mejorar temporalmente sus rasgos animalísticos — lo que llaman cambiar.</p>",
+      "traits": "Mejora de características. Tu Destreza aumenta en 1.\nEdad. Los cambiaformas suelen madurar rápido física y emocionalmente. Rara vez viven más de 70 años.\nAlineamiento. Los cambiaformas tienden a la neutralidad.\nTamaño. Los cambiaformas van desde los 5ft. hasta los 7 ft. Su tamaño es Mediano.\nVelocidad. Su velocidad de movimiento base es 30 ft.\nVisión nocturna. Tienes visión superior en la oscuridad y luz tenue. Puedes ver en luz tenue 60 ft. como si fuera luz clara, y en oscuridad como si fuera luz tenue. No puedes discernir colores en la oscuridad, solo sombras de gris.\nSentidos agudos. Tienes proficiencia con la habilidad de Percepción.\nIdiomas. Puedes leer y escribir Común y un lenguaje de tu elección.",
+      "subrace": {
+        "name": "Cacería salvaje",
+        "description": "<p>Los cambiaformas de cacería salvaje son agudos y perceptios. Algunos están constantemente alerta, siempre atentos a posibles amenazas. Otros se centran en su intuición. Los cambiaformas de caceríasalvaje son excelentes cazadores, y tienden a convertirse en líderes espirituales de sus comunidades. Mejora de características. Tu sabiduría aumenta en 2. Rastreador natural. Tienes proficiencia en la habilidad de Supervivencia. Mejora de cambio. Mientras cambies de forma, tienes ventaja en tus tiradas de Sabiduría.</p>"
+      }
+    },
+    "armorClass": 14,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 16,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 16,
+      "charisma": 13
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": "9",
+      "current": "9"
+    },
+    "initiativeBonus": "3",
+    "passivePerception": 15,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [
+      {
+        "name": "Habilidad racial — Marcar el olor",
+        "description": "Como acción adicional, puedes marcar a una criatura que veas a 10 ft. o menos de ti. Hasta el final de tu siguiente descanso largo, tu bono de proficiencia es doblado para cualquier tirada de habilidad que hagas para encontrar a la criatura marcada, y siempre sabes la localización de dicha criatura si está a 60 ft. o menos de ti. No puedes usar esta habilidad hasta que finalizas un descanso corto o largo.",
+        "usage_num": {
+          "max": 1,
+          "current": 0
+        },
+        "usage_type": "short_rest"
+      },
+      {
+        "name": "Habilidad racial — Cambiar de forma",
+        "description": "Como acción adicional, asumes una apariencia más bestial. Esta transformación dura 1 minuto, hasta que mueres o quedas inconsciente, o hasta que vuelves a tu forma original usando una acción adicional. Cuando cambias de forma, ganas puntos de vida temporales iguales a tu nivel + tu bonificador de Constitución (mínimo de 1 punto de vida). También ganas los beneficios de tu subraza. Una vez cambias, no puedes volver hacerlo hasta finalizar un descanso corto o largo.",
+        "usage_num": {
+          "max": 1,
+          "current": 0
+        },
+        "usage_type": "short_rest"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Cimitarra",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "numDie": 1,
+              "dieSize": 6,
+              "type": "Cortante",
+              "range": 5
+            }
+          }
+        }
+      },
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "numDie": 1,
+              "dieSize": 4,
+              "type": "Perforante",
+              "range": 5
+            },
+            "distance": {
+              "numDie": 1,
+              "dieSize": 4,
+              "type": "Perforante",
+              "range": {
+                "short": 20,
+                "long": 60
+              }
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Druídico",
+        "description": "Conoces el druídico, el secreto idioma de los druidas. Puedes hablar el idioma y usarlo para dejar mensajes ocultos. Tú y otros que conoces el idioma automáticamente localizan tal mensaje. Otros lo pueden localizar con un éxito en una tirada de Sabiduría (Percepción) con CD 15 pero no pueden descifrarlo sin magia."
+      }
+    ],
+    "reactions": [],
+    "spells": [
+      {
+        "caster": "5fe145ae267d9afc8e956c0f",
+        "spells": {
+          "0": [
+            {
+              "spellId": "5eaf26838e8ecfd3cdc48f5b"
+            },
+            {
+              "spellId": "602175e195150a6bd0eb6a60"
+            }
+          ],
+          "1": [
+            {
+              "spellId": "602183fb95150a6bd0eb6a62"
+            },
+            {
+              "spellId": "6021851f95150a6bd0eb6a63"
+            },
+            {
+              "spellId": "6021866a95150a6bd0eb6a64"
+            },
+            {
+              "spellId": "6021873095150a6bd0eb6a65"
+            },
+            {
+              "spellId": "5eaf1f3e8e8ecfd3cdc48c4c"
+            },
+            {
+              "spellId": "5eaf1f838e8ecfd3cdc48c68"
+            },
+            {
+              "spellId": "5eaf1ff08e8ecfd3cdc48c9a"
+            },
+            {
+              "spellId": "5eaf20278e8ecfd3cdc48cb1"
+            },
+            {
+              "spellId": "6021882295150a6bd0eb6a66"
+            },
+            {
+              "spellId": "5ff47a051565c186e4612545"
+            },
+            {
+              "spellId": "5ff477dc7abe0a5f9c5c6a10"
+            },
+            {
+              "spellId": "5ff47a451565c186e4612546"
+            },
+            {
+              "spellId": "5ff478fd1565c186e4612543"
+            },
+            {
+              "spellId": "5ed2b5fbdfd4d4a1adcbbb6b"
+            },
+            {
+              "spellId": "6021891595150a6bd0eb6a67"
+            },
+            {
+              "spellId": "6021897995150a6bd0eb6a68"
+            },
+            {
+              "spellId": "602189b895150a6bd0eb6a69"
+            },
+            {
+              "spellId": "5eaf23a38e8ecfd3cdc48e27"
+            },
+            {
+              "spellId": "60218b3795150a6bd0eb6a6a"
+            },
+            {
+              "spellId": "60218b6795150a6bd0eb6a6b"
+            },
+            {
+              "spellId": "5eb318b9b8821a3a04edfb8d"
+            }
+          ]
+        },
+        "modifier": "wisdom",
+        "level": 1
+      }
+    ],
+    "equipment": {
+      "items": [
+        {
+          "id": "5eb1352bb8821a3a04eda7e3",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "6021a4869f3d039145dfee73",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5f6397554af7eaef9120ac8f",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5eb04df14871d4a313b58bc5",
+          "quantity": 2,
+          "equipped": true
+        }
+      ],
+      "magicWeapons": null
+    },
+    "proficiencies": "Armaduras: Ligera, mediana, escudos.\nArmas: Daga, hoz, lanza, maza, bastón, honda, javalina, porra, cimitarra, dardo.\nIdiomas. Común, druídico.\nHerramientas. Herramientas de herborista, cuerno.",
+    "savingThrows": {
+      "strength": {
+        "proficient": false,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": false,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": true,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": true,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Druida",
+        "subclassName": null,
+        "classLevel": 1,
+        "classId": "5fe145ae267d9afc8e956c0f",
+        "hitDie": 8
+      }
+    ],
+    "wounds": [],
+    "money": {
+      "gold": "5"
+    }
+  },
+  "__v": 0,
+  "name": "Lyanna Celeren (druida)",
+  "createdBy": "5e987f8e4b88382a98c84042"
+}

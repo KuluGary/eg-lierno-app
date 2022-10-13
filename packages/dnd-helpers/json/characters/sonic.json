@@ -1,0 +1,166 @@
+{
+  "name": "Sonic",
+  "flavor": {
+    "faction": "",
+    "environment": "",
+    "description": "El erizo más rápido del mundo, que puede correr a velocidades supersónicas. En términos generales, le encanta poder hacer lo que quiere y detesta ser encerrado. Tiene un poco de actitud, pero no puede pasar por alto a alguien en problemas. ",
+    "class": "Corredor supersónico",
+    "campaign": [
+      {
+        "campaignId": "609ac73a4300430004281fb5",
+        "unlocked": false
+      }
+    ],
+    "personality": "Sonic se describe por \"ser como el viento\". Es relajado, de espíritu libre y aventurero que siempre está en movimiento. Considera su libertad por encima de todo, viviendo a su manera sin obedecer los estándares que se le presentan y lo que más disfruta es viajar por el mundo. Con una fuerte pasión por la vida, siempre anda buscando nuevas experiencias, participando en un sin fin de aventuras.<br /><br />Sonic presenta una personalidad aventurera, decidida, confiado de sí mismo, algo egocéntrico, y presumido, pero a pesar de eso siempre ayuda a cualquier ser que se encuentre en problemas. En varias ocasiones se nota que disfruta de burlarse de sus enemigos y algunas veces de sus propios amigos aunque no lo hace con mala intención. Su principal propósito es parar los planes del Doctor Eggman. A pesar de ser un héroe algo rebelde es relajado, le gusta hacer maniobras peligrosas por diversión, y su pasatiempo favorito es correr a velocidad supersónica.",
+    "portrait": {
+      "original": "https://i.imgur.com/eCQ08A0.jpg",
+      "token": "https://i.imgur.com/ctAV4VA.png",
+      "avatar": "https://i.imgur.com/23ufs99.png"
+    },
+    "traits": {
+      "gender": "Hombre",
+      "pronoun": "el",
+      "nameIsProper": false
+    },
+    "appearance": "Sonic es un erizo antropomórfico delgado con pelaje azul que cubre la mayor parte de su cuerpo y piel de melocotón sobre sus brazos, hocico y torso delantero. Tiene seis púas largas en la parte posterior de la cabeza, dos espinas que sobresalen de la espalda detrás de los hombros y una cola corta.<br /><br />Como vestimenta, Sonic usa dos zapatillas rojas resistentes a la fricción, con calcetines blancos y suelas grises y correas blancas en la parte anterior sujetas por una hebilla dorada. También usa guantes blancos.",
+    "backstory": "No se sabe mucho sobre la vida temprana de Sonic. Él nació con su habilidad anormal de correr a súper velocidad, con su amor por la aventura eventualmente llevándolo lejos de su hogar. Desde entonces, ha pasado su vida viajando por el mundo, impulsado por su espíritu inquieto, en busca de aventuras para satisfacer su sed de emociones.<br /><br />En algún momento, Sonic conoció al Dr. Ivo Robotnik y se convirtieron en enemigos. Sonic posteriormente pelearía con Robotnik en un número incalculable de enfrentamientos mientras el científico intenta una y otra vez conquistar el mundo, con Sonic frustrando sus planes cada vez.",
+    "alignment": "Caótico bueno"
+  },
+  "stats": {
+    "race": {
+      "name": "Erizo",
+      "size": "Mediano"
+    },
+    "armorClass": 14,
+    "proficiencyBonus": 3,
+    "speed": {
+      "land": 50
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 17,
+      "constitution": 12,
+      "intelligence": 10,
+      "wisdom": 13,
+      "charisma": 14
+    },
+    "savingThrows": {
+      "strength": {
+        "proficient": true
+      },
+      "dexterity": {
+        "proficient": true
+      }
+    },
+    "skills": {
+      "athletics": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "strength"
+      },
+      "acrobatics": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "dexterity"
+      },
+      "stealth": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "dexterity"
+      },
+      "animal-handling": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "wisdom"
+      },
+      "perception": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "wisdom"
+      },
+      "survival": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "wisdom"
+      },
+      "performance": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "charisma"
+      },
+      "persuasion": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "charisma"
+      }
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": ["Visión nocturna 60 ft."],
+    "additionalAbilities": [
+      {
+        "name": "Dote — Móvil",
+        "description": "Sonic es excepcionalmente veloz y ágil. Gana los siguientes beneficios:<ul><li>Su velocidad aumenta en 10 ft.</li><li>Cuando usa la acción de Correr, el terreno difícil no cuesta movimiento extra.</li><li>Cuando ataca a una criatura, no provoca ataques de oportunidad de esa criatura por el resto del turno, tanto si acierta como no.</li>"
+      },
+      {
+        "name": "Agilidad felina",
+        "description": "Sus reflejos y agilidad le permiten moverse con un subidón de velocidad. Cuando se mueve en su turno en combate, puede doblar su velocidad hasta el final de su turno. Una vez usa este rasgo, no puede usarse de nuevo hasta que Sonic se mueva 0 ft. en uno de sus turnos."
+      },
+      {
+        "name": "Artes marciales",
+        "description": "Si Sonic usa la acción de ataque con un ataque desarmado o con una arma de monje en su turno, puede realizar un golpe desarmado como acción adicional."
+      },
+      {
+        "name": "Movimientos Ki",
+        "description": "Sonic puede utilizar Ki para potenciar sus movimientos.<ul><li><b>Paso del viento.(1 ki)</b>. Puede usar una acción adicional retirarse o esprintar. Su distancia de salto se dobla.</li><li><b>Ráfaga de golpes (1 ki)</b>. Inmediatamente después de realizar su acción de ataque durante tu turno, puede realizar dos impactos desarmados como acción adicional.</li><li><b>Defensa paciente</b>. Puede hacer una acción de esquivar como acción adicional durante su turno."
+      },
+      {
+        "name": "Técnica resbaladiza",
+        "description": "Cuando Sonic usa su Ráfaga de Golpes, gana los beneficios de la acción Destrabarse, y su velocidad aumenta en 10 ft."
+      },
+      {
+        "name": "Lanzamiento de conjuros",
+        "description": "Sonic es un bardo de nivel 1. La habilidad de conjuración de Sonic es Carisma (salvación de conjuro CD 13, +5 al golpe con ataques de conjuro). Sonic requiere ningún componente material para lanzar sus hechizos. Sonic tiene los siguientes hechizos de bardo preparados:<ul><li>Trucos (a voluntad): <i>Burla dañina</i>, <i>Golpe certero</i></li><li>Nivel 1 (2 huecos): <i>Zancada prodigiosa</i>, <i>Hablar con los animales</i>, <i>Encantar persona</i></li></ul>"
+      }
+    ],
+    "challengeRating": 5,
+    "actions": [
+      {
+        "name": "Ataque desarmado",
+        "description": "<i>Ataque de arma melé:</i>6 al golpe, alcance 5ft., un objetivo. <i>Daño:</i> 5(1d4 + 3) daño contundente. <small><i>Propiedades: Sutil</i></small>"
+      }
+    ],
+    "reactions": [
+      {
+        "name": "Desviar proyectiles",
+        "description": "Sonic puede desviar o atrapar un proyectil cuando le impacte un ataque a distancia. Reduce el daño 1d10 +  7. Si el daño es reducido a 0, puede atrapar el proyectil y utilizar 1 punto de ki para para hacer un ataque a distancia. Realiza este ataque como si tuviera competencia y el misil cuenta como un arma de monje que tiene alcance normal de 20 pies y alcance largo de 60 pies."
+      },
+      {
+        "name": "Caída lenta",
+        "description": "Sonic puede usar su reacción para reducir cualquier daño por caída que reciba. Este daño se reduce un número igual a 20."
+      }
+    ],
+    "legendaryActions": [],
+    "legendaryActionsPerRound": 3,
+    "hitPoints": {
+      "current": 27,
+      "max": 27
+    },
+    "legendaryActionsDescription": "el sonic puede llevar a cabo 3 acciones legendarias, escogiendo entre las opciones disponibles. Solo se puede utilizar una opción a la vez y solo al final del turno de otra criatura. Sonic recupera las acciones legendarias usadas al principio de su turno.",
+    "hitDie": {
+      "num": 5,
+      "size": 8
+    },
+    "equipment": {
+      "items": [],
+      "armor": [],
+      "magicItems": [],
+      "magicWeapons": [],
+      "weapons": [],
+      "vehicles": []
+    }
+  },
+  "createdBy": "5e987f8e4b88382a98c84042"
+}

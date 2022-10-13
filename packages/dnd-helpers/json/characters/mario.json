@@ -1,0 +1,194 @@
+{
+  "name": "Mario",
+  "flavor": {
+    "faction": "Reino Champiñón",
+    "environment": "",
+    "description": "¡Es él! ¡Mario! Ya sea que esté usando uno de sus atuendos especiales o simplemente su mono azul normal, este héroe que corre, salta, ataca a Bowser y salva a las princesas es una superestrella completa. El fontanero tiene suficientes trucos bajo la manga para lidiar con cualquier cosa.",
+    "class": "Héroe del Reino Champiñón",
+    "campaign": [
+      {
+        "campaignId": "609ac73a4300430004281fb5",
+        "unlocked": false
+      }
+    ],
+    "personality": "<p>Mario es un héroe de buen corazón conocido por ser amable, alegre, juguetón, valiente y testarudo; aunque mostrando impaciencia y arrogancia ocasionalmente.</p><p>Se ha demostrado en varias ocasiones que Mario tiene una actitud mandona hacia su hermano, debido a la personalidad extrovertida de Mario interactuando con la naturaleza más introvertida de Luigi. Además, Mario es mucho más impulsivo y agresivo que su hermano, Luigi, y está dispuesto a entrar en situaciones peligrosas él solo. Mario también mantiene una cara seria o una expresión firme cuando lucha, a diferencia de Luigi.</p><p>A menudo Mario asume un papel de liderazgo, ya que es amigable y felizmente coopera con aquellos que comparten su afinidad por el bien y una meta común. Sin embargo, con aquellos con intenciones o acciones malévolas, suele tener una filosofía más de \"golpear primero y preguntar después\", lo que le puede llevar a tener malentendidos ocasionalmente.</p><p>Finalmente, Mario también es un aficionado de la comida, fascinado con la comida italiana especialmente. Es también un gran aficionado de las tartas y pasteles de la princesa Peach, siendo conseguir una de ellas el catalizador de más de una de sus aventuras en el Reino Champiñón.</p>",
+    "portrait": {
+      "original": "https://i.imgur.com/Y7atTk9.jpg",
+      "token": "https://i.imgur.com/Zegrfsm.png",
+      "avatar": "https://i.imgur.com/QYtrQ6N.png"
+    },
+    "traits": {
+      "gender": "Hombre",
+      "pronoun": "El",
+      "nameIsProper": true
+    },
+    "appearance": "<p>Mario es representado como un hombre fornido que usa una gorra con su icónica M, una camisa roja de manga larga, unos tirantes vaqueros azul con dos botones amarillos, zapatos marrones y guantes blancos, una nariz grande y redonda, piel clara y ligeramente bronceada, cabello castaño chocolate y un bigote negro.</p>",
+    "backstory": "<p>Las aventuras de Mario comienzan desde su más tierna infancia. Cuando Mario y Luigi está siendo llevados por la cigüeña a sus padres, el malvado Kamek intenta secuestrarlos. Tras un ligero error de cálculo, Kamek falla y solo se lleva al bebé Luigi y bebé Mario cae a la isla de los Yoshis. Un Yoshi verde al encontrarlo en su camino decide devolverlo a su familia, con el apoyo de sus otros amigos Yoshi. Bebé Mario avisa a los Yoshis de que su hermano ha sido capturado por Kamek, y los Yoshis luego emplean un sistema de retransmisión para transportar a bebé Mario a través de la isla. Después de superar obstáculos y luchar contra jefes que Kamek ha ampliado en varios fuertes y castillos de la isla, los Yoshis finalmente logran derrotar a Kamek y bebé Bowser y rescatar a bebé Luigi y la cigüeña, permitiendo que la cigüeña entregue a los bebés a sus padres de manera segura.</p><p>A partir de ese entonces, Mario viviría un sin fin de aventuras junto a muchos de sus amigos. Salvaría el mundo incontables veces, y muchas de ellas enfrentándose a su archienemigo de la infancia, Bowser, y salvando también a su amor incondicional, la princesa Peach.</p>",
+    "alignment": "Legal bueno"
+  },
+  "stats": {
+    "race": {
+      "name": "Mediano",
+      "size": "Pequeño"
+    },
+    "armorClass": 14,
+    "proficiencyBonus": 3,
+    "speed": {
+      "land": 35
+    },
+    "abilityScores": {
+      "strength": 16,
+      "dexterity": 16,
+      "constitution": 12,
+      "intelligence": 8,
+      "wisdom": 14,
+      "charisma": 14
+    },
+    "savingThrows": {
+      "strength": {
+        "proficient": true
+      },
+      "dexterity": {
+        "proficient": true
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "dexterity"
+      },
+      "athletics": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "strength"
+      },
+      "animal-handling": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "wisdom"
+      },
+      "survival": {
+        "proficient": true,
+        "expertise": false,
+        "modifier": "wisdom"
+      }
+    },
+    "damageVulnerabilities": [],
+    "damageResistances": [],
+    "damageImmunities": [],
+    "conditionImmunities": [],
+    "senses": [],
+    "additionalAbilities": [
+      {
+        "name": "Multiataque",
+        "description": "<p>Cuando Mario hace un ataque desarmado, puede utilizar su acción adicional para hacer un segundo ataque desarmado.</p>"
+      },
+      {
+        "name": "Corazón de Fuego",
+        "description": "Cada vez que Mario lanza un conjuro que causa daño de fuego, brota magia ardiente de su cuerpo. Esta erupción hace que las criaturas de su elección que puede ver a 10 pies de él sufran daño de fuego igual 2."
+      },
+      {
+        "name": "Puntos de hechicería (3 / descanso largo)",
+        "description": "<p>Mario tiene dos opciones de metamagia disponibles:</p><ul><li><strong>Metamagia: <em>Conjuro acelerado</em></strong>. Cuando lanza un conjuro cuyo tiempo de lanzamiento dura una acción, puede gastar 2 puntos de hechicería para cambiar el tiempo de lanzamiento a una acción adiciona..</li><li><strong>Metamagia: <em>Conjuro cuidadoso</em></strong>. Cuando lanza un conjuro que obliga a otras criaturas a hacer tiradas de salvación, puede proteger a algunas de esas criaturas de la fuerza del conjuro. Para hacerlo, gasta 1 punto de hechicería y elige tantas criaturas como tu modificador por Carisma (1). Las criaturas elegidas tienen éxito automáticamente en la tirada de salvación.</li></ul>"
+      }
+    ],
+    "challengeRating": 5,
+    "actions": [],
+    "reactions": [],
+    "legendaryActions": [],
+    "legendaryActionsPerRound": 3,
+    "hitPoints": {
+      "current": 99,
+      "max": 99
+    },
+    "legendaryActionsDescription": "Mario puede llevar a cabo 3 acciones legendarias, escogiendo entre las opciones disponibles. Solo se puede utilizar una opción a la vez y solo al final del turno de otra criatura. Mario recupera las acciones legendarias usadas al principio de su turno.",
+    "hitDie": {
+      "num": 16,
+      "size": 8
+    },
+    "attacks": [
+      {
+        "name": "Ataque desarmado",
+        "proficient": true,
+        "data": {
+          "modifier": "strength",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Contundente",
+              "numDie": 1,
+              "dieSize": 6
+            }
+          }
+        }
+      },
+      {
+        "name": "Martillo",
+        "proficient": true,
+        "data": {
+          "modifier": "strength",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Contundente",
+              "numDie": 1,
+              "dieSize": 8
+            },
+            "versatile": {
+              "type": "Contundente",
+              "numDie": 1,
+              "dieSize": 10
+            }
+          }
+        }
+      }
+    ],
+    "spells": [
+      {
+        "caster": "00000",
+        "spells": {
+          "atWill": [
+            {
+              "spellId": "5eb31445b8821a3a04edf9b7"
+            },
+            {
+              "spellId": "61b3e2362ed7ee266ca7820c"
+            },
+            {
+              "spellId": "6021897995150a6bd0eb6a68"
+            },
+            {
+              "spellId": "61b3f4142ed7ee266ca78272"
+            }
+          ],
+          "perDay2": [
+            {
+              "spellId": "61b3ea202ed7ee266ca7822f"
+            },
+            {
+              "spellId": "61b3ec712ed7ee266ca7823b"
+            }
+          ],
+          "perDay1": [
+            {
+              "spellId": "61b3ede02ed7ee266ca7823e"
+            }
+          ]
+        },
+        "modifier": "charisma",
+        "level": 4
+      }
+    ],
+    "equipment": {
+      "items": [],
+      "armor": [],
+      "magicItems": [],
+      "magicWeapons": [],
+      "weapons": [],
+      "vehicles": []
+    }
+  },
+  "createdBy": "5e987f8e4b88382a98c84042",
+  "__v": 0
+}

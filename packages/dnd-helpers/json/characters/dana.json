@@ -1,0 +1,419 @@
+{
+  "flavor": {
+    "faction": "Sacerdotisas del Equilibrio",
+    "traits": {
+      "gender": "Mujer",
+      "pronoun": "La",
+      "age": "20 años",
+      "eyes": "Oliva",
+      "weight": "65 kg",
+      "hair": "Marrón",
+      "skin": "Pálida",
+      "height": "1,70 m"
+    },
+    "personality": "",
+    "portrait": {
+      "original": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3804c063-f0ca-46d6-912f-ef3e464f67a4/d64n1j9-74b76560-f6fe-4c45-9e04-f5bafe7f5f89.png/v1/fill/w_1024,h_1312,q_80,strp/study5_by_peterprime_d64n1j9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMzEyIiwicGF0aCI6IlwvZlwvMzgwNGMwNjMtZjBjYS00NmQ2LTkxMmYtZWYzZTQ2NGY2N2E0XC9kNjRuMWo5LTc0Yjc2NTYwLWY2ZmUtNGM0NS05ZTA0LWY1YmFmZTdmNWY4OS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HOF_iPwM7L-0UW3I395Bgm8sgsLMqvgiBvh7tv1joQ8"
+    },
+    "backstory": "Las fiebres del invierno se llevaron consigo a los animales de la vieja y robusta granja, y con ellas marchó su padre también. Para Dana todo aquello era un recuerdo perdido, la memoria de un hombre calido, atento y amable que se perdió con el frío. <br/><br/>Todo lo que creía conocer se encontraba en la Orden a la que su madre acudió tras aquel terrible suceso. Allí les dieron un hogar, un propósito. Su madre prontó se amigo con todas las mujeres que vivian allí y no tardó en unirse a la Orden misma. Dana debía tener unos diez años para entonces. <br/><br/>La Orden seguía a Daphne, diosa de la muerte y madre naturaleza. Un dualismo que marcaba todos los rituales del lugar, al igual que daba pie a su principal misión: Cuidar de los desvalidos, especialmente de las mujeres en situaciones dificiles. Pero la diosa rara vez se expresaba tras la Gran Ecatombe, así que no eran necesarios poderes o habilidades especiales para unirse a ella.<br/><br/>Dana se convirtió en una adolescente impulsiva, divertida y estudiosa, que ayudaba en la Orden pero soñaba con recorrer el mundo. Nunca pensó en unirse a la mision, no porque no la apreciara o ni siquiera por no compartir su fe, simplemente no sentía que fuera su lugar en el mundo. Pero el mundo tenia algo que decir al respecto. <br/><br/>Una noche, a la última hora del día, una mujer moribunda con su hijo entró en la mansion, tropezando consigo misma. Dana fue la primera en verlos, vestida con un largo camison y una gruesa capa. Corriendo cogio a la mujer y logro sentarla en una de las sillas, mientras su pequeño hijo las miraba, aterrado. Pero su rostro cambio inmediatamente al volver a mirar a su madre: La mujer seguia palida y temblorosa, pero el color de sus mejillas había vuelto timidamente y su respiración ya no provocaba aquel sonido lastimoso. Dana se alejó como si la hubieran sacudido ante aquella escena. Pero una voz a su espalda rompió su pasmo:<br/><br/>- Dana, Dana Graves. Hacía más de una decada que la diosa no se expresaba con esta claridad- la mentora de la Orden la alcanzó y la abrazo con fuerza, mientras Dana seguía en su estado de desconcierto. Antes de seguir la cogió fuerte por los hombros, mirandola a los ojos fijamente-. Eres una de nosotras, has sido elegida. Y como yo, tu poder se encuentra en el umbral de la vida y la muerte- la abrazó una vez más y se fue a atender a la mujer, que si bien se encontraba estable, seguía debil y enferma. <br/><br/>Dana no tenía apellido, no se daban estos lujos en el lugar de donde venía y Graves le cayó como una piedra en el estomago. Hizó la ceremonia para unirse a la Orden, siguió el regimen de aprendizaje sin problemas, al contrario lo adoraba profundamente. Se entrenó para la magia con entusiasmo y seguía los rituales de la orden con fascinación. Únicamente dentro de si misma siempre tuvo la duda de si aquel era su lugar, si su destino era encerrarse en aquella apacible mansión para el resto de sus dias. Se convirtió en una de las sacerdotisas más poderosas del lugar con esa duda reconcomiendole el estomago. Un malestar inacabable. <br/><br/>Un malestar que un día se vio sorprendido por lo más imposible que cabia imaginar: Una misión. El cometido de visitar cada uno de los templos, olvidados o no, de los dioses que compartian panteón con la suya. Despertarlos, y pedirles su protección para el mundo. Porque la oscuridad se acercaba de nuevo, y con ello, quizá el fin mismo. En ese momento, Dana empezó a comprender.",
+    "appearance": "",
+    "alignment": "Neutral buena",
+    "background": {
+      "description": "Pasaste años aprendiendo la sabiduría del multiverso. Has rastreado manuscritos, estudiado pergaminos y escuchado a los mayores expertos en los temas que te interesan. Tus esfuerzos te han hecho un maestro en tus campos de estudio.",
+      "trait": "Cuando intentas aprender o recordar un fragmento de información, si no sabes nada sobre el tema, a menudo sí sabes a dónde o de quién puedes obtenerlo. Por lo general, esta información viene de una biblioteca, scriptorium, universidad o un sabio u otra persona o criatura culta. Tu DM podría decidir que el conocimiento que buscas está oculto en un lugar lejano y casi inaccesible, o que simplemente no puede ser encontrado. Develar los secretos más profundos del multiverso puede requerir una aventura o incluso toda una campaña.",
+      "name": "Erudita"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humana",
+      "description": "La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.",
+      "traits": "Velocidad. 30 ft.\nDote inicial. Ganas una Dote de tu elección.\nModificadores. +1 a dos características a escoger. Competencia a escoger. Dote adicional.\nEdad. Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo.\nAlineamiento. Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor.\nTamaño. La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cual sea tu altura concreta, tu tamaño es Mediano."
+    },
+    "armorClass": 12,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 8,
+      "dexterity": 12,
+      "constitution": 14,
+      "intelligence": 14,
+      "wisdom": 16,
+      "charisma": 10
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": false,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 17,
+      "current": 17
+    },
+    "initiativeBonus": 1,
+    "passivePerception": 15,
+    "experience": 0,
+    "actions": [
+      {
+        "name": "Canalizar divinidad: Expulsar no-muertos",
+        "description": "Como acción, presentas tu símbolo sagrado y dices una oración para expulsar a los muertos vivientes. Cada muerto que te vea o te escuche en un radio de 30 pies debe hacer una tirada de salvación de Sabiduría. Si falla, es expulsado durante un minuto o hasta que reciba daño\n\nUna criatura expulsada debe dedicar su turno a intentar moverse tan lejos de ti como pueda. No puede moverse voluntariamente a un espacio que se encuentre a menos de 30 pies de ti ni realizar reacciones. Durante su acción, solo puede realizar la acción de esprintar o intentar escapar del efecto que le impida moverse. Si no hay ningún lugar al que pueda moverse, puede usar la acción esquivar."
+      },
+      {
+        "name": "Canalizar divinidad: Camino a la Tumba",
+        "description": "Como acción, puedes escoger una criatura que puedas ver a 30 ft. de ti, maldiciéndola hasta el final de tu turno. La próxima vez que tú o un aliado golpee a la criatura maldita, la criatura tiene vulnerabilidad a todos los tipos de daño de ese ataque, y la maldición termina."
+      },
+      {
+        "name": "Ojos de la Tumba",
+        "description": "Como acción, puedes abrir tu conciencia para percibir no-muertos mágicamente. Hasta el final de tu próximo turno, conoces la localización de cualquier no-muerto a 60 ft. que no esté bajo cobertura total y no esté protegido por magia de adivinación. Esta habilidad no te dice nada acerca de la identidad o habilidades de la criatura. Puedes usar esta habilidad un número de veces igual a tu modificador de Sabiduría, y recuperas todos los usos con un descanso largo."
+      }
+    ],
+    "bonusActions": [],
+    "attacks": [
+      {
+        "name": "Daga",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "type": "Perforante",
+              "dieSize": 4,
+              "numDie": 1,
+              "range": 5
+            },
+            "distance": {
+              "type": "Perforante",
+              "dieSize": 4,
+              "numDie": 1,
+              "range": {
+                "short": 20,
+                "long": 60
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Bastón",
+        "proficient": true,
+        "data": {
+          "modifier": "strength",
+          "damage": {
+            "melee": {
+              "dieSize": 6,
+              "numDie": 1,
+              "type": "Contundente",
+              "range": 5
+            },
+            "versatile": {
+              "dieSize": 8,
+              "numDie": 1,
+              "type": "Contundente"
+            }
+          },
+          "properties": ["Versátil"],
+          "type": "Ataque de arma melé.",
+          "range": "5 ft."
+        }
+      },
+      {
+        "name": "Bastón (shillelagh)",
+        "proficient": true,
+        "data": {
+          "modifier": "wisdom",
+          "damage": {
+            "melee": {
+              "dieSize": 6,
+              "numDie": 1,
+              "type": "Contundente",
+              "range": 5
+            },
+            "versatile": {
+              "dieSize": 8,
+              "numDie": 1,
+              "type": "Contundente"
+            }
+          },
+          "properties": ["Versátil"],
+          "type": "Ataque de arma melé.",
+          "range": "5 ft."
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Círculo de la Mortalidad",
+        "description": "Cuando normalmente tirarías uno o más dados para recupera puntos de vida con un hechizo a una criatura con 0 puntos de vida, en su lugar usas el mayor número posible de cada dado. Además, aprendes el truco 'alzar a los muertos', y no cuenta para el número de trucos de clérigo que conoces. Para ti, tiene un alcance de 30 ft., y puedes lanzarlo como acción adicional."
+      },
+      {
+        "name": "Iniciado en la magia",
+        "description": "Elige una clase: bardo, brujo, clérigo, druida, hechicero o mago. Aprendes dos trucos de tu elección escogidos de entre los de la lista de conjuros de esa clase.\n\nTambién aprendes el conjuro de nivel 1 que escojas de dicha lista. Podrás emplear esta dote para lanzar una vez este conjuro a su nivel más bajo. Deberás finalizar un descanso largo para poder lanzarlo otra vez mediante esta dote.\n\nTu aptitud mágica para estos conjuros dependerá de la clase que hayas elegido: Carisma para bardo, brujo o hechicero; Sabiduría para clérigo o druida; e Inteligencia para mago."
+      },
+      {
+        "name": "Investigador",
+        "description": "Cuando intentas aprender o recordar un fragmento de información, si no sabes nada sobre el tema, a menudo sí sabes a dónde o de quién puedes obtenerlo. Por lo general, esta información viene de una biblioteca, scriptorium, universidad o un sabio u otra persona o criatura culta. Tu DM podría decidir que el conocimiento que buscas está oculto en un lugar lejano y casi inaccesible, o que simplemente no puede ser encontrado. Develar los secretos más profundos del multiverso puede requerir una aventura o incluso toda una campaña."
+      }
+    ],
+    "reactions": [],
+    "spells": [
+      {
+        "modifier": "intelligence",
+        "caster": "",
+        "spells": {
+          "0": [
+            {
+              "spellId": "5eb6e9280d1f655e40243c02"
+            },
+            {
+              "spellId": "5eaf25218e8ecfd3cdc48ec5"
+            },
+            {
+              "spellId": "5eaf25848e8ecfd3cdc48eef"
+            },
+            {
+              "spellId": "5eaf26838e8ecfd3cdc48f5b"
+            },
+            {
+              "spellId": "5eaf26f98e8ecfd3cdc48f8b"
+            },
+            {
+              "spellId": "5eaf275d8e8ecfd3cdc48fb9"
+            },
+            {
+              "spellId": "5eaf27978e8ecfd3cdc48fd0"
+            }
+          ],
+          "1": [
+            {
+              "spellId": "5eaf1b4a8e8ecfd3cdc48ab4"
+            },
+            {
+              "spellId": "5eaf1c1c8e8ecfd3cdc48b0d"
+            },
+            {
+              "spellId": "5eaf1dff8e8ecfd3cdc48bcb"
+            },
+            {
+              "spellId": "5eaf1ec18e8ecfd3cdc48c14"
+            },
+            {
+              "spellId": "5eaf1f3e8e8ecfd3cdc48c4c"
+            },
+            {
+              "spellId": "5eaf1f838e8ecfd3cdc48c68"
+            },
+            {
+              "spellId": "5eaf1fb98e8ecfd3cdc48c81"
+            },
+            {
+              "spellId": "5eaf1ff08e8ecfd3cdc48c9a"
+            },
+            {
+              "spellId": "5eaf20278e8ecfd3cdc48cb1"
+            },
+            {
+              "spellId": "5eaf20708e8ecfd3cdc48cd3"
+            },
+            {
+              "spellId": "5eaf21158e8ecfd3cdc48d14"
+            },
+            {
+              "spellId": "5eaf23018e8ecfd3cdc48de3"
+            },
+            {
+              "spellId": "5eaf23578e8ecfd3cdc48e06"
+            },
+            {
+              "spellId": "5eaf23a38e8ecfd3cdc48e27"
+            },
+            {
+              "spellId": "5eaf24088e8ecfd3cdc48e53"
+            },
+            {
+              "spellId": "5eaf24478e8ecfd3cdc48e6e"
+            },
+            {
+              "spellId": "5ed2b5fbdfd4d4a1adcbbb6b"
+            }
+          ]
+        }
+      }
+    ],
+    "equipment": {
+      "items": [
+        {
+          "id": "5eb050e84871d4a313b58cba",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5e99bf839fee6cdfd31192c7",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5e99e02c9fee6cdfd3119fc2",
+          "quantity": 10,
+          "equipped": true
+        },
+        {
+          "id": "5eb1352bb8821a3a04eda7e3",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5eb04df14871d4a313b58bc5",
+          "equipped": true,
+          "quantity": 1
+        },
+        {
+          "id": "5eb04f464871d4a313b58c34",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "magicWeapons": null
+    },
+    "proficiencies": "Proficiencias de armas: Simples, marciales\n\nProficiencia de armaduras: Media, ligera, escudos\n\nHerramientas: Juego de cartas, vehículos (tierra)\n\nIdiomas: Común",
+    "savingThrows": {
+      "strength": {
+        "proficient": true,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": false,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": true,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": false,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Clérigo",
+        "subclassName": null,
+        "classLevel": 2,
+        "hitDie": 10,
+        "classId": "5ec02407f44b2b688355a566"
+      }
+    ],
+    "wounds": [],
+    "spellSlots": {
+      "1": "3"
+    }
+  },
+  "name": "Dana Graves",
+  "createdBy": "5eb1b45488db130004a9c172"
+}

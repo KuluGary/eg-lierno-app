@@ -1,0 +1,325 @@
+{
+  "flavor": {
+    "faction": "",
+    "traits": {
+      "gender": "Hombre",
+      "pronoun": "El",
+      "age": "25 años",
+      "eyes": "Azul grisáceo",
+      "weight": "74 kg",
+      "hair": "Blanco",
+      "skin": "Pálida",
+      "height": "1,81 cm"
+    },
+    "personality": "<p>Solitario por naturaleza, Ament es a menudo distante y reservado. De pocas palabras, prefiere dejar que sus acciones hablen por sí mismas. Sin embargo, bajo este frío exterior, yace un lado mucho más cálido. Si bien es implacable con aquellos que intentan causar daño a los suyos, nunca muestra este lado con aquellos que son inocentes o indefensos. Además, también es extremadamente leal a aquellos que le muestran apoyo y nunca deja de lado a sus aliados.</p>",
+    "portrait": {
+      "original": "https://i.imgur.com/KrhsxGv.png",
+      "token": "https://i.imgur.com/CLiU0FV.png",
+      "avatar": "https://i.imgur.com/G52BdfH.png"
+    },
+    "backstory": "<p>Ament creció como heredero de la familia Fordye. El fallecimiento de Lady Fordye durante el parto de su difunto hermano menor trastornó a su padre, Jerome convirtiéndole en alguien mucho menos empático y mucho más estricto, tratando a Ament con dureza y severidad. Esto se demostró en el carácter que forjó el muchacho en su adolescencia, convirtiéndose en alguien con poca consideración social pero con grandes ansias de mejora y de ganarse el beneplácito de su progenitor. Esto lo llevó a esforzarse en convertirse en un espadachón excelente para su edad. Tras la muerte de su padre, Ament se volvió frío y distante. Habiendo perdido una meta en la vida, y aunque no perdió la ambición de escalar en la jerarquía de poder, perdió el contacto con mucha gente. Con dieciséis años se convirtió en el prematuro Lord de la casa Fordye. Se convirtió en alguien parecido a su padre como líder, aunque mucho más impulsivo e inexperimentado. Ament ganó fama como militar tras haber recuperado el control de una fortaleza ocupada por los orcos. Su segunda al mando y confidente personal, Erin de Lyria, también se catapultó en fama tras haber tenido un rol fundamental en la hazaña.</p><p>Tras un accidente de montura, Ament desapareció del mapa durante meses, dándose por muerto para la gente pero recuperándose en secreto en un monasterio. Cahyrs fue tomada y gobernada por la familia de Lyria, vasallos de los Fordye, y luego por los Werhelm. Ament estuvo a punto de regresar cuando se enteró de que Cahyrst había sido tomado por la familia de Lyria, encontrándose con el hermano menor de Erin, Erran, dirigiendo Cahyrst tras la muerte de su hermana en lo que solo pudo suponer que se trataba de una pelea política por el control de Cahyrst.</p><p>Ament se exilió a si mismo, a sabiendas de que corría peligro sid ecidía volver y con diecinueveaños se dedicó al trabajo de mercenario, especializándose en la caza de aberraciones.De eso hace ya casi diez años</p>",
+    "appearance": "<p>Ament es un hombre delgado, alto, con el pelo grisáceo y ondulado, ojos azules y rostro severo y pálido. Suele llevar ropa discreta; de tonos negros, blancos, grises, verdes y terracota. No es su preferencia llevar armadura, pero cuando debe suele llevar un gambesón, camisa o cota de malla.</p>",
+    "alignment": "Neutral",
+    "background": {
+      "name": "Forastero",
+      "description": "<p><br></p>",
+      "trait": "<p>Tienes una memoria excelente para los mapas y la geografía, y siempre puedes recordar la disposición general del terreno, asentamiento y otras localizaciones a tu alrededor. Además, puedes encontrar comida y agua fresca para ti y otras cinco personas al día, siempre que la tierra pueda proveer de bayas, caza menor, agua y demás.</p>"
+    }
+  },
+  "stats": {
+    "race": {
+      "name": "Humano",
+      "description": "<p>La mayoría de los humanos son descendientes de pioneros, conquistadores, comerciantes, viajeros, refugiados y demás emigrantes. Por tanto, las tierras humanas son una amalgama de pueblos distintos en cuanto a aspectos físicos, culturales, religiosos y políticos.</p>",
+      "traits": "Velocidad. 30 ft.\nDote inicial. Ganas una Dote de tu elección.\nModificadores. +1 a dos características a escoger. Competencia a escoger. Dote adicional.\nEdad. Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo.\nAlineamiento. Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor.\nTamaño. La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cual sea tu altura concreta, tu tamaño es Mediano.",
+      "subrace": {
+        "name": null,
+        "description": null
+      }
+    },
+    "armorClass": 14,
+    "speed": {
+      "land": 30
+    },
+    "abilityScores": {
+      "strength": 12,
+      "dexterity": 15,
+      "constitution": 13,
+      "intelligence": 10,
+      "wisdom": 14,
+      "charisma": 8
+    },
+    "proficiencyBonus": 2,
+    "skills": {
+      "acrobatics": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "animal-handling": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "arcana": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "athletics": {
+        "modifier": "strength",
+        "proficient": true,
+        "expertise": false
+      },
+      "deception": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "history": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "insight": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "intimidation": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "investigation": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "medicine": {
+        "modifier": "wisdom",
+        "proficient": false,
+        "expertise": false
+      },
+      "nature": {
+        "modifier": "intelligence",
+        "proficient": true,
+        "expertise": false
+      },
+      "perception": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      },
+      "performance": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "persuasion": {
+        "modifier": "charisma",
+        "proficient": false,
+        "expertise": false
+      },
+      "religion": {
+        "modifier": "intelligence",
+        "proficient": false,
+        "expertise": false
+      },
+      "sleight-of-hand": {
+        "modifier": "dexterity",
+        "proficient": false,
+        "expertise": false
+      },
+      "stealth": {
+        "modifier": "dexterity",
+        "proficient": true,
+        "expertise": false
+      },
+      "survival": {
+        "modifier": "wisdom",
+        "proficient": true,
+        "expertise": false
+      }
+    },
+    "hitPoints": {
+      "max": 12,
+      "current": 12
+    },
+    "initiativeBonus": 1,
+    "passivePerception": 12,
+    "passiveInvestigation": 10,
+    "experience": 0,
+    "actions": [],
+    "bonusActions": [],
+    "attacks": [
+      {
+        "name": "Espada corta",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "melee": {
+              "range": 5,
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 6
+            }
+          }
+        }
+      },
+      {
+        "name": "Arco corto",
+        "proficient": true,
+        "data": {
+          "modifier": "dexterity",
+          "damage": {
+            "distance": {
+              "range": {
+                "short": 80,
+                "long": 320
+              },
+              "type": "Perforante",
+              "numDie": 1,
+              "dieSize": 6
+            }
+          }
+        }
+      }
+    ],
+    "additionalAbilities": [
+      {
+        "name": "Enemigo favorecido",
+        "description": "<p>A partir del primer nivel, tienes experiencia en estudiar, rastrear, cazar e incluso hablar a <strong>monstruosidades</strong>.</p><p>Tienes ventaja en tiradas de Sabiduría (Supervivencia) para rastrear monstruosidades, así como en tiradas de Inteligencia para recordar información sobre ellas.</p><p>Cuando ganas esta habilidad, también aprendes un idioma de tu elección hablado por monstruosidades, si es que hablan alguno.</p>"
+      },
+      {
+        "name": "Explorador natural",
+        "description": "<p>En el primer nivel, estás particularmente familiarizado con un entorno natural y eres adepto en viajar a través y sobrevivir en <strong>prados</strong>. Cuando haces una tirada de Inteligencia o Sabiduría relacionada con prados, tu bonificador de competencia es doblado si utilizas una habilidad en la que eres competente.</p><p>Mientras viajes durante una hora o más a través de tu terreno favorecido, ganas los siguientes beneficios:</p><ul><li>Terreno difícil no causa que tu grupo se ralentice.</li><li>Tu grupo no puede perderse excepto por medios mágicos.</li><li>Aunque estés ocupado con otra tarea mientras viajas (tal como recolectar, navegar o rastrear), te mantienes alerta al peligro.</li><li>Si estás viajando solo, puedes moverte sigilosamente a tu ritmo normal.</li><li>Cuando recolectar, encuentras el doble de comida de lo que encontrarías normalmente.</li><li>Mientras rastreas otras criaturas, también aprendes su número exacto, sus tamaños, y hace cuanto han pasado por esa zona.</li></ul>"
+      },
+      {
+        "name": "Dote — Observador",
+        "description": "<p>Con una rapidez extraordinaria en percatarte en los cambios a tu alrededor, ganas los siguientes beneficios:</p><ul><li>Aumenta en 1 tu Inteligencia o Sabiduria, hasta un máximo de 20.</li><li>Si puedes ver la boca de una criatura moverse mientras habla un idioma que entiendes, puedes interpretar lo que dice leyendo sus labios.</li><li>Tienes un bonificador de +5 a tu Sabiduría (Percepcion) e Inteligencia (Investigación) pasivas.</li></ul>"
+      }
+    ],
+    "reactions": [],
+    "spells": [],
+    "equipment": {
+      "items": [
+        {
+          "id": "5e99bf839fee6cdfd31192c7",
+          "quantity": 1,
+          "equipped": true
+        },
+        {
+          "id": "5eb1352bb8821a3a04eda7e3",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "armor": [
+        {
+          "id": "5eb052264871d4a313b58d2b",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicItems": null,
+      "weapons": [
+        {
+          "id": "5eb04df14871d4a313b58bc5",
+          "equipped": true,
+          "quantity": 1
+        },
+        {
+          "id": "5e99ff639fee6cdfd311aaa5",
+          "equipped": true,
+          "quantity": 1
+        },
+        {
+          "id": "6022b1ff9f3d039145dff629",
+          "equipped": true,
+          "quantity": 1
+        }
+      ],
+      "vehicles": [
+        {
+          "id": "5f791fb28d7addcb45ffa3d7",
+          "quantity": 1,
+          "equipped": true
+        }
+      ],
+      "magicWeapons": null,
+      "rations": 0,
+      "waterskin": 0
+    },
+    "proficiencies": "<ul><li><strong>Proficiencias de armas:</strong> Simples, marciales</li><li><strong>Proficiencia de armaduras:</strong> Media, ligera, escudos</li><li><strong>Idiomas:</strong> Común</li></ul>",
+    "savingThrows": {
+      "strength": {
+        "proficient": true,
+        "expertise": false
+      },
+      "dexterity": {
+        "proficient": true,
+        "expertise": false
+      },
+      "constitution": {
+        "proficient": false,
+        "expertise": false
+      },
+      "intelligence": {
+        "proficient": false,
+        "expertise": false
+      },
+      "wisdom": {
+        "proficient": false,
+        "expertise": false
+      },
+      "charisma": {
+        "proficient": false,
+        "expertise": false
+      }
+    },
+    "classes": [
+      {
+        "className": "Montaraz",
+        "subclassName": null,
+        "classLevel": 1,
+        "hitDie": 10,
+        "classId": "5ec02fbcf44b2b688355aaeb",
+        "subclassDescription": null
+      }
+    ],
+    "wounds": [],
+    "stress": 0,
+    "afflictions": [],
+    "otherResource": [],
+    "statBonus": [
+      {
+        "modifier": "stats.abilityScores.dexterity",
+        "bonus": 1,
+        "descriptions": "<p>Bonificador racial: Humano variante</p>"
+      },
+      {
+        "modifier": "stats.abilityScores.constitution",
+        "bonus": 1,
+        "descriptions": "<p>Bonificador racial: Humano variante</p>"
+      },
+      {
+        "modifier": "stats.abilityScores.wisdom",
+        "bonus": 1,
+        "descriptions": "<p>Dote: Observador</p>"
+      },
+      {
+        "modifier": "stats.passivePerception",
+        "bonus": 5,
+        "descriptions": "<p>Dote: Observador</p>"
+      },
+      {
+        "modifier": "stats.passiveInvestigation",
+        "bonus": 5,
+        "descriptions": "<p>Dote: Observador</p>"
+      }
+    ]
+  },
+  "name": "Ament Fordye",
+  "createdBy": "5e987f8e4b88382a98c84042"
+}
