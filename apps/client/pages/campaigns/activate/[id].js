@@ -25,9 +25,7 @@ export default function ActivateCampaign({ campaign, characters }) {
   return (
     <Layout>
       <Container>
-        <Typography component="h3" variant="h5">
-          Aceptar invitacion a {campaign.name}
-        </Typography>
+        <Typography variant="h3">Aceptar invitacion a {campaign.name}</Typography>
         <Box sx={{ margin: "2em 3em" }}>
           <FormControl fullWidth>
             <InputLabel id="character-select-label">Personaje seleccionado</InputLabel>

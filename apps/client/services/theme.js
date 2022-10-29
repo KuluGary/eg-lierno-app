@@ -46,6 +46,17 @@ const initialTheme = {
       },
     },
   },
+  typography: {
+    htmlFontSize: 16,
+    fontSize: 14,
+    h1: { fontSize: "2.4em", fontFamily: "Lalezar" },
+    h2: { fontSize: "1.464em" },
+    h3: { fontSize: "1.331em" },
+    h4: { fontSize: "1.21em" },
+    h5: { fontSize: "1.1em" },
+    body1: { fontSize: "1rem" },
+    body2: { fontSize: "0.909em" },
+  },
 };
 
 export { initialTheme, background, primary };

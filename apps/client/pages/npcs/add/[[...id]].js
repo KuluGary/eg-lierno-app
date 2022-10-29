@@ -15,6 +15,8 @@ import { getToken } from "next-auth/jwt";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import useCreatureData from "hooks/useCreatureData";
+import serialize from "helpers/serializeJson";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -51,12 +53,18 @@ const tabs = [
   { label: "Equipamiento", Icon: BackpackIcon, Component: Equipment },
 ];
 
-export default function AddNpc({ npcId, npc, spells, classes, items }) {
+export default function AddNpc({
+  npc,
+  // spells,
+  // classes,
+  // items
+}) {
   const theme = useTheme();
   const router = useRouter();
   const [activeStep, setActiveStep] = useState(0);
   const commoner = creature_template;
   const [creature, setCreature] = useState({ ...(npc ?? commoner) });
+  const { spells, items, classes } = useCreatureData(npc, "npc");
   const colors = {
     active: theme.palette.primary.main,
     inactive: theme.palette.action.active,
@@ -89,7 +97,7 @@ export default function AddNpc({ npcId, npc, spells, classes, items }) {
       <Head>
         <title>Lierno App | Crear NPC</title>
       </Head>
-      <Container noPadding sx={{ maxWidth: "75%", margin: "0 auto" }}>
+      <Container noPadding sx={{ width: { laptop: "65vw", tablet: "90%" }, margin: "0 auto" }}>
         <Box sx={{ width: "100%" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Tabs
@@ -135,71 +143,17 @@ export default function AddNpc({ npcId, npc, spells, classes, items }) {
 }
 
 export async function getServerSideProps(context) {
-  const { req, query } = context;
-  const secret = process.env.SECRET;
+  const { query } = context;
+  const { connectToDB } = await import("lib/mongodb");
+  const { default: Npc } = await import("/models/npc");
 
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
+  await connectToDB();
 
-  if (!token) {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
-  }
-
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  let npc = null;
-  let npcId = null;
-  let spells = null;
-
-  if (!!query?.id && query?.id?.length > 0) {
-    npcId = query.id[0];
-    npc = await Api.fetchInternal("/npcs/" + query.id[0], {
-      headers,
-    }).catch(() => null);
-
-    if (npc?.stats.spells?.length > 0) {
-      const spellIds = [];
-
-      npc.stats.spells.forEach(({ spells }) => {
-        spellIds.push(
-          ...Object.values(spells)
-            .flat()
-            .map(({ spellId }) => spellId)
-        );
-      });
-
-      spells = await Api.fetchInternal(`/spells?id=${JSON.stringify(spellIds)}`, {
-        headers,
-      });
-    }
-  }
-
-  const items = await Api.fetchInternal("/items", {
-    headers,
-  }).catch(() => null);
-
-  const classes = await Api.fetchInternal("/classes/", {
-    headers,
-  }).catch(() => null);
+  const npc = serialize(await Npc.findById(query.id));
 
   return {
     props: {
       npc,
-      npcId,
-      items,
-      classes,
     },
   };
 }

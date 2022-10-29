@@ -8,6 +8,7 @@ import { useState } from "react";
 
 export default function Login({ providers }) {
   const regex = StringUtil.regex;
+
   const [credentials, setCredentials] = useState({ username: "", password: "" });
   const [errors, setErrors] = useState({ username: "", password: "" });
   const [loading, setLoading] = useState(false);
@@ -16,6 +17,8 @@ export default function Login({ providers }) {
     password:
       "Esta contraseña no es válida, por favor asegúrate de que tu contraseña tiene al menos un número, una letra mayúscula y minúscula, un carácter especial y tiene entre 6 y 20 carácteres.",
   };
+
+
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -73,9 +76,7 @@ export default function Login({ providers }) {
           <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
-            Accede a Lierno App
-          </Typography>
+          <Typography variant="h3">Accede a Lierno App</Typography>
           <Typography component="div" variant="subtitle2" textAlign="center" marginTop=".5em">
             En Lierno App podrás llevar la cuenta de tus personajes y campañas de forma fácil e intuitiva.
           </Typography>

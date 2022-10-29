@@ -58,15 +58,16 @@ export function Stats({ creature, setCreature }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Detalles de las estadísticas de personaje
-        </Typography>
+        <Typography variant="h3">Detalles de las estadísticas de personaje</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Selecciona los datos referentes a las estadísticas de tu personaje.
         </Typography>
       </Grid>
       <Grid item laptop={isCharacter ? 8 : 6}>
         <Container>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Typography variant="button">VELOCIDAD</Typography>
+          </Box>
           <Grid item laptop={12} container spacing={3}>
             <Grid
               item
@@ -78,7 +79,6 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="button">VELOCIDAD</Typography>
               <Typography variant="overline">A PIE</Typography>
               <Container>
                 <InputBase
@@ -99,7 +99,6 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="button">VELOCIDAD</Typography>
               <Typography variant="overline">NADANDO</Typography>
               <Container>
                 <InputBase
@@ -120,7 +119,6 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="button">VELOCIDAD</Typography>
               <Typography variant="overline">VOLANDO</Typography>
               <Container>
                 <InputBase
@@ -206,6 +204,11 @@ export function Stats({ creature, setCreature }) {
       <Grid item laptop={12}>
         <Container>
           <Grid container spacing={3}>
+            <Grid item laptop={12}>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Typography variant="button">Puntuación de característica</Typography>
+              </Box>
+            </Grid>
             {Object.keys(creature.stats?.abilityScores)?.map((key, index) => {
               const label = statLabels[key];
               const value = creature.stats.abilityScores[key];
@@ -223,8 +226,7 @@ export function Stats({ creature, setCreature }) {
                   }}
                 >
                   <Typography variant="button">{label}</Typography>
-                  <Typography variant="overline">BASE</Typography>
-                  <Container>
+                  <Container sx={{ marginTop: "1em" }}>
                     <InputBase
                       value={value}
                       type="number"
@@ -235,7 +237,7 @@ export function Stats({ creature, setCreature }) {
                 </Grid>
               );
             })}
-            <Grid item laptop={12}>
+            <Grid item laptop={12} sx={{}}>
               <Divider sx={{ mb: "1em" }} />
               {creature?.stats.statBonus?.map(({ modifier, bonus, descriptions }, index) => (
                 <Grid key={index} item laptop={12} container spacing={3}>
@@ -312,23 +314,26 @@ export function Stats({ creature, setCreature }) {
                   </Grid>
                 </Grid>
               ))}
-              <Button
-                onClick={() => {
-                  const newBonuses = [
-                    ...(creature?.stats?.statBonus ?? []),
-                    {
-                      modifier: "stats.abilityScores.strength",
-                      bonus: 1,
-                      descriptions: "",
-                    },
-                  ];
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Button
+                  sx={{ margin: "0 auto" }}
+                  onClick={() => {
+                    const newBonuses = [
+                      ...(creature?.stats?.statBonus ?? []),
+                      {
+                        modifier: "stats.abilityScores.strength",
+                        bonus: 1,
+                        descriptions: "",
+                      },
+                    ];
 
-                  setCreature("stats.statBonus", newBonuses);
-                }}
-              >
-                <AddIcon sx={{ marginRight: "1em" }} />
-                Añadir bonificador a las características
-              </Button>
+                    setCreature("stats.statBonus", newBonuses);
+                  }}
+                >
+                  <AddIcon sx={{ marginRight: "1em" }} />
+                  Añadir bonificador a las características
+                </Button>
+              </Box>
             </Grid>
           </Grid>
         </Container>
@@ -336,10 +341,10 @@ export function Stats({ creature, setCreature }) {
       {!isCharacter && (
         <Grid item laptop={4}>
           <Container sx={{ height: "100%" }}>
-            <Grid item laptop={12} container spacing={0}>
-              <Grid item laptop={12} sx={{ textAlign: "center" }}>
-                <Typography variant="button">DADOS DE GOLPE</Typography>
-              </Grid>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Typography variant="button">DADOS DE GOLPE</Typography>
+            </Box>
+            <Grid item laptop={12} container spacing={2}>
               <Grid
                 item
                 laptop={6}
@@ -386,10 +391,13 @@ export function Stats({ creature, setCreature }) {
       )}
       <Grid item laptop={isCharacter ? 12 : 8}>
         <Container>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Typography variant="button">PUNTOS DE VIDA</Typography>
+          </Box>
           <Grid item laptop={12} container spacing={3}>
             <Grid
               item
-              laptop={3}
+              laptop={isCharacter ? 2 : 3}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -397,8 +405,7 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="overline">PUNTOS DE VIDA</Typography>
-              <Typography variant="button">MÁXIMOS</Typography>
+              <Typography variant="overline">MÁXIMOS</Typography>
               <Container>
                 <InputBase
                   type="number"
@@ -410,7 +417,7 @@ export function Stats({ creature, setCreature }) {
             </Grid>
             <Grid
               item
-              laptop={3}
+              laptop={isCharacter ? 2 : 3}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -418,8 +425,7 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="overline">PUNTOS DE VIDA</Typography>
-              <Typography variant="button">ACTUALES</Typography>
+              <Typography variant="overline">ACTUALES</Typography>
               <Container>
                 <InputBase
                   type="number"
@@ -431,7 +437,7 @@ export function Stats({ creature, setCreature }) {
             </Grid>
             <Grid
               item
-              laptop={3}
+              laptop={isCharacter ? 2 : 3}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -439,8 +445,7 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="overline">PUNTOS DE VIDA</Typography>
-              <Typography variant="button">TEMPORALES</Typography>
+              <Typography variant="overline">TEMPORALES</Typography>
               <Container>
                 <InputBase
                   type="number"
@@ -452,7 +457,7 @@ export function Stats({ creature, setCreature }) {
             </Grid>
             <Grid
               item
-              laptop={3}
+              laptop={isCharacter ? 6 : 3}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -460,8 +465,7 @@ export function Stats({ creature, setCreature }) {
                 alignItems: "center",
               }}
             >
-              <Typography variant="button">CALCULAR</Typography>
-              <Typography variant="overline">PUNTOS DE VIDA</Typography>
+              <Typography variant="overline">CALCULAR</Typography>
               <Container>
                 <Button
                   onClick={() => {
@@ -497,14 +501,16 @@ export function Stats({ creature, setCreature }) {
                     setCreature("stats.hitPoints.max", newMaxHitPoints);
                   }}
                 >
-                  <FontAwesomeIcon size="lg" icon={faDice} style={{ marginRight: "1em" }} />
-                  {isCharacter
-                    ? `${creature?.stats.classes
+                  <FontAwesomeIcon size="lg" icon={faDice} style={{}} />
+                  {isCharacter && (
+                    <Box sx={{ marginLeft: "1em" }}>
+                      {`${creature?.stats.classes
                         ?.map(({ classLevel, hitDie }) => `${classLevel}d${hitDie}`)
-                        .join(" + ")} ${getOperatorString(getModifier(creature?.stats.abilityScores.constitution))}`
-                    : `${creature?.stats.hitDie?.num}d${creature?.stats.hitDie?.size} ${getOperatorString(
+                        .join(" + ")} ${getOperatorString(
                         getModifier(creature?.stats.abilityScores.constitution)
-                      )}`}
+                      )} puntos de vida`}
+                    </Box>
+                  )}
                 </Button>
               </Container>
             </Grid>

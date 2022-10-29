@@ -5,9 +5,7 @@ export function Background({ creature, setCreature }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Trasfondo de tu personaje
-        </Typography>
+        <Typography variant="h3">Trasfondo de tu personaje</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Por favor, introduce los detalles del trasfondo de tu personaje.
         </Typography>

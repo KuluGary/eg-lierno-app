@@ -20,9 +20,7 @@ export default function Settings({ user }) {
   return (
     <Layout>
       <Container>
-        <Typography variant="h5" component="h1">
-          Ajustes
-        </Typography>
+        <Typography variant="h3">Ajustes</Typography>
       </Container>
       <Container sx={{ marginTop: "1rem" }}>
         <Grid container spacing={1}>
@@ -63,9 +61,7 @@ export default function Settings({ user }) {
           <Grid item laptop={8}>
             <Container noPadding>
               <Box sx={{ margin: "1rem" }}>
-                <Typography variant="h6" component="h2">
-                  Personaliza tu visualización
-                </Typography>
+                <Typography variant="h4">Personaliza tu visualización</Typography>
                 <Typography variant="subtitle1">
                   Esta configuración afecta a todas las cuentas de Twitter en este navegador.
                 </Typography>
@@ -73,9 +69,7 @@ export default function Settings({ user }) {
               <Divider />
               <Box sx={{ padding: "0 4rem" }}>
                 <Container sx={{ marginBlock: "1em" }}>
-                  <Typography variant="h6" component="h2">
-                    Prueba las tipografías
-                  </Typography>
+                  <Typography variant="h4">Prueba las tipografías</Typography>
                   <Typography variant="body1">
                     Un jugoso zumo de piña y kiwi bien frío es exquisito y no lleva alcohol.
                   </Typography>

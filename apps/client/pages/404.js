@@ -16,11 +16,11 @@ export default function NotFound() {
       }}
     >
       <Box>
-        <Typography variant="h5" component="h1" color="background.contrastText">
+        <Typography variant="h3" color="background.contrastText">
           404
         </Typography>
         <Divider />
-        <Typography variant="subtitle1" component="h1" color="background.contrastText">
+        <Typography variant="subtitle1" color="background.contrastText">
           No se ha podido encontrar la página.
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "space-around", marginBlock: 1 }}>

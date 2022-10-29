@@ -21,9 +21,7 @@ export function Class({ creature, setCreature, classes }) {
     return (
       <Grid container spacing={3}>
         <Grid item laptop={12}>
-          <Typography variant="h5" component="h1">
-            Detalles de la clase de personaje
-          </Typography>
+          <Typography variant="h3">Detalles de la clase de personaje</Typography>
           <Typography variant="subtitle1" sx={{ marginTop: ".25em" }}>
             Selecciona los datos referentes a la clase de tu personaje.
           </Typography>
@@ -35,17 +33,13 @@ export function Class({ creature, setCreature, classes }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Detalles de la clase de personaje
-        </Typography>
+        <Typography variant="h3">Detalles de la clase de personaje</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: ".25em" }}>
           Selecciona los datos referentes a la clase de tu personaje.
         </Typography>
       </Grid>
       <Grid item laptop={12}>
-        <Typography variant="h6" component="h2">
-          Clase y nivel
-        </Typography>
+        <Typography variant="h4">Clase y nivel</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: ".25em" }}>
           Elige al menos una clase.
         </Typography>

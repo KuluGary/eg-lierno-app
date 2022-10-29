@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Typography, Box, Tabs, Tab, Divider } from "@mui/material";
 import { Container, HTMLContainer } from "../..";
 import Router from "next/router";
@@ -30,15 +31,13 @@ export function CreatureFlavor({ Header, data, containerStyle }) {
       <Box id="creature-flavor" component="div" sx={style.flavorContainer}>
         {image && <Image src={data.image} sx={style.portrait} modal />}
         {sections?.map(({ title, content }) => {
-          if (!content) return <></>;
+          if (!content) return <Fragment key={title}></Fragment>;
 
           return (
-            <>
-              <Typography variant="h6" component="h1">
-                {title}
-              </Typography>
+            <Fragment key={title}>
+              <Typography variant="h4">{title}</Typography>
               <HTMLContainer content={content} />
-            </>
+            </Fragment>
           );
         })}
       </Box>

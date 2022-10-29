@@ -32,10 +32,10 @@ export default function StatComponent({ stat, label, bonusList, base }) {
         containerStyles={theme.mixins.noScrollbar}
       >
         <Box style={style.modalContentContainer}>
-          <Typography id="modal-modal-title" variant="h6" component="h2" sx={style.modalTitle}>
+          <Typography id="modal-modal-title" variant="h4" sx={style.modalTitle}>
             {`${stats[label]?.name} ${stat}`}
           </Typography>
-          <Typography variant="subtitle2" component="h3" sx={style.modalSubtitle}>
+          <Typography variant="subtitle2" sx={style.modalSubtitle}>
             {` (${getOperatorString(getModifier(stat))})`}
           </Typography>
         </Box>
@@ -46,8 +46,8 @@ export default function StatComponent({ stat, label, bonusList, base }) {
                 <TableCell sx={style.tableCell}>Modificador base</TableCell>
                 <TableCell sx={style.tableCell}>{base}</TableCell>
               </TableRow>
-              {bonusList.map(({ descriptions, bonus }) => (
-                <TableRow>
+              {bonusList.map(({ descriptions, bonus }, i) => (
+                <TableRow key={i}>
                   <TableCell sx={style.tableCell}>{convertHtmlToString(descriptions)}</TableCell>
                   <TableCell sx={style.tableCell}>{getOperatorString(bonus)}</TableCell>
                 </TableRow>
@@ -63,7 +63,7 @@ export default function StatComponent({ stat, label, bonusList, base }) {
           </Box>
         </Box>
       </FullScreenModal>
-      
+
       <Box data-testid={`${label}-stat`} component="div" onClick={() => setOpenModal(true)} sx={style.statContainer}>
         <Box component="div" sx={style.abilityScoreContainer}>
           <Box component="div" sx={style.abilityScoreLabelContainer}>
@@ -72,7 +72,7 @@ export default function StatComponent({ stat, label, bonusList, base }) {
             </Typography>
           </Box>
           <Divider />
-          <Typography data-testid={`${label}-modifier`} variant="h5" component="p" sx={style.abilityScoreValue}>
+          <Typography data-testid={`${label}-modifier`} variant="h3" component="p" sx={style.abilityScoreValue}>
             {getOperatorString(getModifier(stat))}
           </Typography>
         </Box>

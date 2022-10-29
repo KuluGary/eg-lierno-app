@@ -19,7 +19,6 @@ export function DragDropTable({ items, id }) {
                   : theme.palette.action.hover,
               }}
             >
-              {/* {console.log(index, items.length)} */}
               {(draggableProvided, draggableSnapshot) => (
                 <TableRow
                   ref={draggableProvided.innerRef}

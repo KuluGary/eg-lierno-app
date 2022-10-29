@@ -25,7 +25,7 @@ const HitPoints = ({ children, hitPoints, modifyHitPoints }) => {
           } else {
             healthToRemove = healthToRemove - hitPoints.temp;
             const newTotalHealth = hitPoints.current - healthToRemove;
-            
+
             modifyHitPoints("current", newTotalHealth < 0 ? 0 : newTotalHealth);
             modifyHitPoints("temp", 0);
           }
@@ -53,7 +53,7 @@ const HitPoints = ({ children, hitPoints, modifyHitPoints }) => {
         {children}
       </Box>
       <FullScreenModal containerStyles={style.modalContainer} open={openModal} onClose={() => setOpenModal(false)}>
-        <Typography variant="h6">Modificar puntos de vida</Typography>
+        <Typography variant="h4">Modificar puntos de vida</Typography>
         <Box>Recupera o elimina puntos de vida o puntos de vida temporales.</Box>
         <Box sx={style.modalContentContainer}>
           <Box sx={[style.sectionContainer, style.dataContainer, style.damageCalcContainer]}>
@@ -106,9 +106,9 @@ const HitPoints = ({ children, hitPoints, modifyHitPoints }) => {
             </Box>
             <Divider />
             <Box sx={[style.dataContainerSection, style.dataContainerBody]}>
-              <Typography variant="h5">{hitPoints?.current ?? 0}</Typography>
-              <Typography variant="h5">{hitPoints?.max ?? 0}</Typography>
-              <Typography variant="h5">{hitPoints?.temp ?? "--"}</Typography>
+              <Typography variant="h3">{hitPoints?.current ?? 0}</Typography>
+              <Typography variant="h3">{hitPoints?.max ?? 0}</Typography>
+              <Typography variant="h3">{hitPoints?.temp ?? "--"}</Typography>
             </Box>
             <Divider />
             <Box sx={style.dataContainerSection}>

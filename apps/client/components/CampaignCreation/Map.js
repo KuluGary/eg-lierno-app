@@ -4,9 +4,7 @@ export function Map({ campaign, setCampaign }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Incluye el mapa de tu campaña
-        </Typography>
+        <Typography variant="h3">Incluye el mapa de tu campaña</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Por favor, introduce la URL al mapa de tu campaña.
         </Typography>

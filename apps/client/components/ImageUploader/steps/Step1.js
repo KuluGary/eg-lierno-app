@@ -67,7 +67,7 @@ function Step1({ setUpImg, handleNext }) {
       <Box component="div" {...getRootProps()}>
         <Container
           sx={{
-            backgroundColor: theme.palette.background.paper,
+            backgroundColor: theme.palette.background.main,
             textAlign: "center",
             cursor: "pointer",
             "&:hover": { "box-shadow": theme.shadows[1], backgroundColor: theme.palette.action.hover },

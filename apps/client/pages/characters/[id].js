@@ -19,18 +19,20 @@ import { CreatureMenu } from "components/CreatureMenu/CreatureMenu";
 import { CreatureFlavor, CreatureStats } from "components/CreatureProfile";
 import HitPoints from "components/CreatureProfile/CreatureStats/components/HitPoints/HitPoints";
 import download from "downloadjs";
+import serialize from "helpers/serializeJson";
+import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
-import { getToken } from "next-auth/jwt";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import Api from "services/api";
 
-export default function CharacterProfile({ character, spells, items, tier, classes }) {
+export default function CharacterProfile({ character }) {
   const { data: session } = useSession();
   const theme = useTheme();
   const width = useWidth();
   const [currentCharacter, setCurrentCharacter] = useState(character);
+  const { spells, items, tier, classes } = useCreatureData(character, "character");
 
   const downloadPdf = () => {
     Api.fetchInternal("/characters/sheet/pdf/" + currentCharacter["_id"])
@@ -92,9 +94,7 @@ export default function CharacterProfile({ character, spells, items, tier, class
               >
                 <Box component="div" sx={{ display: "flex", alignItems: "center" }}>
                   <Box sx={{ textAlign: width.down("tablet") ? "center" : "left" }}>
-                    <Typography variant="h5" component="h1">
-                      {character?.name}
-                    </Typography>
+                    <Typography variant="h3">{character?.name}</Typography>
                     <Typography variant="subtitle1">{getCharacterSubtitle(currentCharacter)}</Typography>
                   </Box>
                 </Box>
@@ -216,89 +216,18 @@ export default function CharacterProfile({ character, spells, items, tier, class
 }
 
 export async function getServerSideProps(context) {
-  const { req, query } = context;
-  const secret = process.env.SECRET;
+  const { query } = context;
+  const { connectToDB } = await import("lib/mongodb");
+  const { default: Character } = await import("models/character");
 
-  const token = await getToken({ req, secret, raw: true }).catch((_) => null);
+  await connectToDB();
 
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  const character = await Api.fetchInternal("/characters/" + query.id, {
-    headers,
-  });
-
-  let spells = null;
-  let items = [];
-
-  if (!!character.stats.spells && character.stats.spells.length > 0) {
-    const spellIds = [];
-
-    character.stats.spells.forEach((spellcasting) => {
-      Object.values(spellcasting.spells || {})?.forEach((spellLevel) => {
-        spellIds.push(...spellLevel);
-      });
-    });
-
-    spells = await Api.fetchInternal(`/spells?id=${JSON.stringify(spellIds.map((spell) => spell.spellId))}`, {
-      headers,
-    });
-  }
-
-  const classes = await Api.fetchInternal("/classes/", {
-    headers,
-  }).catch(() => null);
-
-  if (!!character.stats.equipment) {
-    const objects = [];
-
-    for (const key in character.stats.equipment || {}) {
-      const element = character.stats.equipment[key];
-
-      if (Array.isArray(element)) {
-        objects.push(...element.map((i) => i.id));
-      }
-    }
-
-    items = await Api.fetchInternal("/items", {
-      method: "POST",
-      body: JSON.stringify(objects),
-    });
-
-    items = items.map(({ _id, name, description }) => {
-      return {
-        id: _id,
-        name,
-        description,
-      };
-    });
-  }
-
-  let tier = null;
-
-  if (!!character?.flavor.group) {
-    tier = await Api.fetchInternal(`/tier-by-creature?type=character&id=${character.flavor.group}`, {
-      headers,
-    })
-      .then((res) => res.map((el) => el._id))
-      .catch(() => null);
-  }
+  const character = serialize(await Character.findById(query.id));
 
   return {
     props: {
       key: character._id,
       character,
-      spells,
-      items,
-      tier,
-      classes,
     },
   };
 }

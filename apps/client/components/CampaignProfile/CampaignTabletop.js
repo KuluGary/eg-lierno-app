@@ -31,11 +31,7 @@ function AddElementModal({ open, setOpen, creatures, addNewCreature }) {
     <Dialog open={open} onClose={() => setOpen((prevOpen) => !prevOpen)}>
       <DialogTitle>Añadir un elemento al orden de iniciativa</DialogTitle>
       <Divider />
-      <Tabs
-        value={tabIndex}
-        onChange={(_, newValue) => setTabIndex(newValue)}
-        aria-label="basic tabs example"
-      >
+      <Tabs value={tabIndex} onChange={(_, newValue) => setTabIndex(newValue)} aria-label="basic tabs example">
         {Object.keys(creatures).map((key) => (
           <Tab key={key} label={keyTranslator[key]} />
         ))}
@@ -159,7 +155,7 @@ function CampaignTabletop({ campaign, dm, players, characters }) {
                 <TableCell colSpan={4}>
                   <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                     <Box>
-                      <Typography variant="h6">Orden de iniciativa</Typography>
+                      <Typography variant="h4">Orden de iniciativa</Typography>
                       <Typography variant="subtitle1">Turno de {orderables[currentTurn]?.title}</Typography>
                     </Box>
 

@@ -9,7 +9,7 @@ export default function Item({ classes }) {
       <Metadata title={`${classes.name} | Lierno App`} />
       <Container sx={{ width: "60vw", m: "0 auto" }}>
         {<Image src={classes.image} sx={{ float: "right", maxWidth: "25%", border: "none" }} />}
-        <Typography variant="h5" component="h1" sx={{ mb: 1 }}>
+        <Typography variant="h3" sx={{ mb: 1 }}>
           {classes.name}
         </Typography>
         <Typography variant="subtitle1" sx={{ fontWeight: 500, fontStyle: "italic", marginBottom: "10px" }}>

@@ -102,9 +102,7 @@ export default function Character() {
         noPadding
         header={
           <Box sx={{ p: "1em" }}>
-            <Typography variant="h5" component="h1">
-              Personajes
-            </Typography>
+            <Typography variant="h3">Personajes</Typography>
           </Box>
         }
       >
