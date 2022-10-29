@@ -17,19 +17,21 @@ import { CreatureMenu } from "components/CreatureMenu/CreatureMenu";
 import { CreatureFlavor, CreatureStats } from "components/CreatureProfile";
 import HitPoints from "components/CreatureProfile/CreatureStats/components/HitPoints/HitPoints";
 import download from "downloadjs";
+import serialize from "helpers/serializeJson";
 import { ArrayUtil } from "helpers/string-util";
+import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
-import { getToken } from "next-auth/jwt";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import Api from "services/api";
 
-export default function NpcProfile({ npc, spells, items, classes, tier }) {
+export default function NpcProfile({ npc }) {
   const { data: session } = useSession();
   const theme = useTheme();
   const width = useWidth();
   const [currentNpc, setCurrentNpc] = useState(npc);
+  const { spells, items, tier, classes } = useCreatureData(npc, "npc");
 
   const downloadPdf = () => {
     Api.fetchInternal("/npc/sheet/pdf/" + npc["_id"])
@@ -90,9 +92,7 @@ export default function NpcProfile({ npc, spells, items, classes, tier }) {
                 >
                   <Box component="div" sx={{ display: "flex", alignItems: "center" }}>
                     <Box>
-                      <Typography variant="h5" component="h1">
-                        {npc?.name}
-                      </Typography>
+                      <Typography variant="h3">{npc?.name}</Typography>
                       <Typography variant="subtitle1">
                         {[currentNpc.flavor.class, currentNpc.stats.race, currentNpc.stats.alignment]
                           .filter((el) => el && el.length > 0)
@@ -226,102 +226,18 @@ export default function NpcProfile({ npc, spells, items, classes, tier }) {
 }
 
 export async function getServerSideProps(context) {
-  const { req, query } = context;
-  const secret = process.env.SECRET;
+  const { query } = context;
+  const { connectToDB } = await import("lib/mongodb");
+  const { default: Npc } = await import("models/npc");
 
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
+  await connectToDB();
 
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  const npc = await Api.fetchInternal("/npcs/" + query.id, {
-    headers,
-  }).catch((_) => null);
-
-  if (!npc) return { notFound: true };
-
-  let spells = null;
-  let items = [];
-
-  if (!!npc?.stats?.spells && npc.stats.spells.length > 0) {
-    const spellIds = [];
-
-    npc.stats.spells.forEach((spellcasting) => {
-      Object.values(spellcasting.spells || {})?.forEach((spellLevel) => {
-        spellIds.push(...spellLevel);
-      });
-    });
-
-    spells = await Api.fetchInternal(`/spells?id=${JSON.stringify(spellIds.map((spell) => spell.spellId))}`, {
-      headers,
-    }).catch((_) => null);
-  }
-
-  if (!!npc?.stats?.equipment) {
-    const objects = [];
-
-    for (const key in npc.stats.equipment || {}) {
-      const element = npc.stats.equipment[key];
-
-      if (Array.isArray(element)) {
-        objects.push(...element.map((i) => i.id));
-      }
-    }
-
-    items = await Api.fetchInternal("/items", {
-      method: "POST",
-      body: JSON.stringify(objects),
-    });
-
-    items = items.map(({ _id, name, description }) => {
-      return {
-        id: _id,
-        name,
-        description,
-      };
-    });
-  }
-
-  let classes = await Api.fetchInternal("/classes/", {
-    headers,
-  }).catch(() => null);
-
-  if (!!classes) {
-    classes = classes.map((charClass) => {
-      const parsed = {
-        className: charClass.name,
-        classId: charClass._id,
-      };
-
-      return parsed;
-    });
-  }
-
-  let tier = null;
-
-  if (!!npc?.flavor.group) {
-    tier = await Api.fetchInternal(`/tier-by-creature?type=npc&id=${npc.flavor.group}`, {
-      headers,
-    })
-      .then((res) => res.map((el) => el._id))
-      .catch(() => null);
-  }
+  const npc = serialize(await Npc.findById(query.id));
 
   return {
     props: {
       key: npc._id,
       npc,
-      spells,
-      items,
-      classes,
-      tier,
     },
   };
 }

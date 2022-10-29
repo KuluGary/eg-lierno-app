@@ -8,9 +8,9 @@ import {
   CampaignLogs,
   CampaignMap,
 } from "components/CampaignProfile";
+import serialize from "helpers/serializeJson";
+import useCampaignData from "hooks/useCampaignData";
 import { useQueryState } from "hooks/useQueryState";
-import { getToken } from "next-auth/jwt";
-import Api from "services/api";
 
 const tabs = [
   { label: "Detalles", Component: CampaignDetails },
@@ -50,11 +50,9 @@ function TabPanel(props) {
   );
 }
 
-export default function CampaignProfile({ campaign, playerData = {}, characterData }) {
-  // const [activeStep, setActiveStep] = useState(0);
+export default function CampaignProfile({ campaign }) {
   const [activeStep, setActiveStep] = useQueryState("step", 0, "number");
-  const { players, dm } = playerData;
-  const { characters } = characterData;
+  const { players, dm, characters } = useCampaignData(campaign);
 
   const handleStepChange = (_, newValue) => {
     setActiveStep(newValue);
@@ -67,9 +65,7 @@ export default function CampaignProfile({ campaign, playerData = {}, characterDa
         <Grid item laptop={12}>
           <Container noPadding>
             <Box component="div" sx={{ p: 3 }}>
-              <Typography component="h1" variant="h5">
-                {campaign?.name}
-              </Typography>
+              <Typography variant="h3">{campaign?.name}</Typography>
               <Typography component="subtitle">{campaign?.flavor?.game}</Typography>
             </Box>
             <Divider />
@@ -97,49 +93,17 @@ export default function CampaignProfile({ campaign, playerData = {}, characterDa
 }
 
 export async function getServerSideProps(context) {
-  const { req, query } = context;
-  const secret = process.env.SECRET;
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
+  const { query } = context;
+  const { connectToDB } = await import("lib/mongodb");
+  const { default: Campaign } = await import("models/campaign");
 
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
+  await connectToDB();
 
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  let playerData = null;
-  let characterData = null;
-
-  const campaign = await Api.fetchInternal("/campaigns/" + query.id, {
-    headers,
-  });
-
-  if (campaign) {
-    playerData = await Api.fetchInternal("/auth/players", {
-      method: "POST",
-      headers,
-      body: JSON.stringify({
-        dmId: campaign.dm,
-        userEmails: campaign.players?.map(({ email }) => email),
-      }),
-    });
-
-    characterData = await Api.fetchInternal("/characterinfo", {
-      method: "POST",
-      headers,
-      body: JSON.stringify({ characterIds: campaign.characters }),
-    });
-  }
+  const campaign = serialize(await Campaign.findById(query.id));
 
   return {
     props: {
       campaign,
-      playerData,
-      characterData,
     },
   };
 }

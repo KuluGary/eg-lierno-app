@@ -11,7 +11,7 @@ export default function Item({ item }) {
       <Metadata title={`${item.name} | Lierno App`} />
       <Container sx={{ width: "60vw", m: "0 auto" }}>
         {image && <Image src={item?.image?.small ?? item?.image?.large} sx={{ float: "right" }} />}
-        <Typography variant="h5" component="h1" sx={{ mb: 1 }}>
+        <Typography variant="h3" sx={{ mb: 1 }}>
           {item.name}
         </Typography>
         <Typography variant="subtitle1" sx={{ fontWeight: 500, fontStyle: "italic" }}>

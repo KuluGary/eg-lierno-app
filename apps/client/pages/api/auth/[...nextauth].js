@@ -17,18 +17,10 @@ export default NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const url = process.env.NEXT_PUBLIC_ENDPOINT + "v1/auth/signin";
-
-        const headers = {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          withCredentials: true,
-        };
+        const url = process.env.NEXT_PUBLIC_ENDPOINT + "/api/sign-in";
 
         const res = await fetch(url, {
           method: "POST",
-          headers,
-          credentials: "include",
           body: JSON.stringify(credentials),
         });
 

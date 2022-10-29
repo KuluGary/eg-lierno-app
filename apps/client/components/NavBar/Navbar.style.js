@@ -3,40 +3,12 @@ const style = ({ theme, drawerWidth, open, isMainScreen, isIntersecting }) => ({
     display: "flex",
     justifyContent: "space-between",
     color: "inherit",
-    height: "100%",
+
     zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(["width", "margin"], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    [theme.breakpoints.up("tablet")]: {
-      WebkitBackdropFilter: "blur(20px)",
-      backdropFilter: "blur(20px)",
-      backgroundColor: theme.palette.background.main,
-      ...(isMainScreen && {
-        WebkitBackdropFilter: "none",
-        backdropFilter: "none",
-        height: "auto",
-        background: "transparent",
-        color: "primary.contrastText",
-        border: "none",
-        transition: theme.transitions.create(["background-color", "color"], {
-          duration: theme.transitions.duration.standard,
-        }),
-        ...(isIntersecting && {
-          background: theme.palette.background.main,
-          borderBottom: `1px solid ${theme.palette.divider}`,
-          color: theme.palette.text.primary,
-        }),
-      }),
-    },
-    ...(open && {
-      width: `calc(100% - ${drawerWidth}px)`,
-      transition: theme.transitions.create(["width", "margin"], {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-    }),
+    background: "transparent",
+    WebkitBackdropFilter: "blur(20px)",
+    backdropFilter: "blur(20px)",
+    color: (t) => t.palette.background.contrastText,
   },
   default: {
     height: "60px",
@@ -55,6 +27,11 @@ const style = ({ theme, drawerWidth, open, isMainScreen, isIntersecting }) => ({
         duration: theme.transitions.duration.enteringScreen,
       }),
     }),
+  },
+  title: {
+    fontSize: "1.45rem",
+    fontFamily: "Lalezar",
+    flexGrow: 1,
   },
   toolbar: {
     pr: "24px",

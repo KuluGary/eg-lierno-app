@@ -32,7 +32,7 @@ export function NavBar({ open, toggleDrawer, mode = "normal", containerRef = nul
             }
           });
         },
-        { rootMargin: "-200px 0px 0px 0px" }
+        { rootMargin: "0px 0px 0px 0px" }
       );
 
       if (containerRef?.current) observer.observe(containerRef.current);
@@ -68,7 +68,7 @@ export function NavBar({ open, toggleDrawer, mode = "normal", containerRef = nul
             </IconButton>
           )}
         </Box>
-        <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
+        <Typography variant="h4" color="inherit" noWrap sx={navStyle["title"]}>
           Lierno
         </Typography>
         <UserActions isMainScreen={isMainScreen} />

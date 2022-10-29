@@ -85,9 +85,7 @@ export default function MonsterProfile({ monster, spells, items, classes, tier }
                 >
                   <Box component="div" sx={{ display: "flex", alignItems: "center" }}>
                     <Box>
-                      <Typography variant="h5" component="h1">
-                        {monster?.name}
-                      </Typography>
+                      <Typography variant="h3">{monster?.name}</Typography>
                       <Typography variant="subtitle1">
                         {/* {[currentMonster.flavor.class, currentMonster.stats.race, currentMonster.stats.alignment]
                           .filter((el) => el && el.length > 0)

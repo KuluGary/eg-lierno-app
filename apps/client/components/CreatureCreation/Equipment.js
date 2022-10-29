@@ -48,9 +48,7 @@ const Modal = ({ open, onClose, section, selectedIndex, creature, onSave, items 
     >
       <Grid container spacing={3}>
         <Grid item laptop={12}>
-          <Typography variant="h5" component="h1">
-            {`Añade un ${sectionTitles[section]?.toLowerCase()} a tu personaje`}
-          </Typography>
+          <Typography variant="h3">{`Añade un ${sectionTitles[section]?.toLowerCase()} a tu personaje`}</Typography>
         </Grid>
         <Grid item laptop={10}>
           <Box>
@@ -121,9 +119,7 @@ const Section = ({ data, title, onDragEnd, section, setModalOpen, setSelectedInd
   return (
     <Container noPadding sx={{ marginBlock: "1em" }}>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: ".75em" }}>
-        <Typography variant="h6" component="h2">
-          {title}
-        </Typography>
+        <Typography variant="h4">{title}</Typography>
         <AddButton onClick={() => setModalOpen(section)} />
       </Box>
       <Divider />
@@ -207,9 +203,7 @@ export function Equipment({ creature, setCreature, items }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Equipamiento del personaje
-        </Typography>
+        <Typography variant="h3">Equipamiento del personaje</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: ".25em" }}>
           Añade los objetos del personaje.
         </Typography>

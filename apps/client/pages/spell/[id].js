@@ -9,7 +9,7 @@ export default function Spell({ spell }) {
       <Metadata title={`${spell.name} | Lierno App`} description={spell.stats.description} />
       <Container sx={{ width: "60vw", m: "0 auto" }} noPadding>
         <Box sx={{ m: 2 }}>
-          <Typography variant="h5" component="h1" sx={{ mb: 1 }}>
+          <Typography variant="h3" sx={{ mb: 1 }}>
             {spell.name}
           </Typography>
           <Typography variant="subtitle1" sx={{ fontWeight: 500, fontStyle: "italic" }}>

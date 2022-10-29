@@ -15,6 +15,8 @@ function Step3({ upImg, cropImg, setImage, setDone }) {
       };
       const formData = new FormData();
 
+      console.log({ upImg, a: typeof upImg });
+
       formData.append("original", upImg);
       formData.append("crop", cropImg);
 
@@ -24,7 +26,7 @@ function Step3({ upImg, cropImg, setImage, setDone }) {
         body: formData,
       };
 
-      Api.fetchInternal("/image", options)
+      Api.fetchInternal("/images", options)
         .then(({ images }) => {
           const imgObj = {};
 
@@ -58,7 +60,7 @@ function Step3({ upImg, cropImg, setImage, setDone }) {
     >
       <Box sx={{ textAlign: "center" }}>
         <CheckCircleIcon fontSize="large" />
-        <Typography variant="h6">La imagen se ha guardado con éxito.</Typography>
+        <Typography variant="h4">La imagen se ha guardado con éxito.</Typography>
       </Box>
     </Box>
   );

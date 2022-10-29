@@ -108,32 +108,6 @@ export function Spell({ open, onClose, section, selectedIndex, creature, classes
     }
   };
 
-  const getHighestSpellSlotLevel = () => {
-    if (spellcasting.caster) {
-      if (spellcasting.level) {
-        let spellSlots = spellcaster?.level[spellcasting.level]?.spellSlots;
-
-        return spellSlots.length;
-      } else {
-        return 0;
-      }
-    } else {
-      return 0;
-    }
-  };
-
-  const getWarlockSpells = () => {
-    const warlockSpells = [];
-
-    for (const spellLevel in spellcasting.spells) {
-      if (spellLevel === "0") continue;
-
-      warlockSpells.push(...spellcasting.spells[spellLevel]);
-    }
-
-    return warlockSpells;
-  };
-
   const handleClose = () => {
     setSpellToAdd({
       name: "",
@@ -151,7 +125,7 @@ export function Spell({ open, onClose, section, selectedIndex, creature, classes
     const newSpellToAdd = { ...spellToAdd };
     newSpellToAdd.stats.components.type = (newSpellToAdd.stats.components?.type ?? []).join(",");
 
-    Api.fetchInternal("/spell", {
+    Api.fetchInternal("/spells", {
       method: "POST",
       body: JSON.stringify(newSpellToAdd),
     }).then((res) => {

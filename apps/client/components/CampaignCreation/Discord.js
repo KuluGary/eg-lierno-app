@@ -5,9 +5,7 @@ export function Discord({ campaign, setCampaign }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Información del canal de Discord de tu campaña
-        </Typography>
+        <Typography variant="h3">Información del canal de Discord de tu campaña</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Por favor, introduce los detalles del canal de Discord de tu campaña.
         </Typography>

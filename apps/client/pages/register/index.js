@@ -119,9 +119,7 @@ export default function Register() {
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
-            Regístrate en Lierno App
-          </Typography>
+          <Typography variant="h3">Regístrate en Lierno App</Typography>
           <Typography component="div" variant="subtitle2" textAlign="center" marginTop=".5em">
             En Lierno App podrás llevar la cuenta de tus personajes y campañas de forma fácil e intuitiva.
           </Typography>

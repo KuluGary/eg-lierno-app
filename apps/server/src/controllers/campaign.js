@@ -147,7 +147,6 @@ module.exports.activatePlayer = async (req, res) => {
 
       const indexToModify = campaign.players.findIndex((player) => player.email === email);
 
-      console.log(user);
       const player = {
         email,
         active: true,

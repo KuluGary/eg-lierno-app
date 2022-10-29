@@ -15,9 +15,7 @@ export function Race({ creature, setCreature }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Detalles de la raza de personaje
-        </Typography>
+        <Typography variant="h3">Detalles de la raza de personaje</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Selecciona los datos referentes a la raza de tu personaje.
         </Typography>
@@ -58,9 +56,7 @@ export function Race({ creature, setCreature }) {
         />
       </Grid>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Detalles de la subraza de personaje
-        </Typography>
+        <Typography variant="h3">Detalles de la subraza de personaje</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Selecciona los datos referentes a la subraza de tu personaje.
         </Typography>

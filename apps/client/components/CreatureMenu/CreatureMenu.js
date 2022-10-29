@@ -29,7 +29,7 @@ export const CreatureMenu = ({ creature, type, downloadPdf }) => {
   };
 
   const onDelete = () => {
-    Api.fetchInternal(`/${type}/${creature._id}`, {
+    Api.fetchInternal(`/${type}s/${creature._id}`, {
       method: "DELETE",
     }).then(() => Router.back());
   };
@@ -66,7 +66,6 @@ export const CreatureMenu = ({ creature, type, downloadPdf }) => {
       method: "POST",
       body: JSON.stringify(duplicateData),
     }).then((newId) => {
-      console.log(newId);
       Router.push(`/${type}s/${newId}`);
     });
   };

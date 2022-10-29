@@ -1,8 +1,8 @@
 import { TableCell, TableRow as MuiTableRow, Typography } from "@mui/material";
 import { Box, useTheme } from "@mui/system";
-import { HTMLContainer, Link, Avatar } from "../..";
-import { convert as convertHtmlToString } from "html-to-text";
 import { useWidth } from "hooks/useWidth";
+import { convert as convertHtmlToString } from "html-to-text";
+import { Avatar, Link } from "../..";
 import style from "./TableRow.style";
 
 function TableRow({ data, src }) {
@@ -28,7 +28,7 @@ function TableRow({ data, src }) {
         {!!avatar && <Avatar src={avatar} size={56} count={count} />}
         <Box component="div" sx={style.tableCellContent}>
           <Link href={parsedSrc}>
-            <Typography variant="subtitle1" sx={style.tableCellTitle}>
+            <Typography variant="h4" sx={style.tableCellTitle}>
               {name}
             </Typography>
           </Link>

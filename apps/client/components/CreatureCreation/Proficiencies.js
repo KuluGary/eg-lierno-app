@@ -100,17 +100,13 @@ export function Proficiencies({ creature, setCreature }) {
         handleSave={handleChangeSkill}
       />
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Detalles de las proficiencias de personaje
-        </Typography>
+        <Typography variant="h3">Detalles de las proficiencias de personaje</Typography>
         <Typography variant="subtitle1" sx={{ mb: "1em" }}>
           Selecciona los datos referentes a las estadísticas de tu personaje.
         </Typography>
 
         <Container>
-          <Typography variant="h6" component="h2">
-            Bonificador de competencia
-          </Typography>
+          <Typography variant="h4">Bonificador de competencia</Typography>
           <Typography variant="subtitle1" sx={{ mb: "1em" }}>
             Introduce el valor de la bonificación de competencia.
           </Typography>
@@ -127,9 +123,7 @@ export function Proficiencies({ creature, setCreature }) {
 
       <Grid item laptop={12}>
         <Container>
-          <Typography variant="h6" component="h2">
-            Tiradas de salvación
-          </Typography>
+          <Typography variant="h4">Tiradas de salvación</Typography>
           <Typography variant="subtitle1" sx={{ mb: "1em" }}>
             Introduce las tiradas de salvación con las que eres proficiente.
           </Typography>
@@ -170,9 +164,7 @@ export function Proficiencies({ creature, setCreature }) {
       </Grid>
       <Grid item laptop={12}>
         <Container>
-          <Typography variant="h6" component="h2">
-            Habilidades
-          </Typography>
+          <Typography variant="h4">Habilidades</Typography>
           <Typography variant="subtitle1" sx={{ mb: "1em" }}>
             Introduce las tiradas de habilidades con las que eres proficiente.
           </Typography>

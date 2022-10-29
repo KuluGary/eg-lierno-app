@@ -57,7 +57,7 @@ export function CampaignCreatures({ campaign }) {
                   count: getNestedKey("count", element),
                 })}
                 loading={isLoading}
-                fetchFrom={`/campaigns/${campaign._id}/npcs`}
+                fetchFrom={`/npcs/campaigns/${campaign._id}`}
                 src={"/npcs/{ID}"}
                 onEdit={(id) => Router.push(`/npcs/add/${id}`)}
                 onDelete={() => {}}
@@ -95,7 +95,7 @@ export function CampaignCreatures({ campaign }) {
                   count: getNestedKey("count", element),
                 })}
                 loading={isLoading}
-                fetchFrom={`/campaigns/${campaign._id}/monsters`}
+                fetchFrom={`/monsters/campaigns/${campaign._id}`}
                 src={"/monsters/{ID}"}
                 onEdit={(id) => Router.push(`/monsters/add/${id}`)}
                 onDelete={() => {}}

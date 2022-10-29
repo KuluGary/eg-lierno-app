@@ -34,9 +34,7 @@ export function Details({ campaign, setCampaign }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>
-        <Typography variant="h5" component="h1">
-          Detalles básicos de la campaña
-        </Typography>
+        <Typography variant="h3">Detalles básicos de la campaña</Typography>
         <Typography variant="subtitle1" sx={{ marginTop: "1em" }}>
           Por favor, introduce los detalles básicos referentes a tu campaña.
         </Typography>
@@ -86,11 +84,7 @@ export function Details({ campaign, setCampaign }) {
           disableClearable
           renderTags={(tagValue) =>
             tagValue.map((option, index) => (
-              <Chip
-                key={index}
-                variant="outlined"
-                label={`${option.email} (${option.active ? "activo" : "inactivo"})`}
-              />
+              <Chip key={index} variant="outlined" label={`${option.email} (${option.active ? "" : "pendiente"})`} />
             ))
           }
           value={campaign?.players}

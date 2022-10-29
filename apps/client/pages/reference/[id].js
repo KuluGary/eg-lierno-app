@@ -8,7 +8,7 @@ export default function Reference({ reference }) {
       <Metadata title={`${reference.title} | Lierno App`} description={reference.description} />
       <Container sx={{ width: "60vw", m: "0 auto" }} noPadding>
         <Box sx={{ m: 2 }}>
-          <Typography variant="h5" component="h1" sx={{ mb: 1 }}>
+          <Typography variant="h3" sx={{ mb: 1 }}>
             {reference.title}
           </Typography>
           <Typography variant="subtitle1">{reference.subtitle}</Typography>

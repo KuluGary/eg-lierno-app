@@ -17,9 +17,7 @@ export default function Campaigns({ campaigns }) {
         noPadding
         header={
           <Box sx={{ p: "1em" }}>
-            <Typography variant="h5" component="h1">
-              Campañas
-            </Typography>
+            <Typography variant="h3">Campañas</Typography>
           </Box>
         }
       >

@@ -25,7 +25,6 @@ const clientSideEmotionCache = createEmotionCache();
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const [mode, setMode] = React.useState(prefersDarkMode ? "dark" : "light");
   const [theme, setTheme] = useState(createTheme({ ...initialTheme }));
 
   React.useEffect(() => {
@@ -69,8 +68,6 @@ export default function MyApp(props) {
 
         const { background, mode } = JSON.parse(backgroundStr);
         const primary = JSON.parse(primaryStr);
-
-        console.log(background);
 
         const newTheme = createTheme({
           ...theme,

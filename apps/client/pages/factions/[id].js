@@ -1,12 +1,12 @@
 import { getInitials, getNestedKey } from "@lierno/core-helpers";
 import { getNpcSubtitle } from "@lierno/dnd-helpers";
+import { Typography } from "@mui/material";
 import { Box, Divider, Grid, Tab, Tabs } from "@mui/material";
-import { Avatar, Container, Layout, Metadata } from "components";
+import { Avatar, Container, HTMLContainer, Layout, Metadata } from "components";
 import { PaginatedTable } from "components/Table";
+import serialize from "helpers/serializeJson";
 import { useQueryState } from "hooks/useQueryState";
-import { getToken } from "next-auth/jwt";
 import { useRouter } from "next/router";
-import Api from "services/api";
 
 function a11yProps(index) {
   return {
@@ -15,7 +15,7 @@ function a11yProps(index) {
   };
 }
 
-export default function FactionProfile({ faction, npcs }) {
+export default function FactionProfile({ faction }) {
   const [activeStep, setActiveStep] = useQueryState("step", 0, "number");
   const { query } = useRouter();
 
@@ -30,7 +30,9 @@ export default function FactionProfile({ faction, npcs }) {
             <Box component="div" sx={{ display: "flex", alignItems: "center", p: 3 }}>
               <Avatar src={faction?.image} fallBackText={getInitials(faction?.name ?? "")} size={45} />
               <Box component="div" sx={{ marginInline: 3 }}>
-                {faction?.name}
+                <Typography variant="h2">
+                  {faction?.name}
+                </Typography>
               </Box>
             </Box>
             <Divider />
@@ -42,7 +44,8 @@ export default function FactionProfile({ faction, npcs }) {
                 onChange={handleStepChange}
                 aria-label="basic tabs example"
               >
-                <Tab label="NPCs" {...a11yProps(0)} />
+                <Tab label="Descripción" {...a11yProps(0)} />
+                <Tab label="NPCs" {...a11yProps(1)} />
               </Tabs>
             </Box>
             <Box
@@ -51,6 +54,15 @@ export default function FactionProfile({ faction, npcs }) {
               hidden={activeStep !== 0}
               id={`simple-tabpanel-${0}`}
               aria-labelledby={`simple-tab-${0}`}
+            >
+              <HTMLContainer content={faction.description} sx={{ padding: "1em" }} />
+            </Box>
+            <Box
+              component="div"
+              role="tabpanel"
+              hidden={activeStep !== 1}
+              id={`simple-tabpanel-${1}`}
+              aria-labelledby={`simple-tab-${1}`}
             >
               <PaginatedTable
                 getRowData={(element) => ({
@@ -69,7 +81,7 @@ export default function FactionProfile({ faction, npcs }) {
                   ),
                 })}
                 loading={false}
-                fetchFrom={`/factions/${query.id}/npcs`}
+                fetchFrom={`/npcs/factions/${query.id}`}
                 src={"/npcs/{ID}"}
                 onEdit={(id) => Router.push(`/npcs/add/${id}`)}
                 onDelete={(id) => handleOpenDeleteModal(`/npc/${id}`)}
@@ -86,32 +98,17 @@ export default function FactionProfile({ faction, npcs }) {
 }
 
 export async function getServerSideProps(context) {
-  const { req, query } = context;
-  const secret = process.env.SECRET;
+  const { query } = context;
+  const { connectToDB } = await import("lib/mongodb");
+  const { default: Faction } = await import("models/faction");
 
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
+  await connectToDB();
 
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  const faction = await Api.fetchInternal("/factions/" + query.id, { headers }).catch(() => null);
-  let npcs = null;
-
-  if (!!faction) {
-    npcs = await Api.fetchInternal("/factions/" + query.id + "/npcs", { headers }).catch(() => null);
-  }
+  const faction = serialize(await Faction.findById(query.id));
 
   return {
     props: {
       faction,
-      npcs,
     },
   };
 }
