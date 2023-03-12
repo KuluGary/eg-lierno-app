@@ -7,7 +7,7 @@ import Proficiency from "./components/Proficiency/Proficiency";
 import StatComponent from "./components/Stat/Stat";
 import style from "./CreatureStats.style";
 
-export function CreatureStats({ Header, containerStyle, data }) {
+export default function CreatureStats({ Header, containerStyle, data }) {
   const [tab, setTab] = useState(0);
   const handleTabChange = (_, newValue) => setTab(newValue);
 

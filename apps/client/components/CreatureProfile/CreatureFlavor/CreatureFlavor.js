@@ -6,7 +6,7 @@ import style from "./CreatureFlavor.style";
 import { Container } from "components/Container/Container";
 import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
 
-export function CreatureFlavor({ Header, data, containerStyle }) {
+export default function CreatureFlavor({ Header, data, containerStyle }) {
   const { tier, image, sections } = data;
 
   return (
