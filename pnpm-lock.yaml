@@ -67,6 +67,7 @@ importers:
       babel-loader: ^8.2.3
       bcrypt: ^4.0.1
       clsx: ^1.1.1
+      cross-env: ^7.0.3
       cypress: ^10.3.0
       downloadjs: ^1.4.7
       eslint: 7.32.0
@@ -147,6 +148,7 @@ importers:
       '@babel/preset-react': registry.npmjs.org/@babel/preset-react/7.18.6_@babel+core@7.19.3
       '@netlify/plugin-nextjs': registry.npmjs.org/@netlify/plugin-nextjs/4.24.3
       babel-loader: registry.npmjs.org/babel-loader/8.2.5_wfdvla2jorjoj23kkavho2upde
+      cross-env: registry.npmjs.org/cross-env/7.0.3
       cypress: registry.npmjs.org/cypress/10.9.0
       eslint: registry.npmjs.org/eslint/7.32.0
       eslint-config-next: registry.npmjs.org/eslint-config-next/12.0.3_ryw2y7si5rgryppguxfefl6ecy
@@ -1896,6 +1898,7 @@ packages:
     name: '@material-ui/core'
     version: 4.12.4
     engines: {node: '>=8.0.0'}
+    deprecated: Material UI v4 doesn't receive active development since September 2021. See the guide https://mui.com/material-ui/migration/migration-v4/ to upgrade to v5.
     peerDependencies:
       '@types/react': ^16.8.6 || ^17.0.0
       react: ^16.8.0 || ^17.0.0
@@ -1949,6 +1952,7 @@ packages:
     name: '@material-ui/styles'
     version: 4.11.5
     engines: {node: '>=8.0.0'}
+    deprecated: Material UI v4 doesn't receive active development since September 2021. See the guide https://mui.com/material-ui/migration/migration-v4/ to upgrade to v5.
     peerDependencies:
       '@types/react': ^16.8.6 || ^17.0.0
       react: ^16.8.0 || ^17.0.0
