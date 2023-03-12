@@ -1,33 +1,30 @@
-import { Tabs, Box, Tab, Typography, useTheme, Container as MuiContainer, Button } from "@mui/material";
-import { useState } from "react";
-import { Container, Layout } from "components";
-import {
-  Details,
-  Race,
-  Class,
-  Stats,
-  Proficiencies,
-  Abilities,
-  Background,
-  Equipment,
-} from "components/CreatureCreation";
-import {
-  MuscleUp as MuscleUpIcon,
-  SwordShield as SwordShieldIcon,
-  Juggler as JugglerIcon,
-  SpellBolt as SpellBoltIcon,
-  Character as CharacterIcon,
-  AlienStare as AlienStareIcon,
-  Barbute as BarbuteIcon,
-  Backpack as BackpackIcon,
-} from "components/icons";
+import { setNestedKey } from "@lierno/core-helpers";
+import { Box, Button, Container as MuiContainer, Tab, Tabs, Typography, useTheme } from "@mui/material";
+import { Container } from "components/Container/Container";
+import { Abilities } from "components/CreatureCreation/Abilities";
+import { Background } from "components/CreatureCreation/Background";
+import { Class } from "components/CreatureCreation/Class";
+import { Details } from "components/CreatureCreation/Details";
+import { Equipment } from "components/CreatureCreation/Equipment";
+import { Proficiencies } from "components/CreatureCreation/Proficiencies";
+import { Race } from "components/CreatureCreation/Race";
+import { Stats } from "components/CreatureCreation/Stats";
+import { AlienStare as AlienStareIcon } from "components/icons/AlienStare";
+import { Backpack as BackpackIcon } from "components/icons/Backpack";
+import { Barbute as BarbuteIcon } from "components/icons/Barbute";
+import { Character as CharacterIcon } from "components/icons/Character";
+import { Juggler as JugglerIcon } from "components/icons/Juggler";
+import { MuscleUp as MuscleUpIcon } from "components/icons/MuscleUp";
+import { SpellBolt as SpellBoltIcon } from "components/icons/SpellBolt";
+import { SwordShield as SwordShieldIcon } from "components/icons/SwordShield";
+import { Layout } from "components/Layout/Layout";
 import character_template from "helpers/json/character_template.json";
-import Api from "services/api";
 import { getToken } from "next-auth/jwt";
+import { getSession } from "next-auth/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { getSession } from "next-auth/react";
-import { setNestedKey } from "@lierno/core-helpers";
+import { useState } from "react";
+import Api from "services/api";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

@@ -1,10 +1,8 @@
-import { getSpellcastingName, getSpellStrings, getStatBonus } from "@lierno/dnd-helpers";
-import { Box, Button, Divider, Grid, Input, Tab, Table, Tabs, TextField, Typography } from "@mui/material";
-import { ExpandedTableRow } from "components/Table";
+import { getStatBonus } from "@lierno/dnd-helpers";
+import { Box, Divider, Tab, Tabs } from "@mui/material";
+import { Container } from "components/Container/Container";
 import { useState } from "react";
-import { Container, HTMLContainer } from "../..";
 import Ability from "./components/Ability/Ability";
-import HitPoints from "./components/HitPoints/HitPoints";
 import Proficiency from "./components/Proficiency/Proficiency";
 import StatComponent from "./components/Stat/Stat";
 import style from "./CreatureStats.style";
@@ -41,7 +39,13 @@ export function CreatureStats({ Header, containerStyle, data }) {
 
         <Divider />
 
-        <Tabs value={tab} onChange={handleTabChange} aria-label="Pestañas de Habilidades">
+        <Tabs
+          value={tab}
+          onChange={handleTabChange}
+          aria-label="Pestañas de Habilidades"
+          variant="scrollable"
+          scrollButtons="auto"
+        >
           {data.abilities
             ?.filter(({ content }) => content?.length > 0 || Object.keys(content ?? {})?.length > 0)
             .map(({ title }, index) => (

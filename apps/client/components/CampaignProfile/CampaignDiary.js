@@ -1,14 +1,9 @@
-import { Grid, Box, IconButton, Collapse, Typography, styled } from "@mui/material";
-import { Container, HTMLContainer } from "components";
-import { TreeView, TreeItem } from "@mui/lab";
+import { ArrowDropDown, ArrowRight, Menu as MenuIcon } from "@mui/icons-material";
+import { TreeItem, TreeView } from "@mui/lab";
 import { treeItemClasses } from "@mui/lab/TreeItem";
-import {
-  ExpandMore as ExpandMoreIcon,
-  ChevronRight as ChevronRightIcon,
-  Menu as MenuIcon,
-  ArrowRight,
-  ArrowDropDown,
-} from "@mui/icons-material";
+import { Box, Grid, IconButton, styled, Typography } from "@mui/material";
+import { Container } from "components/Container/Container";
+import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
 import { useState } from "react";
 
 export function CampaignDiary({ campaign }) {

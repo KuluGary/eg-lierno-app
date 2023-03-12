@@ -6,7 +6,7 @@ import {
   Explore as ExploreIcon,
 } from "@mui/icons-material";
 import { useRouter } from "next/router";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material/styles";
 import { useWidth } from "../../hooks/useWidth";
 import { useSession } from "next-auth/react";
 import { Link } from "components/Link/Link";

@@ -8,14 +8,16 @@ import {
   getPassiveInvestigation,
   getPassivePerception,
   getSavingThrowString,
-  getSpeedString,
+  getSpeedString
 } from "@lierno/dnd-helpers";
 import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Layout, Metadata } from "components";
 import { CreatureMenu } from "components/CreatureMenu/CreatureMenu";
-import { CreatureFlavor, CreatureStats } from "components/CreatureProfile";
+import { CreatureFlavor } from "components/CreatureProfile/CreatureFlavor/CreatureFlavor";
 import HitPoints from "components/CreatureProfile/CreatureStats/components/HitPoints/HitPoints";
+import { CreatureStats } from "components/CreatureProfile/CreatureStats/CreatureStats";
+import { Layout } from "components/Layout/Layout";
+import { Metadata } from "components/Metadata/Metadata";
 import download from "downloadjs";
 import serialize from "helpers/serializeJson";
 import { ArrayUtil } from "helpers/string-util";
@@ -205,6 +207,7 @@ export default function NpcProfile({ npc }) {
               abilities: [
                 { title: "Ataques", content: currentNpc.stats.attacks ? getAttackStrings(currentNpc) : [] },
                 { title: "Acciones", content: currentNpc["stats"]["actions"] },
+                { title: "Acciones adicionales", content: currentNpc["stats"]["bonusActions"] },
                 { title: "Reacciones", content: currentNpc["stats"]["reactions"] },
                 { title: "Habilidades", content: currentNpc["stats"]["additionalAbilities"] },
                 {

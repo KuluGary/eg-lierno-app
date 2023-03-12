@@ -1,9 +1,11 @@
 import { getNestedKey } from "@lierno/core-helpers";
 import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
-import { Container, Layout, Metadata } from "components";
+import { Container } from "components/Container/Container";
+import { Layout } from "components/Layout/Layout";
+import { Metadata } from "components/Metadata/Metadata";
 import ItemSubtitle from "components/Subtitle/ItemSubtitle/ItemSubtitle";
 import SpellSubtitle from "components/Subtitle/SpellSubtitle/SpellSubtitle";
-import { Table } from "components/Table";
+import { Table } from "components/Table/Table";
 import references from "helpers/json/references.json";
 import { SPELL_ICON_DICTIONARY } from "helpers/string-util";
 import { useQueryState } from "hooks/useQueryState";
@@ -218,34 +220,34 @@ export async function getServerSideProps(context) {
   }
 
   let items = {};
-
-  await Api.fetchInternal("/items")
-    .then((apiItems) => {
-      apiItems.forEach((item) => {
-        items[item.type] = [...(items[item.type] ?? []), item];
-      });
-    })
-    .catch(() => null);
-
   let spells = {};
-
-  await Api.fetchInternal("/spells", { headers })
-    .then((apiSpells) => {
-      for (const spell of apiSpells) {
-        spells[spell.stats.level] = [...(spells[spell.stats.level] ?? []), spell];
-      }
-    })
-    .catch(() => null);
-
   let classes = {};
 
-  await Api.fetchInternal("/classes", { headers })
-    .then((apiClasses) => {
-      for (const charClass of apiClasses) {
-        classes[charClass.game] = [...(classes[charClass.game] ?? []), charClass];
-      }
-    })
-    .catch(() => null);
+  const promises = [
+    Api.fetchInternal("/items")
+      .then((apiItems) => {
+        apiItems.forEach((item) => {
+          items[item.type] = [...(items[item.type] ?? []), item];
+        });
+      })
+      .catch(() => null),
+    Api.fetchInternal("/spells", { headers })
+      .then((apiSpells) => {
+        for (const spell of apiSpells) {
+          spells[spell.stats.level] = [...(spells[spell.stats.level] ?? []), spell];
+        }
+      })
+      .catch(() => null),
+    Api.fetchInternal("/classes", { headers })
+      .then((apiClasses) => {
+        for (const charClass of apiClasses) {
+          classes[charClass.game] = [...(classes[charClass.game] ?? []), charClass];
+        }
+      })
+      .catch(() => null),
+  ];
+
+  await Promise.all(promises);
 
   return {
     props: {

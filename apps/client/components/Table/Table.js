@@ -1,8 +1,9 @@
-import { getNestedKey } from "@lierno/core-helpers";
-import { Table as MuiTable, TableBody, Box } from "@mui/material";
+import { Box, Table as MuiTable, TableBody } from "@mui/material";
 import { useQueryState } from "hooks/useQueryState";
 import { useEffect, useState } from "react";
-import { TableRow, TableFooter, TableHeader } from ".";
+import { TableFooter } from "./TableFooter/TableFooter";
+import { TableHeader } from "./TableHeader/TableHeader";
+import { TableRow } from "./TableRow/TableRow";
 
 function Table({ data = [], onEdit, onDelete, src, isEditable, headerProps, getRowData }) {
   const [displayData, setDisplayData] = useState(data);

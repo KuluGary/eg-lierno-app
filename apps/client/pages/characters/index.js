@@ -1,15 +1,17 @@
+import { getNestedKey } from "@lierno/core-helpers";
+import { getCharacterSubtitle, getNpcSubtitle } from "@lierno/dnd-helpers";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
-import { Container, FileUploaderModal, Layout } from "components";
+import { Container } from "components/Container/Container";
 import { DeleteModal } from "components/DeleteModal/DeleteModal";
-import { PaginatedTable } from "components/Table";
-import Api from "services/api";
+import { FileUploaderModal } from "components/FileUploaderModal";
+import { Layout } from "components/Layout/Layout";
+import { PaginatedTable } from "components/Table/PaginatedTable";
 import { useMounted } from "hooks/useMounted";
 import { useQueryState } from "hooks/useQueryState";
 import Head from "next/head";
 import Router from "next/router";
 import { useState } from "react";
-import { getNestedKey } from "@lierno/core-helpers";
-import { getCharacterSubtitle, getNpcSubtitle } from "@lierno/dnd-helpers";
+import Api from "services/api";
 
 function a11yProps(index) {
   return {

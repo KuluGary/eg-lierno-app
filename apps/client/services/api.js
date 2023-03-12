@@ -6,6 +6,8 @@ export default class Api {
       withCredentials: true,
     };
 
+    console.log({ url });
+
     return fetch(`${process.env.NEXT_PUBLIC_CLIENT}api${url}`, {
       headers,
       credentials: "include",

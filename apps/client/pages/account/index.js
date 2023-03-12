@@ -1,21 +1,26 @@
-import { Box, Button, ButtonBase, Divider, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
-import { Avatar, Container, Layout } from "components";
-import Api from "services/api";
-import { getToken } from "next-auth/jwt";
-import { background, primary } from "services/theme";
-import ColorModeContext from "services/color-context";
-import { useContext } from "react";
 import { Check } from "@mui/icons-material";
+import { Box, Button, ButtonBase, Divider, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Avatar } from "components/Avatar/Avatar";
+import { Container } from "components/Container/Container";
+import { Layout } from "components/Layout/Layout";
+import { getToken } from "next-auth/jwt";
+import { useContext, useMemo } from "react";
+import Api from "services/api";
+import ColorModeContext from "services/color-context";
+import { background, primary } from "services/theme";
 
-export default function Settings({ user }) {
+export default function Settings({}) {
   const themeEditor = useContext(ColorModeContext);
-  const selectedBackground = localStorage.getItem("background");
-  const selectedColor = localStorage.getItem("primary");
-  const getISODate = (date) => {
-    const d = new Date(date);
+  const selectedBackground = useMemo(() => {
+    if (typeof window !== "undefined") return localStorage.getItem("background");
 
-    return d.toLocaleDateString("es-ES");
-  };
+    return "";
+  });
+  const selectedColor = useMemo(() => {
+    if (typeof window !== "undefined") return localStorage.getItem("primary");
+
+    return "";
+  });
 
   return (
     <Layout>
@@ -24,40 +29,7 @@ export default function Settings({ user }) {
       </Container>
       <Container sx={{ marginTop: "1rem" }}>
         <Grid container spacing={1}>
-          <Grid item laptop={4}>
-            <Container noPadding>
-              <Box sx={{ margin: "1rem", display: "flex", alignItems: "center", gap: "1em" }}>
-                <Avatar src={user.metadata.avatar} />
-                <Typography>{user.username}</Typography>
-              </Box>
-              <Divider />
-              <List>
-                {user.metadata.first_name && user.metadata.last_name && (
-                  <ListItem>
-                    <ListItemText
-                      primary={`${user.metadata.first_name} ${user.metadata.last_name}`}
-                      secondary={"Nombre"}
-                    />
-                  </ListItem>
-                )}
-                {user.metadata.email && (
-                  <ListItem>
-                    <ListItemText primary={user.metadata.email} secondary={"Email"} />
-                  </ListItem>
-                )}
-                {user.createdAt && (
-                  <ListItem>
-                    <ListItemText primary={getISODate(user.createdAt)} secondary={"Fecha de creación"} />
-                  </ListItem>
-                )}
-                {user.metadata.location && (
-                  <ListItem>
-                    <ListItemText primary={user.metadata.location} secondary={"Ubicación"} />
-                  </ListItem>
-                )}
-              </List>
-            </Container>
-          </Grid>
+          <Grid item laptop={4}></Grid>
           <Grid item laptop={8}>
             <Container noPadding>
               <Box sx={{ margin: "1rem" }}>
@@ -163,27 +135,27 @@ export default function Settings({ user }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const { req } = context;
-  const secret = process.env.SECRET;
+// export async function getServerSideProps(context) {
+//   const { req } = context;
+//   const secret = process.env.SECRET;
 
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
+//   const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
 
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
+//   const headers = {
+//     Accept: "application/json",
+//     "Content-Type": "application/json",
+//     withCredentials: true,
+//   };
 
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
+//   if (token) {
+//     headers["Authorization"] = "Bearer " + token;
+//   }
 
-  const user = await Api.fetchInternal("/auth/user", { headers });
+//   const user = await Api.fetchInternal("/auth/user", { headers });
 
-  if (!user) return { notFound: true };
+//   if (!user) return { notFound: true };
 
-  return {
-    props: { user },
-  };
-}
+//   return {
+//     props: { user },
+//   };
+// }

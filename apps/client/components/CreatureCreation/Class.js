@@ -1,3 +1,5 @@
+import { getGenderedClass } from "@lierno/dnd-helpers";
+import { Add as AddIcon, Delete as DeleteIcon } from "@mui/icons-material";
 import {
   Button,
   FormControl,
@@ -9,10 +11,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Add as AddIcon, Delete as DeleteIcon } from "@mui/icons-material";
-import { HTMLEditor } from "components";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import { useRouter } from "next/router";
-import { getGenderedClass } from "@lierno/dnd-helpers";
 
 export function Class({ creature, setCreature, classes }) {
   const router = useRouter();
@@ -85,6 +85,7 @@ export function Class({ creature, setCreature, classes }) {
                           sx={{
                             borderBottom: (t) => `1px solid ${t.palette.divider}`,
                             borderTop: (t) => i !== 0 && `1px solid ${t.palette.divider}`,
+                            backgroundColor: (t) => t.palette.background.main,
                           }}
                         >
                           {key}

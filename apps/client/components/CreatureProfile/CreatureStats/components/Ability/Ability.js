@@ -2,8 +2,7 @@ import { getSpellcastingName, getSpellStrings } from "@lierno/dnd-helpers";
 import { Table } from "@mui/material";
 import { Box } from "@mui/system";
 import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
-import { ExpandedTableRow } from "components/Table";
-import React from "react";
+import { ExpandedTableRow } from "components/Table/ExpandedTableRow/ExpandedTableRow";
 
 export default function Ability({ show, character, classes, dataClasses, title, content, index }) {
   if (title === "Hechizos") {

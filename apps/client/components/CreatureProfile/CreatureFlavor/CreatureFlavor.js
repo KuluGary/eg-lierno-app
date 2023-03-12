@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 import { Typography, Box, Tabs, Tab, Divider } from "@mui/material";
-import { Container, HTMLContainer } from "../..";
 import Router from "next/router";
 import Image from "../../Image/Image";
 import style from "./CreatureFlavor.style";
+import { Container } from "components/Container/Container";
+import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
 
 export function CreatureFlavor({ Header, data, containerStyle }) {
   const { tier, image, sections } = data;

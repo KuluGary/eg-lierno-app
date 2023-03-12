@@ -1,7 +1,7 @@
 const background = [
-  { type: "light", color: "hsl(0, 0%, 100%)" },
-  { type: "dark", color: "hsl(229, 20%, 20%)" },
-  { type: "dark", color: "hsl(229, 27%, 8%)" },
+  { mode: "light", background: "hsl(0, 0%, 100%)" },
+  { mode: "dark", background: "hsl(229, 20%, 20%)" },
+  { mode: "dark", background: "hsl(229, 27%, 8%)" },
 ];
 
 const primary = [

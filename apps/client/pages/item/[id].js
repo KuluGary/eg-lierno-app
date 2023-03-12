@@ -1,6 +1,9 @@
 import { Box, Typography } from "@mui/material";
-import { Container, HTMLContainer, Layout, Metadata } from "components";
+import { Container } from "components/Container/Container";
+import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
 import Image from "components/Image/Image";
+import { Layout } from "components/Layout/Layout";
+import { Metadata } from "components/Metadata/Metadata";
 import ItemSubtitle from "components/Subtitle/ItemSubtitle/ItemSubtitle";
 import Api from "services/api";
 export default function Item({ item }) {

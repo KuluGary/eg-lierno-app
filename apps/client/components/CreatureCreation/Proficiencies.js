@@ -13,7 +13,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Container, HTMLEditor } from "components";
+import { Container } from "components/Container/Container";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import customizable_stats from "helpers/json/customizable_stats.json";
 import { useEffect, useState } from "react";
 

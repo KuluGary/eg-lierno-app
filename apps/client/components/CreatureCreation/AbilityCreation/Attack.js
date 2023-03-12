@@ -1,4 +1,3 @@
-import { useTheme } from "@emotion/react";
 import {
   Box,
   Checkbox,
@@ -10,13 +9,15 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  TextField,
+  TextField
 } from "@mui/material";
-import { Container } from "components";
-import { FullScreenModal } from "components/Modal";
+import { useTheme } from "@mui/material/styles";
+import { Container } from "components/Container/Container";
+import { FullScreenModal } from "components/Modal/FullScreenModal";
 import { statLabels } from "helpers/creature-calculations";
 import { useEffect, useState } from "react";
-import { ModalFooter, ModalHeader } from ".";
+import { ModalHeader } from "./ModalHeader";
+import { ModalFooter } from "./ModalFooter";
 
 const defaultFormData = {
   melee: {

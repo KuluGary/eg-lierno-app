@@ -1,7 +1,6 @@
 import { Grid, useTheme } from "@mui/material";
-import { Container } from "components";
-import { useState } from "react";
-import { useEffect, useRef } from "react";
+import { Container } from "components/Container/Container";
+import { useEffect, useRef, useState } from "react";
 
 function TabletopCanvas() {
   const theme = useTheme();
@@ -71,3 +70,4 @@ function TabletopCanvas() {
 }
 
 export { TabletopCanvas };
+

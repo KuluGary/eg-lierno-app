@@ -1,21 +1,21 @@
+import { getGendered } from "@lierno/core-helpers";
+import { AddPhotoAlternate as AddPhotoAlternateIcon, Help as HelpOutlineIcon } from "@mui/icons-material";
 import {
-  Grid,
-  TextField,
   Box,
   FormControl,
-  Select,
-  MenuItem,
   FormHelperText,
-  useTheme,
-  Typography,
+  Grid,
   IconButton,
+  MenuItem,
+  Select,
+  TextField,
+  Typography,
+  useTheme,
 } from "@mui/material";
-import { Help as HelpOutlineIcon, AddPhotoAlternate as AddPhotoAlternateIcon } from "@mui/icons-material";
-import { useState } from "react";
-import { HTMLEditor } from "components";
-import { useRouter } from "next/router";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import ImageUploader from "components/ImageUploader/ImageUploader";
-import { getGendered } from "@lierno/core-helpers";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 export function Details({ creature, setCreature }) {
   const router = useRouter();

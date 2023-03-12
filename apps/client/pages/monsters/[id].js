@@ -13,10 +13,12 @@ import {
 } from "@lierno/dnd-helpers";
 import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Layout, Metadata } from "components";
 import { CreatureMenu } from "components/CreatureMenu/CreatureMenu";
-import { CreatureFlavor, CreatureStats } from "components/CreatureProfile";
+import { CreatureFlavor } from "components/CreatureProfile/CreatureFlavor/CreatureFlavor";
 import HitPoints from "components/CreatureProfile/CreatureStats/components/HitPoints/HitPoints";
+import { CreatureStats } from "components/CreatureProfile/CreatureStats/CreatureStats";
+import { Layout } from "components/Layout/Layout";
+import { Metadata } from "components/Metadata/Metadata";
 import { ArrayUtil } from "helpers/string-util";
 import { useWidth } from "hooks/useWidth";
 import { getToken } from "next-auth/jwt";

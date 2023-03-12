@@ -13,4 +13,5 @@ module.exports = {
     }
     return config;
   },
+  staticPageGenerationTimeout: 120
 };

@@ -7,7 +7,7 @@ import { TypeORMLegacyAdapter } from "@next-auth/typeorm-legacy-adapter";
 export default NextAuth({
   adapter: TypeORMLegacyAdapter(process.env.DATABASE_URL),
   pages: {
-    signIn: "/login",
+    signIn: "/",
   },
   providers: [
     Credentials({
@@ -17,7 +17,7 @@ export default NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const url = process.env.NEXT_PUBLIC_ENDPOINT + "/api/sign-in";
+        const url = process.env.NEXT_PUBLIC_CLIENT + "/api/user/sign-in";
 
         const res = await fetch(url, {
           method: "POST",

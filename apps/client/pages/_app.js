@@ -1,16 +1,13 @@
+import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
-import { useMediaQuery } from "@mui/material";
-import CssBaseline from "@mui/material/CssBaseline";
-import { createTheme, darken, ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { SessionProvider as AuthProvider } from "next-auth/react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import PropTypes from "prop-types";
-import * as React from "react";
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import createEmotionCache from "../helpers/createEmotionCache";
 import ColorModeContext from "../services/color-context";
 import { background as backgroundList, initialTheme, primary as primaryList } from "../services/theme";
 import "../styles/globals.css";
@@ -20,20 +17,19 @@ const ProgressBar = dynamic(() => import("components/ProgressBar"), {
 });
 
 // Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
+const clientSideEmotionCache = createCache({ key: "css" });
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [theme, setTheme] = useState(createTheme({ ...initialTheme }));
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof window !== undefined) {
       colorMode.setDefaultTheme();
     }
   }, []);
 
-  const colorMode = React.useMemo(
+  const colorMode = useMemo(
     () => ({
       changePrimaryColor: (main) => {
         const newTheme = createTheme({
@@ -53,7 +49,7 @@ export default function MyApp(props) {
             mode,
             primary: { ...theme.palette.primary },
             background: {
-              ...theme.palette.augmentColor({ color: { main: background } }),
+              ...theme.palette.augmentColor({ color: { main: background ?? theme.palette.primary } }),
             },
           },
           components: { ...initialTheme.components },
@@ -63,7 +59,10 @@ export default function MyApp(props) {
         localStorage.setItem("background", JSON.stringify({ background, mode }));
       },
       setDefaultTheme: () => {
-        const backgroundStr = localStorage.getItem("background") ?? JSON.stringify({ ...backgroundList[0] });
+        const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const backgroundStr =
+          localStorage.getItem("background") ?? JSON.stringify({ ...backgroundList[matchMedia.matches ? 1 : 0] });
         const primaryStr = localStorage.getItem("primary") ?? JSON.stringify({ main: primaryList[0] });
 
         const { background, mode } = JSON.parse(backgroundStr);
@@ -74,7 +73,9 @@ export default function MyApp(props) {
           palette: {
             mode,
             primary,
-            background: { ...theme.palette.augmentColor({ color: { main: background } }) },
+            background: {
+              ...theme.palette.augmentColor({ color: { main: background ?? theme.palette.background.main.color } }),
+            },
           },
           components: { ...initialTheme.components },
         });
@@ -86,19 +87,13 @@ export default function MyApp(props) {
     [theme]
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.documentElement.style.setProperty("--primary-color", theme.palette.primary.main);
   }, [theme]);
 
   return (
     <AuthProvider options={{ clientMaxAge: 0, keepAlive: 0 }} session={pageProps.session}>
-      <ToastContainer
-        closeOnClick
-        draggable
-        position="top-right"
-        autoClose={5000}
-        theme={prefersDarkMode ? "dark" : "light"}
-      />
+      <ToastContainer closeOnClick draggable position="top-right" autoClose={5000} theme={"dark"} />
       <CacheProvider value={emotionCache}>
         <Head>
           <title>Lierno App</title>
@@ -115,9 +110,3 @@ export default function MyApp(props) {
     </AuthProvider>
   );
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  emotionCache: PropTypes.object,
-  pageProps: PropTypes.object.isRequired,
-};
