@@ -12,22 +12,37 @@ import {
   getSpeedString,
   getStatBonus,
 } from "@lierno/dnd-helpers";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, CircularProgress, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { CreatureMenu } from "components/CreatureMenu/CreatureMenu";
-import { CreatureFlavor } from "components/CreatureProfile/CreatureFlavor/CreatureFlavor";
 import HitPoints from "components/CreatureProfile/CreatureStats/components/HitPoints/HitPoints";
-import { CreatureStats } from "components/CreatureProfile/CreatureStats/CreatureStats";
 import { Layout } from "components/Layout/Layout";
 import { Metadata } from "components/Metadata/Metadata";
 import download from "downloadjs";
-import serialize from "helpers/serializeJson";
 import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import Api from "services/api";
+
+import dynamic from "next/dynamic";
+
+const CreatureFlavor = dynamic(() => import("components/CreatureProfile/CreatureFlavor/CreatureFlavor"), {
+  loading: () => (
+    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
+      <CircularProgress />
+    </Box>
+  ),
+});
+
+const CreatureStats = dynamic(() => import("components/CreatureProfile/CreatureStats/CreatureStats"), {
+  loading: () => (
+    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
+      <CircularProgress />
+    </Box>
+  ),
+});
 
 export default function CharacterProfile({ character }) {
   const { data: session } = useSession();
