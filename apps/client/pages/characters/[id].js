@@ -219,12 +219,7 @@ export default function CharacterProfile({ character }) {
 
 export async function getServerSideProps(context) {
   const { query } = context;
-  const { connectToDB } = await import("lib/mongodb");
-  const { default: Character } = await import("models/character");
-
-  await connectToDB();
-
-  const character = serialize(await Character.findById(query.id));
+  const character = await Api.fetchInternal(`/characters/${query.id}`).catch(() => null);
 
   return {
     props: {
