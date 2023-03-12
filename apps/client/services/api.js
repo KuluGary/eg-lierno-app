@@ -11,11 +11,11 @@ export default class Api {
       credentials: "include",
       ...options,
     }).then(async (response) => {
+      const json = await response.json();
+
       if (response.status >= 400 && response.status < 500) {
         throw new Error(json.message);
       }
-
-      const json = await response.json();
 
       return json?.payload ?? json;
     });
@@ -33,11 +33,11 @@ export default class Api {
       credentials: "include",
       ...options,
     }).then(async (response) => {
+      const json = await response.json();
+
       if (response.status >= 400 && response.status < 500) {
         throw new Error(json.message);
       }
-
-      const json = await response.json();
 
       return json?.payload ?? json;
     });
