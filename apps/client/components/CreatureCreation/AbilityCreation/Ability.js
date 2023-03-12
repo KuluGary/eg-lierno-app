@@ -1,8 +1,9 @@
-import { Grid, TextField, Box } from "@mui/material";
-import { HTMLEditor } from "components";
-import { FullScreenModal } from "components/Modal";
+import { Box, Grid, TextField } from "@mui/material";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
+import { FullScreenModal } from "components/Modal/FullScreenModal";
 import { useEffect, useState } from "react";
-import { ModalFooter, ModalHeader } from ".";
+import { ModalFooter } from "./ModalFooter";
+import { ModalHeader } from "./ModalHeader";
 
 export function Ability({ open, onClose, section, selectedIndex, creature, onSave }) {
   const [content, setContent] = useState({ name: "", description: "" });

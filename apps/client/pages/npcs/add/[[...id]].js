@@ -1,22 +1,25 @@
 import { setNestedKey } from "@lierno/core-helpers";
 import { Box, Button, Container as MuiContainer, Tab, Tabs, Typography, useTheme } from "@mui/material";
-import { Container, Layout } from "components";
-import { Abilities, Details, Equipment, Proficiencies, Stats } from "components/CreatureCreation";
-import {
-  Backpack as BackpackIcon,
-  Character as CharacterIcon,
-  Juggler as JugglerIcon,
-  MuscleUp as MuscleUpIcon,
-  SpellBolt as SpellBoltIcon,
-} from "components/icons";
+// import { Abilities, Details, Equipment, Proficiencies, Stats } from "components/CreatureCreation";
+import { Abilities } from "components/CreatureCreation/Abilities";
+import { Details } from "components/CampaignCreation/Details";
+import { Equipment } from "components/CreatureCreation/Equipment";
+import { Proficiencies } from "components/CreatureCreation/Proficiencies";
+import { Stats } from "components/CreatureCreation/Stats";
+import { Backpack as BackpackIcon } from "components/icons/Backpack";
+import { Character as CharacterIcon } from "components/icons/Character";
+import { Juggler as JugglerIcon } from "components/icons/Juggler";
+import { MuscleUp as MuscleUpIcon } from "components/icons/MuscleUp";
+import { SpellBolt as SpellBoltIcon } from "components/icons/SpellBolt";
 import Api from "services/api";
 import creature_template from "helpers/json/creature_template.json";
-import { getToken } from "next-auth/jwt";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import useCreatureData from "hooks/useCreatureData";
 import serialize from "helpers/serializeJson";
+import { Layout } from "components/Layout/Layout";
+import { Container } from "components/Container/Container";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,12 +56,7 @@ const tabs = [
   { label: "Equipamiento", Icon: BackpackIcon, Component: Equipment },
 ];
 
-export default function AddNpc({
-  npc,
-  // spells,
-  // classes,
-  // items
-}) {
+export default function AddNpc({ npc }) {
   const theme = useTheme();
   const router = useRouter();
   const [activeStep, setActiveStep] = useState(0);
@@ -130,7 +128,9 @@ export default function AddNpc({
               </TabPanel>
             ))}
             <Box sx={{ m: 3, float: "right" }}>
-              <Button sx={{ marginInline: 1 }}>Cancelar</Button>
+              <Button sx={{ marginInline: 1 }} onClick={() => router.back()}>
+                Cancelar
+              </Button>
               <Button sx={{ marginInline: 1 }} variant="outlined" onClick={handleSubmit}>
                 Guardar
               </Button>

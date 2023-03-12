@@ -1,7 +1,8 @@
 import { Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { NavBar } from "components/NavBar/NavBar";
+import { SecondaryNav } from "components/SecondaryNav/SecondaryNav";
 import { useState } from "react";
-import { NavBar, SecondaryNav } from "../";
 import style from "./Layout.style";
 
 export function Layout({ children }) {

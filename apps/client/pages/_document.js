@@ -1,8 +1,6 @@
-import * as React from "react";
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import createEmotionServer from "@emotion/server/create-instance";
-import createEmotionCache from "../helpers/createEmotionCache";
 import { ServerStyleSheets } from "@mui/styles";
+import Document, { Head, Html, Main, NextScript } from "next/document";
+import React from "react";
 
 export default class MyDocument extends Document {
   render() {

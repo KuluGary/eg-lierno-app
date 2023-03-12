@@ -37,18 +37,6 @@ export const postImage = async (req, res) => {
           res.status(500).json({ error: "Err: " + err });
         });
     });
-
-    // let { original, crop } = req.files;
-
-    // original = original[0];
-    // crop = crop[0];
-
-    // const originalName = original.originalName || original.originalname || "";
-
-    // const token = await createToken(crop.buffer);
-    // const avatar = await getSmallImage(crop.buffer);
-
-    // console.log({ token, avatar });
   } catch (error) {
     console.error({ error });
     res.status(400).json({ message: error });

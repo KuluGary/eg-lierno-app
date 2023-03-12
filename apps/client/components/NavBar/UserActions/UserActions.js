@@ -16,7 +16,7 @@ export default function UserActions({ isMainScreen = false }) {
 
   const handleLogout = (e) => {
     e.preventDefault();
-    signOut();
+    signOut({ callbackUrl: "/" });
   };
 
   if (sessionStatus === "loading") return <React.Fragment />;

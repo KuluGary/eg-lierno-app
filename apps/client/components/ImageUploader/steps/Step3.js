@@ -15,8 +15,6 @@ function Step3({ upImg, cropImg, setImage, setDone }) {
       };
       const formData = new FormData();
 
-      console.log({ upImg, a: typeof upImg });
-
       formData.append("original", upImg);
       formData.append("crop", cropImg);
 

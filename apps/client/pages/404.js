@@ -1,5 +1,5 @@
 import { Box, Divider, Typography } from "@mui/material";
-import { Link } from "components";
+import { Link } from "components/Link/Link";
 
 export default function NotFound() {
   return (
@@ -24,9 +24,6 @@ export default function NotFound() {
           No se ha podido encontrar la página.
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "space-around", marginBlock: 1 }}>
-          <Link href="/login">
-            <Typography variant="subtitle2">Volver al login</Typography>
-          </Link>
           <Link href="/">
             <Typography variant="subtitle2">Volver al inicio</Typography>
           </Link>

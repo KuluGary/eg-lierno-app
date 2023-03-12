@@ -1,21 +1,22 @@
-import { Grid, Typography, Table, TableCell, Divider, Box } from "@mui/material";
-import { DragDropTable } from "components/DragDropComponents";
+import { Box, Divider, Grid, Table, TableCell, Typography } from "@mui/material";
+import { Container } from "components/Container/Container";
+import { DragDropTable } from "components/DragDropComponents/DragDropTable";
 import { useState } from "react";
 import { DragDropContext } from "react-beautiful-dnd";
-import { Container } from "..";
-import { AddButton, EditButton, DeleteButton } from "../Buttons";
-import { Ability, Attack, Spell } from "./AbilityCreation";
+import { AddButton, DeleteButton, EditButton } from "../Buttons";
+
+import dynamic from "next/dynamic";
 
 const Modal = (props) => {
   const { section } = props;
 
   switch (section) {
     case "spells":
-      return <Spell {...props} />;
+      return dynamic(() => import("./AbilityCreation/Spell")).then(({ Spell }) => Spell);
     case "attacks":
-      return <Attack {...props} />;
+      return dynamic(() => import("./AbilityCreation/Attack")).then(({ Attack }) => Attack);
     default:
-      return <Ability {...props} />;
+      return dynamic(() => import("./AbilityCreation/Ability")).then(({ Ability }) => Ability);
   }
 };
 
@@ -138,7 +139,6 @@ export function Abilities({ creature, setCreature, classes }) {
           selectedIndex={selectedIndex}
           creature={creature}
           onSave={(content, section, index) => {
-            console.log({ content, section });
             const newArray = creature?.stats[section] ?? [];
 
             if (index !== null) {

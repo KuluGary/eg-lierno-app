@@ -1,21 +1,9 @@
+import { getNestedKey } from "@lierno/core-helpers";
 import { Grid } from "@mui/material";
 import { Container } from "components/Container/Container";
-import { PaginatedTable, Table } from "components/Table";
-import Api from "services/api";
-import { useEffect, useState } from "react";
-import { getNestedKey } from "@lierno/core-helpers";
+import { PaginatedTable } from "components/Table/PaginatedTable";
 
 export function CampaignFactions({ campaign }) {
-  const [factions, setFactions] = useState();
-
-  // useEffect(() => fetchNewFactions(), []);
-
-  // const fetchNewFactions = async () => {
-  //   const newFactions = await Api.fetchInternal("/campaigns/factions/" + campaign._id);
-
-  //   setFactions(newFactions);
-  // };
-
   return (
     <Grid item laptop={12} container spacing={2}>
       <Grid item laptop={12}>
@@ -30,7 +18,6 @@ export function CampaignFactions({ campaign }) {
             })}
             fetchFrom={`/factions/campaigns/${campaign._id}`}
             src={"/factions/{ID}"}
-            data={factions}
           />
         </Container>
       </Grid>

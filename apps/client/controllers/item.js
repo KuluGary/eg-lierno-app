@@ -12,12 +12,15 @@ export const getItems = async (req, res) => {
       res.status(200).json({ payload: item });
     } else {
       const itemIds = getApiParams("itemIds", req);
-      console.log({ itemIds });
+      const { skip, limit } = req.query;
 
       if (!!itemIds) {
         const itemIdsArr = itemIds.split(",");
 
-        const items = await Item.find({ _id: { $in: itemIdsArr } });
+        const items = await Item.find({ _id: { $in: itemIdsArr } })
+          .sort({ name: 1 })
+          .skip(parseInt(skip ?? 0))
+          .limit(parseInt(limit ?? 0));
 
         res.status(200).json({ payload: items });
       } else {

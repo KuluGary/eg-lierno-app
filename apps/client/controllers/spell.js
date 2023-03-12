@@ -7,7 +7,8 @@ export const getSpell = async (req, res) => {
     const id = getApiParams("id", req);
 
     if (!!id) {
-      const spellIds = req.query?.spellIds?.split(",");
+      const spellIds = JSON.parse(id);
+      console.log({ spellIds });
 
       if (spellIds.length > 1) {
         const spells = await Spell.find({ _id: { $in: spellIds } });

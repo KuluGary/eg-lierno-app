@@ -1,11 +1,11 @@
-import { Typography, Box } from "@mui/material";
-import { Layout, Container } from "components";
-import { Table } from "components/Table";
-import Api from "services/api";
-import Head from "next/head";
-import { getToken } from "next-auth/jwt";
-import Router from "next/router";
 import { getNestedKey } from "@lierno/core-helpers";
+import { Box, Typography } from "@mui/material";
+import { Container } from "components/Container/Container";
+import { Layout } from "components/Layout/Layout";
+import { Table } from "components/Table/Table";
+import Head from "next/head";
+import Router from "next/router";
+import Api from "services/api";
 
 export default function Campaigns({ campaigns }) {
   return (
@@ -40,24 +40,7 @@ export default function Campaigns({ campaigns }) {
 }
 
 export async function getServerSideProps(context) {
-  const { req } = context;
-  const secret = process.env.SECRET;
-
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
-
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  const campaigns = await Api.fetchInternal("/campaigns", {
-    headers,
-  }).catch((_) => null);
+  const campaigns = await Api.fetchInternal("/campaigns").catch((_) => null);
 
   return {
     props: {

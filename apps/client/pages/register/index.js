@@ -1,10 +1,11 @@
-import { useState } from "react";
-import Head from "next/head";
-import { Grid, Box, Typography, Button, FormControlLabel, Container, Avatar, TextField, Paper } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { Copyright, Link } from "components";
+import { Avatar, Box, Button, Grid, Paper, TextField, Typography } from "@mui/material";
+import { Copyright } from "components/Copyright/Copyright";
+import { Link } from "components/Link/Link";
 import { StringUtil } from "helpers/string-util";
+import Head from "next/head";
 import Router from "next/router";
+import { useState } from "react";
 import { toast } from "react-toastify";
 import Api from "services/api";
 
@@ -99,9 +100,8 @@ export default function Register() {
         tablet={4}
         laptop={6}
         sx={{
-          backgroundImage: "url(art/login-bg.jpg)",
+          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(art/login-bg.jpg)`,
           backgroundRepeat: "no-repeat",
-          backgroundColor: (t) => (t.palette.mode === "light" ? t.palette.grey[50] : t.palette.grey[900]),
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -201,7 +201,7 @@ export default function Register() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="/login" variant="body2">
+                <Link href="/" variant="body2">
                   ¿Ya tienes una cuenta? Entrar
                 </Link>
               </Grid>

@@ -10,7 +10,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { HTMLEditor } from "components";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import { useState, useEffect } from "react";
 import Api from "services/api";
 

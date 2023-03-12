@@ -30,10 +30,8 @@ const useCreatureData = (creature, type) => {
 
     setClasses(apiClasses);
 
-    if (!!creature?.stats?.equipment && Object.values(creature?.stats?.equipment).some((arr) => arr.length > 0)) {
+    if (!!creature?.stats?.equipment && Object.values(creature?.stats?.equipment)?.some((arr) => arr?.length > 0)) {
       const objects = [];
-
-      console.log({ objects });
 
       for (const key in creature.stats.equipment || {}) {
         const element = creature.stats.equipment[key];
@@ -42,8 +40,6 @@ const useCreatureData = (creature, type) => {
           objects.push(...element.map((i) => i.id));
         }
       }
-
-      console.log({ objects });
 
       let items = await Api.fetchInternal(`/items?itemIds=${objects.join(",")}`);
 

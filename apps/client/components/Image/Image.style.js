@@ -18,6 +18,7 @@ const style = {
     alignItems: "center",
   },
   imageStyles: {
+    position: "relative",
     border: (theme) => `1px solid ${theme.palette.divider}`,
     borderRadius: "4px",
     cursor: "pointer",

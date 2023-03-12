@@ -1,25 +1,26 @@
-import {
-  Grid,
-  Typography,
-  InputBase,
-  Divider,
-  Button,
-  TextField,
-  FormControl,
-  Select,
-  MenuItem,
-  Box,
-  ListSubheader,
-  IconButton,
-} from "@mui/material";
-import { Add as AddIcon, Close } from "@mui/icons-material";
-import { Container, HTMLEditor } from "components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDice } from "@fortawesome/free-solid-svg-icons";
-import { useRouter } from "next/router";
-import { skills, saves } from "../../helpers/json/customizable_stats.json";
-import { getModifier, getStatBonus } from "@lierno/dnd-helpers";
 import { getOperatorString } from "@lierno/core-helpers";
+import { getModifier, getStatBonus } from "@lierno/dnd-helpers";
+import { Add as AddIcon, Close } from "@mui/icons-material";
+import {
+  Box,
+  Button,
+  Divider,
+  FormControl,
+  Grid,
+  IconButton,
+  InputBase,
+  ListSubheader,
+  MenuItem,
+  Select,
+  TextField,
+  Typography,
+} from "@mui/material";
+import { useTheme } from "@mui/styles";
+import { Container } from "components/Container/Container";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
+import { D20 } from "components/icons/D20";
+import { useRouter } from "next/router";
+import { saves, skills } from "../../helpers/json/customizable_stats.json";
 
 const scoreBonusOptions = [
   {
@@ -54,6 +55,7 @@ const statLabels = {
 export function Stats({ creature, setCreature }) {
   const router = useRouter();
   const isCharacter = router.pathname.includes("characters");
+  const theme = useTheme();
 
   return (
     <Grid container spacing={3}>
@@ -468,6 +470,7 @@ export function Stats({ creature, setCreature }) {
               <Typography variant="overline">CALCULAR</Typography>
               <Container>
                 <Button
+                  size="small"
                   onClick={() => {
                     const { total: conTotal } = getStatBonus(`stats.abilityScores.constitution`, creature);
                     const { bonus: hitPointBonus } = getStatBonus(`stats.hitPoints.max`, creature);
@@ -501,7 +504,7 @@ export function Stats({ creature, setCreature }) {
                     setCreature("stats.hitPoints.max", newMaxHitPoints);
                   }}
                 >
-                  <FontAwesomeIcon size="lg" icon={faDice} style={{}} />
+                  <D20 color={theme.palette.primary.main} size={32} sx={{ margin: 0 }} />
                   {isCharacter && (
                     <Box sx={{ marginLeft: "1em" }}>
                       {`${creature?.stats.classes

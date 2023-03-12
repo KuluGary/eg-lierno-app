@@ -92,16 +92,16 @@ export const putCharacter = async (req, res) => {
     if (session) {
       const characterId = getApiParams("id", req);
 
-      await Character.findOneAndUpdate({ _id: characterId, createdBy: session.userId }, req.body, (err) => {
+      Character.findOneAndUpdate({ _id: characterId, createdBy: session.userId }, req.body, (err) => {
         if (err) return res.status(403).json({ message: "El personaje no ha podido ser modificado." });
 
         return res.status(200).json({ message: "Personaje modificado" });
       });
     } else {
-      res.status(401).json({ message: "Usuario sin autenticar." });
+      return res.status(401).json({ message: "Usuario sin autenticar." });
     }
   } catch (error) {
-    res.status(400).json({ message: error });
+    return res.status(400).json({ message: error });
   }
 };
 
@@ -112,8 +112,6 @@ export const deleteCharacter = async (req, res) => {
     if (session) {
       const characterId = getApiParams("id", req);
 
-      console.log(characterId);
-
       await Character.findOneAndDelete({ _id: characterId, createdBy: session.userId }, (err) => {
         if (err) return res.status(500).json({ message: err });
 
@@ -123,7 +121,6 @@ export const deleteCharacter = async (req, res) => {
       res.status(401).json({ message: "Usuario sin autenticar." });
     }
   } catch (error) {
-    console.log({ error });
     res.status(400).json({ message: error });
   }
 };

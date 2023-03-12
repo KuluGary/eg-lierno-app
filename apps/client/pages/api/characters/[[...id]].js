@@ -2,7 +2,6 @@ import { deleteCharacter, getCharacters, postCharacter, putCharacter } from "con
 import connectDB from "middleware/mongodb";
 
 const handler = async (req, res) => {
-  console.log(req.method)
   switch (req.method) {
     case "GET":
       return getCharacters(req, res);
@@ -13,7 +12,7 @@ const handler = async (req, res) => {
     case "DELETE":
       return deleteCharacter(req, res);
     default:
-      res.status(422).send("req_method_not_supported");
+      return res.status(422).send("req_method_not_supported");
   }
 };
 

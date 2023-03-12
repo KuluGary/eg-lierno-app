@@ -1,5 +1,8 @@
 import { Box, Grid, Table, TableBody, TableCell, TableRow, Typography } from "@mui/material";
-import { Avatar, Container, HTMLContainer, Link } from "components";
+import { Avatar } from "components/Avatar/Avatar";
+import { Container } from "components/Container/Container";
+import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
+import { Link } from "components/Link/Link";
 import style from "./CampaignDetails.style";
 
 export function CampaignDetails({ campaign, dm, players, characters }) {

@@ -1,5 +1,8 @@
 import { Box, Divider, Typography } from "@mui/material";
-import { Container, HTMLContainer, Layout, Metadata } from "components";
+import { Container } from "components/Container/Container";
+import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
+import { Layout } from "components/Layout/Layout";
+import { Metadata } from "components/Metadata/Metadata";
 import references from "helpers/json/references.json";
 
 export default function Reference({ reference }) {
@@ -21,7 +24,6 @@ export default function Reference({ reference }) {
           <Box component="ul">
             {reference.bullets?.map((bullet, index) => (
               <Box component="li" key={index}>
-                {/* {bullet} */}
                 <HTMLContainer content={bullet} />
               </Box>
             ))}

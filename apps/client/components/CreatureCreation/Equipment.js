@@ -1,10 +1,10 @@
-import { Grid, Typography, Table, TableCell, Divider, Box, TextField, Autocomplete, Button } from "@mui/material";
-import { DragDropTable } from "components/DragDropComponents";
-import { FullScreenModal } from "components/Modal";
+import { Autocomplete, Box, Button, Divider, Grid, Table, TableCell, TextField, Typography } from "@mui/material";
+import { Container } from "components/Container/Container";
+import { DragDropTable } from "components/DragDropComponents/DragDropTable";
+import { FullScreenModal } from "components/Modal/FullScreenModal";
 import { useEffect, useState } from "react";
 import { DragDropContext } from "react-beautiful-dnd";
-import { Container } from "..";
-import { AddButton, EditButton, DeleteButton } from "../Buttons";
+import { AddButton, DeleteButton, EditButton } from "../Buttons";
 
 const Modal = ({ open, onClose, section, selectedIndex, creature, onSave, items }) => {
   const [content, setContent] = useState({ id: "", equipped: true, quantity: 1 });

@@ -19,13 +19,14 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { HTMLEditor } from "components";
-import { FullScreenModal } from "components/Modal";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
+import { FullScreenModal } from "components/Modal/FullScreenModal";
 import { spellcasters, statLabels } from "helpers/creature-calculations";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Api from "services/api";
-import { ModalFooter, ModalHeader } from ".";
+import { ModalHeader } from "./ModalHeader";
+import { ModalFooter } from "./ModalFooter";
 
 const schoolOptions = [
   "Abjuración",

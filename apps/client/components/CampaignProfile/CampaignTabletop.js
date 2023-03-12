@@ -1,4 +1,4 @@
-import { Add, DoubleArrow, ScreenShareOutlined } from "@mui/icons-material";
+import { Add, DoubleArrow } from "@mui/icons-material";
 import {
   Box,
   Dialog,
@@ -14,14 +14,16 @@ import {
   TableRow,
   Tabs,
   TextField,
-  Typography,
+  Typography
 } from "@mui/material";
-import { Avatar, Container, TabletopCanvas } from "components";
-import { Table } from "components/Table";
-import Api from "services/api";
+import { Avatar } from "components/Avatar/Avatar";
+import { Container } from "components/Container/Container";
+import { Table } from "components/Table/Table";
+import { TabletopCanvas } from "components/TabletopCanvas/TabletopCanvas";
 import { useSocket } from "hooks/useSocket";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
+import Api from "services/api";
 
 function AddElementModal({ open, setOpen, creatures, addNewCreature }) {
   const [tabIndex, setTabIndex] = useState(0);
@@ -244,3 +246,4 @@ function CampaignTabletop({ campaign, dm, players, characters }) {
 }
 
 export { CampaignTabletop };
+

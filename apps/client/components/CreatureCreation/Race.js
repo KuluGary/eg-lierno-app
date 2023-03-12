@@ -1,6 +1,6 @@
 import { getGendered } from "@lierno/core-helpers";
 import { FormControl, Grid, MenuItem, Select, TextField, Typography, useTheme } from "@mui/material";
-import { HTMLEditor } from "components";
+import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 
 export function Race({ creature, setCreature }) {
   const sizes = [

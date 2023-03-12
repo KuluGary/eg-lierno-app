@@ -4,7 +4,7 @@ describe("Home navigation", () => {
 
     cy.get('a[href*="/api/auth/signing"]').click();
 
-    cy.url().should("include", "/login");
+    cy.url().should("include", "/");
 
     cy.get("h1").contains("Accede a Lierno App");
   });
