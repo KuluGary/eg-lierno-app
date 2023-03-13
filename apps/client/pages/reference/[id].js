@@ -1,6 +1,6 @@
 import { Box, Divider, Typography } from "@mui/material";
 import { Container } from "components/Container/Container";
-import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
+import HTMLContainer from "components/HTMLContainer/HTMLContainer";
 import { Layout } from "components/Layout/Layout";
 import { Metadata } from "components/Metadata/Metadata";
 import references from "helpers/json/references.json";

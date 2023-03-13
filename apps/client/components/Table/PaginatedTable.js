@@ -1,16 +1,23 @@
-import { useQueryState } from "hooks/useQueryState";
-import { useCallback, useEffect, useState } from "react";
-import { Table as MuiTable, TableBody, Box, CircularProgress } from "@mui/material";
-import Api from "services/api";
+import { Box, CircularProgress, Table as MuiTable, TableBody } from "@mui/material";
 import { FunctionUtil } from "helpers/function-util";
 import { usePersistedStorage } from "hooks/usePersistedStorage";
-import Card from "components/Card/Card";
-import { getNestedKey } from "@lierno/core-helpers";
+import { useQueryState } from "hooks/useQueryState";
+import { useCallback, useEffect, useState } from "react";
+import Api from "services/api";
+import { TableFooter } from "./TableFooter/TableFooter";
 import { TableHeader } from "./TableHeader/TableHeader";
 import { TableRow } from "./TableRow/TableRow";
-import { TableFooter } from "./TableFooter/TableFooter";
 
-function PaginatedTable({ src, onEdit, onDelete, isEditable, headerProps, fetchFrom, loading, getRowData }) {
+export default function PaginatedTable({
+  src,
+  onEdit,
+  onDelete,
+  isEditable,
+  headerProps,
+  fetchFrom,
+  loading,
+  getRowData,
+}) {
   const [displayData, setDisplayData] = useState(null);
   const [rowsPerPage, setRowsPerPage] = usePersistedStorage("rowsPerTable", 5);
   const [querySearch, setQuerySearch] = useState("");
@@ -99,5 +106,3 @@ function PaginatedTable({ src, onEdit, onDelete, isEditable, headerProps, fetchF
     </>
   );
 }
-
-export { PaginatedTable };

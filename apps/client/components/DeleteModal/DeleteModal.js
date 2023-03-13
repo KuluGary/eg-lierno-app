@@ -1,7 +1,7 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
 import React from "react";
 
-export function DeleteModal({ open, onSave, onClose }) {
+export default function DeleteModal({ open, onSave, onClose }) {
   return (
     <Dialog open={open} onClose={onClose}>
       <DialogTitle sx={{ p: 4 }}>{`¿Seguro que quieres eliminar este elemento?`}</DialogTitle>

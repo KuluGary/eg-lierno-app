@@ -10,10 +10,12 @@ import {
   getProficiencyBonus,
   getSavingThrowString,
   getSpeedString,
-  getStatBonus,
+  getStatBonus
 } from "@lierno/dnd-helpers";
-import { Box, CircularProgress, Grid, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import CircularProgress from "@mui/material/CircularProgress";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import { CreatureMenu } from "components/CreatureMenu/CreatureMenu";
 import HitPoints from "components/CreatureProfile/CreatureStats/components/HitPoints/HitPoints";
 import { Layout } from "components/Layout/Layout";
@@ -22,11 +24,10 @@ import download from "downloadjs";
 import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
 import { useSession } from "next-auth/react";
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import Api from "services/api";
-
-import dynamic from "next/dynamic";
 
 const CreatureFlavor = dynamic(() => import("components/CreatureProfile/CreatureFlavor/CreatureFlavor"), {
   loading: () => (
@@ -46,7 +47,6 @@ const CreatureStats = dynamic(() => import("components/CreatureProfile/CreatureS
 
 export default function CharacterProfile({ character }) {
   const { data: session } = useSession();
-  const theme = useTheme();
   const width = useWidth();
   const [currentCharacter, setCurrentCharacter] = useState(character);
   const { spells, items, tier, classes } = useCreatureData(character, "character");
@@ -78,11 +78,6 @@ export default function CharacterProfile({ character }) {
       <Grid container spacing={1} sx={{ height: "100%" }}>
         <Grid item laptop={6} mobile={12}>
           <CreatureFlavor
-            containerStyle={{
-              height: width.down("tablet") ? "100%" : "90vh",
-              overflowY: width.down("tablet") ? "no-scroll" : "scroll",
-              ...theme.mixins.noScrollbar,
-            }}
             data={{
               id: currentCharacter._id,
               sections: [
@@ -124,12 +119,6 @@ export default function CharacterProfile({ character }) {
         </Grid>
         <Grid item laptop={6} mobile={12} sx={{ paddingBottom: width.down("tablet") ? "1em" : 0 }}>
           <CreatureStats
-            containerStyle={{
-              height: width.down("tablet") ? "100%" : "90vh",
-              overflowY: width.down("tablet") ? "no-scroll" : "scroll",
-              paddingBottom: width.down("tablet") ? "1em" : 0,
-              ...theme.mixins.noScrollbar,
-            }}
             data={{
               character: currentCharacter,
               classes: currentCharacter["stats"]["classes"],
@@ -234,10 +223,8 @@ export default function CharacterProfile({ character }) {
 
 export async function getServerSideProps(context) {
   const { query } = context;
-  console.time("getServerSideProps");
   const character = await Api.fetchInternal(`/characters/${query.id}`).catch(() => null);
-  console.timeEnd("getServerSideProps");
-  
+
   return {
     props: {
       key: character._id,

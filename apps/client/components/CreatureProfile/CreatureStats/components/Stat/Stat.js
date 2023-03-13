@@ -1,7 +1,14 @@
 import { getOperatorString } from "@lierno/core-helpers";
 import { getModifier } from "@lierno/dnd-helpers";
-import { Box, Divider, Table, TableBody, TableCell, TableRow, Typography, useTheme } from "@mui/material";
-import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
+import { useTheme } from "@mui/material";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableRow from "@mui/material/TableRow";
+import Typography from "@mui/material/Typography";
+import HTMLContainer from "components/HTMLContainer/HTMLContainer";
 import { Shield as ShieldIcon } from "components/icons/Shield";
 import { FullScreenModal } from "components/Modal/FullScreenModal";
 import customizable_stats from "helpers/json/customizable_stats.json";

@@ -1,18 +1,34 @@
 import { Fragment } from "react";
-import { Typography, Box, Tabs, Tab, Divider } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Divider from "@mui/material/Divider";
 import Router from "next/router";
 import Image from "../../Image/Image";
 import style from "./CreatureFlavor.style";
 import { Container } from "components/Container/Container";
-import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
+import HTMLContainer from "components/HTMLContainer/HTMLContainer";
+import { useWidth } from "hooks/useWidth";
+import { useTheme } from "@mui/material";
 
-export default function CreatureFlavor({ Header, data, containerStyle }) {
+export default function CreatureFlavor({ Header, data }) {
   const { tier, image, sections } = data;
+  const width = useWidth();
+  const theme = useTheme();
 
   return (
-    <Container header={!!Header && <Header />} sx={{ ...(!!containerStyle && containerStyle) }} noPadding>
+    <Container
+      header={!!Header && <Header />}
+      sx={{
+        height: width.down("tablet") ? "100%" : "90vh",
+        overflowY: width.down("tablet") ? "no-scroll" : "scroll",
+        ...theme.mixins.noScrollbar,
+      }}
+      noPadding
+    >
       {tier?.length > 1 && (
-        <>
+        <Fragment>
           <Tabs value={data.tier.indexOf(data.id)} aria-label="tier tabs">
             {tier.map((t, i) => (
               <Tab
@@ -27,7 +43,7 @@ export default function CreatureFlavor({ Header, data, containerStyle }) {
             ))}
           </Tabs>
           <Divider />
-        </>
+        </Fragment>
       )}
       <Box id="creature-flavor" component="div" sx={style.flavorContainer}>
         {image && <Image src={data.image} sx={style.portrait} modal />}

@@ -3,7 +3,7 @@ import { Collapse, IconButton, TableCell, TableRow, Typography } from "@mui/mate
 import { useState } from "react";
 import style from "./ExpandedTableRow.style";
 
-export function ExpandedTableRow({ icon, title, content, index }) {
+export default function ExpandedTableRow({ icon, title, content, index }) {
   const [open, setOpen] = useState(false);
 
   return (

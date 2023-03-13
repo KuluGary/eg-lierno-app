@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import style from "./FileUploaderModal.style";
 
-export function FileUploaderModal({ open, onClose, onSave }) {
+export default function FileUploaderModal({ open, onClose, onSave }) {
   const onDrop = useCallback((acceptedFiles) => {
     onSave(acceptedFiles);
   });
