@@ -1,7 +1,7 @@
 import { getNestedKey } from "@lierno/core-helpers";
 import { Grid } from "@mui/material";
 import { Container } from "components/Container/Container";
-import { PaginatedTable } from "components/Table/PaginatedTable";
+import PaginatedTable from "components/Table/PaginatedTable";
 
 export function CampaignFactions({ campaign }) {
   return (

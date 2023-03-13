@@ -3,7 +3,7 @@ import { TreeItem, TreeView } from "@mui/lab";
 import { treeItemClasses } from "@mui/lab/TreeItem";
 import { Box, Grid, IconButton, styled, Typography } from "@mui/material";
 import { Container } from "components/Container/Container";
-import { HTMLContainer } from "components/HTMLContainer/HTMLContainer";
+import HTMLContainer from "components/HTMLContainer/HTMLContainer";
 import { useState } from "react";
 
 export function CampaignDiary({ campaign }) {

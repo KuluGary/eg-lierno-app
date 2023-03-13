@@ -2,16 +2,39 @@ import { getNestedKey } from "@lierno/core-helpers";
 import { getCharacterSubtitle, getNpcSubtitle } from "@lierno/dnd-helpers";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import { Container } from "components/Container/Container";
-import { DeleteModal } from "components/DeleteModal/DeleteModal";
-import { FileUploaderModal } from "components/FileUploaderModal";
 import { Layout } from "components/Layout/Layout";
-import { PaginatedTable } from "components/Table/PaginatedTable";
+import CircularProgress from "@mui/material/CircularProgress";
 import { useMounted } from "hooks/useMounted";
 import { useQueryState } from "hooks/useQueryState";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import Router from "next/router";
 import { useState } from "react";
 import Api from "services/api";
+
+const FileUploaderModal = dynamic(() => import("components/FileUploaderModal/FileUploaderModal"), {
+  loading: () => (
+    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
+      <CircularProgress />
+    </Box>
+  ),
+});
+
+const DeleteModal = dynamic(() => import("components/DeleteModal/DeleteModal"), {
+  loading: () => (
+    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
+      <CircularProgress />
+    </Box>
+  ),
+});
+
+const PaginatedTable = dynamic(() => import("components/Table/PaginatedTable"), {
+  loading: () => (
+    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
+      <CircularProgress />
+    </Box>
+  ),
+});
 
 function a11yProps(index) {
   return {
