@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 
 export function CampaignMap({ campaign }) {
   return (

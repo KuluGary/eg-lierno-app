@@ -12,7 +12,7 @@ import Api from "services/api";
 import Router from "next/router";
 import { useState } from "react";
 
-export const CreatureMenu = ({ creature, type, downloadPdf }) => {
+const CreatureMenu = ({ creature, type, downloadPdf }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -117,3 +117,5 @@ export const CreatureMenu = ({ creature, type, downloadPdf }) => {
     </>
   );
 };
+
+export default CreatureMenu;

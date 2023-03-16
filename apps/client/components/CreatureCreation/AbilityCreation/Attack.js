@@ -9,10 +9,10 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  TextField
+  TextField,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { FullScreenModal } from "components/Modal/FullScreenModal";
 import { statLabels } from "helpers/creature-calculations";
 import { useEffect, useState } from "react";

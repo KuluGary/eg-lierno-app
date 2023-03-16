@@ -1,5 +1,5 @@
 import { Box, Dialog, DialogContent } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import style from "./FileUploaderModal.style";

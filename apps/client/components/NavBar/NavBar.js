@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import style from "./Navbar.style";
 import UserActions from "./UserActions/UserActions";
 
-export function NavBar({ open, toggleDrawer, mode = "normal", containerRef = null, ...props }) {
+export default function NavBar({ open, toggleDrawer, mode = "normal", containerRef = null, ...props }) {
   const router = useRouter();
   const { status: sessionStatus } = useSession();
   const isMainScreen = router.pathname === "/";

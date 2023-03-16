@@ -16,8 +16,9 @@ import { getToken } from "next-auth/jwt";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { Layout } from "components/Layout/Layout";
-import { Container } from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
+import Container from "components/Container/Container";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

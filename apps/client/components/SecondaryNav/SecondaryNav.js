@@ -157,7 +157,7 @@ const SideNavigation = ({ open }) => {
   );
 };
 
-export function SecondaryNav(props) {
+export default function SecondaryNav(props) {
   const width = useWidth();
   const { status } = useSession();
 

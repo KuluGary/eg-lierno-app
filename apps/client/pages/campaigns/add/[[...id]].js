@@ -1,8 +1,9 @@
 import { setNestedKey } from "@lierno/core-helpers";
 import { Box, Button, Container as MuiContainer, Tab, Tabs, Typography } from "@mui/material";
 import { Details } from "components/CampaignCreation/Details";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
 import { getToken } from "next-auth/jwt";
 import { useSession } from "next-auth/react";
 import Head from "next/head";

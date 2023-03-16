@@ -1,7 +1,7 @@
 import { Grid, TextField, Typography } from "@mui/material";
 import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 
-export function Background({ creature, setCreature }) {
+export default function Background({ creature, setCreature }) {
   return (
     <Grid container spacing={3}>
       <Grid item laptop={12}>

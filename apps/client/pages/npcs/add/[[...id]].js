@@ -18,8 +18,9 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import useCreatureData from "hooks/useCreatureData";
 import serialize from "helpers/serializeJson";
-import { Layout } from "components/Layout/Layout";
-import { Container } from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
+import Container from "components/Container/Container";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

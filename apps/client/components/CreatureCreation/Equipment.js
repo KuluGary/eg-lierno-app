@@ -1,5 +1,5 @@
 import { Autocomplete, Box, Button, Divider, Grid, Table, TableCell, TextField, Typography } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { DragDropTable } from "components/DragDropComponents/DragDropTable";
 import { FullScreenModal } from "components/Modal/FullScreenModal";
 import { useEffect, useState } from "react";
@@ -158,7 +158,7 @@ const Section = ({ data, title, onDragEnd, section, setModalOpen, setSelectedInd
   );
 };
 
-export function Equipment({ creature, setCreature, items }) {
+export default function Equipment({ creature, setCreature, items }) {
   const [modalOpen, setModalOpen] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(null);
 

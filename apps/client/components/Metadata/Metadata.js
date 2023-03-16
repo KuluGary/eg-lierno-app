@@ -17,3 +17,5 @@ export const Metadata = ({ description, image, title }) => (
     {!!title && <title>{title}</title>}
   </Head>
 );
+
+export default Metadata;

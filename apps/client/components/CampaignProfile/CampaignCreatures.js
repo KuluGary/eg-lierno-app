@@ -1,7 +1,7 @@
 import { getNestedKey } from "@lierno/core-helpers";
 import { getMonsterSubtitle, getNpcSubtitle } from "@lierno/dnd-helpers";
 import { Box, Grid, Tab, Tabs } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import PaginatedTable from "components/Table/PaginatedTable";
 import Router from "next/router";
 import { useState } from "react";

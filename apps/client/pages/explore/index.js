@@ -1,8 +1,9 @@
 import { getNestedKey } from "@lierno/core-helpers";
 import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
-import { Metadata } from "components/Metadata/Metadata";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
+import Metadata from "components/Metadata/Metadata";
 import ItemSubtitle from "components/Subtitle/ItemSubtitle/ItemSubtitle";
 import SpellSubtitle from "components/Subtitle/SpellSubtitle/SpellSubtitle";
 import { Table } from "components/Table/Table";

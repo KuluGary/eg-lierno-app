@@ -1,7 +1,8 @@
 import { Box, Divider, Typography } from "@mui/material";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
-import { Metadata } from "components/Metadata/Metadata";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
+import Metadata from "components/Metadata/Metadata";
 import fs from "fs";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";

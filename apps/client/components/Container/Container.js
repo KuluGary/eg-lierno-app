@@ -1,7 +1,7 @@
 import { Divider, Paper, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-export function Container({ hover = false, header, children, noPadding, sx = {} }) {
+export default function Container({ hover = false, header, children, noPadding, sx = {} }) {
   const theme = useTheme();
 
   return (

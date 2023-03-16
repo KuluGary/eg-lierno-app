@@ -1,7 +1,8 @@
 import { getNestedKey } from "@lierno/core-helpers";
 import { Box, Typography } from "@mui/material";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
 import { Table } from "components/Table/Table";
 import Head from "next/head";
 import Router from "next/router";
