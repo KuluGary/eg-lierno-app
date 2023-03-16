@@ -2,7 +2,7 @@ import { getGendered } from "@lierno/core-helpers";
 import { FormControl, Grid, MenuItem, Select, TextField, Typography, useTheme } from "@mui/material";
 import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 
-export function Race({ creature, setCreature }) {
+export default function Race({ creature, setCreature }) {
   const sizes = [
     getGendered("Diminuto", "Diminuta", "Diminute", creature.flavor.traits.pronoun),
     getGendered("Pequeño", "Pequeña", "Pequeñe", creature.flavor.traits.pronoun),

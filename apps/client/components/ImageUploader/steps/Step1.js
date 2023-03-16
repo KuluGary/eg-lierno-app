@@ -1,6 +1,6 @@
 import { isValidUrl } from "@lierno/core-helpers";
 import { Box, TextField, useTheme } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { useCallback, useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
 

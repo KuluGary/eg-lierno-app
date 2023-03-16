@@ -8,7 +8,6 @@ export const getSpell = async (req, res) => {
 
     if (!!id) {
       const spellIds = JSON.parse(id);
-      console.log({ spellIds });
 
       if (spellIds.length > 1) {
         const spells = await Spell.find({ _id: { $in: spellIds } });

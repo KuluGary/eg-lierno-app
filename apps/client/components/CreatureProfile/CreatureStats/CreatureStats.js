@@ -4,38 +4,19 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { useWidth } from "hooks/useWidth";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import style from "./CreatureStats.style";
-import CircularProgress from "@mui/material/CircularProgress";
 
-const Ability = dynamic(() => import("./components/Ability/Ability"), {
-  loading: () => (
-    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
-      <CircularProgress />
-    </Box>
-  ),
-});
+const Ability = dynamic(() => import("./components/Ability/Ability"));
 
-const Proficiency = dynamic(() => import("./components/Proficiency/Proficiency"), {
-  loading: () => (
-    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
-      <CircularProgress />
-    </Box>
-  ),
-});
+const Proficiency = dynamic(() => import("./components/Proficiency/Proficiency"));
 
-const StatComponent = dynamic(() => import("./components/Stat/Stat"), {
-  loading: () => (
-    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4 }}>
-      <CircularProgress />
-    </Box>
-  ),
-});
+const StatComponent = dynamic(() => import("./components/Stat/Stat"));
 
-export default function CreatureStats({ Header, data }) {
+function CreatureStats({ Header, data }) {
   const [tab, setTab] = useState(0);
   const handleTabChange = (_, newValue) => setTab(newValue);
   const width = useWidth();
@@ -105,3 +86,5 @@ export default function CreatureStats({ Header, data }) {
     </Box>
   );
 }
+
+export default CreatureStats;

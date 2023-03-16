@@ -5,7 +5,7 @@ import {
   UploadFile as UploadFileIcon,
 } from "@mui/icons-material";
 import { Box, Collapse, IconButton, InputAdornment, TextField } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { useState } from "react";
 import style from "./TableHeader.style";
 

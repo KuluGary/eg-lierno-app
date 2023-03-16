@@ -7,12 +7,13 @@ import Divider from "@mui/material/Divider";
 import Router from "next/router";
 import Image from "../../Image/Image";
 import style from "./CreatureFlavor.style";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import HTMLContainer from "components/HTMLContainer/HTMLContainer";
 import { useWidth } from "hooks/useWidth";
 import { useTheme } from "@mui/material";
+import React from "react";
 
-export default function CreatureFlavor({ Header, data }) {
+function CreatureFlavor({ Header, data }) {
   const { tier, image, sections } = data;
   const width = useWidth();
   const theme = useTheme();
@@ -61,3 +62,5 @@ export default function CreatureFlavor({ Header, data }) {
     </Container>
   );
 }
+
+export default CreatureFlavor;

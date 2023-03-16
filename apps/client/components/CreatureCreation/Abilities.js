@@ -1,5 +1,5 @@
 import { Box, Divider, Grid, Table, TableCell, Typography } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { DragDropTable } from "components/DragDropComponents/DragDropTable";
 import { useState } from "react";
 import { DragDropContext } from "react-beautiful-dnd";
@@ -12,11 +12,11 @@ const Modal = (props) => {
 
   switch (section) {
     case "spells":
-      return dynamic(() => import("./AbilityCreation/Spell")).then(({ Spell }) => Spell);
+      return dynamic(() => import("./AbilityCreation/Spell"));
     case "attacks":
-      return dynamic(() => import("./AbilityCreation/Attack")).then(({ Attack }) => Attack);
+      return dynamic(() => import("./AbilityCreation/Attack"));
     default:
-      return dynamic(() => import("./AbilityCreation/Ability")).then(({ Ability }) => Ability);
+      return dynamic(() => import("./AbilityCreation/Ability"));
   }
 };
 
@@ -77,7 +77,7 @@ const Section = ({ data, title, onDragEnd, section, setModalOpen, setSelectedInd
   );
 };
 
-export function Abilities({ creature, setCreature, classes }) {
+export default function Abilities({ creature, setCreature, classes }) {
   const [modalOpen, setModalOpen] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(null);
 

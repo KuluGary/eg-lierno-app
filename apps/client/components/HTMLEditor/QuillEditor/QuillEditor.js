@@ -1,17 +1,4 @@
-import dynamic from "next/dynamic";
-import Box from "@mui/material/Box";
-import CircularProgress from "@mui/material/CircularProgress";
-
-const ReactQuill = dynamic(() => import("react-quill"), {
-  ssr: false,
-  loading: () => (
-    <Box sx={{ display: "flex", justifyContent: "center", marginBlock: 4, width: "100%" }}>
-      <CircularProgress />
-    </Box>
-  ),
-});
-
-const Quill = dynamic(() => import("react-quill")).then(({ Quill }) => Quill);
+import ReactQuill, { Quill } from "react-quill";
 
 const MODULES = {
   toolbar: {

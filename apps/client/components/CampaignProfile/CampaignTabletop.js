@@ -14,10 +14,10 @@ import {
   TableRow,
   Tabs,
   TextField,
-  Typography
+  Typography,
 } from "@mui/material";
 import { Avatar } from "components/Avatar/Avatar";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { Table } from "components/Table/Table";
 import { TabletopCanvas } from "components/TabletopCanvas/TabletopCanvas";
 import { useSocket } from "hooks/useSocket";
@@ -246,4 +246,3 @@ function CampaignTabletop({ campaign, dm, players, characters }) {
 }
 
 export { CampaignTabletop };
-

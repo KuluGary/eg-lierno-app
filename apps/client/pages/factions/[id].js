@@ -1,10 +1,11 @@
 import { getInitials, getNestedKey } from "@lierno/core-helpers";
 import { getNpcSubtitle } from "@lierno/dnd-helpers";
 import { Avatar, Box, Divider, Grid, Tab, Tabs, Typography } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import HTMLContainer from "components/HTMLContainer/HTMLContainer";
-import { Layout } from "components/Layout/Layout";
-import { Metadata } from "components/Metadata/Metadata";
+import Layout from "components/Layout/Layout";
+
+import Metadata from "components/Metadata/Metadata";
 import PaginatedTable from "components/Table/PaginatedTable";
 import serialize from "helpers/serializeJson";
 import { useQueryState } from "hooks/useQueryState";

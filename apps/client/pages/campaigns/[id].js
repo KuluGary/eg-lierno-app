@@ -1,13 +1,14 @@
 import { Box, Divider, Grid, Tab, Tabs, Typography } from "@mui/material";
 import { CampaignCreatures } from "components/CampaignProfile/CampaignCreatures";
-import { CampaignDetails } from "components/CampaignProfile/CampaignDetails/CampaignDetails"; 
+import { CampaignDetails } from "components/CampaignProfile/CampaignDetails/CampaignDetails";
 import { CampaignDiary } from "components/CampaignProfile/CampaignDiary";
 import { CampaignFactions } from "components/CampaignProfile/CampaignFactions";
 import { CampaignLogs } from "components/CampaignProfile/CampaignLogs";
 import { CampaignMap } from "components/CampaignProfile/CampaignMap";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
-import { Metadata } from "components/Metadata/Metadata";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
+import Metadata from "components/Metadata/Metadata";
 import serialize from "helpers/serializeJson";
 import useCampaignData from "hooks/useCampaignData";
 import { useQueryState } from "hooks/useQueryState";

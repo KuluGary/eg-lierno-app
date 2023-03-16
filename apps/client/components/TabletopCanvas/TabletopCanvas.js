@@ -1,5 +1,5 @@
 import { Grid, useTheme } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { useEffect, useRef, useState } from "react";
 
 function TabletopCanvas() {
@@ -70,4 +70,3 @@ function TabletopCanvas() {
 }
 
 export { TabletopCanvas };
-

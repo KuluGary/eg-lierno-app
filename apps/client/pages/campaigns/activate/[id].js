@@ -1,7 +1,8 @@
 import { Button, FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
 import { getToken } from "next-auth/jwt";
 import { useRouter } from "next/router";
 import { useState } from "react";

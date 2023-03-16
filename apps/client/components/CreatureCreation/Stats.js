@@ -16,7 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useTheme } from "@mui/styles";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import { D20 } from "components/icons/D20";
 import { useRouter } from "next/router";
@@ -52,7 +52,7 @@ const statLabels = {
   charisma: "CAR",
 };
 
-export function Stats({ creature, setCreature }) {
+export default function Stats({ creature, setCreature }) {
   const router = useRouter();
   const isCharacter = router.pathname.includes("characters");
   const theme = useTheme();

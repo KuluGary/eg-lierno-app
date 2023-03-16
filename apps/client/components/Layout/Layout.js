@@ -1,11 +1,13 @@
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
-import { NavBar } from "components/NavBar/NavBar";
-import { SecondaryNav } from "components/SecondaryNav/SecondaryNav";
 import { useState } from "react";
 import style from "./Layout.style";
+import dynamic from "next/dynamic";
 
-export function Layout({ children }) {
+const NavBar = dynamic(() => import("components/NavBar/NavBar"));
+const SecondaryNav = dynamic(() => import("components/SecondaryNav/SecondaryNav"));
+
+export default function Layout({ children }) {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
   const toggleDrawer = () => setOpen(!open);

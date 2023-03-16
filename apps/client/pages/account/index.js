@@ -1,8 +1,9 @@
 import { Check } from "@mui/icons-material";
 import { Box, Button, ButtonBase, Divider, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Avatar } from "components/Avatar/Avatar";
-import { Container } from "components/Container/Container";
-import { Layout } from "components/Layout/Layout";
+import Container from "components/Container/Container";
+import Layout from "components/Layout/Layout";
+
 import { getToken } from "next-auth/jwt";
 import { useContext, useMemo } from "react";
 import Api from "services/api";

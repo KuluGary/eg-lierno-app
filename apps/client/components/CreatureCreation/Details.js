@@ -17,7 +17,7 @@ import ImageUploader from "components/ImageUploader/ImageUploader";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-export function Details({ creature, setCreature }) {
+export default function Details({ creature, setCreature }) {
   const router = useRouter();
   const theme = useTheme();
   const alignments = [

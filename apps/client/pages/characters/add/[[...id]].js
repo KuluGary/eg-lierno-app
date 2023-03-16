@@ -1,14 +1,14 @@
 import { setNestedKey } from "@lierno/core-helpers";
-import { Box, Button, Container as MuiContainer, Tab, Tabs, Typography, useTheme } from "@mui/material";
-import { Container } from "components/Container/Container";
-import { Abilities } from "components/CreatureCreation/Abilities";
-import { Background } from "components/CreatureCreation/Background";
-import { Class } from "components/CreatureCreation/Class";
-import { Details } from "components/CreatureCreation/Details";
-import { Equipment } from "components/CreatureCreation/Equipment";
-import { Proficiencies } from "components/CreatureCreation/Proficiencies";
-import { Race } from "components/CreatureCreation/Race";
-import { Stats } from "components/CreatureCreation/Stats";
+import { useTheme } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import MuiContainer from "@mui/material/Container";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import Typography from "@mui/material/Typography";
+
+import Container from "components/Container/Container";
+import dynamic from "next/dynamic";
 import { AlienStare as AlienStareIcon } from "components/icons/AlienStare";
 import { Backpack as BackpackIcon } from "components/icons/Backpack";
 import { Barbute as BarbuteIcon } from "components/icons/Barbute";
@@ -17,7 +17,8 @@ import { Juggler as JugglerIcon } from "components/icons/Juggler";
 import { MuscleUp as MuscleUpIcon } from "components/icons/MuscleUp";
 import { SpellBolt as SpellBoltIcon } from "components/icons/SpellBolt";
 import { SwordShield as SwordShieldIcon } from "components/icons/SwordShield";
-import { Layout } from "components/Layout/Layout";
+import Layout from "components/Layout/Layout";
+
 import character_template from "helpers/json/character_template.json";
 import { getToken } from "next-auth/jwt";
 import { getSession } from "next-auth/react";
@@ -25,6 +26,15 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Api from "services/api";
+
+const Abilities = dynamic(() => import("components/CreatureCreation/Abilities"));
+const Background = dynamic(() => import("components/CreatureCreation/Background"));
+const Class = dynamic(() => import("components/CreatureCreation/Class"));
+const Details = dynamic(() => import("components/CreatureCreation/Details"));
+const Equipment = dynamic(() => import("components/CreatureCreation/Equipment"));
+const Proficiencies = dynamic(() => import("components/CreatureCreation/Proficiencies"));
+const Race = dynamic(() => import("components/CreatureCreation/Race"));
+const Stats = dynamic(() => import("components/CreatureCreation/Stats"));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

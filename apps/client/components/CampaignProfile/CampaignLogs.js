@@ -1,6 +1,6 @@
 import { Box, Grid, List, ListItem, ListItemButton, ListItemIcon, Typography } from "@mui/material";
 import { Avatar } from "components/Avatar/Avatar";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import HTMLContainer from "components/HTMLContainer/HTMLContainer";
 import { useEffect, useRef, useState } from "react";
 import Api from "services/api";

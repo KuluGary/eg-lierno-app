@@ -13,7 +13,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Container } from "components/Container/Container";
+import Container from "components/Container/Container";
 import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import customizable_stats from "helpers/json/customizable_stats.json";
 import { useEffect, useState } from "react";
@@ -74,7 +74,7 @@ const ProficiencyModal = ({ creatureSkills, option, open, setOpen, handleSave })
   );
 };
 
-export function Proficiencies({ creature, setCreature }) {
+export default function Proficiencies({ creature, setCreature }) {
   const { saves, skills } = customizable_stats;
   const [selectedProficiency, setSelectedProficiency] = useState(null);
   const [proficiencyModalOpen, setProficiencyModalOpen] = useState(false);

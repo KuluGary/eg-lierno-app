@@ -14,7 +14,7 @@ import {
 import { HTMLEditor } from "components/HTMLEditor/HTMLEditor";
 import { useRouter } from "next/router";
 
-export function Class({ creature, setCreature, classes }) {
+export default function Class({ creature, setCreature, classes }) {
   const router = useRouter();
 
   if (router.pathname.includes("npc")) {
