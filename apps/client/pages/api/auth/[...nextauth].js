@@ -17,8 +17,7 @@ export default NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const url = process.env.NEXT_PUBLIC_CLIENT + "/api/user/sign-in";
-
+        const url = process.env.NEXT_PUBLIC_CLIENT + "api/user/sign-in";
         const res = await fetch(url, {
           method: "POST",
           body: JSON.stringify(credentials),
