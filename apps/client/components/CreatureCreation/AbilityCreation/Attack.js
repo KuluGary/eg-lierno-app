@@ -47,7 +47,7 @@ const defaultFormData = {
   },
 };
 
-export function Attack({ open, onClose, section, selectedIndex, creature, onSave }) {
+export default function Attack({ open, onClose, section, selectedIndex, creature, onSave }) {
   const theme = useTheme();
   const [attack, setAttack] = useState({
     name: "",

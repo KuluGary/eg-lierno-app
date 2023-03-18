@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { ModalFooter } from "./ModalFooter";
 import { ModalHeader } from "./ModalHeader";
 
-export function Ability({ open, onClose, section, selectedIndex, creature, onSave }) {
+export default function Ability({ open, onClose, section, selectedIndex, creature, onSave }) {
   const [content, setContent] = useState({ name: "", description: "" });
 
   useEffect(() => {

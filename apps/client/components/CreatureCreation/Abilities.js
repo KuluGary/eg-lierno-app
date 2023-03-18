@@ -4,19 +4,22 @@ import { DragDropTable } from "components/DragDropComponents/DragDropTable";
 import { useState } from "react";
 import { DragDropContext } from "react-beautiful-dnd";
 import { AddButton, DeleteButton, EditButton } from "../Buttons";
-
 import dynamic from "next/dynamic";
+
+const Spell = dynamic(() => import("./AbilityCreation/Spell"));
+const Attack = dynamic(() => import("./AbilityCreation/Attack"));
+const Ability = dynamic(() => import("./AbilityCreation/Ability"));
 
 const Modal = (props) => {
   const { section } = props;
 
   switch (section) {
     case "spells":
-      return dynamic(() => import("./AbilityCreation/Spell"));
+      return <Spell {...props} />;
     case "attacks":
-      return dynamic(() => import("./AbilityCreation/Attack"));
+      return <Attack {...props} />;
     default:
-      return dynamic(() => import("./AbilityCreation/Ability"));
+      return <Ability {...props} />;
   }
 };
 

@@ -39,7 +39,7 @@ const schoolOptions = [
   "Transmutación",
 ];
 
-export function Spell({ open, onClose, section, selectedIndex, creature, classes, onSave }) {
+export default function Spell({ open, onClose, section, selectedIndex, creature, classes, onSave }) {
   const [spellAutocomplete, setSpellAutocomplete] = useState([]);
   const [spellLevelArray] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8]);
   const [spellcasting, setSpellcasting] = useState({
