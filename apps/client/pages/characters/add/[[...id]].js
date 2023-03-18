@@ -6,6 +6,7 @@ import MuiContainer from "@mui/material/Container";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
+import LoadingButton from "@mui/lab/LoadingButton";
 
 import Container from "components/Container/Container";
 import { AlienStare as AlienStareIcon } from "components/icons/AlienStare";
@@ -86,6 +87,7 @@ export default function AddCharacter({ character = null }) {
     inactive: theme.palette.action.active,
   };
   const session = useSession();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (session.status === "loading") return;
@@ -114,16 +116,23 @@ export default function AddCharacter({ character = null }) {
   };
 
   const handleSubmit = () => {
+    if (isLoading) return;
+
+    setIsLoading(true);
     if (!!creature._id) {
       Api.fetchInternal("/characters/" + creature._id, {
         method: "PUT",
         body: JSON.stringify(creature),
-      }).then(() => router.back());
+      })
+        .then(() => router.back())
+        .finally(() => setIsLoading(false));
     } else {
       Api.fetchInternal("/characters", {
         method: "POST",
         body: JSON.stringify(creature),
-      }).then(() => router.back());
+      })
+        .then(() => router.back())
+        .finally(() => setIsLoading(false));
     }
   };
 
@@ -166,10 +175,12 @@ export default function AddCharacter({ character = null }) {
                 </TabPanel>
               ))}
               <Box sx={{ m: 3, float: "right" }}>
-                <Button sx={{ marginInline: 1 }}>Cancelar</Button>
-                <Button sx={{ marginInline: 1 }} variant="outlined" onClick={handleSubmit}>
-                  Guardar
+                <Button disabled={isLoading} sx={{ marginInline: 1 }}>
+                  Cancelar
                 </Button>
+                <LoadingButton loading={isLoading} sx={{ marginInline: 1 }} variant="outlined" onClick={handleSubmit}>
+                  Guardar
+                </LoadingButton>
               </Box>
             </MuiContainer>
           </Box>

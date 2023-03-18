@@ -70,7 +70,7 @@ export async function getStaticPaths() {
     params: { id: character._id },
   }));
 
-  return { paths, fallback: "blocking" };
+  return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }) {
@@ -78,6 +78,6 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { character },
-    revalidate: 60
+    revalidate: 10
   };
 }
