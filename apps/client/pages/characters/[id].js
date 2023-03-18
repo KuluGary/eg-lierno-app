@@ -15,7 +15,7 @@ const CharacterFlavor = dynamic(() =>
   import("components/CreatureProfile/CreatureFlavor/components/Character/CharacterFlavor")
 );
 
-export default function CharacterProfile({ character }) {
+export default function CharacterProfile({ character = null }) {
   const width = useWidth();
   const [currentCharacter, setCurrentCharacter] = useState(character);
   const { spells, items, tier, classes } = useCreatureData(character, "character");
@@ -45,14 +45,14 @@ export default function CharacterProfile({ character }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const { query } = context;
-  const character = await Api.fetchExternal(`/characters/${query.id}`).catch(() => null);
+// export async function getServerSideProps(context) {
+//   const { query } = context;
+//   const character = await Api.fetchExternal(`/characters/${query.id}`).catch(() => null);
 
-  return {
-    props: {
-      key: character._id,
-      character,
-    },
-  };
-}
+//   return {
+//     props: {
+//       key: character._id,
+//       character,
+//     },
+//   };
+// }
