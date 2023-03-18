@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Layout from "components/Layout/Layout";
 import Metadata from "components/Metadata/Metadata";
+import serialize from "helpers/serializeJson";
 import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
 import dynamic from "next/dynamic";
@@ -23,7 +24,7 @@ export default function CharacterProfile({ character = null }) {
   const { spells, items, tier, classes } = useCreatureData(character, "character");
 
   useEffect(() => {
-    if (router.query.id) {
+    if (router.query.id && !character) {
       Api.fetchInternal(`/characters/${router.query.id}`)
         .then(setCurrentCharacter)
         .catch(() => null);
@@ -55,4 +56,28 @@ export default function CharacterProfile({ character = null }) {
       </Grid>
     </Layout>
   );
+}
+
+export async function getStaticPaths() {
+  const { connectToDB } = await import("lib/mongodb");
+  const { default: Character } = await import("models/character");
+
+  await connectToDB();
+
+  const characters = serialize(await Character.find({}, "_id"));
+
+  const paths = characters.map((character) => ({
+    params: { id: character._id },
+  }));
+
+  return { paths, fallback: "blocking" };
+}
+
+export async function getStaticProps({ params }) {
+  const character = await Api.fetchInternal(`/characters/${params.id}`);
+
+  return {
+    props: { character },
+    revalidate: 60
+  };
 }

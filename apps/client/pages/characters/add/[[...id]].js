@@ -8,7 +8,6 @@ import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
 
 import Container from "components/Container/Container";
-import dynamic from "next/dynamic";
 import { AlienStare as AlienStareIcon } from "components/icons/AlienStare";
 import { Backpack as BackpackIcon } from "components/icons/Backpack";
 import { Barbute as BarbuteIcon } from "components/icons/Barbute";
@@ -18,13 +17,14 @@ import { MuscleUp as MuscleUpIcon } from "components/icons/MuscleUp";
 import { SpellBolt as SpellBoltIcon } from "components/icons/SpellBolt";
 import { SwordShield as SwordShieldIcon } from "components/icons/SwordShield";
 import Layout from "components/Layout/Layout";
+import dynamic from "next/dynamic";
 
 import character_template from "helpers/json/character_template.json";
-import { getToken } from "next-auth/jwt";
-import { getSession } from "next-auth/react";
+import useCreatureData from "hooks/useCreatureData";
+import { useSession } from "next-auth/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Api from "services/api";
 
 const Abilities = dynamic(() => import("components/CreatureCreation/Abilities"));
@@ -74,16 +74,36 @@ const tabs = [
   { label: "Equipamiento", Icon: BackpackIcon, Component: Equipment },
 ];
 
-export default function AddCharacter({ character, classes, spells, items }) {
+export default function AddCharacter({ character = null }) {
   const theme = useTheme();
   const router = useRouter();
   const [activeStep, setActiveStep] = useState(0);
   const { commoner } = character_template;
   const [creature, setCreature] = useState({ ...(character ?? commoner) });
+  const { spells, items, classes } = useCreatureData(creature, "character");
   const colors = {
     active: theme.palette.primary.main,
     inactive: theme.palette.action.active,
   };
+  const session = useSession();
+
+  useEffect(() => {
+    if (session.status === "loading") return;
+
+    if (session.status === "unauthenticated") {
+      router.push("/");
+    }
+
+    if (router.query.id) {
+      Api.fetchInternal(`/characters/${router.query.id}`)
+        .then((character) => {
+          if (session.data.userId === character.createdBy) {
+            setCreature(character);
+          }
+        })
+        .catch(() => null);
+    }
+  }, [router.query.id, session]);
 
   const handleStepChange = (_, newValue) => {
     setActiveStep(newValue);
@@ -113,124 +133,48 @@ export default function AddCharacter({ character, classes, spells, items }) {
         <title>Lierno App | Crear personaje</title>
       </Head>
       <Container noPadding sx={{ maxWidth: "75%", margin: "0 auto" }}>
-        <Box sx={{ width: "100%" }}>
-          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-            <Tabs
-              value={activeStep}
-              variant="scrollable"
-              scrollButtons={"auto"}
-              onChange={handleStepChange}
-              aria-label="basic tabs example"
-            >
-              {tabs.map(({ label, Icon }, index) => (
-                <Tab
-                  key={index}
-                  label={label}
-                  icon={<Icon color={activeStep === index ? colors.active : colors.inactive} size={28} />}
-                  {...a11yProps(index)}
-                />
-              ))}
-            </Tabs>
-          </Box>
-          <MuiContainer maxWidth="xs" sx={{ width: "75%" }}>
-            {tabs.map(({ Component }, index) => (
-              <TabPanel key={index} value={activeStep} index={index}>
-                <Component
-                  creature={creature}
-                  setCreature={handleCreatureChange}
-                  classes={classes}
-                  spells={spells}
-                  items={items}
-                />
-              </TabPanel>
-            ))}
-            <Box sx={{ m: 3, float: "right" }}>
-              <Button sx={{ marginInline: 1 }}>Cancelar</Button>
-              <Button sx={{ marginInline: 1 }} variant="outlined" onClick={handleSubmit}>
-                Guardar
-              </Button>
+        {creature && (
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={activeStep}
+                variant="scrollable"
+                scrollButtons={"auto"}
+                onChange={handleStepChange}
+                aria-label="basic tabs example"
+              >
+                {tabs.map(({ label, Icon }, index) => (
+                  <Tab
+                    key={index}
+                    label={label}
+                    icon={<Icon color={activeStep === index ? colors.active : colors.inactive} size={28} />}
+                    {...a11yProps(index)}
+                  />
+                ))}
+              </Tabs>
             </Box>
-          </MuiContainer>
-        </Box>
+            <MuiContainer maxWidth="xs" sx={{ width: "75%" }}>
+              {tabs.map(({ Component }, index) => (
+                <TabPanel key={index} value={activeStep} index={index}>
+                  <Component
+                    creature={creature}
+                    setCreature={handleCreatureChange}
+                    classes={classes}
+                    spells={spells}
+                    items={items}
+                  />
+                </TabPanel>
+              ))}
+              <Box sx={{ m: 3, float: "right" }}>
+                <Button sx={{ marginInline: 1 }}>Cancelar</Button>
+                <Button sx={{ marginInline: 1 }} variant="outlined" onClick={handleSubmit}>
+                  Guardar
+                </Button>
+              </Box>
+            </MuiContainer>
+          </Box>
+        )}
       </Container>
     </Layout>
   );
-}
-
-export async function getServerSideProps(context) {
-  const { req, query } = context;
-  const secret = process.env.SECRET;
-
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
-  const { userId } = await getSession({ req });
-
-  if (!token) {
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
-  }
-
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  let character = null;
-  let spells = null;
-
-  if (!!query.id && query.id.length > 0) {
-    character = await Api.fetchInternal("/characters/" + query.id[0], {
-      headers,
-    }).catch(() => null);
-
-    if (!character || character.createdBy !== userId) {
-      return {
-        redirect: {
-          destination: "/characters",
-          permanent: false,
-        },
-      };
-    }
-
-    if (character?.stats.spells?.length > 0) {
-      const spellIds = [];
-
-      character.stats.spells.forEach(({ spells }) => {
-        spellIds.push(
-          ...Object.values(spells)
-            .flat()
-            .map(({ spellId }) => spellId)
-        );
-      });
-
-      spells = await Api.fetchInternal(`/spells?id=${JSON.stringify(spellIds)}`, {
-        headers,
-      });
-    }
-  }
-
-  const classes = await Api.fetchInternal("/classes/", {
-    headers,
-  }).catch(() => null);
-
-  const items = await Api.fetchInternal("/items", {
-    headers,
-  }).catch(() => null);
-
-  return {
-    props: {
-      character,
-      classes,
-      spells,
-      items,
-    },
-  };
 }
