@@ -4,7 +4,8 @@ import Metadata from "components/Metadata/Metadata";
 import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Api from "services/api";
 
 const CharacterStats = dynamic(() =>
@@ -16,9 +17,18 @@ const CharacterFlavor = dynamic(() =>
 );
 
 export default function CharacterProfile({ character = null }) {
+  const router = useRouter();
   const width = useWidth();
   const [currentCharacter, setCurrentCharacter] = useState(character);
   const { spells, items, tier, classes } = useCreatureData(character, "character");
+
+  useEffect(() => {
+    if (router.query.id) {
+      Api.fetchInternal(`/characters/${router.query.id}`)
+        .then(setCurrentCharacter)
+        .catch(() => null);
+    }
+  }, [router.query]);
 
   return (
     <Layout>
@@ -29,30 +39,20 @@ export default function CharacterProfile({ character = null }) {
       />
       <Grid container spacing={1} sx={{ height: "100%" }}>
         <Grid item laptop={6} mobile={12}>
-          <CharacterFlavor character={currentCharacter} tier={tier} />
+          {currentCharacter && <CharacterFlavor character={currentCharacter} tier={tier} />}
         </Grid>
         <Grid item laptop={6} mobile={12} sx={{ paddingBottom: width.down("tablet") ? "1em" : 0 }}>
-          <CharacterStats
-            character={character}
-            setCurrentCharacter={setCurrentCharacter}
-            spells={spells}
-            items={items}
-            classes={classes}
-          />
+          {currentCharacter && (
+            <CharacterStats
+              character={currentCharacter}
+              setCurrentCharacter={setCurrentCharacter}
+              spells={spells}
+              items={items}
+              classes={classes}
+            />
+          )}
         </Grid>
       </Grid>
     </Layout>
   );
 }
-
-// export async function getServerSideProps(context) {
-//   const { query } = context;
-//   const character = await Api.fetchExternal(`/characters/${query.id}`).catch(() => null);
-
-//   return {
-//     props: {
-//       key: character._id,
-//       character,
-//     },
-//   };
-// }
