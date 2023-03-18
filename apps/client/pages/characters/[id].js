@@ -47,7 +47,7 @@ export default function CharacterProfile({ character }) {
 
 export async function getServerSideProps(context) {
   const { query } = context;
-  const character = await Api.fetchInternal(`/characters/${query.id}`).catch(() => null);
+  const character = await Api.fetchExternal(`/characters/${query.id}`).catch(() => null);
 
   return {
     props: {

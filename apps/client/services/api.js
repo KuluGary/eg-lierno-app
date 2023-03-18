@@ -28,7 +28,7 @@ export default class Api {
       withCredentials: true,
     };
 
-    return fetch(`${process.env.NEXT_PUBLIC_ENDPOINT}api${url}`, {
+    return fetch(`${process.env.NEXT_PUBLIC_ENDPOINT}v1${url}`, {
       headers,
       credentials: "include",
       ...options,
