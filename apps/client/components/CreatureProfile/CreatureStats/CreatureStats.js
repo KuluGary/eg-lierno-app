@@ -74,7 +74,7 @@ function CreatureStats({ Header, data }) {
         </Tabs>
 
         <Divider />
-
+        
         <Box component="div">
           {data.abilities
             ?.filter(({ content }) => content?.length > 0 || Object.keys(content ?? {})?.length > 0)

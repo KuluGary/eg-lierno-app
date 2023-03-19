@@ -21,7 +21,7 @@ export default function CharacterProfile({ character = null }) {
   const router = useRouter();
   const width = useWidth();
   const [currentCharacter, setCurrentCharacter] = useState(character);
-  const { spells, items, tier, classes } = useCreatureData(currentCharacter, "character");
+  const { loadingData, spells, items, tier, classes } = useCreatureData(currentCharacter, "character");
 
   useEffect(() => {
     if (router.query.id && !character) {
@@ -40,10 +40,10 @@ export default function CharacterProfile({ character = null }) {
       />
       <Grid container spacing={1} sx={{ height: "100%" }}>
         <Grid item laptop={6} mobile={12}>
-          {currentCharacter && <CharacterFlavor character={currentCharacter} tier={tier} />}
+          {currentCharacter && !loadingData && <CharacterFlavor character={currentCharacter} tier={tier} />}
         </Grid>
         <Grid item laptop={6} mobile={12} sx={{ paddingBottom: width.down("tablet") ? "1em" : 0 }}>
-          {currentCharacter && (
+          {currentCharacter && !loadingData && (
             <CharacterStats
               character={currentCharacter}
               setCurrentCharacter={setCurrentCharacter}
