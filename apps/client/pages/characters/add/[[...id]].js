@@ -119,21 +119,19 @@ export default function AddCharacter({ character = null }) {
     if (isLoading) return;
 
     setIsLoading(true);
-    if (!!creature._id) {
-      Api.fetchInternal("/characters/" + creature._id, {
-        method: "PUT",
-        body: JSON.stringify(creature),
+
+    const method = !!creature._id ? "PUT" : "POST";
+
+    Api.fetchInternal("/characters/" + creature._id ?? "", {
+      method,
+      body: JSON.stringify(creature),
+    })
+      .then((characterId) => {
+        Api.fetchInternal(`/characters/revalidate?id=${creature._id ?? characterId}`)
+          .then(() => router.back())
+          .finally(() => setIsLoading(false));
       })
-        .then(() => router.back())
-        .finally(() => setIsLoading(false));
-    } else {
-      Api.fetchInternal("/characters", {
-        method: "POST",
-        body: JSON.stringify(creature),
-      })
-        .then(() => router.back())
-        .finally(() => setIsLoading(false));
-    }
+      .finally(() => setIsLoading(false));
   };
 
   return (
