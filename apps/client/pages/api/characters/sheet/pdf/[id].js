@@ -6,14 +6,16 @@ import Item from "models/item";
 import User from "models/user";
 import { PDFDocument } from "pdf-lib";
 import connectDB from "middleware/mongodb";
+import getApiParams from "helpers/getApiParams";
+import Spell from "models/spell";
 
 const handler = async (req, res) => {
   try {
     if (req.method === "GET") {
       const session = await getServerSession(req);
 
-      if (token) {
-        const characterId = req.params.id;
+      if (!!session) {
+        const characterId = getApiParams("id", req);
 
         const character = await Character.findOne({
           _id: characterId,
@@ -343,6 +345,7 @@ const handler = async (req, res) => {
       res.status(422).send("req_method_not_supported");
     }
   } catch (error) {
+    console.log({error})
     res.status(400).json({ message: error });
   }
 };
