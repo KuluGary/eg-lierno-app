@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import Api from "services/api";
 
 const useCreatureData = (creature, type) => {
-  const [spells, setSpells] = useState(null);
+  const [loadingData, setLoadingData] = useState(false);
+  const [spells, setSpells] = useState([]);
   const [items, setItems] = useState([]);
   const [tier, setTier] = useState(null);
   const [classes, setClasses] = useState([]);
@@ -12,6 +13,7 @@ const useCreatureData = (creature, type) => {
   }, [creature]);
 
   const fetchData = async () => {
+    setLoadingData(true);
     if (!!creature.stats.spells && creature.stats.spells.length > 0) {
       const spellIds = [];
 
@@ -59,9 +61,12 @@ const useCreatureData = (creature, type) => {
 
       setTier(tier);
     }
+
+    setLoadingData(false);
   };
 
   return {
+    loadingData,
     spells,
     items,
     tier,
