@@ -57,27 +57,3 @@ export default function CharacterProfile({ character = null }) {
     </Layout>
   );
 }
-
-export async function getStaticPaths() {
-  const { connectToDB } = await import("lib/mongodb");
-  const { default: Character } = await import("models/character");
-
-  await connectToDB();
-
-  const characters = serialize(await Character.find({}, "_id"));
-
-  const paths = characters.map((character) => ({
-    params: { id: character._id },
-  }));
-
-  return { paths, fallback: true };
-}
-
-export async function getStaticProps({ params }) {
-  const character = await Api.fetchInternal(`/characters/${params.id}`);
-
-  return {
-    props: { character },
-    revalidate: 10
-  };
-}

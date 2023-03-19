@@ -72,7 +72,7 @@ export const postCharacter = async (req, res) => {
       character["createdBy"] = session["userId"];
       const newCharacter = new Character(character);
 
-      newCharacter.save(async (err) => {
+      newCharacter.save((err) => {
         if (err) return res.status(403).json({ message: err });
 
         res.status(200).json({ payload: newCharacter._id });
@@ -92,7 +92,7 @@ export const putCharacter = async (req, res) => {
     if (session) {
       const characterId = getApiParams("id", req);
 
-      Character.findOneAndUpdate({ _id: characterId, createdBy: session.userId }, req.body, async (err) => {
+      Character.findOneAndUpdate({ _id: characterId, createdBy: session.userId }, req.body, (err) => {
         if (err) return res.status(403).json({ message: "El personaje no ha podido ser modificado." });
 
         return res.status(200).json({ message: "Personaje modificado" });
