@@ -75,7 +75,6 @@ export const postCharacter = async (req, res) => {
       newCharacter.save(async (err) => {
         if (err) return res.status(403).json({ message: err });
 
-        res.revalidate(`/characters/${newCharacter._id}`);
         res.status(200).json({ payload: newCharacter._id });
       });
     } else {
@@ -96,7 +95,6 @@ export const putCharacter = async (req, res) => {
       Character.findOneAndUpdate({ _id: characterId, createdBy: session.userId }, req.body, async (err) => {
         if (err) return res.status(403).json({ message: "El personaje no ha podido ser modificado." });
 
-        res.revalidate(`/characters/${characterId}`);
         return res.status(200).json({ message: "Personaje modificado" });
       });
     } else {
