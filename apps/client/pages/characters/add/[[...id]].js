@@ -141,7 +141,7 @@ export default function AddCharacter({ character = null }) {
       <Head>
         <title>Lierno App | Crear personaje</title>
       </Head>
-      <Container noPadding sx={{ maxWidth: "75%", margin: "0 auto" }}>
+      <Container noPadding sx={{ maxWidth: "min(100%, 1080px)", margin: "0 auto" }}>
         {creature && (
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
