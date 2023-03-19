@@ -1,6 +1,6 @@
 {
   "name": "@lierno/dnd-helpers",
-  "version": "1.1.18",
+  "version": "1.1.19",
   "description": "Helper functions for D&D applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
