@@ -9,7 +9,7 @@ import {
   getProficiencyBonus,
   getSavingThrowString,
   getSpeedString,
-  getStatBonus
+  getStatBonus,
 } from "@lierno/dnd-helpers";
 import { Api } from "@mui/icons-material";
 import dynamic from "next/dynamic";
