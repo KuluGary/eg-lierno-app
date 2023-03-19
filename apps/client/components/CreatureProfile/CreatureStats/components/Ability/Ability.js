@@ -13,7 +13,6 @@ export default function Ability({ show, character, classes, dataClasses, title, 
         <Table size="small">
           {show &&
             characterSpells.map((spells, index) => {
-              console.log({ spells, spellData, character, dataClasses });
               return (
                 <ExpandedTableRow
                   index={index}
