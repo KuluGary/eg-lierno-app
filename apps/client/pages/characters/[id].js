@@ -21,7 +21,7 @@ export default function CharacterProfile({ character = null }) {
   const router = useRouter();
   const width = useWidth();
   const [currentCharacter, setCurrentCharacter] = useState(character);
-  const { spells, items, tier, classes } = useCreatureData(character, "character");
+  const { spells, items, tier, classes } = useCreatureData(currentCharacter, "character");
 
   useEffect(() => {
     if (router.query.id && !character) {

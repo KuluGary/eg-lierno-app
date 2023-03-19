@@ -5,6 +5,7 @@ import Character from "models/character";
 import Item from "models/item";
 import User from "models/user";
 import { PDFDocument } from "pdf-lib";
+import connectDB from "middleware/mongodb";
 
 const handler = async (req, res) => {
   try {
@@ -345,3 +346,5 @@ const handler = async (req, res) => {
     res.status(400).json({ message: error });
   }
 };
+
+export default connectDB(handler);
