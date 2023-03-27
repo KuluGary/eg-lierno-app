@@ -14,9 +14,9 @@ const CustomQuillEditor = dynamic(() => import("./QuillEditor/QuillEditor"), {
   ),
 });
 
-const QuillEditor = forwardRef((props, ref) => <CustomQuillEditor {...props} editorRef={ref} />);
-
 export function HTMLEditor({ value, onChange, placeholder = "", inputStyles = {}, ...other }) {
+  const QuillEditor = forwardRef((props, ref) => <CustomQuillEditor {...props} editorRef={ref} />);
+
   return (
     <TextField
       {...other}
@@ -24,7 +24,7 @@ export function HTMLEditor({ value, onChange, placeholder = "", inputStyles = {}
       multiline
       fullWidth
       placeholder={placeholder}
-      value={value}
+      value={value ?? ""}
       onChange={onChange}
       InputProps={{ inputComponent: QuillEditor }}
       InputLabelProps={{ shrink: true }}
