@@ -9,9 +9,8 @@ import SpellSubtitle from "components/Subtitle/SpellSubtitle/SpellSubtitle";
 import { Table } from "components/Table/Table";
 import references from "helpers/json/references.json";
 import { SPELL_ICON_DICTIONARY } from "helpers/string-util";
+import useExploreData from "hooks/useExploreData";
 import { useQueryState } from "hooks/useQueryState";
-import { getToken } from "next-auth/jwt";
-import Api from "services/api";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -30,7 +29,8 @@ function TabPanel(props) {
   );
 }
 
-export default function ExplorePage({ items, spells, classes }) {
+export default function ExplorePage() {
+  const { items, spells, classes } = useExploreData();
   const [tabValue, setTabValue] = useQueryState("category", 0, "number");
   const [itemTabValue, setItemTabValue] = useQueryState("item", 0, "number");
   const [classTabValue, setClassTabValue] = useQueryState("class", 0, "number");
@@ -202,59 +202,4 @@ export default function ExplorePage({ items, spells, classes }) {
       </Container>
     </Layout>
   );
-}
-
-export async function getServerSideProps(context) {
-  const { req } = context;
-  const secret = process.env.SECRET;
-
-  const token = await getToken({ req, secret, raw: true }).catch((e) => console.error(e));
-
-  const headers = {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    withCredentials: true,
-  };
-
-  if (token) {
-    headers["Authorization"] = "Bearer " + token;
-  }
-
-  let items = {};
-  let spells = {};
-  let classes = {};
-
-  const promises = [
-    Api.fetchInternal("/items")
-      .then((apiItems) => {
-        apiItems.forEach((item) => {
-          items[item.type] = [...(items[item.type] ?? []), item];
-        });
-      })
-      .catch(() => null),
-    Api.fetchInternal("/spells", { headers })
-      .then((apiSpells) => {
-        for (const spell of apiSpells) {
-          spells[spell.stats.level] = [...(spells[spell.stats.level] ?? []), spell];
-        }
-      })
-      .catch(() => null),
-    Api.fetchInternal("/classes", { headers })
-      .then((apiClasses) => {
-        for (const charClass of apiClasses) {
-          classes[charClass.game] = [...(classes[charClass.game] ?? []), charClass];
-        }
-      })
-      .catch(() => null),
-  ];
-
-  await Promise.all(promises);
-
-  return {
-    props: {
-      items,
-      spells,
-      classes,
-    },
-  };
 }

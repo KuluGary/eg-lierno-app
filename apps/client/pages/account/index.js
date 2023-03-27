@@ -30,8 +30,7 @@ export default function Settings({}) {
       </Container>
       <Container sx={{ marginTop: "1rem" }}>
         <Grid container spacing={1}>
-          <Grid item laptop={4}></Grid>
-          <Grid item laptop={8}>
+          <Grid item laptop={12}>
             <Container noPadding>
               <Box sx={{ margin: "1rem" }}>
                 <Typography variant="h4">Personaliza tu visualización</Typography>
@@ -65,17 +64,17 @@ export default function Settings({}) {
                       gap: 5,
                     }}
                   >
-                    {background.map(({ type, color }, i) => {
+                    {background.map(({ mode, background }, i) => {
                       const isSelected = selectedBackground
-                        ? JSON.parse(selectedBackground).background === color
-                        : background[0] === color;
+                        ? JSON.parse(selectedBackground).background === background
+                        : background[0] === background;
 
                       return (
                         <ButtonBase
                           key={i}
-                          onClick={() => themeEditor.changeBackgroundColor(color, type)}
+                          onClick={() => themeEditor.changeBackgroundColor(background, mode)}
                           sx={{
-                            backgroundColor: color,
+                            backgroundColor: background,
                             borderRadius: "100vw",
                             height: "5em",
                             width: "5em",

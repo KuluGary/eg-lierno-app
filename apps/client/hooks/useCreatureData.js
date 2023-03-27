@@ -14,7 +14,7 @@ const useCreatureData = (creature, type) => {
 
   const fetchData = async () => {
     setLoadingData(true);
-    if (!!creature.stats.spells && creature.stats.spells.length > 0) {
+    if (!!creature?.stats?.spells && creature?.stats?.spells?.length > 0) {
       const spellIds = [];
 
       creature.stats.spells.forEach((spellcasting) => {
@@ -54,7 +54,7 @@ const useCreatureData = (creature, type) => {
       setItems(items);
     }
 
-    if (!!creature?.flavor.group && !!creature?.flavor?.group?.length > 1) {
+    if (!!creature?.flavor?.group && !!creature?.flavor?.group?.length > 1) {
       const tier = await Api.fetchInternal(`/tier/creature?tierType=${type}&tierId=${creature.flavor.group}`).then(
         (res) => res.map((el) => el._id)
       );

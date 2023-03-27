@@ -1,5 +1,6 @@
-import { activateAccount } from "assets/email/activateAccount";
+import activateAccount from "assets/email/activateAccount";
 import bcrypt from "bcrypt";
+import getApiParams from "helpers/getApiParams";
 import getServerSession from "helpers/getServerSession";
 import jwt from "jsonwebtoken";
 import User from "models/user";
@@ -23,7 +24,7 @@ export const signUp = async (req, res) => {
       newUser.save((err) => {
         if (err) return res.status(500).json({ message: err });
 
-        const token = jwt.sing(
+        const token = jwt.sign(
           {
             _id: newUser._id,
             username,
@@ -33,16 +34,18 @@ export const signUp = async (req, res) => {
           { expiresIn: "24h" }
         );
 
+        const auth = {
+          type: "OAuth2",
+          user: process.env.G_EMAIL,
+          pass: process.env.G_PASS,
+          clientId: process.env.G_OAUTH_CLIENT_ID,
+          clientSecret: process.env.G_OAUTH_SECRET,
+          refreshToken: process.env.G_OAUTH_REFRESH_TOKEN,
+        };
+
         const transporter = mailer.createTransport({
           service: "gmail",
-          auth: {
-            type: "OAuth2",
-            user: process.env.G_EMAIL,
-            pass: process.env.G_PASS,
-            clientId: process.env.G_OAUTH_CLIENT_ID,
-            clientSecret: process.env.G_OAUTH_SECRET,
-            refreshToken: process.env.G_OAUTH_REFRESH_TOKEN,
-          },
+          auth,
         });
 
         const mailOptions = {
@@ -51,7 +54,7 @@ export const signUp = async (req, res) => {
           subject: "Activación de cuenta en Lierno App ✔",
           html: activateAccount
             .replace("|USERNAME|", username)
-            .replace("|URL|", `${process.env.NEXT_PUBLIC_CLIENT}/api/v1/auth/activate/${token}`)
+            .replace("|URL|", `${process.env.NEXT_PUBLIC_CLIENT}/api/user/activate/${token}`)
             .replace("|DATE|", `${new Date().getFullYear()}`),
         };
 
@@ -85,6 +88,27 @@ export const signIn = async (req, res) => {
     } else {
       res.status(403).json({ message: "Nombre de usuario incorrecto" });
     }
+  } catch (error) {
+    res.status(400).json({ message: error });
+  }
+};
+
+export const activateUser = async (req, res) => {
+  try {
+    const token = getApiParams("token", req);
+
+    console.log({ token });
+
+    jwt.verify(token, process.env.SECRET_KEY, (_, data) => {
+      if (!data) return res.status(500).json({ message: "Token de activación inválido" });
+
+      User.findByIdAndUpdate(data._id, { isActive: true }, (err) => {
+        if (err) return res.status(403).json({ message: "No se ha podido activar la cuenta especificada" });
+
+        res.redirect("/");
+      });
+    });
+    User.findOneAndUpdate({});
   } catch (error) {
     res.status(400).json({ message: error });
   }

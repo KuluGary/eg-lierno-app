@@ -14,20 +14,17 @@ export default function Register() {
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
-    metadata: { first_name: "", last_name: "", email: "" },
   });
   const [errors, setErrors] = useState({
     username: "",
     password: "",
-    metadata: { first_name: "", last_name: "", email: "" },
+    metadata: { email: "" },
   });
   const errorMessages = {
     username: "Este no es un nombre de usuario válido. Asegúrate de que al menos tenga 3 carácteres.",
     password:
-      "Esta contraseña no es válida, por favor asegúrate de que tu contraseña tiene al menos un número, una letra mayúscula y minúscula, un carácter especial y tiene entre 6 y 20 carácteres.",
+      "Esta contraseña no es válida, por favor asegúrate de que tu contraseña tiene 6 carácteres sin espacios.",
     metadata: {
-      first_name: "Por favor introduce un nombre válido.",
-      last_name: "Por favor introduce un apellido válido.",
       email: "Este no es un email válido. Por favor, asegúrate que el email que introduces es correcto.",
     },
   };
@@ -63,18 +60,14 @@ export default function Register() {
     errors["username"].length > 0 ||
     errors["password"].length > 0 ||
     errors["metadata"]["email"].length > 0 ||
-    errors["metadata"]["first_name"].length > 0 ||
-    errors["metadata"]["last_name"].length > 0 ||
     !credentials["username"].length > 0 ||
     !credentials["password"].length > 0 ||
-    !credentials["metadata"]["email"].length > 0 ||
-    !credentials["metadata"]["first_name"].length > 0 ||
-    !credentials["metadata"]["last_name"].length > 0;
+    !credentials["metadata"]["email"].length > 0;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    Api.fetchInternal("/auth/signup", {
+    Api.fetchInternal("/user/sign-up", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -125,34 +118,6 @@ export default function Register() {
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, maxWidth: "60%" }}>
             <Grid container spacing={2}>
-              <Grid item mobile={12} laptop={6}>
-                <TextField
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="first_name"
-                  label="Nombre"
-                  autoFocus
-                  onChange={handleChange}
-                  error={!!errors["metadata"]["first_name"]}
-                  helperText={errors["metadata"]["first_name"]}
-                />
-              </Grid>
-              <Grid item mobile={12} laptop={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="last_name"
-                  label="Apellidos"
-                  name="lastName"
-                  autoComplete="family-name"
-                  onChange={handleChange}
-                  error={!!errors["metadata"]["last_name"]}
-                  helperText={errors["metadata"]["last_name"]}
-                />
-              </Grid>
-
               <Grid item mobile={12}>
                 <TextField
                   required

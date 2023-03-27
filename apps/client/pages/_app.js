@@ -2,6 +2,7 @@ import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { SessionProvider as AuthProvider } from "next-auth/react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -18,6 +19,8 @@ const ProgressBar = dynamic(() => import("components/ProgressBar"), {
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({ key: "css" });
+
+const queryClient = new QueryClient();
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
@@ -93,20 +96,22 @@ export default function MyApp(props) {
 
   return (
     <AuthProvider options={{ clientMaxAge: 0, keepAlive: 0 }} session={pageProps.session}>
-      <ToastContainer closeOnClick draggable position="top-right" autoClose={5000} theme={"dark"} />
-      <CacheProvider value={emotionCache}>
-        <Head>
-          <title>Lierno App</title>
-          <meta name="viewport" content="initial-scale=1, width=device-width" />
-        </Head>
-        <CssBaseline />
-        <ColorModeContext.Provider value={colorMode}>
-          <ThemeProvider theme={theme}>
-            <ProgressBar />
-            <Component {...pageProps} />
-          </ThemeProvider>
-        </ColorModeContext.Provider>
-      </CacheProvider>
+      <QueryClientProvider client={queryClient}>
+        <ToastContainer closeOnClick draggable position="top-right" autoClose={5000} theme={"dark"} />
+        <CacheProvider value={emotionCache}>
+          <Head>
+            <title>Lierno App</title>
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
+          </Head>
+          <CssBaseline />
+          <ColorModeContext.Provider value={colorMode}>
+            <ThemeProvider theme={theme}>
+              <ProgressBar />
+              <Component {...pageProps} />
+            </ThemeProvider>
+          </ColorModeContext.Provider>
+        </CacheProvider>
+      </QueryClientProvider>
     </AuthProvider>
   );
 }

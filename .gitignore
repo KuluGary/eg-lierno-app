@@ -32,3 +32,6 @@ cypress.env.json
 
 # turbo
 .turbo
+
+# scripts
+/bin

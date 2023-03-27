@@ -43,7 +43,7 @@ export const SPELL_ICON_DICTIONARY = {
 export const StringUtil = {
   regex: {
     email: /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/,
-    password: /^[a-zA-Z0-9]{8,32}$/,
+    password: /\S{6}$/,
     username: /^[a-zA-Z0-9]{3,32}$/,
     first_name: /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/,
     last_name: /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/,
