@@ -1,7 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Layout from "components/Layout/Layout";
 import Metadata from "components/Metadata/Metadata";
-import serialize from "helpers/serializeJson";
 import useCreatureData from "hooks/useCreatureData";
 import { useWidth } from "hooks/useWidth";
 import dynamic from "next/dynamic";

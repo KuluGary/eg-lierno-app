@@ -119,7 +119,7 @@ export default function AddCharacter({ character = null }) {
     if (isLoading) return;
 
     setIsLoading(true);
-    
+
     if (!!creature._id) {
       Api.fetchInternal("/characters/" + creature._id, {
         method: "PUT",
@@ -176,7 +176,7 @@ export default function AddCharacter({ character = null }) {
                 </TabPanel>
               ))}
               <Box sx={{ m: 3, float: "right" }}>
-                <Button disabled={isLoading} sx={{ marginInline: 1 }}>
+                <Button onClick={() => router.back()} disabled={isLoading} sx={{ marginInline: 1 }}>
                   Cancelar
                 </Button>
                 <LoadingButton loading={isLoading} sx={{ marginInline: 1 }} variant="outlined" onClick={handleSubmit}>

@@ -17,11 +17,12 @@ const categories = [
     tag: "Personajes",
     Icon: AccountCircleIcon,
   },
-  {
-    to: "/campaigns",
-    tag: "Partidas",
-    Icon: MenuBookIcon,
-  },
+  // @TODO fix
+  // {
+  //   to: "/campaigns",
+  //   tag: "Partidas",
+  //   Icon: MenuBookIcon,
+  // },
   {
     to: "/explore",
     tag: "Explorar",
