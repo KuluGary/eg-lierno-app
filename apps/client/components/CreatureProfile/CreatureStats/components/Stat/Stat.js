@@ -3,20 +3,15 @@ import { getModifier } from "@lierno/dnd-helpers";
 import { useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
-import HTMLContainer from "components/HTMLContainer/HTMLContainer";
 import { Shield as ShieldIcon } from "components/icons/Shield";
-import { FullScreenModal } from "components/Modal/FullScreenModal";
 import customizable_stats from "helpers/json/customizable_stats.json";
-import { convert as convertHtmlToString } from "html-to-text";
 import { useState } from "react";
 import style from "./Stat.style";
+import StatModal from "./StatModal";
 
-export default function StatComponent({ stat, label, bonusList, base }) {
+export default function StatComponent(props) {
+  const { stat, label } = props;
   const { stats, checks } = customizable_stats;
   const [openModal, setOpenModal] = useState(false);
   const theme = useTheme();
@@ -31,46 +26,7 @@ export default function StatComponent({ stat, label, bonusList, base }) {
 
   return (
     <>
-      <FullScreenModal
-        open={openModal}
-        onClose={() => setOpenModal(false)}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        containerStyles={theme.mixins.noScrollbar}
-      >
-        <Box style={style.modalContentContainer}>
-          <Typography id="modal-modal-title" variant="h4" sx={style.modalTitle}>
-            {`${stats[label]?.name} ${stat}`}
-          </Typography>
-          <Typography variant="subtitle2" sx={style.modalSubtitle}>
-            {` (${getOperatorString(getModifier(stat))})`}
-          </Typography>
-        </Box>
-        <Box>
-          <Table>
-            <TableBody>
-              <TableRow>
-                <TableCell sx={style.tableCell}>Modificador base</TableCell>
-                <TableCell sx={style.tableCell}>{base}</TableCell>
-              </TableRow>
-              {bonusList.map(({ descriptions, bonus }, i) => (
-                <TableRow key={i}>
-                  <TableCell sx={style.tableCell}>{convertHtmlToString(descriptions)}</TableCell>
-                  <TableCell sx={style.tableCell}>{getOperatorString(bonus)}</TableCell>
-                </TableRow>
-              ))}
-              <TableRow>
-                <TableCell sx={style.tableCell}>{"Total"}</TableCell>
-                <TableCell sx={[style.tableCell, { fontWeight: "bold" }]}>{stat}</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-          <Box style={style.labelDescriptionContainer}>
-            <HTMLContainer content={checks[label]?.description} />
-          </Box>
-        </Box>
-      </FullScreenModal>
-
+      <StatModal {...props} stats={stats} checks={checks} show={openModal} onClose={() => setOpenModal(false)} />
       <Box data-testid={`${label}-stat`} component="div" onClick={() => setOpenModal(true)} sx={style.statContainer}>
         <Box component="div" sx={style.abilityScoreContainer}>
           <Box component="div" sx={style.abilityScoreLabelContainer}>
